@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 12.04 Inverse Functions Given Equations</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 12</div>
+        <div style="font-size: 13px; color: #666;">Inverse Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">12.04</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Inverse Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">12.04</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Inverse Functions Given Equations</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Bijective Function:</strong>&nbsp;A function that is both one-to-one (each input maps to a unique output) and onto (every possible output is produced by some input); a bijective function always has an inverse that is also a function.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Domain Restriction:</strong>&nbsp;A limitation placed on the input values of a function to ensure it is one-to-one; when finding the inverse of a function that is not one-to-one over all real numbers, a domain restriction is required before the inverse can be written.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Function Type:</strong>&nbsp;A classification of a function based on its algebraic structure (e.g., linear, quadratic, exponential, radical, cubic) that can be used to determine whether the function is one-to-one and whether an inverse function exists without graphing.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Identity Function:</strong>&nbsp;The function \( I(x) = x \), which returns every input unchanged; used as the benchmark for verifying inverse functions, since \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \) must both hold.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Inverse Function:</strong>&nbsp;A function that reverses the input-output relationship of the original function, written as \( f^{-1}(x) \), found algebraically by replacing \( f(x) \) with \( y \), swapping \( x \) and \( y \), and solving for \( y \).</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>One-to-one Function:</strong>&nbsp;A function in which every output value corresponds to exactly one input value; that is, if \( f(a) = f(b) \), then \( a = b \). Only one-to-one functions have inverses that are also functions.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Verification by Composition:</strong>&nbsp;The process of confirming that two functions \( f(x) \) and \( g(x) \) are inverses by showing that both \( f(g(x)) = x \) and \( g(f(x)) = x \) for all \( x \) in the appropriate domain.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>\( x \)-\( y \) Interchange:</strong>&nbsp;The algebraic step in finding an inverse function where the variables \( x \) and \( y \) are swapped in the equation, reflecting the reversal of the input-output relationship before solving for the new output variable.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In the previous lesson, you learned how to determine whether an inverse function exists by examining graphs and tables. In this lesson, you will work directly with equations. You will learn how to analyze the algebraic structure of a function to determine whether it is one-to-one, find the equation of its inverse when one exists, and verify the inverse relationship using composition of functions.</span></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Determining Whether a Function Has an Inverse from Its Equation</strong></h4>
+<p><strong>Using Function Type to Determine One-to-One Behavior</strong></p>
+<ul>
+<li>Recall that a function must be <strong>one-to-one</strong> for its inverse to also be a function.</li>
+<li>When you are given an equation rather than a graph or table, you can determine whether the function is one-to-one by analyzing its <strong>function type</strong> — the algebraic structure that classifies it as linear, quadratic, exponential, and so on.</li>
+<li>Each function type has predictable behavior that tells you whether it is strictly increasing or decreasing (one-to-one) or whether it turns around and revisits output values (not one-to-one).</li>
+</ul>
+<p>The table below summarizes the most common function types you will encounter and whether each has an inverse over its natural domain.</p>
+<table style="border-collapse: collapse; width: 70.8772%; height: 259px;" border="1">
+<tbody>
+<tr style="height: 27px;">
+<th style="width: 18.239%; height: 27px;">Function Type</th>
+<th style="width: 29.5597%; height: 27px;">General Form</th>
+<th style="width: 27.044%; height: 27px;">One-to-One?</th>
+<th style="width: 25.1572%; height: 27px;">Inverse Exists?</th>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Linear (nonzero slope)</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = mx + b,\ m \neq 0 \)</td>
+<td style="width: 27.044%; height: 29px;">Yes</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Quadratic</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = ax^2 + bx + c \)</td>
+<td style="width: 27.044%; height: 29px;">No</td>
+<td style="width: 25.1572%; height: 29px;">Not without a domain restriction</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Cubic (Basic Forms and Transformation Form)</td>
+<td style="width: 29.5597%; height: 29px;">
+<p>\( f(x) = ax^3 + \cdots \)</p>
+<p>\(f(x)=a(x+h)^3-k \)</p>
+</td>
+<td style="width: 27.044%; height: 29px;">Yes (for basic forms)</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr>
+<td style="width: 18.239%;">Cubic</td>
+<td style="width: 29.5597%;">\( f(x)=ax^3+bx^2+ \cdots \)</td>
+<td style="width: 27.044%;">No (graph will turn around)</td>
+<td style="width: 25.1572%;">No</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Exponential</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = ab^x,\ b &gt; 0,\ b \neq 1 \)</td>
+<td style="width: 27.044%; height: 29px;">Yes</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Square Root</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = \sqrt{x} \)</td>
+<td style="width: 27.044%; height: 29px;">Yes (natural domain \( x \geq 0 \))</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Cube Root</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = \sqrt[3]{x} \)</td>
+<td style="width: 27.044%; height: 29px;">Yes (all real numbers)</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Logarithmic</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = \log_b(x),\ b &gt; 0,\ b \neq 1 \)</td>
+<td style="width: 27.044%; height: 29px;">Yes (natural domain \( x &gt; 0 \))</td>
+<td style="width: 25.1572%; height: 29px;">Yes</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 18.239%; height: 29px;">Absolute Value</td>
+<td style="width: 29.5597%; height: 29px;">\( f(x) = |x| \)</td>
+<td style="width: 27.044%; height: 29px;">No</td>
+<td style="width: 25.1572%; height: 29px;">Not without a domain restriction</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div style="border: 3px solid #6B3FA0; background-color: #e8daf6; padding: 20px; border-radius: 8px;"><strong>Key Idea:</strong> A function is one-to-one if it is strictly increasing or strictly decreasing across its entire domain — it never "turns around." Linear, basic cubic, exponential, and square root functions all have this property. Quadratic and absolute value functions are symmetric about a vertex or axis, which means they return the same output value for two different inputs and are therefore not one-to-one over all real numbers. Some Cubic functions are also symmetric about a point.<br><strong>Using graphs of functions can help to determine if a function is strictly increasing or decreasing, or if it turns around at any point.</strong></div>
+<br>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;"><strong>Important Note on Quadratic Functions:</strong> Although a quadratic function does not have an inverse over all real numbers, an inverse <em>can</em> exist if the domain is restricted to one side of the vertex — for example, limiting \( f(x) = x^2 \) to \( x \geq 0 \) makes it one-to-one. Unless a domain restriction is explicitly given, assume a quadratic function does not have an inverse.</div>
+<h4><strong><br>Steps for Finding the Algebraic Inverse of a Function</strong></h4>
+<p>Once you have confirmed that a function is one-to-one, follow these four steps to find the equation of its inverse.</p>
+<div class="step"><strong>Step 1 —</strong> Replace \( f(x) \) with \( y \) to make the equation easier to work with.</div>
+<div class="step"><strong>Step 2 —</strong> Swap \( x \) and \( y \). This reflects the reversal of the input-output relationship that defines an inverse function.</div>
+<div class="step"><strong>Step 3 —</strong> Solve the new equation for \( y \) using algebraic properties.</div>
+<div class="step"><strong>Step 4 —</strong> Replace \( y \) with \( f^{-1}(x) \) to write the inverse in proper function notation. State any domain restrictions if needed.</div>
+<h4><strong><br>A Function That Has an Inverse</strong></h4>
+<p>Determine whether \( f(x) = 3x - 5 \) has an inverse. If so, find the equation of the inverse.</p>
+<ul>
+<li><strong>Step 1 — Identify the function type.</strong> \( f(x) = 3x - 5 \) is a <strong>linear function</strong> with slope \( m = 3 \neq 0 \). Linear functions with nonzero slopes are always strictly increasing or strictly decreasing, making them one-to-one. An inverse function exists.</li>
+<li><strong>Step 2 — Replace \( f(x) \) with \( y \).</strong>
+<ul>
+<li>\( y = 3x - 5 \)</li>
+</ul>
+</li>
+<li><strong>Step 3 — Swap \( x \) and \( y \).</strong>
+<ul>
+<li>\( x = 3y - 5 \)</li>
+</ul>
+</li>
+<li><strong>Step 4 — Solve for \( y \).</strong>
+<ul>
+<li><img class="equation_image" title="\begin{array}
+&amp;x=3y-5 \\
++5\qquad +5 \\
+\hline
+x + 5 = 3y \\
+\underline{x+5} = \underline{3y} \\
+\quad 3 \qquad\; 3 \\
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x%253D3y-5%2520%255C%255C%250A%252B5%255Cqquad%2520%252B5%2520%255C%255C%250A%255Chline%250Ax%2520%252B%25205%2520%253D%25203y%2520%255C%255C%250A%255Cunderline%257Bx%252B5%257D%2520%253D%2520%255Cunderline%257B3y%257D%2520%255C%255C%250A%255Cquad%25203%2520%255Cqquad%255C%253B%25203%2520%255C%255C%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x=3y-5 \\
++5\qquad +5 \\
+\hline
+x + 5 = 3y \\
+\underline{x+5} = \underline{3y} \\
+\quad 3 \qquad\; 3 \\
+\end{array}" data-equation-content="\begin{array}
+&amp;x=3y-5 \\
++5\qquad +5 \\
+\hline
+x + 5 = 3y \\
+\underline{x+5} = \underline{3y} \\
+\quad 3 \qquad\; 3 \\
+\end{array}" data-ignore-a11y-check="" loading="lazy"></li>
+<li><img class="equation_image" title="y = \dfrac{x + 5}{3}" src="https://optimadomi.instructure.com/equation_images/y%2520%253D%2520%255Cdfrac%257Bx%2520%252B%25205%257D%257B3%257D?scale=1" alt="LaTeX: y = \dfrac{x + 5}{3}" data-equation-content="y = \dfrac{x + 5}{3}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li><strong style="font-size: 1rem;">Step 5 — Write in inverse notation.</strong>
+<ul>
+<li>\( f^{-1}(x) = \dfrac{x + 5}{3} \)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Domain check:</strong> Both \( f(x) \) and \( f^{-1}(x) \) are linear functions defined for all real numbers. No domain restriction is needed.</p>
+<p><strong>Answer:</strong> \( f^{-1}(x) = \dfrac{x + 5}{3} \). Domain: all real numbers.</p>
+<h4><strong><br>A Function That Does Not Have an Inverse</strong></h4>
+<p>Determine whether \( g(x) = x^2 - 4 \) has an inverse over all real numbers.</p>
+<p><strong>Step 1 — Identify the function type.</strong> \( g(x) = x^2 - 4 \) is a <strong>quadratic function</strong>. A quadratic function is a parabola that is symmetric about its vertex. Because it is symmetric, every output value above the minimum is produced by two different input values.</p>
+<p><strong>Step 2 — Identify specific inputs that share an output.</strong> Consider \( x = 3 \) and \( x = -3 \):</p>
+<p>\( g(3) = (3)^2 - 4 = 9 - 4 = 5 \)</p>
+<p>\( g(-3) = (-3)^2 - 4 = 9 - 4 = 5 \)</p>
+<p>Both \( x = 3 \) and \( x = -3 \) produce the output 5. Since two different inputs share the same output, the function is not one-to-one.</p>
+<div class="no-inv"><strong>Answer:</strong> \( g(x) = x^2 - 4 \) is not one-to-one over all real numbers. An inverse function does not exist without restricting the domain.</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Determine whether \( f(x) = \dfrac{1}{2}x + 4 \) has an inverse. If so, find the equation of the inverse.</p>
+<details>
+<summary><strong><span style="color: #d60307;">Show Answer and Explanation</span></strong></summary>
+<p><strong>Function type:</strong> \( f(x) = \dfrac{1}{2}x + 4 \) is a <strong>linear function</strong> with slope \( m = \dfrac{1}{2} \neq 0 \). It is one-to-one, and an inverse exists.</p>
+<p><strong>Step 1:</strong> Replace \( f(x) \) with \( y \).</p>
+<ul>
+<li>\( y = \dfrac{1}{2}x + 4 \)</li>
+</ul>
+<p><strong>Step 2:</strong> Swap \( x \) and \( y \).</p>
+<ul>
+<li>\( x = \dfrac{1}{2}y + 4 \)</li>
+</ul>
+<p><strong>Step 3:</strong> Solve for \( y \). Subtract 4 from both sides. Then multiply both sides by 2.</p>
+<ul>
+<li><img class="equation_image" title="\begin{array}
+&amp;x=\frac{1}{2}y+4 \\
+-4 \qquad -4 \\
+\hline
+x - 4 = \frac{1}{2}y \\
+2(x-4)=2\cdot \frac{1}{2}y \\
+2x-8=y\; \text{or}\; y=2x-8
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x%253D%255Cfrac%257B1%257D%257B2%257Dy%252B4%2520%255C%255C%250A-4%2520%255Cqquad%2520-4%2520%255C%255C%250A%255Chline%250Ax%2520-%25204%2520%253D%2520%255Cfrac%257B1%257D%257B2%257Dy%2520%255C%255C%250A2(x-4)%253D2%255Ccdot%2520%255Cfrac%257B1%257D%257B2%257Dy%2520%255C%255C%250A2x-8%253Dy%255C%253B%2520%255Ctext%257Bor%257D%255C%253B%2520y%253D2x-8%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x=\frac{1}{2}y+4 \\
+-4 \qquad -4 \\
+\hline
+x - 4 = \frac{1}{2}y \\
+2(x-4)=2\cdot \frac{1}{2}y \\
+2x-8=y\; \text{or}\; y=2x-8
+\end{array}" data-equation-content="\begin{array}
+&amp;x=\frac{1}{2}y+4 \\
+-4 \qquad -4 \\
+\hline
+x - 4 = \frac{1}{2}y \\
+2(x-4)=2\cdot \frac{1}{2}y \\
+2x-8=y\; \text{or}\; y=2x-8
+\end{array}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+<p><strong>Step 4:</strong> Write in inverse notation.</p>
+<ul>
+<li>\( f^{-1}(x) = 2x - 8 \)</li>
+</ul>
+<p><strong><span style="color: #d60307;">Answer:</span></strong> \( f^{-1}(x) = 2x - 8 \). Domain: all real numbers.</p>
+<p><strong>Notice:</strong> The original function has slope \( \dfrac{1}{2} \) and the inverse has slope 2. The slopes of a function and its inverse are always reciprocals of each other — a useful pattern to check your work.</p>
+</details>
+<p>&nbsp;</p>
+<h4><span style="color: #f88e0a;">Example 2</span></h4>
+<p>Determine whether \( f(x) = x^3 + 2 \) has an inverse. If so, find the equation of the inverse.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Answer and Explanation</strong></span></summary>
+<p><strong>Function type:</strong> \( f(x) = x^3 + 2 \) is a <strong>cubic function</strong>. Basic cubic functions are strictly increasing across all real numbers — the cube of a larger number is always larger than the cube of a smaller number. No two different inputs produce the same output. The function is one-to-one, and an inverse exists.</p>
+<p><strong>Step 1:</strong> Replace \( f(x) \) with \( y \).</p>
+<ul>
+<li>\( y = x^3 + 2 \)</li>
+</ul>
+<p><strong>Step 2:</strong> Swap \( x \) and \( y \).</p>
+<ul>
+<li>\( x = y^3 + 2 \)</li>
+</ul>
+<p><strong>Step 3:</strong> Solve for \( y \). Subtract 2 from both sides.</p>
+<ul>
+<li>\( x - 2 = y^3 \)</li>
+<li>Take the cube root of both sides. Unlike square roots, cube roots are defined for all real numbers, so no restriction is needed.</li>
+<li>\( y = \sqrt[3]{x - 2} \)</li>
+</ul>
+<p><strong>Step 4:</strong> Write in inverse notation.</p>
+<ul>
+<li>\( f^{-1}(x) = \sqrt[3]{x - 2} \)</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \( f^{-1}(x) = \sqrt[3]{x - 2} \). Domain: all real numbers.</p>
+</details>
+<p>&nbsp;</p>
+<p><span style="color: #f88e0a;">Example 3</span></p>
+<p>Determine whether \( h(x) = 2^x - 3 \) has an inverse. If so, find the equation of the inverse.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Answer and Explanation</strong></span></summary>
+<p><strong>Function type:</strong> \( h(x) = 2^x - 3 \) is an <strong>exponential function</strong>. Exponential functions with a base greater than 1 are strictly increasing — as \( x \) increases, \( 2^x \) always increases. Subtracting 3 shifts the graph down but does not change this behavior. The function is one-to-one, and an inverse exists.</p>
+<p><strong>Step 1:</strong> Replace \( h(x) \) with \( y \).</p>
+<ul>
+<li>\( y = 2^x - 3 \)</li>
+</ul>
+<p><strong>Step 2:</strong> Swap \( x \) and \( y \).</p>
+<ul>
+<li>\( x = 2^y - 3 \)</li>
+</ul>
+<p><strong>Step 3:</strong> Solve for \( y \). Add 3 to both sides.</p>
+<ul>
+<li>\( x + 3 = 2^y \)</li>
+<li>To isolate \( y \), apply a logarithm base 2 to both sides. The logarithm is the inverse operation of an exponential.</li>
+<li>\( y = \log_2(x + 3) \)</li>
+</ul>
+<p><strong>Step 4:</strong> Write in inverse notation.</p>
+<ul>
+<li>\( h^{-1}(x) = \log_2(x + 3) \)</li>
+</ul>
+<p><strong>Domain check:</strong> The argument of a logarithm must be positive, so \( x + 3 &gt; 0 \), which means \( x &gt; -3 \). This restriction comes from the fact that the original exponential function \( h(x) = 2^x - 3 \) has a range of \( (-3, \infty) \) — the inverse's domain must match the original function's range.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \( h^{-1}(x) = \log_2(x + 3) \), where \( x &gt; -3 \).</p>
+</details>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc;  margin-top: 0;"><strong>Verifying Inverse Functions Using Composition</strong></h4>
+<p><strong>Why Verify?</strong></p>
+<p>Finding an inverse algebraically using the four-step process gives you a strong candidate for the inverse function, but it is possible to make an algebraic error along the way. Verifying the result using composition of functions gives you a definitive, conclusive confirmation that two functions are truly inverses of each other — not just a visual estimate from a graph or a pattern noticed in a table.</p>
+<div class="highlight"><strong>Verification Rule:</strong> Two functions \( f(x) \) and \( g(x) \) are inverses of each other if and only if <em>both</em> of the following are true: <br><br>\( f(g(x)) = x \) for all \( x \) in the domain of \( g \) <br>\( g(f(x)) = x \) for all \( x \) in the domain of \( f \) <br><br>Both compositions must equal the identity function \( I(x) = x \). If even one of them does not simplify to \( x \), the two functions are <strong>not</strong> inverses.<br><br></div>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<p style="color: #3c8c4c; margin-top: 0;"><strong>Why Must You Check Both Directions?</strong></p>
+For <strong>most</strong> well-behaved functions at this level, if one composition equals \( x \), the other will as well — but this is <strong>not guaranteed</strong> in all cases, particularly when domain restrictions are involved. Checking both directions is a mathematical habit of precision that protects against errors and is expected on assessments.</div>
+<h4><strong><br><br>Steps for Verifying Inverse Functions by Composition</strong></h4>
+<div class="step"><strong>Step 1 —</strong> Compute \( f(g(x)) \) by substituting the entire rule of \( g(x) \) into \( f(x) \) in place of \( x \), then simplify completely.</div>
+<div class="step"><strong>Step 2 —</strong> Compute \( g(f(x)) \) by substituting the entire rule of \( f(x) \) into \( g(x) \) in place of \( x \), then simplify completely.</div>
+<div class="step"><strong>Step 3 —</strong> If both compositions simplify to \( x \), the functions are inverses. If either composition does not simplify to \( x \), the functions are not inverses.</div>
+<h4><strong><br><br>Verifying an Inverse Relationship</strong></h4>
+<p>Determine algebraically whether \( f(x) = 4x - 7 \) and \( g(x) = \dfrac{x + 7}{4} \) are inverses of each other.</p>
+<p><strong>Step 1 — Compute \( f(g(x)) \).</strong> Substitute \( g(x) = \dfrac{x + 7}{4} \) into \( f(x) = 4x - 7 \) in place of \( x \).</p>
+<p>\( f(g(x)) = 4\left(\dfrac{x + 7}{4}\right) - 7 \)</p>
+<p>Multiply: the 4 in the numerator and the 4 in the denominator cancel.</p>
+<p>\( f(g(x)) = (x + 7) - 7 = x \) ✓</p>
+<p><strong>Step 2 — Compute \( g(f(x)) \).</strong> Substitute \( f(x) = 4x - 7 \) into \( g(x) = \dfrac{x + 7}{4} \) in place of \( x \).</p>
+<p>\( g(f(x)) = \dfrac{(4x - 7) + 7}{4} \)</p>
+<p>Combine like terms in the numerator.</p>
+<p>\( g(f(x)) = \dfrac{4x}{4} = x \) ✓</p>
+<p><strong>Step 3 — Conclude.</strong> Both \( f(g(x)) = x \) and \( g(f(x)) = x \). The two functions are confirmed to be inverses of each other.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Determine algebraically whether \( f(x) = x^3 - 5 \) and \( g(x) = \sqrt[3]{x + 5} \) are inverses of each other.</p>
+<details>
+<summary><span style="color: #d60307;"><strong>Show Answer and Explanation</strong></span></summary>
+<p><strong>Compute \( f(g(x)) \).</strong> Substitute \( g(x) = \sqrt[3]{x + 5} \) into \( f(x) = x^3 - 5 \).</p>
+<p>\( f(g(x)) = \left(\sqrt[3]{x + 5}\right)^3 - 5 \)</p>
+<p>Raising a cube root to the third power cancels the radical.</p>
+<p>\( f(g(x)) = (x + 5) - 5 = x \) ✓</p>
+<p><strong>Compute \( g(f(x)) \).</strong> Substitute \( f(x) = x^3 - 5 \) into \( g(x) = \sqrt[3]{x + 5} \).</p>
+<p>\( g(f(x)) = \sqrt[3]{(x^3 - 5) + 5} \)</p>
+<p>Combine like terms inside the radical.</p>
+<p>\( g(f(x)) = \sqrt[3]{x^3} = x \) ✓</p>
+<p><span style="color: #d60307;"><strong>Answer:</strong></span> Both compositions equal \( x \). \( f(x) = x^3 - 5 \) and \( g(x) = \sqrt[3]{x + 5} \) <strong>are inverses</strong> of each other.</p>
+<p><strong>Note:</strong> This result makes sense — when you apply the four-step algebraic method to \( f(x) = x^3 - 5 \), the inverse you find is exactly \( g(x) = \sqrt[3]{x + 5} \). Composition confirms what the algebra predicted.</p>
+</details>
+<p>&nbsp;</p>
+<h4><span style="color: #f88e0a;">Example 5</span></h4>
+<p>Determine algebraically whether \( f(x) = 3x + 6 \) and \( g(x) = \dfrac{x}{3} - 6 \) are inverses of each other.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Answer and Explanation</strong></span></summary>
+<p><strong>Compute \( f(g(x)) \).</strong> Substitute \( g(x) = \dfrac{x}{3} - 6 \) into \( f(x) = 3x + 6 \).</p>
+<p>\( f(g(x)) = 3\left(\dfrac{x}{3} - 6\right) + 6 \)</p>
+<p>Distribute the 3.</p>
+<p>\( f(g(x)) = x - 18 + 6 = x - 12 \)</p>
+<p>Since \( x - 12 \neq x \), we already know these functions are <strong>not</strong> inverses. There is no need to check the second composition, though we will do so for completeness.</p>
+<p><strong>Compute \( g(f(x)) \).</strong> Substitute \( f(x) = 3x + 6 \) into \( g(x) = \dfrac{x}{3} - 6 \).</p>
+<p>\( g(f(x)) = \dfrac{(3x + 6)}{3} - 6 \)</p>
+<p>Divide each term in the numerator by 3.</p>
+<p>\( g(f(x)) = x + 2 - 6 = x - 4 \)</p>
+<p>Again, \( x - 4 \neq x \). ✗</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Neither composition equals \( x \). \( f(x) = 3x + 6 \) and \( g(x) = \dfrac{x}{3} - 6 \) are <strong>not inverses</strong> of each other.</p>
+<p><strong>Where did \( g(x) \) go wrong?</strong> To find the correct inverse of \( f(x) = 3x + 6 \), apply the four-step process: swap and solve to get \( x = 3y + 6 \Rightarrow y = \dfrac{x - 6}{3} \). The correct inverse is \( f^{-1}(x) = \dfrac{x - 6}{3} \), not \( \dfrac{x}{3} - 6 \). The error in \( g(x) \) was subtracting 6 after dividing, rather than subtracting 6 first and then dividing — a common order-of-operations mistake.</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p><span>In this lesson, you learned how to determine whether a function has an inverse by analyzing its equation directly, without needing a graph or table. By identifying the function type — linear, quadratic, cubic, exponential, square root, or absolute value — you can quickly assess whether the function is one-to-one and whether an inverse function exists. When an inverse does exist, you found it algebraically by following a consistent four-step process: replacing \( f(x) \) with \( y \), swapping \( x \) and \( y \) to reflect the reversal of the input-output relationship, solving for \( y \), and writing the result using inverse function notation. You also saw that domain restrictions matter — the natural domain of the inverse must align with the range of the original function, particularly for exponential and radical functions. Quadratic and absolute value functions, while extremely common, are not one-to-one over all real numbers and therefore do not have an inverse unless the domain is restricted first. In Part 2 of this lesson, you extended that work by learning how to verify an inverse relationship using composition of functions. By computing both \( f(g(x)) \) and \( g(f(x)) \) and confirming that both simplify to \( x \), you can conclusively confirm — or disprove — that two functions are inverses of each other. As Practice Problem 2 demonstrated, composition is a powerful error-detection tool: even a small structural mistake in the inverse equation will cause the composition to produce something other than \( x \), immediately revealing the error. Together, the algebraic method for finding inverses and the compositional method for verifying them give you a complete and rigorous toolkit for working with inverse functions.</span></p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">1. How does the algebraic structure of a function reveal whether it is one-to-one and therefore has an inverse that is also a function?</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">2. What does the process of finding an inverse function algebraically reveal about the relationship between a function's inputs and outputs?</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">3. Why is verifying an inverse relationship through composition of functions more conclusive than relying on algebraic steps alone?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">12.04 &middot; Inverse Functions Given Equations</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

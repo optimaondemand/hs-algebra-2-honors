@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 9.05 Solving One-Variable  Logarithmic Equations</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 9</div>
+        <div style="font-size: 13px; color: #666;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">9.05</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">9.05</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving One-Variable  Logarithmic Equations</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="157"><strong data-start="0" data-end="8">Base</strong>: The base is the number that is raised to a power in an exponential or logarithmic expression and represents the factor being repeatedly multiplied.</p>
+<p data-start="159" data-end="288"><strong data-start="159" data-end="171">Condense</strong>: To condense means to combine multiple logarithmic expressions into a single logarithm using logarithmic properties.</p>
+<p data-start="290" data-end="410"><strong data-start="290" data-end="302">Equation</strong>: An equation is a mathematical statement that shows two expressions are equal, connected by an equals sign.</p>
+<p data-start="412" data-end="523"><strong data-start="412" data-end="424">Exponent</strong>: An exponent is a number or variable that indicates how many times a base is multiplied by itself.</p>
+<p data-start="525" data-end="679"><strong data-start="525" data-end="548">Extraneous Solution</strong>: An extraneous solution is a value that arises during the solving process but does not satisfy the original equation when checked.</p>
+<p data-start="681" data-end="835"><strong data-start="681" data-end="694">Logarithm</strong>: A logarithm is the inverse of an exponential function and represents the exponent to which a base must be raised to produce a given number.</p>
+<p data-start="837" data-end="1020"><strong data-start="837" data-end="857">Natural Base (e)</strong>: The natural base, \(e\), is an irrational number approximately equal to 2.718 and is commonly used as the base for natural exponential and logarithmic functions.</p>
+<p data-start="1022" data-end="1170"><strong data-start="1022" data-end="1048">Natural Logarithm (ln)</strong>: A natural logarithm is a logarithm with base \(e\), written as \(\ln{x}\), and is widely used in mathematics and science.</p>
+<p data-start="1172" data-end="1381"><strong data-start="1172" data-end="1204">Power Property of Logarithms</strong>: The power property of logarithms states that the logarithm of a power is equal to the exponent multiplied by the logarithm of the base, written as <img class="equation_image" title="\log_{b}{x^k}=k\log_{b}{x}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257Bx%255Ek%257D%253Dk%255Clog_%257Bb%257D%257Bx%257D?scale=1" alt="LaTeX: \log_{b}{x^k}=k\log_{b}{x}" data-equation-content="\log_{b}{x^k}=k\log_{b}{x}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1383" data-end="1595"><strong data-start="1383" data-end="1417">Product Property of Logarithms</strong>: The product property of logarithms states that the logarithm of a product is equal to the sum of the logarithms of its factors, written as <img class="equation_image" title="\log_{b}{(xy)}=\log_{b}{x}+\log_{b}{y}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257B(xy)%257D%253D%255Clog_%257Bb%257D%257Bx%257D%252B%255Clog_%257Bb%257D%257By%257D?scale=1" alt="LaTeX: \log_{b}{(xy)}=\log_{b}{x}+\log_{b}{y}" data-equation-content="\log_{b}{(xy)}=\log_{b}{x}+\log_{b}{y}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1597" data-end="1859"><strong data-start="1597" data-end="1632">Quotient Property of Logarithms</strong>: The quotient property of logarithms states that the logarithm of a quotient is equal to the difference of the logarithms of the numerator and denominator, written as <img class="equation_image" title="\log_{b}{(\frac{x}{y})}=\log_{b}{x}-\log_{b}{y}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257B(%255Cfrac%257Bx%257D%257By%257D)%257D%253D%255Clog_%257Bb%257D%257Bx%257D-%255Clog_%257Bb%257D%257By%257D?scale=1" alt="LaTeX: \log_{b}{(\frac{x}{y})}=\log_{b}{x}-\log_{b}{y}" data-equation-content="\log_{b}{(\frac{x}{y})}=\log_{b}{x}-\log_{b}{y}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1861" data-end="1999"><strong data-start="1861" data-end="1872">Rewrite</strong>: To rewrite means to express a mathematical expression in a different but equivalent form using algebraic rules or properties.</p>
+<p data-start="2001" data-end="2125"><strong data-start="2001" data-end="2013">Solution</strong>: A solution is a value of the variable that makes an equation true when substituted into the original equation.</p>
+<p data-start="2127" data-end="2269" data-is-last-node="" data-is-only-node=""><strong data-start="2127" data-end="2139">Variable</strong>: A variable is a symbol, usually a letter, that represents an unknown or changing value in a mathematical expression or equation.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Logarithmic equations allow us to solve for variables that appear inside logarithms by using the inverse relationship between logarithms and exponential functions. In this lesson, you will learn how to rewrite logarithmic equations in exponential form, how to use logarithmic properties to <strong data-start="600" data-end="612">condense</strong> expressions before solving, and how to solve equations involving <strong data-start="678" data-end="700">natural logarithms</strong> by using the relationship between \(e\) and \(\ln\). These skills are essential for solving more complex equations and for understanding how logarithms model real-world situations involving growth and decay.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Rewriting Logarithmic Equations to Solve</strong></h4>
+<p>When a logarithmic equation contains <strong data-start="1047" data-end="1069">a single logarithm</strong>, it can often be solved by rewriting it in <strong data-start="1113" data-end="1133">exponential form</strong>. This method isolates the variable by converting the log equation into an equivalent exponential equation.</p>
+<p><img class="equation_image" title="\Large \log_{b}{x}=y \iff b^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bx%257D%253Dy%2520%255Ciff%2520b%255Ey%253Dx?scale=1" alt="LaTeX: \Large \log_{b}{x}=y \iff b^y=x" data-equation-content="\Large \log_{b}{x}=y \iff b^y=x" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img id="1124290" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M09L01IMGConverting.png" alt="MAT11M09L01IMGConverting.png" width="309" height="89" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1124290" data-api-returntype="File" loading="lazy"></p>
+<p>Once the equation is written in exponential form, standard algebraic methods can be used to solve for the variable.</p>
+<h4><br><strong>Example</strong></h4>
+<p>Solve <img class="equation_image" title="\log_{3}{5x}=4" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B5x%257D%253D4?scale=1" alt="LaTeX: \log_{3}{5x}=4" data-equation-content="\log_{3}{5x}=4" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Step 1: Rewrite the equation in exponential form.</p>
+<p><img class="equation_image" title="\log_{3}{5x}=4 \\
+\space \\
+3^4=5x" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B5x%257D%253D4%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A3%255E4%253D5x?scale=1" alt="LaTeX: \log_{3}{5x}=4 \\
+\space \\
+3^4=5x" data-equation-content="\log_{3}{5x}=4 \\
+\space \\
+3^4=5x" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Step 2: Isolate x using opposite operations.</p>
+<p><img class="equation_image" title="5x=3^4 \\
+5x=81 \\
+\underline{5x}=\underline{81} \\
+\;5 \quad\quad 5 \\
+x=\frac{81}{5} \\
+x=16.2" src="https://optimadomi.instructure.com/equation_images/5x%253D3%255E4%2520%255C%255C%250A5x%253D81%2520%255C%255C%250A%255Cunderline%257B5x%257D%253D%255Cunderline%257B81%257D%2520%255C%255C%250A%255C%253B5%2520%255Cquad%255Cquad%25205%2520%255C%255C%250Ax%253D%255Cfrac%257B81%257D%257B5%257D%2520%255C%255C%250Ax%253D16.2?scale=1" alt="LaTeX: 5x=3^4 \\
+5x=81 \\
+\underline{5x}=\underline{81} \\
+\;5 \quad\quad 5 \\
+x=\frac{81}{5} \\
+x=16.2" data-equation-content="5x=3^4 \\
+5x=81 \\
+\underline{5x}=\underline{81} \\
+\;5 \quad\quad 5 \\
+x=\frac{81}{5} \\
+x=16.2" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Answer: \(\{\frac{81}{5}\}\)</p>
+<p>Check your solution.</p>
+<p><img class="equation_image" title="\log_{3}{5x}=4 \\
+\textcolor{red}{x=\frac{81}{5}} \\
+\log_{3}{5(\frac{81}{5})}=4 \\
+\log_{3}{81}=4 \\
+Rewrite\; in\; exponential \\
+3^4=81 \quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B5x%257D%253D4%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D%255Cfrac%257B81%257D%257B5%257D%257D%2520%255C%255C%250A%255Clog_%257B3%257D%257B5(%255Cfrac%257B81%257D%257B5%257D)%257D%253D4%2520%255C%255C%250A%255Clog_%257B3%257D%257B81%257D%253D4%2520%255C%255C%250ARewrite%255C%253B%2520in%255C%253B%2520exponential%2520%255C%255C%250A3%255E4%253D81%2520%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{3}{5x}=4 \\
+\textcolor{red}{x=\frac{81}{5}} \\
+\log_{3}{5(\frac{81}{5})}=4 \\
+\log_{3}{81}=4 \\
+Rewrite\; in\; exponential \\
+3^4=81 \quad \textcolor{green}{True}" data-equation-content="\log_{3}{5x}=4 \\
+\textcolor{red}{x=\frac{81}{5}} \\
+\log_{3}{5(\frac{81}{5})}=4 \\
+\log_{3}{81}=4 \\
+Rewrite\; in\; exponential \\
+3^4=81 \quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Solve <img class="equation_image" title="\log_{5}{(2x-1)}=2" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257B(2x-1)%257D%253D2?scale=1" alt="LaTeX: \log_{5}{(2x-1)}=2" data-equation-content="\log_{5}{(2x-1)}=2" data-ignore-a11y-check="" loading="lazy">.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by rewriting the equation in exponential form.</p>
+<p><img class="equation_image" title="\log_{5}{(2x-1)}=2 \\
+\space \\
+5^2=2x-1 \\
+or \\
+2x-1=25" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257B(2x-1)%257D%253D2%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A5%255E2%253D2x-1%2520%255C%255C%250Aor%2520%255C%255C%250A2x-1%253D25?scale=1" alt="LaTeX: \log_{5}{(2x-1)}=2 \\
+\space \\
+5^2=2x-1 \\
+or \\
+2x-1=25" data-equation-content="\log_{5}{(2x-1)}=2 \\
+\space \\
+5^2=2x-1 \\
+or \\
+2x-1=25" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve the linear equation by isolating \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;2x-1=25 \\
+\phantom{2x}+1\quad +1 \\
+\hline
+2x=26 \\
+\underline{2x}=\underline{26} \\
+\;2\quad\quad 2 \\
+x=13
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25262x-1%253D25%2520%255C%255C%250A%255Cphantom%257B2x%257D%252B1%255Cquad%2520%252B1%2520%255C%255C%250A%255Chline%250A2x%253D26%2520%255C%255C%250A%255Cunderline%257B2x%257D%253D%255Cunderline%257B26%257D%2520%255C%255C%250A%255C%253B2%255Cquad%255Cquad%25202%2520%255C%255C%250Ax%253D13%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;2x-1=25 \\
+\phantom{2x}+1\quad +1 \\
+\hline
+2x=26 \\
+\underline{2x}=\underline{26} \\
+\;2\quad\quad 2 \\
+x=13
+\end{array}" data-equation-content="\begin{array}
+&amp;2x-1=25 \\
+\phantom{2x}+1\quad +1 \\
+\hline
+2x=26 \\
+\underline{2x}=\underline{26} \\
+\;2\quad\quad 2 \\
+x=13
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check the solution.</p>
+<p><img class="equation_image" title="\log_{5}{(2x-1)}=2 \\
+\textcolor{red}{x=13} \\
+\log_{5}{(2(13)-1)}=2 \\
+\log_{5}{(26-1)}=2 \\
+\log_{5}{25}=2 \\
+Rewrite\; in\; exponential \\
+5^2=25 \quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257B(2x-1)%257D%253D2%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D13%257D%2520%255C%255C%250A%255Clog_%257B5%257D%257B(2(13)-1)%257D%253D2%2520%255C%255C%250A%255Clog_%257B5%257D%257B(26-1)%257D%253D2%2520%255C%255C%250A%255Clog_%257B5%257D%257B25%257D%253D2%2520%255C%255C%250ARewrite%255C%253B%2520in%255C%253B%2520exponential%2520%255C%255C%250A5%255E2%253D25%2520%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{5}{(2x-1)}=2 \\
+\textcolor{red}{x=13} \\
+\log_{5}{(2(13)-1)}=2 \\
+\log_{5}{(26-1)}=2 \\
+\log_{5}{25}=2 \\
+Rewrite\; in\; exponential \\
+5^2=25 \quad \textcolor{green}{True}" data-equation-content="\log_{5}{(2x-1)}=2 \\
+\textcolor{red}{x=13} \\
+\log_{5}{(2(13)-1)}=2 \\
+\log_{5}{(26-1)}=2 \\
+\log_{5}{25}=2 \\
+Rewrite\; in\; exponential \\
+5^2=25 \quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\{13\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B13%255C%257D?scale=1" alt="LaTeX: \{13\}" data-equation-content="\{13\}" data-ignore-a11y-check="" loading="lazy"></p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Solve <img class="equation_image" title="\log_{6}{(3x)}=\log_{6}{18}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B6%257D%257B(3x)%257D%253D%255Clog_%257B6%257D%257B18%257D?scale=1" alt="LaTeX: \log_{6}{(3x)}=\log_{6}{18}" data-equation-content="\log_{6}{(3x)}=\log_{6}{18}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since there is a log with the same base on both sides, they cancel each other and the arguments can be set equal.</p>
+<p><img class="equation_image" title="\log_{6}{(3x)}=\log_{6}{18} \\
+\space \\
+3x=18 \\" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B6%257D%257B(3x)%257D%253D%255Clog_%257B6%257D%257B18%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A3x%253D18%2520%255C%255C?scale=1" alt="LaTeX: \log_{6}{(3x)}=\log_{6}{18} \\
+\space \\
+3x=18 \\" data-equation-content="\log_{6}{(3x)}=\log_{6}{18} \\
+\space \\
+3x=18 \\" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve the linear equation by isolating \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+3x=18 \\
+\underline{3x}=\underline{18} \\
+\;3\quad\quad 3 \\
+x=6
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A3x%253D18%2520%255C%255C%250A%255Cunderline%257B3x%257D%253D%255Cunderline%257B18%257D%2520%255C%255C%250A%255C%253B3%255Cquad%255Cquad%25203%2520%255C%255C%250Ax%253D6%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+3x=18 \\
+\underline{3x}=\underline{18} \\
+\;3\quad\quad 3 \\
+x=6
+\end{array}" data-equation-content="\begin{array}
+3x=18 \\
+\underline{3x}=\underline{18} \\
+\;3\quad\quad 3 \\
+x=6
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check the solution.</p>
+<p><img class="equation_image" title="\log_{6}{(3x)}=\log_{6}{18} \\
+\textcolor{red}{x=6} \\
+\log_{6}{(3(6))}=\log_{6}{18} \\
+\log_{6}{18}=\log_{6}{18}\quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B6%257D%257B(3x)%257D%253D%255Clog_%257B6%257D%257B18%257D%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D6%257D%2520%255C%255C%250A%255Clog_%257B6%257D%257B(3(6))%257D%253D%255Clog_%257B6%257D%257B18%257D%2520%255C%255C%250A%255Clog_%257B6%257D%257B18%257D%253D%255Clog_%257B6%257D%257B18%257D%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{6}{(3x)}=\log_{6}{18} \\
+\textcolor{red}{x=6} \\
+\log_{6}{(3(6))}=\log_{6}{18} \\
+\log_{6}{18}=\log_{6}{18}\quad \textcolor{green}{True}" data-equation-content="\log_{6}{(3x)}=\log_{6}{18} \\
+\textcolor{red}{x=6} \\
+\log_{6}{(3(6))}=\log_{6}{18} \\
+\log_{6}{18}=\log_{6}{18}\quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\{6\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B6%255C%257D?scale=1" alt="LaTeX: \{6\}" data-equation-content="\{6\}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>&nbsp;</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Properties of Logarithms</strong></h4>
+<p data-start="2426" data-end="2628">When a logarithmic equation contains <strong data-start="2463" data-end="2498">multiple logarithms on one side</strong>, logarithmic properties must be used to <strong data-start="2539" data-end="2551">condense</strong> the expression into a single logarithm before rewriting in exponential form.</p>
+<p data-start="2630" data-end="2645">Key properties:</p>
+<ul data-start="2646" data-end="2840">
+<li data-start="2646" data-end="2706">
+<p data-start="2648" data-end="2706"><strong data-start="2648" data-end="2668">Product Property</strong>: <img class="equation_image" title="\log_{b}{x}+\log_{b}{y}=\log_{b}{(xy)}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257Bx%257D%252B%255Clog_%257Bb%257D%257By%257D%253D%255Clog_%257Bb%257D%257B(xy)%257D?scale=1" alt="LaTeX: \log_{b}{x}+\log_{b}{y}=\log_{b}{(xy)}" data-equation-content="\log_{b}{x}+\log_{b}{y}=\log_{b}{(xy)}" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+<li data-start="2707" data-end="2790">
+<p data-start="2709" data-end="2790"><strong data-start="2709" data-end="2730">Quotient Property</strong>: <img class="equation_image" title="\log_{b}{x}-\log_{b}{y}=\log_{b}{(\frac{x}{y})}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257Bx%257D-%255Clog_%257Bb%257D%257By%257D%253D%255Clog_%257Bb%257D%257B(%255Cfrac%257Bx%257D%257By%257D)%257D?scale=1" alt="LaTeX: \log_{b}{x}-\log_{b}{y}=\log_{b}{(\frac{x}{y})}" data-equation-content="\log_{b}{x}-\log_{b}{y}=\log_{b}{(\frac{x}{y})}" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+</ul>
+<p data-start="2842" data-end="2921">After condensing, the equation can be rewritten in exponential form and solved.</p>
+<p data-start="2842" data-end="2921">Remember, all these properties can also be used with natural logarithms \(\ln\).</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Solve <img class="equation_image" title="\log_{2}{x}+\log_{2}{4}=5" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B2%257D%257Bx%257D%252B%255Clog_%257B2%257D%257B4%257D%253D5?scale=1" alt="LaTeX: \log_{2}{x}+\log_{2}{4}=5" data-equation-content="\log_{2}{x}+\log_{2}{4}=5" data-ignore-a11y-check="" loading="lazy">.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by condensing the logs into one log. Since the logs are being added, we can use the product property.</p>
+<p><img class="equation_image" title="\log_{2}{x}+\log_{2}{4}=5 \\
+\log_{2}{(4x)}=5" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B2%257D%257Bx%257D%252B%255Clog_%257B2%257D%257B4%257D%253D5%2520%255C%255C%250A%255Clog_%257B2%257D%257B(4x)%257D%253D5?scale=1" alt="LaTeX: \log_{2}{x}+\log_{2}{4}=5 \\
+\log_{2}{(4x)}=5" data-equation-content="\log_{2}{x}+\log_{2}{4}=5 \\
+\log_{2}{(4x)}=5" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can rewrite the equation in exponential form.</p>
+<p><img class="equation_image" title="\log_{2}{(4x)}=5 \\
+\space \\
+2^5=4x \\
+or \\
+4x=32" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B2%257D%257B(4x)%257D%253D5%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A2%255E5%253D4x%2520%255C%255C%250Aor%2520%255C%255C%250A4x%253D32?scale=1" alt="LaTeX: \log_{2}{(4x)}=5 \\
+\space \\
+2^5=4x \\
+or \\
+4x=32" data-equation-content="\log_{2}{(4x)}=5 \\
+\space \\
+2^5=4x \\
+or \\
+4x=32" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve the linear equation by isolating \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;4x=32 \\
+\underline{4x}=\underline{32} \\
+\;4\quad\quad 4 \\
+x=8
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25264x%253D32%2520%255C%255C%250A%255Cunderline%257B4x%257D%253D%255Cunderline%257B32%257D%2520%255C%255C%250A%255C%253B4%255Cquad%255Cquad%25204%2520%255C%255C%250Ax%253D8%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;4x=32 \\
+\underline{4x}=\underline{32} \\
+\;4\quad\quad 4 \\
+x=8
+\end{array}" data-equation-content="\begin{array}
+&amp;4x=32 \\
+\underline{4x}=\underline{32} \\
+\;4\quad\quad 4 \\
+x=8
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check the solution.</p>
+<p><img class="equation_image" title="\log_{2}{(4x)}=5 \\
+\textcolor{red}{x=8} \\
+\log_{2}{(4(8))}=5 \\
+\log_{2}{32}=5 \\
+Rewrite\; in\; exponential \\
+2^5=32 \quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B2%257D%257B(4x)%257D%253D5%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D8%257D%2520%255C%255C%250A%255Clog_%257B2%257D%257B(4(8))%257D%253D5%2520%255C%255C%250A%255Clog_%257B2%257D%257B32%257D%253D5%2520%255C%255C%250ARewrite%255C%253B%2520in%255C%253B%2520exponential%2520%255C%255C%250A2%255E5%253D32%2520%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{2}{(4x)}=5 \\
+\textcolor{red}{x=8} \\
+\log_{2}{(4(8))}=5 \\
+\log_{2}{32}=5 \\
+Rewrite\; in\; exponential \\
+2^5=32 \quad \textcolor{green}{True}" data-equation-content="\log_{2}{(4x)}=5 \\
+\textcolor{red}{x=8} \\
+\log_{2}{(4(8))}=5 \\
+\log_{2}{32}=5 \\
+Rewrite\; in\; exponential \\
+2^5=32 \quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\{8\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B8%255C%257D?scale=1" alt="LaTeX: \{8\}" data-equation-content="\{8\}" data-ignore-a11y-check="" loading="lazy"></p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Solve <img class="equation_image" title="\log_{3}{x}-\log_{3}{2}=2" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257Bx%257D-%255Clog_%257B3%257D%257B2%257D%253D2?scale=1" alt="LaTeX: \log_{3}{x}-\log_{3}{2}=2" data-equation-content="\log_{3}{x}-\log_{3}{2}=2" data-ignore-a11y-check="" loading="lazy">.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by condensing the logs into one log. Since the logs are being subtracted, we can use the quotient property.</p>
+<p><img class="equation_image" title="\log_{3}{x}-\log_{3}{2}=2 \\
+\log_{3}{(\frac{x}{2})}=2" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257Bx%257D-%255Clog_%257B3%257D%257B2%257D%253D2%2520%255C%255C%250A%255Clog_%257B3%257D%257B(%255Cfrac%257Bx%257D%257B2%257D)%257D%253D2?scale=1" alt="LaTeX: \log_{3}{x}-\log_{3}{2}=2 \\
+\log_{3}{(\frac{x}{2})}=2" data-equation-content="\log_{3}{x}-\log_{3}{2}=2 \\
+\log_{3}{(\frac{x}{2})}=2" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can rewrite the equation in exponential form.</p>
+<p><img class="equation_image" title="\log_{3}{(\frac{x}{2})}=2 \\
+\space \\
+3^2=\frac{x}{2} \\
+or \\
+\frac{x}{2}=9" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B(%255Cfrac%257Bx%257D%257B2%257D)%257D%253D2%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A3%255E2%253D%255Cfrac%257Bx%257D%257B2%257D%2520%255C%255C%250Aor%2520%255C%255C%250A%255Cfrac%257Bx%257D%257B2%257D%253D9?scale=1" alt="LaTeX: \log_{3}{(\frac{x}{2})}=2 \\
+\space \\
+3^2=\frac{x}{2} \\
+or \\
+\frac{x}{2}=9" data-equation-content="\log_{3}{(\frac{x}{2})}=2 \\
+\space \\
+3^2=\frac{x}{2} \\
+or \\
+\frac{x}{2}=9" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve the linear equation by isolating \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;2\cdot \frac{x}{2}=9\cdot 2 \\
+x=18
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25262%255Ccdot%2520%255Cfrac%257Bx%257D%257B2%257D%253D9%255Ccdot%25202%2520%255C%255C%250Ax%253D18%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;2\cdot \frac{x}{2}=9\cdot 2 \\
+x=18
+\end{array}" data-equation-content="\begin{array}
+&amp;2\cdot \frac{x}{2}=9\cdot 2 \\
+x=18
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check the solution.</p>
+<p><img class="equation_image" title="\log_{3}{x}-\log_{3}{2}=2 \\
+\textcolor{red}{x=18} \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+Condense \\
+\log_{3}{\frac{18}{2}}=2 \\
+\log_{3}{9}=2 \\
+Rewrite\; in\; exponential \\
+3^2=9 \quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257Bx%257D-%255Clog_%257B3%257D%257B2%257D%253D2%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D18%257D%2520%255C%255C%250A%255Clog_%257B3%257D%257B18%257D-%255Clog_%257B3%257D%257B2%257D%253D2%2520%255C%255C%250A%255Clog_%257B3%257D%257B18%257D-%255Clog_%257B3%257D%257B2%257D%253D2%2520%255C%255C%250ACondense%2520%255C%255C%250A%255Clog_%257B3%257D%257B%255Cfrac%257B18%257D%257B2%257D%257D%253D2%2520%255C%255C%250A%255Clog_%257B3%257D%257B9%257D%253D2%2520%255C%255C%250ARewrite%255C%253B%2520in%255C%253B%2520exponential%2520%255C%255C%250A3%255E2%253D9%2520%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{3}{x}-\log_{3}{2}=2 \\
+\textcolor{red}{x=18} \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+Condense \\
+\log_{3}{\frac{18}{2}}=2 \\
+\log_{3}{9}=2 \\
+Rewrite\; in\; exponential \\
+3^2=9 \quad \textcolor{green}{True}" data-equation-content="\log_{3}{x}-\log_{3}{2}=2 \\
+\textcolor{red}{x=18} \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+\log_{3}{18}-\log_{3}{2}=2 \\
+Condense \\
+\log_{3}{\frac{18}{2}}=2 \\
+\log_{3}{9}=2 \\
+Rewrite\; in\; exponential \\
+3^2=9 \quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\{18\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B18%255C%257D?scale=1" alt="LaTeX: \{18\}" data-equation-content="\{18\}" data-ignore-a11y-check="" loading="lazy"></p>
+<h4><span style="color: #f6a50d;"><br><br>Example 3</span></h4>
+<p>Solve <img class="equation_image" title="\log_{5}{x}+\log_{5}{4}=\log_{5}{100}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257Bx%257D%252B%255Clog_%257B5%257D%257B4%257D%253D%255Clog_%257B5%257D%257B100%257D?scale=1" alt="LaTeX: \log_{5}{x}+\log_{5}{4}=\log_{5}{100}" data-equation-content="\log_{5}{x}+\log_{5}{4}=\log_{5}{100}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by condensing the logs on the left-hand side into one log. Since the logs are being added, we can use the product property.</p>
+<p><img class="equation_image" title="\log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\log_{5}{4x}=\log_{5}{100}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257Bx%257D%252B%255Clog_%257B5%257D%257B4%257D%253D%255Clog_%257B5%257D%257B100%257D%2520%255C%255C%250A%255Clog_%257B5%257D%257B4x%257D%253D%255Clog_%257B5%257D%257B100%257D?scale=1" alt="LaTeX: \log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\log_{5}{4x}=\log_{5}{100}" data-equation-content="\log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\log_{5}{4x}=\log_{5}{100}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Since we have a log with the same base on both sides, they will cancel each other out.</p>
+<p><img class="equation_image" title="\log_{5}{(4x)}=\log_{5}{100} \\
+\space \\
+4x=100" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257B(4x)%257D%253D%255Clog_%257B5%257D%257B100%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A4x%253D100?scale=1" alt="LaTeX: \log_{5}{(4x)}=\log_{5}{100} \\
+\space \\
+4x=100" data-equation-content="\log_{5}{(4x)}=\log_{5}{100} \\
+\space \\
+4x=100" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve the linear equation by isolating \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;4x=100 \\
+\underline{4x}=\underline{100} \\
+\;4\quad\quad4 \\
+x=25
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25264x%253D100%2520%255C%255C%250A%255Cunderline%257B4x%257D%253D%255Cunderline%257B100%257D%2520%255C%255C%250A%255C%253B4%255Cquad%255Cquad4%2520%255C%255C%250Ax%253D25%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;4x=100 \\
+\underline{4x}=\underline{100} \\
+\;4\quad\quad4 \\
+x=25
+\end{array}" data-equation-content="\begin{array}
+&amp;4x=100 \\
+\underline{4x}=\underline{100} \\
+\;4\quad\quad4 \\
+x=25
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check the solution.</p>
+<p><img class="equation_image" title="\log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\textcolor{red}{x=25} \\
+\log_{5}{25}+\log_{5}{4}=\log_{5}{100} \\
+Condense \\
+\log_{5}{(25\cdot 4)}=\log_{5}{100} \\
+\log_{5}{100}=\log_{5}{100}\quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B5%257D%257Bx%257D%252B%255Clog_%257B5%257D%257B4%257D%253D%255Clog_%257B5%257D%257B100%257D%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D25%257D%2520%255C%255C%250A%255Clog_%257B5%257D%257B25%257D%252B%255Clog_%257B5%257D%257B4%257D%253D%255Clog_%257B5%257D%257B100%257D%2520%255C%255C%250ACondense%2520%255C%255C%250A%255Clog_%257B5%257D%257B(25%255Ccdot%25204)%257D%253D%255Clog_%257B5%257D%257B100%257D%2520%255C%255C%250A%255Clog_%257B5%257D%257B100%257D%253D%255Clog_%257B5%257D%257B100%257D%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\textcolor{red}{x=25} \\
+\log_{5}{25}+\log_{5}{4}=\log_{5}{100} \\
+Condense \\
+\log_{5}{(25\cdot 4)}=\log_{5}{100} \\
+\log_{5}{100}=\log_{5}{100}\quad \textcolor{green}{True}" data-equation-content="\log_{5}{x}+\log_{5}{4}=\log_{5}{100} \\
+\textcolor{red}{x=25} \\
+\log_{5}{25}+\log_{5}{4}=\log_{5}{100} \\
+Condense \\
+\log_{5}{(25\cdot 4)}=\log_{5}{100} \\
+\log_{5}{100}=\log_{5}{100}\quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\{25\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B25%255C%257D?scale=1" alt="LaTeX: \{25\}" data-equation-content="\{25\}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Logarithmic Equations with Natural Logs</strong></h4>
+<p data-start="4097" data-end="4288">Natural logarithms involve the base \(e\). Because \(\ln\) and \(e\) are <strong data-start="4170" data-end="4191">inverse functions</strong>, logarithmic equations involving \(\ln\) are often solved by rewriting them in exponential form.</p>
+<p data-start="4290" data-end="4322">The key inverse relationship is:</p>
+<p data-start="4290" data-end="4322"><img class="equation_image" title="\Large \ln{x}=y \iff e^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Cln%257Bx%257D%253Dy%2520%255Ciff%2520e%255Ey%253Dx?scale=1" alt="LaTeX: \Large \ln{x}=y \iff e^y=x" data-equation-content="\Large \ln{x}=y \iff e^y=x" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2630" data-end="2645">Key properties:</p>
+<ul data-start="2646" data-end="2840">
+<li data-start="2646" data-end="2706">
+<p data-start="2648" data-end="2706"><strong data-start="2648" data-end="2668">Product Property</strong>: <img class="equation_image" title="\ln{x}+\ln{y}=\ln{(xy)}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%252B%255Cln%257By%257D%253D%255Cln%257B(xy)%257D?scale=1" alt="LaTeX: \ln{x}+\ln{y}=\ln{(xy)}" data-equation-content="\ln{x}+\ln{y}=\ln{(xy)}" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+<li data-start="2707" data-end="2790">
+<p data-start="2709" data-end="2790"><strong data-start="2709" data-end="2730">Quotient Property</strong>: <img class="equation_image" title="\ln{x}-\ln{y}=\ln{(\frac{x}{y})}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D-%255Cln%257By%257D%253D%255Cln%257B(%255Cfrac%257Bx%257D%257By%257D)%257D?scale=1" alt="LaTeX: \ln{x}-\ln{y}=\ln{(\frac{x}{y})}" data-equation-content="\ln{x}-\ln{y}=\ln{(\frac{x}{y})}" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+</ul>
+<p data-start="2842" data-end="2921">After condensing, the equation can be rewritten in exponential form and solved.</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Solve <img class="equation_image" title="\ln{x}=2" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%253D2?scale=1" alt="LaTeX: \ln{x}=2" data-equation-content="\ln{x}=2" data-ignore-a11y-check="" loading="lazy">. Write the answer as an exact solution and as an approximation, rounded to the nearest thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The base for a natural log is e. You can think of the equation as \(\log_{e}{x}=2\) and use the same method as above to rewrite it in exponential form.</p>
+<p>You can also use e and raise it to both sides, knowing the \(e\) will cancel out the \(\ln\) on the left-hand side.</p>
+<p>Step 1: Rewrite in exponential form with base \(e\) for the natural log.</p>
+<p><img class="equation_image" title="\ln{x}=2 \\
+e^2=x" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%253D2%2520%255C%255C%250Ae%255E2%253Dx?scale=1" alt="LaTeX: \ln{x}=2 \\
+e^2=x" data-equation-content="\ln{x}=2 \\
+e^2=x" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact \(\{e^2\}\)</p>
+<p>Approximate \(7.389\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Solve <img class="equation_image" title="\ln{(x-3)}+\ln{5}=3" src="https://optimadomi.instructure.com/equation_images/%255Cln%257B(x-3)%257D%252B%255Cln%257B5%257D%253D3?scale=1" alt="LaTeX: \ln{(x-3)}+\ln{5}=3" data-equation-content="\ln{(x-3)}+\ln{5}=3" data-ignore-a11y-check="" loading="lazy">. Write the answer as an exact solution and as an approximation, rounded to the nearest ten-thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We need to begin by condensing the two logs on the left-hand side.</p>
+<p><img class="equation_image" title="\ln{(x-3)}+\ln{5}=3 \\
+\space \\
+\ln{(5(x-3))}=3 \\
+\ln{(5x-15)}=3" src="https://optimadomi.instructure.com/equation_images/%255Cln%257B(x-3)%257D%252B%255Cln%257B5%257D%253D3%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Cln%257B(5(x-3))%257D%253D3%2520%255C%255C%250A%255Cln%257B(5x-15)%257D%253D3?scale=1" alt="LaTeX: \ln{(x-3)}+\ln{5}=3 \\
+\space \\
+\ln{(5(x-3))}=3 \\
+\ln{(5x-15)}=3" data-equation-content="\ln{(x-3)}+\ln{5}=3 \\
+\space \\
+\ln{(5(x-3))}=3 \\
+\ln{(5x-15)}=3" data-ignore-a11y-check="" loading="lazy"></p>
+<p>The base for a natural log is e. You can think of the equation as \(\log_{e}{(5x-15)}=3\) and use the same method as above to rewrite it in exponential form.</p>
+<p>You can also use e and raise it to both sides, knowing the \(e\) will cancel out the \(\ln\) on the left-hand side.</p>
+<p>Step 1: Rewrite in exponential form with base \(e\) for the natural log.</p>
+<p><img class="equation_image" title="\ln{(5x-15)}=3 \\
+e^3=5x-15 \\
+or \\
+5x-15=e^3" src="https://optimadomi.instructure.com/equation_images/%255Cln%257B(5x-15)%257D%253D3%2520%255C%255C%250Ae%255E3%253D5x-15%2520%255C%255C%250Aor%2520%255C%255C%250A5x-15%253De%255E3?scale=1" alt="LaTeX: \ln{(5x-15)}=3 \\
+e^3=5x-15 \\
+or \\
+5x-15=e^3" data-equation-content="\ln{(5x-15)}=3 \\
+e^3=5x-15 \\
+or \\
+5x-15=e^3" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve to isolate the variable \(x\).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;5x-15=e^3 \\
+\phantom{5x}+15\quad\; +15 \\
+5x=e^3+15 \\
+\underline{5x}=\underline{e^3+15} \\
+\;5\quad\quad\quad  5 \\
+x=\Large \frac{e^3+15}{5}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25265x-15%253De%255E3%2520%255C%255C%250A%255Cphantom%257B5x%257D%252B15%255Cquad%255C%253B%2520%252B15%2520%255C%255C%250A5x%253De%255E3%252B15%2520%255C%255C%250A%255Cunderline%257B5x%257D%253D%255Cunderline%257Be%255E3%252B15%257D%2520%255C%255C%250A%255C%253B5%255Cquad%255Cquad%255Cquad%2520%25205%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257Be%255E3%252B15%257D%257B5%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;5x-15=e^3 \\
+\phantom{5x}+15\quad\; +15 \\
+5x=e^3+15 \\
+\underline{5x}=\underline{e^3+15} \\
+\;5\quad\quad\quad  5 \\
+x=\Large \frac{e^3+15}{5}
+\end{array}" data-equation-content="\begin{array}
+&amp;5x-15=e^3 \\
+\phantom{5x}+15\quad\; +15 \\
+5x=e^3+15 \\
+\underline{5x}=\underline{e^3+15} \\
+\;5\quad\quad\quad  5 \\
+x=\Large \frac{e^3+15}{5}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact \(\{(\Large \frac{e^3+15}{5})\}\)</p>
+<p>Approximate \(7.0171\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 3</span></h4>
+<p>Solve <img class="equation_image" title="\ln{x}+\ln{(x-1)}=\ln{12}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%252B%255Cln%257B(x-1)%257D%253D%255Cln%257B12%257D?scale=1" alt="LaTeX: \ln{x}+\ln{(x-1)}=\ln{12}" data-equation-content="\ln{x}+\ln{(x-1)}=\ln{12}" data-ignore-a11y-check="" loading="lazy">. Write the answer as an exact solution.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We need to begin by condensing the two logs on the left-hand side.</p>
+<p><img class="equation_image" title="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\space \\
+\ln{(x(x-1))}=\ln{12} \\
+\ln{(x^2-x)}=\ln{12}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%252B%255Cln%257B(x-1)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Cln%257B(x(x-1))%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cln%257B(x%255E2-x)%257D%253D%255Cln%257B12%257D?scale=1" alt="LaTeX: \ln{x}+\ln{(x-1)}=\ln{12} \\
+\space \\
+\ln{(x(x-1))}=\ln{12} \\
+\ln{(x^2-x)}=\ln{12}" data-equation-content="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\space \\
+\ln{(x(x-1))}=\ln{12} \\
+\ln{(x^2-x)}=\ln{12}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Since we have a natural log on both sides, we can cancel them out and set the arguments equal.</p>
+<p>Step 1: Rewrite.</p>
+<p><img class="equation_image" title="\ln{(x^2-x)}=\ln{12} \\
+x^2-x=12" src="https://optimadomi.instructure.com/equation_images/%255Cln%257B(x%255E2-x)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250Ax%255E2-x%253D12?scale=1" alt="LaTeX: \ln{(x^2-x)}=\ln{12} \\
+x^2-x=12" data-equation-content="\ln{(x^2-x)}=\ln{12} \\
+x^2-x=12" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will solve to isolate the variable \(x\). Since it is a quadratic, we will make it equal to 0, factor, and solve the factors.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;x^2-x=12 \\
+\phantom{x^2}-12\ -12 \\
+x^2-x-12=0 \\
+Factors\; of\; -12 \\
+-4\cdot3=-12\; and\; -4+3=-1 \\
+(x-4)(x+3)=0 \\
+x-4=0\; and\; x+3=0\\
+x=4\; and\; x=-3
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x%255E2-x%253D12%2520%255C%255C%250A%255Cphantom%257Bx%255E2%257D-12%255C%2520-12%2520%255C%255C%250Ax%255E2-x-12%253D0%2520%255C%255C%250AFactors%255C%253B%2520of%255C%253B%2520-12%2520%255C%255C%250A-4%255Ccdot3%253D-12%255C%253B%2520and%255C%253B%2520-4%252B3%253D-1%2520%255C%255C%250A(x-4)(x%252B3)%253D0%2520%255C%255C%250Ax-4%253D0%255C%253B%2520and%255C%253B%2520x%252B3%253D0%255C%255C%250Ax%253D4%255C%253B%2520and%255C%253B%2520x%253D-3%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x^2-x=12 \\
+\phantom{x^2}-12\ -12 \\
+x^2-x-12=0 \\
+Factors\; of\; -12 \\
+-4\cdot3=-12\; and\; -4+3=-1 \\
+(x-4)(x+3)=0 \\
+x-4=0\; and\; x+3=0\\
+x=4\; and\; x=-3
+\end{array}" data-equation-content="\begin{array}
+&amp;x^2-x=12 \\
+\phantom{x^2}-12\ -12 \\
+x^2-x-12=0 \\
+Factors\; of\; -12 \\
+-4\cdot3=-12\; and\; -4+3=-1 \\
+(x-4)(x+3)=0 \\
+x-4=0\; and\; x+3=0\\
+x=4\; and\; x=-3
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Check your solutions.</p>
+<p><img class="equation_image" title="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=4} \\
+\ln{4}+\ln{(4-1)}=\ln{12} \\
+\ln{4}+\ln{3}=\ln{12} \\
+\ln{(4\cdot 3)}=\ln{12}\quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%252B%255Cln%257B(x-1)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D4%257D%2520%255C%255C%250A%255Cln%257B4%257D%252B%255Cln%257B(4-1)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cln%257B4%257D%252B%255Cln%257B3%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cln%257B(4%255Ccdot%25203)%257D%253D%255Cln%257B12%257D%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=4} \\
+\ln{4}+\ln{(4-1)}=\ln{12} \\
+\ln{4}+\ln{3}=\ln{12} \\
+\ln{(4\cdot 3)}=\ln{12}\quad \textcolor{green}{True}" data-equation-content="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=4} \\
+\ln{4}+\ln{(4-1)}=\ln{12} \\
+\ln{4}+\ln{3}=\ln{12} \\
+\ln{(4\cdot 3)}=\ln{12}\quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>and</p>
+<p><img class="equation_image" title="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=-3} \\
+\ln{-3}+\ln{(-3-1)}=\ln{12} \\
+\ln{(-3)}+\ln{(-4)}=\ln{12} \\
+\ln{(-3\cdot -4)}=\ln{12}\quad \textcolor{green}{True}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D%252B%255Cln%257B(x-1)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Ctextcolor%257Bred%257D%257Bx%253D-3%257D%2520%255C%255C%250A%255Cln%257B-3%257D%252B%255Cln%257B(-3-1)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cln%257B(-3)%257D%252B%255Cln%257B(-4)%257D%253D%255Cln%257B12%257D%2520%255C%255C%250A%255Cln%257B(-3%255Ccdot%2520-4)%257D%253D%255Cln%257B12%257D%255Cquad%2520%255Ctextcolor%257Bgreen%257D%257BTrue%257D?scale=1" alt="LaTeX: \ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=-3} \\
+\ln{-3}+\ln{(-3-1)}=\ln{12} \\
+\ln{(-3)}+\ln{(-4)}=\ln{12} \\
+\ln{(-3\cdot -4)}=\ln{12}\quad \textcolor{green}{True}" data-equation-content="\ln{x}+\ln{(x-1)}=\ln{12} \\
+\textcolor{red}{x=-3} \\
+\ln{-3}+\ln{(-3-1)}=\ln{12} \\
+\ln{(-3)}+\ln{(-4)}=\ln{12} \\
+\ln{(-3\cdot -4)}=\ln{12}\quad \textcolor{green}{True}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact \(\{-3,4\}\)</p>
+<h4 data-start="5266" data-end="5279"><strong><br><br>Conclusion</strong></h4>
+<p data-start="5281" data-end="5835" data-is-last-node="" data-is-only-node="">In this lesson, you learned how to solve logarithmic equations by rewriting them in exponential form, how to use logarithmic properties to condense expressions before solving, and how to work with natural logarithms using the inverse relationship between \(e\) and \(\ln\). You practiced solving equations ranging from simple single-log problems to more complex equations with multiple logarithms and logs on both sides. These skills are essential for success in Algebra 2 and for solving real-world problems involving exponential and logarithmic models.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How do the properties of logarithms help us condense expressions so we can solve logarithmic equations?</p>
+<p>2. Why is rewriting a logarithmic equation in exponential form an effective strategy for isolating the variable?</p>
+<p>3. How does the relationship between \(\ln\) and the base \(e\) help us solve logarithmic equations involving natural logs?</p>
+<p>4. Why must we check the domain of a logarithmic equation to determine whether a solution is valid?</p>
+<p>5. How can extraneous solutions arise when solving logarithmic equations, and how do we identify them?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">9.05 &middot; Solving One-Variable  Logarithmic Equations</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

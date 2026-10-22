@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.02 Transforming Exponential Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.02</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.02</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Transforming Exponential Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="118"><strong data-start="0" data-end="13">Asymptote</strong>: A line that a graph approaches but never reaches, often showing the long-term behavior of a function.</p>
+<p data-start="120" data-end="271"><strong data-start="120" data-end="128">Base</strong>: The constant value in an exponential function that is repeatedly multiplied and determines whether the function represents growth or decay.</p>
+<p data-start="273" data-end="417"><strong data-start="273" data-end="296">Compounded Interest</strong>: Interest calculated on the initial amount of money and on the accumulated interest from previous compounding periods.</p>
+<p data-start="419" data-end="589"><strong data-start="419" data-end="455">Continuously Compounded Interest</strong>: Interest that is added an infinite number of times per year, resulting in growth modeled by an exponential function with base <em data-start="583" data-end="586">e</em>.</p>
+<p data-start="591" data-end="674"><strong data-start="591" data-end="601">Domain</strong>: The set of all possible input values for which a function is defined.</p>
+<p data-start="676" data-end="819"><strong data-start="676" data-end="700">Exponential Function</strong>: A function in which the variable appears in the exponent and represents growth or decay at a constant percent rate.</p>
+<p data-start="821" data-end="974"><strong data-start="821" data-end="842">Function Notation</strong>: A way to represent a function using symbols, typically written as \(f(x)\), where \(x\) is the input and \(f(x)\) is the output.</p>
+<p data-start="976" data-end="1067"><strong data-start="976" data-end="996">Horizontal Shift</strong>: A transformation that moves a graph left or right along the x-axis.</p>
+<p data-start="1069" data-end="1166"><strong data-start="1069" data-end="1086">Initial Value</strong>: The starting value of a function, usually the output when the input is zero.</p>
+<p data-start="1330" data-end="1476"><strong data-start="1330" data-end="1356">Percent Rate of Change</strong>: The constant percentage by which a quantity increases or decreases for each unit change in the independent variable.</p>
+<p data-start="1478" data-end="1543"><strong data-start="1478" data-end="1487">Range</strong>: The set of all possible output values of a function.</p>
+<p data-start="1545" data-end="1703"><strong data-start="1545" data-end="1563">Rate of Growth</strong>: The amount by which a quantity increases relative to its current value over a given time interval, expressed as a decimal or percentage.</p>
+<p data-start="1705" data-end="1801"><strong data-start="1705" data-end="1719">Reflection</strong>: A transformation that flips a graph over a line, such as the x-axis or y-axis.</p>
+<p data-start="1803" data-end="1898"><strong data-start="1803" data-end="1821">Transformation</strong>: A change made to a graph that alters its position, shape, or orientation.</p>
+<p data-start="1900" data-end="1983"><strong data-start="1900" data-end="1915">Translation</strong>: A transformation that slides a graph without changing its shape.</p>
+<p data-start="1985" data-end="2071"><strong data-start="1985" data-end="2003">Vertical Shift</strong>: A transformation that moves a graph up or down along the y-axis.</p>
+<p data-start="2073" data-end="2196" data-is-last-node="" data-is-only-node=""><strong data-start="2073" data-end="2088">Y-Intercept</strong>: The point where a graph crosses the y-axis, representing the value of the function when the input is zero.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Transformations allow us to understand how changing an equation affects the appearance and meaning of a graph. In Algebra 2, translations are especially important when working with exponential functions because they help model real-world situations such as starting values, delays, and shifts in time. In this lesson, you will learn how vertical and horizontal translations change a graph, how key features are affected, how to identify transformations from equations, tables, and graphs, and how to write equations or tables that represent transformed functions.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Exponential Function</strong></h4>
+<table style="border-collapse: collapse; width: 59.39%; height: 58px;" border="1">
+<tbody>
+<tr>
+<td style="width: 23.7257%;">
+<h4>Exponential Function with Base b</h4>
+<p>\(\Large f(x)=(b)^x\)</p>
+</td>
+<td style="width: 37.3998%;">
+<p>Parent Graph when \(a=1\) and \(b=2\), function \(f(x)=2^x\)</p>
+<p>Key Features</p>
+<ul>
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Vertical asymptote: \(y=0\)</p>
+</li>
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Domain: all real numbers, \(-\infty&lt; x &lt; \infty \)</p>
+</li>
+<li data-start="1203" data-end="1222">
+<p data-start="1205" data-end="1222">Range: \(y&gt;0\)</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">X-intercept: None</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">Y-intercept: \((0,1)\)</p>
+</li>
+<li data-start="1249" data-end="1274">End Behavior
+<ul>
+<li data-start="1249" data-end="1274"><img class="equation_image" title="x \rightarrow -\infty,\; then\; y \rightarrow 0" src="https://optimadomi.instructure.com/equation_images/x%2520%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%2520%255Crightarrow%25200?scale=1" alt="LaTeX: x \rightarrow -\infty,\; then\; y \rightarrow 0" data-equation-content="x \rightarrow -\infty,\; then\; y \rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="1249" data-end="1274"><img class="equation_image" title="x\rightarrow \infty,\; then\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x\rightarrow \infty,\; then\; y\rightarrow \infty" data-equation-content="x\rightarrow \infty,\; then\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="width: 38.885%; text-align: center;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/mzf3ivcppe?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+<tr>
+<td style="width: 23.7257%;">
+<p>Exponential Functional with Base e</p>
+<p>\(\Large f(x)=e^x\)</p>
+</td>
+<td style="width: 37.3998%;">
+<p>Key Features</p>
+<ul>
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Vertical asymptote: \(y=0\)</p>
+</li>
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Domain: all real numbers, \(-\infty&lt; x &lt; \infty \)</p>
+</li>
+<li data-start="1203" data-end="1222">
+<p data-start="1205" data-end="1222">Range: \(y&gt;0\)</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">X-intercept: None</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">Y-intercept: \((0,1)\)</p>
+</li>
+<li>End Behavior
+<ul>
+<li data-start="1249" data-end="1274"><img class="equation_image" title="x \rightarrow -\infty,\; then\; y \rightarrow 0" src="https://optimadomi.instructure.com/equation_images/x%2520%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%2520%255Crightarrow%25200?scale=1" alt="LaTeX: x \rightarrow -\infty,\; then\; y \rightarrow 0" data-equation-content="x \rightarrow -\infty,\; then\; y \rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="1249" data-end="1274"><img class="equation_image" title="x\rightarrow \infty,\; then\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x\rightarrow \infty,\; then\; y\rightarrow \infty" data-equation-content="x\rightarrow \infty,\; then\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="width: 38.885%; text-align: center;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/mukumkjoud?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+</tbody>
+</table>
+<p>The values in the parent table can change based on the values of b in the basic exponential function.</p>
+</div>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Effects of Vertical Translations</strong></h4>
+<p data-start="1050" data-end="1169">Transformation function:</p>
+<p data-start="1050" data-end="1169"><img class="equation_image" title="Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" src="https://optimadomi.instructure.com/equation_images/Parent%253A%255C%253B%2520f(x)%253Da(b)%255Ex%2520%255C%255C%250ATransformed%253A%255C%253B%2520g(x)%253Da(b)%255E%257Bx-h%257D%252Bk?scale=1" alt="LaTeX: Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" data-equation-content="Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1050" data-end="1169">A <strong data-start="1052" data-end="1067">translation</strong> moves a graph without changing its shape. There are two types of translations covered in this lesson:</p>
+<ul data-start="1171" data-end="1468">
+<li data-start="1171" data-end="1316">
+<p data-start="1173" data-end="1201"><strong data-start="1173" data-end="1198">Vertical translations</strong>:</p>
+<ul data-start="1353" data-end="1468">
+<li data-start="1204" data-end="1228">
+<p data-start="1206" data-end="1228">Form: \(f(x)+k\)</p>
+</li>
+<li data-start="1204" data-end="1228">
+<p data-start="1206" data-end="1228">If \(k&gt;0\),&nbsp;the graph moves <strong data-start="1263" data-end="1269">up</strong>.</p>
+</li>
+<li data-start="1275" data-end="1316">
+<p data-start="1277" data-end="1316">If \(k&lt;0\), the graph moves <strong data-start="1307" data-end="1315">down</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p data-start="1470" data-end="1522">Translations affect the <strong data-start="1494" data-end="1510">key features</strong> of a graph:</p>
+<ul data-start="1523" data-end="1842">
+<li data-start="1523" data-end="1587">
+<p data-start="1525" data-end="1587"><strong data-start="1525" data-end="1540">Y-intercept</strong>: Changes with vertical shifts</p>
+</li>
+<li data-start="1588" data-end="1661">
+<p data-start="1590" data-end="1661"><strong data-start="1590" data-end="1614">Horizontal asymptote</strong>: Will shift with the vertical translation</p>
+</li>
+<li data-start="1662" data-end="1751">
+<p data-start="1664" data-end="1751"><strong data-start="1664" data-end="1680">End behavior</strong>: Remains the same shape, but will approach a different value than 0.</p>
+</li>
+<li data-start="1752" data-end="1798">
+<p data-start="1754" data-end="1798"><strong data-start="1754" data-end="1764">Domain</strong>: Will remain all real numbers</p>
+</li>
+<li data-start="1799" data-end="1842">
+<p data-start="1801" data-end="1842"><strong data-start="1801" data-end="1810">Range</strong>: Changes with vertical shifts</p>
+</li>
+</ul>
+<h4><br><strong>Example</strong></h4>
+<p>Given the base function \(f(x)=2^x\), consider the transformed function \(g(x)=2^x+3\).</p>
+<p>Identify the key features of the transformed function.</p>
+<p data-start="2007" data-end="2053">This is a <strong data-start="2017" data-end="2052">vertical translation up 3 units</strong>.</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079">New y-intercept: \((0,4)\)</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079"><span style="font-size: 1rem;">Calculated by substituting 0 for x; </span><img class="equation_image" style="font-size: 1rem;" title="f(0)=2^0+3 \implies f(0)=1+3 \implies f(0)=4" src="https://optimadomi.instructure.com/equation_images/f(0)%253D2%255E0%252B3%2520%255Cimplies%2520f(0)%253D1%252B3%2520%255Cimplies%2520f(0)%253D4?scale=1" alt="LaTeX: f(0)=2^0+3 \implies f(0)=1+3 \implies f(0)=4" data-equation-content="f(0)=2^0+3 \implies f(0)=1+3 \implies f(0)=4" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+</ul>
+</li>
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079">New asymptote: \(y=3\)</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2054" data-end="2079">The base horizontal asypmtote is \(y=0\). Since the function is translated up 3 units, the horizontal asymptote is also translated up 3 units.</li>
+</ul>
+</li>
+<li data-start="2107" data-end="2133">
+<p data-start="2109" data-end="2133">New End Behavior:</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2107" data-end="2133">
+<p data-start="2109" data-end="2133">as \(x\rightarrow -\infty\), then \(y\rightarrow 3\) and as \(x\rightarrow \infty\), then \(y\rightarrow \infty\)<br>The end behavior is affected by the horizontal asymptote as far as what it approaches as it decreases.</p>
+</li>
+</ul>
+</li>
+<li>Domain: all real numbers \(-\infty &lt; x &lt; \infty\)</li>
+<li data-start="2134" data-end="2152">
+<p data-start="2136" data-end="2152">Range: \(y&gt;3\)</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2134" data-end="2152">The range is affected by the placement of the horizontal asymptote. It either grows from the HA or decays towards the HA.</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>The function \(g(x)=(\frac{1}{4})^x-2\) represents a transformation of the base function \(f(x)=(\frac{1}{4})^x\), as shown in the graph.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/tnpsatx9ho?embed" width="500" height="500" loading="lazy" data-mce-fragment="1"></iframe></p>
+<p>Identify the transformation and the key features of \(g(x)\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The graph was shifted down 2 units. We see that the y-intercept of the parent function is at \((0,1)\) and it is at \((0,-1)\) for the transformed function.</p>
+<p>We can identify the y-intercept from the graph by looking at where it crosses the y-axis.</p>
+<ul>
+<li>y-intercept \((0,-1)\)</li>
+</ul>
+<p>Since this is a vertical transformation, the horizontal asymptote is shifted down by 2 units.</p>
+<ul>
+<li>Horizontal Asymptote: \(y=-2\)</li>
+</ul>
+<p>Since this is exponential decay, the end behavior for when x approaches \(\infty\) is affected by the vertical translation as it approaches the horizontal asymptote.</p>
+<ul>
+<li>as \(x\rightarrow -\infty\), then \(y\rightarrow \infty \)</li>
+<li>as \(x\rightarrow \infty\), then \(y\rightarrow -1\)</li>
+</ul>
+<p>The domain is unaffected by transformations since it is all real numbers.</p>
+<ul>
+<li>D= \(-\infty &lt; x &lt; \infty\)</li>
+</ul>
+<p>The range is affected by vertical translations that change the asymptote.</p>
+<ul>
+<li>R= \(y &gt; -1\)</li>
+</ul>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>The transformed function \(g(x)\) shown in the graph represents a transformation of the base function \(f(x)=e^x\).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/gl8d3pgvnu?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p>Identify the transformation and the key features of \(g(x)\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The graph was shifted up 4 units. We see that the y-intercept of the parent function is at \((0,1)\) and it is at \((0,5)\) for the transformed function.</p>
+<p>We can identify the y-intercept from the graph by looking at where it crosses the y-axis.</p>
+<ul>
+<li>y-intercept \((0,5)\)</li>
+</ul>
+<p>Since this is a vertical transformation, the horizontal asymptote is shifted up by 3 units.</p>
+<ul>
+<li>Horizontal Asymptote: \(y=3\)</li>
+</ul>
+<p>The end behavior for when x approaches \(-\infty\) is affected by the vertical translation as it approaches the horizontal asymptote.</p>
+<ul>
+<li>as \(x\rightarrow -\infty\), then \(y\rightarrow 4\)</li>
+<li>as \(x\rightarrow \infty\), then \(y\rightarrow \infty\)</li>
+</ul>
+<p>The domain is unaffected by transformations since it is all real numbers.</p>
+<ul>
+<li>D= \(-\infty &lt; x &lt; \infty\)</li>
+</ul>
+<p>The range is affected by vertical translations that change the asymptote.</p>
+<ul>
+<li>R= \(y &gt; 4\)</li>
+</ul>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Effects of Horizontal Translations</strong></h4>
+<p data-start="1050" data-end="1169">Transformation function:</p>
+<p data-start="1050" data-end="1169"><img class="equation_image" title="Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" src="https://optimadomi.instructure.com/equation_images/Parent%253A%255C%253B%2520f(x)%253Da(b)%255Ex%2520%255C%255C%250ATransformed%253A%255C%253B%2520g(x)%253Da(b)%255E%257Bx-h%257D%252Bk?scale=1" alt="LaTeX: Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" data-equation-content="Parent:\; f(x)=a(b)^x \\
+Transformed:\; g(x)=a(b)^{x-h}+k" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1050" data-end="1169">A <strong data-start="1052" data-end="1067">translation</strong> moves a graph without changing its shape. There are two types of translations covered in this lesson:</p>
+<ul data-start="1171" data-end="1468">
+<li data-start="1318" data-end="1468">
+<p data-start="1320" data-end="1350"><strong data-start="1320" data-end="1347">Horizontal translations</strong>:</p>
+<ul data-start="1353" data-end="1468">
+<li data-start="1353" data-end="1377">
+<p data-start="1355" data-end="1377">Form: \(f(x-h)\)</p>
+</li>
+<li data-start="1353" data-end="1377">
+<p data-start="1355" data-end="1377">If \(h&gt;0\), the graph moves <strong data-start="1412" data-end="1420">left</strong>.</p>
+</li>
+<li data-start="1426" data-end="1468">
+<p data-start="1428" data-end="1468">If \(h&lt;0\), the graph moves <strong data-start="1458" data-end="1467">right</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p data-start="1470" data-end="1522">Translations affect the <strong data-start="1494" data-end="1510">key features</strong> of a graph:</p>
+<ul data-start="1523" data-end="1842">
+<li data-start="1523" data-end="1587">
+<p data-start="1525" data-end="1587"><strong data-start="1525" data-end="1540">Y-intercept</strong>: Changes with horizontal shifts</p>
+</li>
+<li data-start="1588" data-end="1661">
+<p data-start="1590" data-end="1661"><strong data-start="1590" data-end="1614">Horizontal asymptote</strong>: Will not change</p>
+</li>
+<li data-start="1662" data-end="1751">
+<p data-start="1664" data-end="1751"><strong data-start="1664" data-end="1680">End behavior</strong>: Remains the same shape</p>
+</li>
+<li data-start="1752" data-end="1798">
+<p data-start="1754" data-end="1798"><strong data-start="1754" data-end="1764">Domain</strong>: Will remain all real numbers</p>
+</li>
+<li data-start="1799" data-end="1842">
+<p data-start="1801" data-end="1842"><strong data-start="1801" data-end="1810">Range</strong>: Will remain \(y&gt;0\)</p>
+</li>
+</ul>
+<p><br>Example</p>
+<p>Given the base function \(f(x)=e^x\), consider the transformed function \(g(x)=e^{(x+2)}\).</p>
+<p>Identify the key features of the transformed function.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ao7ltwk5fg?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p data-start="2007" data-end="2053">This is a <strong>horizontal translation left 2 units</strong>.&nbsp;<br><strong></strong>Look for the y-intercept of the parent function and check its movement in comparison with other points. The y-intercept is higher in the transformed function, but if you compare the upward movement, it is not consistent with other points.<br>We compare the movement of points left, and we notice they all moved 2 units left.</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079">New y-intercept: \((0,e^2)\)</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079"><span style="font-size: 1rem;">Calculated by substituting 0 for x; <img class="equation_image" title="g(0)=e^{0+2} \implies g(0)=e^2" src="https://optimadomi.instructure.com/equation_images/g(0)%253De%255E%257B0%252B2%257D%2520%255Cimplies%2520g(0)%253De%255E2?scale=1" alt="LaTeX: g(0)=e^{0+2} \implies g(0)=e^2" data-equation-content="g(0)=e^{0+2} \implies g(0)=e^2" data-ignore-a11y-check="" loading="lazy"></span></p>
+</li>
+</ul>
+</li>
+<li data-start="2054" data-end="2079">
+<p data-start="2056" data-end="2079">Asymptote remains the same as \(y=0\)</p>
+</li>
+<li data-start="2107" data-end="2133">
+<p data-start="2109" data-end="2133">End Behavior remains the same</p>
+<ul data-start="2054" data-end="2152">
+<li data-start="2107" data-end="2133">
+<p data-start="2109" data-end="2133">as \(x\rightarrow -\infty\), then \(y\rightarrow 0\) and as \(x\rightarrow \infty\), then \(y\rightarrow \infty\)</p>
+</li>
+</ul>
+</li>
+<li>Domain: all real numbers \(-\infty &lt; x &lt; \infty\)</li>
+<li data-start="2134" data-end="2152">
+<p data-start="2136" data-end="2152">Range: \(y&gt;0\)</p>
+</li>
+</ul>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>The function \(g(x)=3^{(x-5)}\) represents a transformation of the base function \(f(x)=3^x\).</p>
+<p>Identify the transformation and the key features of \(g(x)\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The graph will shift right 5 units.</p>
+<p>We can calculate the y-intercept by substituting 0 in for x.</p>
+<ul>
+<li><img class="equation_image" title="g(0)=3^{0-5} \\
+g(0)=3^{-5} \\
+g(0)=\frac{1}{243} \approx 0.00412" src="https://optimadomi.instructure.com/equation_images/g(0)%253D3%255E%257B0-5%257D%2520%255C%255C%250Ag(0)%253D3%255E%257B-5%257D%2520%255C%255C%250Ag(0)%253D%255Cfrac%257B1%257D%257B243%257D%2520%255Capprox%25200.00412?scale=1" alt="LaTeX: g(0)=3^{0-5} \\
+g(0)=3^{-5} \\
+g(0)=\frac{1}{243} \approx 0.00412" data-equation-content="g(0)=3^{0-5} \\
+g(0)=3^{-5} \\
+g(0)=\frac{1}{243} \approx 0.00412" data-ignore-a11y-check="" loading="lazy"></li>
+<li>y-intercept \((0,\frac{1}{243})\)</li>
+</ul>
+<p>Since this is a horizontal transformation, the horizontal asymptote is unaffected.</p>
+<ul>
+<li>Horizontal Asymptote: \(y=0\)</li>
+</ul>
+<p>The end behavior is unaffected by horizontal translations since it will still increase or decrease towards the horizontal asymptote, which is unaffected.</p>
+<ul>
+<li>as \(x\rightarrow -\infty\), then \(y\rightarrow 0\)</li>
+<li>as \(x\rightarrow \infty\), then \(y\rightarrow \infty\)</li>
+</ul>
+<p>The domain is unaffected by transformations since it is all real numbers.</p>
+<ul>
+<li>D= \(-\infty &lt; x &lt; \infty\)</li>
+</ul>
+<p>The range is affected by vertical translations that change the asymptote.</p>
+<ul>
+<li>R= \(y &gt; 0\)</li>
+</ul>
+<h4><span style="color: #f6a50d;">&nbsp;</span></h4>
+<p>&nbsp;</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Identifying the Type and Value of Translation</strong></h4>
+<p data-start="2635" data-end="2729">To identify a translation, compare the original function \(f(x)\)&nbsp;to the transformed function.</p>
+<ul data-start="2731" data-end="2831">
+<li data-start="2731" data-end="2764">
+<p data-start="2733" data-end="2764">\(f(x)+k\) → vertical shift</p>
+</li>
+<li data-start="2765" data-end="2831">
+<p data-start="2767" data-end="2831">\(f(x+h)\) → horizontal shift (opposite direction of the sign)</p>
+</li>
+</ul>
+<p data-start="4141" data-end="4162">To write an equation:</p>
+<ul data-start="4165" data-end="4267">
+<li data-start="4165" data-end="4214">
+<p data-start="4167" data-end="4214">Vertical shift → add k&nbsp;outside the function</p>
+</li>
+<li data-start="4217" data-end="4267">
+<p data-start="4219" data-end="4267">Horizontal shift → add h&nbsp;inside the function</p>
+</li>
+</ul>
+<p data-start="4271" data-end="4289">To create a table:</p>
+<ul data-start="4292" data-end="4384">
+<li data-start="4292" data-end="4341">
+<p data-start="4294" data-end="4341">Vertical shift → add k&nbsp;to each output value</p>
+</li>
+<li data-start="4344" data-end="4384">
+<p data-start="4346" data-end="4384">Horizontal shift → add h to each input value</p>
+</li>
+</ul>
+<p><br>Example</p>
+<p>The parent function \(f(x)=2^x\) is translated down 4 units using the transformation function \(f(x)-4\).</p>
+<p>The equation of the transformation function will be \(g(x)=2^x-4\).</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>The graph of \(g(x)\) is transformation of the parent function \(f(x)=(\frac{2}{3})^x\) as shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/2uspyqci5r?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>Which equation represents \(g(x)\)?</p>
+<p>A. <img class="equation_image" title="g(x)=(\frac{2}{3})^{x+3}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D(%255Cfrac%257B2%257D%257B3%257D)%255E%257Bx%252B3%257D?scale=1" alt="LaTeX: g(x)=(\frac{2}{3})^{x+3}" data-equation-content="g(x)=(\frac{2}{3})^{x+3}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>B. <img class="equation_image" title="g(x)=(\frac{2}{3})^{x}+3" src="https://optimadomi.instructure.com/equation_images/g(x)%253D(%255Cfrac%257B2%257D%257B3%257D)%255E%257Bx%257D%252B3?scale=1" alt="LaTeX: g(x)=(\frac{2}{3})^{x}+3" data-equation-content="g(x)=(\frac{2}{3})^{x}+3" data-ignore-a11y-check="" loading="lazy"></p>
+<p>C. <img class="equation_image" title="g(x)=(\frac{2}{3})^{x-3}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D(%255Cfrac%257B2%257D%257B3%257D)%255E%257Bx-3%257D?scale=1" alt="LaTeX: g(x)=(\frac{2}{3})^{x-3}" data-equation-content="g(x)=(\frac{2}{3})^{x-3}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>D. <img class="equation_image" title="g(x)=(\frac{2}{3})^{x}-3" src="https://optimadomi.instructure.com/equation_images/g(x)%253D(%255Cfrac%257B2%257D%257B3%257D)%255E%257Bx%257D-3?scale=1" alt="LaTeX: g(x)=(\frac{2}{3})^{x}-3" data-equation-content="g(x)=(\frac{2}{3})^{x}-3" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We should observe how the points on the graph appear to have shifted. If we look for vertical shifts, it is not a whole unit and each point appears to have shifted up by a different amount.<br>If we observe the horizontal shifts of the points, we notice that each point appears to have shifted right 3 units. This is most notable by observing the y-intercept of the parent function.</p>
+<p>Since the graph appears to have shifted right 3 units, this would use the transformation function \(f(x-3)\). Therefore, the equation of the transformed function is \(f(x)=(\frac{2}{3})^{x-3}\)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> C</p>
+<p><br><br><span style="color: #f67a0c;">Example 2</span></p>
+<p>The parent function \(f(x)=4^x\) is shifted down 5 units.</p>
+<p>Which equation represents the transformed function \(g(x)\)?</p>
+<p>A. <img class="equation_image" title="g(x)=4^{x-5}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D4%255E%257Bx-5%257D?scale=1" alt="LaTeX: g(x)=4^{x-5}" data-equation-content="g(x)=4^{x-5}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>B. <img class="equation_image" title="g(x)=4^{x}-5" src="https://optimadomi.instructure.com/equation_images/g(x)%253D4%255E%257Bx%257D-5?scale=1" alt="LaTeX: g(x)=4^{x}-5" data-equation-content="g(x)=4^{x}-5" data-ignore-a11y-check="" loading="lazy"></p>
+<p>C. <img class="equation_image" title="g(x)=4^{x}+5" src="https://optimadomi.instructure.com/equation_images/g(x)%253D4%255E%257Bx%257D%252B5?scale=1" alt="LaTeX: g(x)=4^{x}+5" data-equation-content="g(x)=4^{x}+5" data-ignore-a11y-check="" loading="lazy"></p>
+<p>D. <img class="equation_image" title="g(x)=4^{x+5}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D4%255E%257Bx%252B5%257D?scale=1" alt="LaTeX: g(x)=4^{x+5}" data-equation-content="g(x)=4^{x+5}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>If the parent function is translated down 5 units, then we use the transformation function \(f(x)-5\) where we subtract 5 to the whole parent function.</p>
+<p>This makes the equation of the transformed function \(g(x)=4^x-5.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> B</p>
+<p><span style="color: #f67a0c;"><br><br>Example 3</span></p>
+<p>The parent function \(f(x)=2^x\) is shifted up 6 units. The table of values for the parent function is shown.</p>
+<table style="border-collapse: collapse; width: 5.93238%; height: 138px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.029%; text-align: center;"><strong>x</strong></td>
+<td style="width: 50.029%; text-align: center;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">-1</td>
+<td style="width: 50.029%; text-align: center;">0.25</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">0</td>
+<td style="width: 50.029%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">1</td>
+<td style="width: 50.029%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">2</td>
+<td style="width: 50.029%; text-align: center;">16</td>
+</tr>
+</tbody>
+</table>
+<p>Create the table of values for the transformed function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since the function is being shifted up 6 units, we add 6 to each output value, \(f(x)\). The inputs, x, values will remain the same.</p>
+<table style="border-collapse: collapse; width: 5.98022%; height: 116px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.8762%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.8762%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">-1</td>
+<td style="width: 49.8762%; text-align: center;">6.25</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">0</td>
+<td style="width: 49.8762%; text-align: center;">7</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">1</td>
+<td style="width: 49.8762%; text-align: center;">10</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">2</td>
+<td style="width: 49.8762%; text-align: center;">22</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #f67a0c;"><br><br>Example 4</span></p>
+<p>The parent function \(f(x)=(\frac{1}{2})^x\) is shifted left 3 units. The table of values for the parent function is shown.</p>
+<table style="border-collapse: collapse; width: 5.93238%; height: 138px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.029%; text-align: center;"><strong>x</strong></td>
+<td style="width: 50.029%; text-align: center;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">-2</td>
+<td style="width: 50.029%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">-1</td>
+<td style="width: 50.029%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">0</td>
+<td style="width: 50.029%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50.029%; text-align: center;">1</td>
+<td style="width: 50.029%; text-align: center;">0.5</td>
+</tr>
+</tbody>
+</table>
+<p>Create the table of values for the transformed function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since the function is being shifted left 3 units, we subtract 3 from each input value, \(x\). The outputs, \(f(x)\), values will remain the same.</p>
+<table style="border-collapse: collapse; width: 5.98022%; height: 116px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.8762%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.8762%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">-5</td>
+<td style="width: 49.8762%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">-4</td>
+<td style="width: 49.8762%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">-3</td>
+<td style="width: 49.8762%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 49.8762%; text-align: center;">-2</td>
+<td style="width: 49.8762%; text-align: center;">0.5</td>
+</tr>
+</tbody>
+</table>
+<h4 data-start="5172" data-end="5187"><strong><br><br>Conclusion</strong></h4>
+<p data-start="5189" data-end="5766" data-is-last-node="" data-is-only-node="">Understanding vertical and horizontal translations allows you to predict and explain how exponential graphs change without altering their overall shape. By analyzing equations, tables, and graphs, you can identify the type and size of a translation, determine how key features are affected, and create new representations of transformed functions. These skills are essential for interpreting mathematical models and real-world situations where changes over time are shifted or adjusted. With practice, recognizing and applying translations becomes a powerful tool in Algebra 2.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="1100" data-end="1177">1. How do changes to the equation of an exponential function affect its graph?</p>
+<p data-start="1100" data-end="1177"><span style="font-size: 1rem;">2. What is the difference between transformations that affect the input of a function versus those that affect the output?</span></p>
+<p data-start="1100" data-end="1177"><span style="font-size: 1rem;">3. How can graphs and tables be used to identify and verify transformations of exponential functions?</span></p>
+<p data-start="1100" data-end="1177"><span style="font-size: 1rem;">4. Why do horizontal transformations behave differently from vertical transformations?</span></p>
+<p data-start="1100" data-end="1177"><span style="font-size: 1rem;">5. How can transformations of exponential functions be interpreted in real-world situations?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.02 &middot; Transforming Exponential Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

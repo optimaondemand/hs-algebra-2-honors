@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.01 Exponential Functions and Their Graphs</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.01</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.01</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Exponential Functions and Their Graphs</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="121"><strong data-start="0" data-end="13">Asymptote</strong>: A line that a graph approaches but never reaches, often describing the long-term behavior of a function.</p>
+<p data-start="123" data-end="274"><strong data-start="123" data-end="131">Base</strong>: The constant value in an exponential function that is repeatedly multiplied and determines whether the function represents growth or decay.</p>
+<p data-start="276" data-end="413"><strong data-start="276" data-end="299">Compounded Interest</strong>: Interest calculated on the initial amount of money and also on the accumulated interest from previous periods.</p>
+<p data-start="415" data-end="549"><strong data-start="415" data-end="436">Continuous Growth</strong>: A type of growth that occurs constantly over time and is modeled using an exponential function with base <em data-start="543" data-end="546">e</em>.</p>
+<p data-start="551" data-end="721"><strong data-start="551" data-end="587">Continuously Compounded Interest</strong>: Interest that is added an infinite number of times per year, resulting in growth modeled by an exponential function with base <em data-start="715" data-end="718">e</em>.</p>
+<p data-start="723" data-end="806"><strong data-start="723" data-end="733">Domain</strong>: The set of all possible input values for which a function is defined.</p>
+<p data-start="808" data-end="963"><strong data-start="808" data-end="832">Exponential Function</strong>: A function in which the independent variable appears in the exponent and represents growth or decay at a constant percent rate.</p>
+<p data-start="965" data-end="1107"><strong data-start="965" data-end="982">Growth Factor</strong>: The factor by which a quantity is multiplied in each unit of time in an exponential function, often written as \(1+r\).</p>
+<p data-start="1109" data-end="1223"><strong data-start="1109" data-end="1126">Initial Value</strong>: The starting value of a function, typically the value of the function when the input is zero.</p>
+<p data-start="1225" data-end="1385"><strong data-start="1225" data-end="1245">Natural Base (e)</strong>: An irrational number approximately equal to 2.718 that is used as the base of exponential functions modeling continuous growth or decay.</p>
+<p data-start="1387" data-end="1538"><strong data-start="1387" data-end="1413">Percent Rate of Change</strong>: The constant percentage by which a quantity increases or decreases over a given time interval in an exponential function.</p>
+<p data-start="1540" data-end="1605"><strong data-start="1540" data-end="1549">Range</strong>: The set of all possible output values of a function.</p>
+<p data-start="1607" data-end="1763"><strong data-start="1607" data-end="1625">Rate of Growth</strong>: The amount by which a quantity increases relative to its current value over a given time period, expressed as a decimal or percentage.</p>
+<p data-start="1765" data-end="1891" data-is-last-node="" data-is-only-node=""><strong data-start="1765" data-end="1780">Y-Intercept</strong>: The point where a graph intersects the y-axis, representing the value of the function when the input is zero.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Exponential functions are powerful tools for modeling situations where quantities grow or decrease by a constant percent over time. These functions appear frequently in real-world contexts such as population growth, bacteria growth, depreciation, and especially finance through interest models. In this lesson, you will learn how exponential functions are structured, how to identify and interpret their rates of growth, how to analyze their graphs, and how to apply them to real-world situations involving compound and continuously compounded interest. By the end of this lesson, you will be able to read, interpret, and compare exponential models both algebraically and graphically.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Structure of an Exponential Function</strong></h4>
+<p data-start="1092" data-end="1178">An <strong data-start="1095" data-end="1119">exponential function</strong> with a real-number base is typically written in the form</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="f(x)=a(b)^x" src="https://optimadomi.instructure.com/equation_images/f(x)%253Da(b)%255Ex?scale=1" alt="LaTeX: f(x)=a(b)^x" data-equation-content="f(x)=a(b)^x" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></p>
+<p data-start="1201" data-end="1251">Each part of this function has a specific meaning:</p>
+<ul data-start="1253" data-end="1621">
+<li data-start="1253" data-end="1338">
+<p data-start="1255" data-end="1338"><strong data-start="1255" data-end="1264"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">a</span></span></span></span></strong> is the <em data-start="1272" data-end="1287">initial value</em>. It represents the starting amount when \(x=0\).</p>
+</li>
+<li data-start="1339" data-end="1555">
+<p data-start="1341" data-end="1428"><strong data-start="1341" data-end="1350"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">b</span></span></span></span></strong> is the <em data-start="1358" data-end="1364">base</em>. It determines whether the function represents growth or decay.</p>
+<ul data-start="1431" data-end="1555">
+<li data-start="1431" data-end="1490">
+<p data-start="1433" data-end="1490">If \(b&gt;1\), the function represents exponential growth.</p>
+</li>
+<li data-start="1493" data-end="1555">
+<p data-start="1495" data-end="1555">If \(0&lt;b&lt;1\),&nbsp;the function represents exponential decay.</p>
+</li>
+</ul>
+</li>
+<li data-start="1556" data-end="1621">
+<p data-start="1558" data-end="1621"><strong data-start="1558" data-end="1567"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">x</span></span></span></span></strong> is the independent variable, often representing time.</p>
+</li>
+</ul>
+<p data-start="1623" data-end="1679">The <strong data-start="1627" data-end="1653">percent rate of growth</strong> comes from the base.</p>
+<p data-start="1623" data-end="1679">If <span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span style="font-size: 1rem;">\(b=1+r\), </span></span></span></span></span>then \(r\) is the growth rate written as a decimal.</p>
+<p data-start="1623" data-end="1679">If \(b=1-r\), then \(r\) is the decay rate written as a decimal.</p>
+</div>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Determining the Constant Percent Rate of Change</strong></h4>
+<p data-start="2540" data-end="2664">Exponential functions change by a <strong data-start="2574" data-end="2594">constant percent</strong>, not a constant amount. The percent rate of change can be found from:</p>
+<ul data-start="2666" data-end="2715">
+<li data-start="2666" data-end="2679">
+<p data-start="2668" data-end="2679">An equation</p>
+</li>
+<li data-start="2680" data-end="2695">
+<p data-start="2682" data-end="2695">An expression</p>
+</li>
+<li data-start="2696" data-end="2715">
+<p data-start="2698" data-end="2715">A table of values</p>
+</li>
+</ul>
+<p data-start="2717" data-end="2843">If the function is written in the form \(f(x)=a(b)^x\), the percent rate of change is found by converting the base \(b\) to a percentage.</p>
+<p data-start="2845" data-end="2928">From a table, you can find the growth factor by dividing <strong>consecutive</strong> output values or the y-values.</p>
+<p data-start="2845" data-end="2928">The initial value in a table is the y-value where \(x=0\).</p>
+<p data-start="2845" data-end="2928"><br><strong>Example</strong></p>
+<p data-start="2845" data-end="2928">For the given function, find the percent rate of change and the initial value.</p>
+<p data-start="2845" data-end="2928">\(f(x)=500(1.12)^x\)</p>
+<p data-start="2845" data-end="2928">The base is 1.12, so the percent rate of change is <strong data-start="3042" data-end="3056">12% growth</strong>.</p>
+<p data-start="2845" data-end="2928">The initial value is 500.</p>
+<p data-start="2845" data-end="2928"><br><strong>Example</strong></p>
+<p data-start="2845" data-end="2928">For the given table of values, find the percent rate of change.</p>
+<table style="border-collapse: collapse; width: 10.0463%; height: 137px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.0057%; text-align: center;"><strong>x</strong></td>
+<td style="width: 50.0057%; text-align: center;"><strong>y</strong></td>
+</tr>
+<tr>
+<td style="width: 50.0057%; text-align: center;">-2</td>
+<td style="width: 50.0057%; text-align: center;">120</td>
+</tr>
+<tr>
+<td style="width: 50.0057%; text-align: center;">-1</td>
+<td style="width: 50.0057%; text-align: center;">60</td>
+</tr>
+<tr>
+<td style="width: 50.0057%; text-align: center;">0</td>
+<td style="width: 50.0057%; text-align: center;">30</td>
+</tr>
+<tr>
+<td style="width: 50.0057%; text-align: center;">1</td>
+<td style="width: 50.0057%; text-align: center;">15</td>
+</tr>
+</tbody>
+</table>
+<p data-start="2845" data-end="2928">&nbsp;To find the constant percent rate of change, we divide consecutive y-values working from the bottom up.</p>
+<p data-start="2845" data-end="2928"><img class="equation_image" title="\Large \frac{15}{30} = \frac{1}{2} = 0.5\\
+\Large \frac{30}{60} = \frac{1}{2} = 0.5\\
+\Large \frac{60}{120} = \frac{1}{2} = 0.5" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Cfrac%257B15%257D%257B30%257D%2520%253D%2520%255Cfrac%257B1%257D%257B2%257D%2520%253D%25200.5%255C%255C%250A%255CLarge%2520%255Cfrac%257B30%257D%257B60%257D%2520%253D%2520%255Cfrac%257B1%257D%257B2%257D%2520%253D%25200.5%255C%255C%250A%255CLarge%2520%255Cfrac%257B60%257D%257B120%257D%2520%253D%2520%255Cfrac%257B1%257D%257B2%257D%2520%253D%25200.5?scale=1" alt="LaTeX: \Large \frac{15}{30} = \frac{1}{2} = 0.5\\
+\Large \frac{30}{60} = \frac{1}{2} = 0.5\\
+\Large \frac{60}{120} = \frac{1}{2} = 0.5" data-equation-content="\Large \frac{15}{30} = \frac{1}{2} = 0.5\\
+\Large \frac{30}{60} = \frac{1}{2} = 0.5\\
+\Large \frac{60}{120} = \frac{1}{2} = 0.5" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2845" data-end="2928">The constant percent rate of change is <img class="equation_image" title="1/2" src="https://optimadomi.instructure.com/equation_images/1%252F2?scale=1" alt="LaTeX: 1/2" data-equation-content="1/2" data-ignore-a11y-check="" loading="lazy"> or <strong>50% decay </strong>since 1-0.5 = 0.5</p>
+<p data-start="2845" data-end="2928">The initial value is where \(x=0\).</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Consider the function \(f(x)=200(0.85)^x\). Identify the initial value, base, and constant percent rate of change.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>The initial value is 200.</li>
+<li>The base is 0.85, which is 1-0.15.</li>
+<li>The percent rate of change is 0.15 or 15%.</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The initial value is 200 with a base of 0.85 representing a decay rate of 15%.</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Consider the function represented by the given table. Identify the initial value and constant percent rate of change.</p>
+<table style="border-collapse: collapse; width: 7.60327%; height: 143.094px;" border="1">
+<tbody>
+<tr style="height: 26.2188px;">
+<td style="width: 50.0434%; text-align: center; height: 26.2188px;"><strong>x</strong></td>
+<td style="width: 50.0434%; text-align: center; height: 26.2188px;"><strong>f(x)</strong></td>
+</tr>
+<tr style="height: 29.2188px;">
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">-2</td>
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">19.2</td>
+</tr>
+<tr style="height: 29.2188px;">
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">-1</td>
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">24</td>
+</tr>
+<tr style="height: 29.2188px;">
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">0</td>
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">30</td>
+</tr>
+<tr style="height: 29.2188px;">
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">1</td>
+<td style="width: 50.0434%; text-align: center; height: 29.2188px;">37.5</td>
+</tr>
+</tbody>
+</table>
+<p><strong><span style="color: #e62429;">Solution:</span></strong></p>
+<ul>
+<li>For the initial value, we find where \(x=0\).
+<ul>
+<li>The initial value is 30.</li>
+</ul>
+</li>
+<li>For the constant percent rate of change, we divide the y-values. Even with decimals, we can still divide them using the calculator.
+<ul>
+<li><img class="equation_image" title="24 \div 19.2 = 1.25 \\
+30 \div 24 = 1.25 \\
+37.5 \div 30 = 1.25" src="https://optimadomi.instructure.com/equation_images/24%2520%255Cdiv%252019.2%2520%253D%25201.25%2520%255C%255C%250A30%2520%255Cdiv%252024%2520%253D%25201.25%2520%255C%255C%250A37.5%2520%255Cdiv%252030%2520%253D%25201.25?scale=1" alt="LaTeX: 24 \div 19.2 = 1.25 \\
+30 \div 24 = 1.25 \\
+37.5 \div 30 = 1.25" data-equation-content="24 \div 19.2 = 1.25 \\
+30 \div 24 = 1.25 \\
+37.5 \div 30 = 1.25" data-ignore-a11y-check="" loading="lazy"></li>
+<li>The base is 1.25 or a growth rate of 25% because 1+0.25=1.25.</li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The function has an initial value of 30 and a growth rate of 25%.</p>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Interpreting Graphs and Key Features of Exponential Functions</strong></h4>
+<p data-start="3803" data-end="3864">Exponential Function</p>
+<p data-start="3803" data-end="3864">\(\Large f(x)=a(b)^x\)</p>
+<p data-start="3803" data-end="3864">\(\Large f(x)=a(e)^x\)</p>
+<p data-start="3803" data-end="3864">Graphs of exponential functions have consistent key features:</p>
+<ul data-start="3866" data-end="4292">
+<li data-start="3866" data-end="3960">
+<p data-start="3868" data-end="3960"><strong data-start="3868" data-end="3883">Y-intercept</strong>: The value of the function when \(x=0\), which is the initial value \(a\), written as \((0,a)\).</p>
+</li>
+<li data-start="3961" data-end="4106">
+<p data-start="3963" data-end="4035"><strong data-start="3963" data-end="3987">Horizontal asymptote</strong>: A line that the graph approaches but never touches.</p>
+<ul data-start="4038" data-end="4106">
+<li data-start="4038" data-end="4106">
+<p data-start="4040" data-end="4106">For basic exponential growth and decay, this is usually \(y=0\).</p>
+</li>
+</ul>
+</li>
+<li data-start="4107" data-end="4138">
+<p data-start="4109" data-end="4138"><strong data-start="4109" data-end="4119">Domain</strong>: All real numbers.</p>
+</li>
+<li data-start="4139" data-end="4186">
+<p data-start="4141" data-end="4186"><strong data-start="4141" data-end="4150">Range</strong>: All positive numbers if \(a&gt;0\).</p>
+</li>
+<li data-start="4139" data-end="4186"><strong>End Behavior</strong>:<br>
+<ul data-start="3866" data-end="4292">
+<li data-start="4139" data-end="4186">For exponential growth:
+<ul data-start="3866" data-end="4292">
+<li data-start="4139" data-end="4186">as \(x\) approaches \(-\infty \), \(y\) approaches \(0\) due to the horizontal asympotote; <img class="equation_image" title="as\; x \rightarrow -\infty,\; then\; y \rightarrow 0" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%2520%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%2520%255Crightarrow%25200?scale=1" alt="LaTeX: as\; x \rightarrow -\infty,\; then\; y \rightarrow 0" data-equation-content="as\; x \rightarrow -\infty,\; then\; y \rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="4139" data-end="4186">as \(x\) approaches \(\infty\), \(y\) approaches \(\infty\) since the graph is growing to the right.; <img class="equation_image" title="as\; x\rightarrow \infty,\; then\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: as\; x\rightarrow \infty,\; then\; y\rightarrow \infty" data-equation-content="as\; x\rightarrow \infty,\; then\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li data-start="4139" data-end="4186">For exponential decay:
+<ul data-start="3866" data-end="4292">
+<li data-start="4139" data-end="4186">as \(x\) approaches \(-\infty \), \(y\) approaches \(\infty\) since the graph is growing to the left; <img class="equation_image" title="as\; x\rightarrow -\infty,\; then\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: as\; x\rightarrow -\infty,\; then\; y\rightarrow \infty" data-equation-content="as\; x\rightarrow -\infty,\; then\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="4139" data-end="4186">as \(x\) approaches \(\infty \), \(y\) approaches \(0\) due to the horizontal asymptote; <img class="equation_image" title="as\; x\rightarrow \infty,\; then\; y\rightarrow 0" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520then%255C%253B%2520y%255Crightarrow%25200?scale=1" alt="LaTeX: as\; x\rightarrow \infty,\; then\; y\rightarrow 0" data-equation-content="as\; x\rightarrow \infty,\; then\; y\rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li data-start="4139" data-end="4186">If the horizontal asymptote changes, then what y approaches will change for one of the end behaviors.</li>
+</ul>
+</li>
+<li data-start="4187" data-end="4292">
+<p data-start="4189" data-end="4292"><strong data-start="4189" data-end="4204">Constraints</strong>: Restrictions based on the real-world situation (for example, time cannot be negative).</p>
+</li>
+<li data-start="4187" data-end="4292"><strong>Exponential Growth:</strong>&nbsp;when the graph grows from left to right.</li>
+<li data-start="4187" data-end="4292"><strong>Exponential Decay:</strong>&nbsp;when the graph decreases from left to right.</li>
+</ul>
+<p><br><strong>Example</strong></p>
+<p>The function \(f(x)=5(1.1)^x\) is represented on the graph shown.</p>
+<p>Identify the y-intercept, horizontal asymptote, domain, and range.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/vjyb3l4ky1?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p>From the graph and using the function, we can identify the key features.</p>
+<p>The y-intercept is \((0,5)\) which is also the initial value of the function.</p>
+<p>The horizontal asypmtote is \(y=0\) as this graph is approaching the x-axis, but will not cross it.</p>
+<p>End behavior: <img class="equation_image" title="as\; x\rightarrow -\infty,\; y\rightarrow 0" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520y%255Crightarrow%25200?scale=1" alt="LaTeX: as\; x\rightarrow -\infty,\; y\rightarrow 0" data-equation-content="as\; x\rightarrow -\infty,\; y\rightarrow 0" data-ignore-a11y-check="" loading="lazy"> and <img class="equation_image" title="as\; x\rightarrow \infty,\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: as\; x\rightarrow \infty,\; y\rightarrow \infty" data-equation-content="as\; x\rightarrow \infty,\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></p>
+<p>The domain is \(\{x|-\infty &lt; x &lt; \infty \} \)</p>
+<p>The range is \(\{y|y&gt;0\}\)</p>
+</div>
+<p><span style="color: #f67a0c;">Example 1</span></p>
+<p>The exponential function \(f(x)=2(0.75)^x\) is represented on the graph shown.</p>
+<p>Identify the y-intercept, horizontal asymptote, domain, and range of the function. Then identify if the function represents exponential growth or decay.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/tz2h33vwdf?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The y-intercept is the point where the graph crosses the y-axis.</p>
+<ul>
+<li>The graph crosses the y-axis at the value 2.</li>
+<li>The y-intercept is the point \((0,2)\).</li>
+</ul>
+<p>The horizontal asymptote is a line that the graph approaches, but never crosses. We can see on the graph that the function is approaching the x-axis.</p>
+<ul>
+<li>The horizontal asymptote is \(y=0\).</li>
+</ul>
+<p>For the end behavior, we see that the graph is growing to the left and declining to the right. This makes the graph an exponential decay.</p>
+<ul>
+<li><img class="equation_image" title="as\; x\rightarrow -\infty,\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: as\; x\rightarrow -\infty,\; y\rightarrow \infty" data-equation-content="as\; x\rightarrow -\infty,\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li><img class="equation_image" title="as\; x\rightarrow \infty,\; y\rightarrow 0" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520y%255Crightarrow%25200?scale=1" alt="LaTeX: as\; x\rightarrow \infty,\; y\rightarrow 0" data-equation-content="as\; x\rightarrow \infty,\; y\rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+<p>The domain for mathematical exponential functions is all real numbers.</p>
+<ul>
+<li>D=\(\{x|-\infty &lt; x &lt; \infty \}\)</li>
+</ul>
+<p>The range is all positive values. If the graph is not shifted up or down, the range is all values greater than 0.</p>
+<ul>
+<li>R=\(\{y|y&gt;0 \}\)</li>
+</ul>
+<p>Since we observed the graph is starting up and working its way down towards the x-axis as we move from the left to the right, we determined the function represents exponential decay.</p>
+<p>This also tells us that the base is between 0 and 1.</p>
+<p><span style="color: #f67a0c;"><br><br>Example 2</span></p>
+<p>The exponential function, \(f(x)=3(e)^x\), is represented on the graph shown.</p>
+<p>Identify the y-intercept, horizontal asymptote, domain, and range of the function. Then identify if the function represents exponential growth or decay.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/zuud3gsntv?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>The y-intercept is the point where the graph crosses the y-axis.</p>
+<ul>
+<li>The graph crosses the y-axis at the value 3.</li>
+<li>The y-intercept is the point \((0,3)\).</li>
+</ul>
+<p>The horizontal asymptote is a line that the graph approaches, but never crosses. We can see on the graph that the function is approaching the x-axis.</p>
+<ul>
+<li>The horizontal asymptote is \(y=0\).</li>
+</ul>
+<p>For the end behavior, we see that the graph is growing to the left and declining to the right. This makes the graph an exponential decay.</p>
+<ul>
+<li><img class="equation_image" title="as\; x\rightarrow -\infty,\; y\rightarrow 0" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520-%255Cinfty%252C%255C%253B%2520y%255Crightarrow%25200?scale=1" alt="LaTeX: as\; x\rightarrow -\infty,\; y\rightarrow 0" data-equation-content="as\; x\rightarrow -\infty,\; y\rightarrow 0" data-ignore-a11y-check="" loading="lazy"></li>
+<li><img class="equation_image" title="as\; x\rightarrow \infty,\; y\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/as%255C%253B%2520x%255Crightarrow%2520%255Cinfty%252C%255C%253B%2520y%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: as\; x\rightarrow \infty,\; y\rightarrow \infty" data-equation-content="as\; x\rightarrow \infty,\; y\rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+<p>The domain for mathematical exponential functions is all real numbers.</p>
+<ul>
+<li>D=\(\{x|-\infty &lt; x &lt; \infty \}\)</li>
+</ul>
+<p>The range is all positive values. If the graph is not shifted up or down, the range is all values greater than 0.</p>
+<ul>
+<li>R=\(\{y|y&gt;0 \}\)</li>
+</ul>
+<p>Since we observed the graph is starting up and working its way down towards the x-axis as we move from the left to the right, we determined that the function represents exponential decay.</p>
+<p>This also tells us that the base is between 0 and 1.</p>
+<p><br><br>Let's look at a few real-world examples using compounded interest and continuous compounded interest.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Compounding Interest Formulas</strong></h4>
+<p data-start="5048" data-end="5102"><strong data-start="5048" data-end="5069">Compound interest</strong> is calculated using the formula:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="minner" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="\Large A=P(1+\frac{r}{n})^{nt}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520A%253DP(1%252B%255Cfrac%257Br%257D%257Bn%257D)%255E%257Bnt%257D?scale=1" alt="LaTeX: \Large A=P(1+\frac{r}{n})^{nt}" data-equation-content="\Large A=P(1+\frac{r}{n})^{nt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ul data-start="5149" data-end="5314">
+<li data-start="5149" data-end="5190">
+<p data-start="5151" data-end="5190"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">P</span></span></span></span> is the principal (initial amount)</p>
+</li>
+<li data-start="5191" data-end="5226">
+<p data-start="5193" data-end="5226"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">r</span></span></span></span> is the annual interest rate</p>
+</li>
+<li data-start="5227" data-end="5289">
+<p data-start="5229" data-end="5289"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">n</span></span></span></span> is the number of times interest is compounded per year</p>
+</li>
+<li data-start="5290" data-end="5314">
+<p data-start="5292" data-end="5314"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">t</span></span></span></span> is time in years</p>
+</li>
+</ul>
+<p data-start="5316" data-end="5370"><strong data-start="5316" data-end="5352"><br>Continuously compounded interest</strong> uses the formula:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="\Large A=Pe^{rt}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520A%253DPe%255E%257Brt%257D?scale=1" alt="LaTeX: \Large A=Pe^{rt}" data-equation-content="\Large A=Pe^{rt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ul data-start="5149" data-end="5314">
+<li data-start="5149" data-end="5190">
+<p data-start="5151" data-end="5190"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">P</span></span></span></span> is the principal (initial amount)</p>
+</li>
+<li data-start="5191" data-end="5226">
+<p data-start="5193" data-end="5226"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">r</span></span></span></span> is the annual interest rate</p>
+</li>
+<li data-start="5290" data-end="5314">
+<p data-start="5292" data-end="5314"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">t</span></span></span></span> is time in years</p>
+</li>
+</ul>
+<p data-start="5390" data-end="5534">Both formulas are exponential and model growth, but continuous compounding grows slightly faster over time because interest is added constantly.</p>
+</div>
+<p>Example</p>
+<p>Suppose you invest $1,000 at a 5% interest rate for x years.</p>
+<p>If invested in a yearly compounding account, the function would be <img class="equation_image" title="\textcolor{red}{f(x)=1000(1.05)^{x}}" src="https://optimadomi.instructure.com/equation_images/%255Ctextcolor%257Bred%257D%257Bf(x)%253D1000(1.05)%255E%257Bx%257D%257D?scale=1" alt="LaTeX: \textcolor{red}{f(x)=1000(1.05)^{x}}" data-equation-content="\textcolor{red}{f(x)=1000(1.05)^{x}}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p>If invested in a continuous compounding account, the function would be <img class="equation_image" title="\textcolor{darkgreen}{f(x)=1000e^{0.05x}}" src="https://optimadomi.instructure.com/equation_images/%255Ctextcolor%257Bdarkgreen%257D%257Bf(x)%253D1000e%255E%257B0.05x%257D%257D?scale=1" alt="LaTeX: \textcolor{darkgreen}{f(x)=1000e^{0.05x}}" data-equation-content="\textcolor{darkgreen}{f(x)=1000e^{0.05x}}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p>The functions are represented on the graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/lkudoxxufi?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>The function in red represents the yearly compounding investment. The function in green represents the continuous compounded investment.<br>We notice that over time, the continuously compounded interest account grows slightly faster than the yearly compounded investment.</p>
+<p>The y-intercept, or starting value, of both accounts is $1000 or \((0,1000)\).</p>
+<p>They both represent exponential growth since we are investing money.</p>
+<p>As \(x\rightarrow \infty\), then \(y\rightarrow \infty\).</p>
+<p>Since negative x-values do not make sense in this context, we will only observe x approaching infinity.</p>
+<p>This also changes the domain to positive x-values only.</p>
+<p>D=\(\{x \geq 0\}\)</p>
+<p>Since we are only looking at x-values greater than or equal to 0, this will change the range to values starting at 1000 and greater.</p>
+<p>R=\(\{y \geq 1000\}\)</p>
+<p>There are constraints on the function, the domain and range since this is a real-world function.</p>
+<ul>
+<li>The x-axis represents the years, and negative years do not make sense. When we open the investment account, that is year 0.</li>
+<li>Since we are investing our money, the account balance will only increase, not decrease.</li>
+</ul>
+<h4 data-start="6319" data-end="6334"><strong><br><br>Conclusion</strong></h4>
+<p data-start="6336" data-end="6903" data-is-last-node="" data-is-only-node="">Exponential functions are essential for understanding situations that involve constant percent change. By learning how to identify the structure of an exponential function, determine its growth rate, interpret its graph, and apply it to real-world contexts like interest, you gain powerful tools for mathematical modeling. Understanding the differences between compound and continuously compounded interest also helps you make informed financial decisions. With practice, exponential functions become a clear and effective way to describe growth and change over time.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="1105" data-end="1201">1. What makes a function exponential, and how is it different from linear or quadratic functions?</p>
+<p data-start="1105" data-end="1201"><span style="font-size: 1rem;">2. How does the base of an exponential function affect its rate of growth or decay?</span></p>
+<p data-start="1105" data-end="1201"><span style="font-size: 1rem;">3. How can the key features of an exponential graph be interpreted in real-world contexts such as finance?</span></p>
+<p data-start="1105" data-end="1201"><span style="font-size: 1rem;">4. In what ways are compound interest and continuously compounded interest similar, and how are they different?</span></p>
+<p data-start="1105" data-end="1201"><span style="font-size: 1rem;">5. How does the exponential function with base </span><em style="font-size: 1rem;" data-start="1554" data-end="1557">e</em><span style="font-size: 1rem;"> model continuous growth more accurately than other exponential models?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.01 &middot; Exponential Functions and Their Graphs</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

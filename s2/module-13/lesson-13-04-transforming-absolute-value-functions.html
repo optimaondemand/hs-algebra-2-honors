@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 13.04 Transforming Absolute Value Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 13</div>
+        <div style="font-size: 13px; color: #666;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">13.04</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">13.04</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Transforming Absolute Value Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p><strong>Compression (vertical or horizontal):</strong> A transformation that shrinks the graph of a function either toward the x-axis (vertical compression, \( |k| &lt; 1 \) in \(k \cdot f(x)\) \)) or toward the y-axis (horizontal compression, \( |k| &gt; 1 \) in \( f(kx) \)).</p>
+<p><strong style="font-size: 1rem;">Horizontal Translation:</strong><span style="font-size: 1rem;"> A transformation that shifts the graph of a function left or right along the x-axis without changing its shape; produced by replacing \( x \) with \( x - h \) in the equation.</span></p>
+<p><strong style="font-size: 1rem;">Parameter:</strong><span style="font-size: 1rem;"> A constant in a function's equation whose value controls a specific feature or behavior of the graph; in \( f(x) = a|x - h| + k \), the parameters are \( a \), \( h \), and \( k \).</span></p>
+<p><strong style="font-size: 1rem;">Parent Function:</strong><span style="font-size: 1rem;"> The simplest, unmodified version of a function family used as the starting point for describing transformations; for the absolute value family, the parent function is \( f(x) = |x| \).</span></p>
+<p><strong style="font-size: 1rem;">Reflection:</strong><span style="font-size: 1rem;"> A transformation that flips the graph of a function across an axis; multiplying \( f(x) \) by a negative value reflects it across the x-axis, while replacing \( x \) with \( -x \) reflects it across the y-axis.</span></p>
+<p><strong style="font-size: 1rem;">Stretch (vertical or horizontal):</strong><span style="font-size: 1rem;"> A transformation that pulls the graph of a function away from the x-axis (vertical stretch, \( |a| &gt; 1 \)) or away from the y-axis (horizontal stretch, \( 0 &lt; |k| &lt; 1 \) in \( f(kx) \)).</span></p>
+<p><strong style="font-size: 1rem;">Transformation:</strong><span style="font-size: 1rem;"> A change applied to a function that alters the position, orientation, or shape of its graph while preserving the overall function family.</span></p>
+<p><strong style="font-size: 1rem;">Vertical Translation:</strong><span style="font-size: 1rem;"> A transformation that shifts the graph of a function up or down along the y-axis without changing its shape; produced by adding a constant \( k \) to \( f(x) \).</span></p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In today's lesson, we will explore how the graph of an absolute value function changes when we apply transformations — shifting it up, down, left, or right, stretching or compressing it, and reflecting it across an axis. In the previous lesson, you studied the key features of absolute value graphs: vertex, axis of symmetry, intercepts, domain, range, and intervals of increase and decrease. Today you will connect each of those features directly to the equation by understanding exactly what each part of \( f(x) = a|x - h| + k \) does to the parent graph. You will learn to identify a transformation and its value from an equation, a graph, or a table of values; describe the combined effect when two transformations act together; and produce the equation, table, or graph of a transformed function given the parent and a transformation rule. By the end of this lesson, you will be able to read any equation in the family of absolute value functions and predict its graph — or work in reverse, reading a graph and writing its equation.</span></p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Parent Function</strong></h4>
+<p><span>Every transformation in this lesson is measured as a change&nbsp;</span><em>from</em><span>&nbsp;the parent function \( f(x) = |x| \). Before analyzing transformations, you need to know this function well — its equation, its table of values, and its graph — because you will compare every transformed function against it. The vertex \( (0, 0) \) is the most important reference point: it tells you where the function is centered, and it is the first thing that moves (or stays put) when a transformation is applied.</span></p>
+<p><strong>Absolute Value Parent Function</strong></p>
+<table style="border-collapse: collapse; width: 63.0127%; height: 410px;" border="1">
+<tbody>
+<tr style="height: 393px;">
+<td style="width: 21.6032%; text-align: center; height: 393px;">
+<p>Equation</p>
+<p>\( f(x)=|x| \)</p>
+</td>
+<td style="width: 25.2037%; text-align: center; height: 393px;">
+<p>Table of Values</p>
+<table style="border-collapse: collapse; width: 45.563%; height: 233px; border-style: inset; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.6784%; background-color: #2b7abc;"><strong>x</strong></td>
+<td style="width: 49.6784%; background-color: #2b7abc;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">-3</td>
+<td style="width: 49.6784%;">3</td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">-2</td>
+<td style="width: 49.6784%;">2</td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">-1</td>
+<td style="width: 49.6784%;">1</td>
+</tr>
+<tr>
+<td style="width: 49.6784%; background-color: #c2e0f4;">0</td>
+<td style="width: 49.6784%; background-color: #c2e0f4;">0</td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">1</td>
+<td style="width: 49.6784%;">1</td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">2</td>
+<td style="width: 49.6784%;">2</td>
+</tr>
+<tr>
+<td style="width: 49.6784%;">3</td>
+<td style="width: 49.6784%;">3</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 53.3111%; text-align: center; height: 393px;">
+<p>Graph</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ut4cpad6zs?embed" width="350" height="350" loading="lazy"></iframe></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><br>Three Things to Watch When Comparing to the Parent</strong></p>
+<p><strong>1. Where is the vertex?</strong><span>&nbsp;</span>In the parent, it sits at \( (0, 0) \). If the vertex moved, a translation occurred. How far and in which direction tells you the type and value.</p>
+<p><strong>2. How steep are the arms?</strong><span>&nbsp;</span>In the parent, each arm has a rate of change of \( \pm 1 \). If the arms are steeper, a vertical stretch occurred. If flatter, a compression. If the arms match the parent but are in the opposite direction, a reflection occurred.</p>
+<p><strong>3. Are the y-values in the table the same as the parent, just in different rows?</strong><span>&nbsp;</span>That signals a horizontal translation. Are the y-values scaled by a constant factor? That signals a vertical stretch or compression.</p>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>The Four Transformation Types</strong></h4>
+<p><span>When a real number is added to or multiplied by the input or output of \( f(x) = |x| \), the graph changes in a predictable way. The table below summarizes all four types you will work with.</span></p>
+<p><strong>Transformation Reference for \( f(x) = |x| \)</strong></p>
+<p><strong>\( f(x) + k \) — Vertical Translation:</strong><span>&nbsp;</span>Adding \( k \) to the output shifts every point up (\( k &gt; 0 \)) or down (\( k &lt; 0 \)) by \( |k| \) units. Vertex moves from \( (0,0) \) to \( (0, k) \). In the table, all y-values change by \( +k \); x-values stay the same.</p>
+<p><strong>\( f(x + k) \) — Horizontal Translation:</strong><span>&nbsp;</span>Adding \( k \) inside the function shifts the graph<span>&nbsp;</span><em>left</em><span>&nbsp;</span>when \( k &gt; 0 \) and<span>&nbsp;</span><em>right</em><span>&nbsp;</span>when \( k &lt; 0 \). Vertex moves from \( (0,0) \) to \( (-k, 0) \). In the table, the same y-values appear but at x-values shifted by \( -k \).</p>
+<p><strong>\( k \cdot f(x) \) — Vertical Stretch or Compression:</strong><span>&nbsp;</span>Multiplying the output by \( k \) scales all y-values. When \( |k| &gt; 1 \), the arms get steeper (stretch). When \( 0 &lt; |k| &lt; 1 \), the arms get flatter (compression). If \( k \) is negative, the graph also reflects over the x-axis.</p>
+<p><strong>\( {-f(x)} \) — Reflection over the x-axis:</strong><span>&nbsp;</span>A special case of \( k \cdot f(x) \) where \( k = -1 \). All y-values are negated; the V flips upside down and opens downward. The vertex stays at the same location but becomes a maximum instead of a minimum.</p>
+<p><br><strong>Why does \( f(x+k) \) with \( k &gt; 0 \) shift the graph to the LEFT?</strong><span>&nbsp;The vertex of \( f(x) = |x| \) occurs where the inside equals zero — at \( x = 0 \). In \( f(x + 3) = |x + 3| \), the inside equals zero when \( x + 3 = 0 \), i.e., \( x = -3 \). The vertex shifted left 3. Adding a positive \( k \) inside moves the whole graph in the negative x-direction.</span></p>
+<h4 style="color: #007acc;"><span><br><strong><br>Identifying From an Equation</strong></span></h4>
+<p>Compare the given function to the parent \( f(x) = |x| \) and match it to one of the four transformation forms.</p>
+<p><strong>Given:</strong> \( g(x) = |x - 4| \)</p>
+<p><strong>Step 1 — Compare to parent:</strong> The parent has just \( x \) inside the bars. The given function has \( x - 4 \) inside the bars. The outside is unchanged.</p>
+<p><strong>Step 2 — Match the form:</strong> This is \( f(x + k) \) with \( x + k = x - 4 \), so \( k = -4 \).</p>
+<p><strong>Step 3 — Determine type and direction:</strong> Horizontal translation. Since \( k = -4 &lt; 0 \), the graph shifts <em>right</em> by \( 4 \) units.</p>
+<p><strong>Step 4 — Confirm with vertex:</strong> Set \( x - 4 = 0 \to x = 4 \). New vertex: \( (4, 0) \). It moved right 4 from the origin. ✓</p>
+<p style="color: #007acc;"><strong>Answer:</strong></p>
+<div style="border: 3px solid #003366; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<p><strong>Transformation type:</strong> Horizontal translation &nbsp; | &nbsp; <strong>Direction:</strong> Right &nbsp; | &nbsp; <strong>Value:</strong> \( k = -4 \) &nbsp; | &nbsp; <strong>New vertex:</strong> \( (4, 0) \)</p>
+</div>
+<h4 style="color: #007acc;"><br><strong>Identifying From a Graph</strong></h4>
+<p><span>Compare the transformed graph to the parent \( f(x) \) (shown dashed). Look at where the vertex moved, whether the arms changed steepness, and whether the graph flipped direction.</span></p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/yw8nybkmke?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p><strong>Step 1 — Compare vertices:</strong><span>&nbsp;</span>The parent vertex is at \( (0, 0) \). The transformed vertex is at \( (0, 3) \). The x-coordinate is the same; the y-coordinate increased by 3.</p>
+<p><strong>Step 2 — Check the arms:</strong><span>&nbsp;</span>Both graphs have the same steepness — the arms are not wider or narrower. No stretch or compression occurred.</p>
+<p><strong>Step 3 — Identify the form:</strong><span>&nbsp;</span>The vertex moved straight up 3 units, matching \( f(x) + k \) with \( k = 3 \).</p>
+<p style="color: #007acc;"><strong>Answer:</strong></p>
+<div style="border: 3px solid #003366; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<p><strong>Transformation type:</strong><span>&nbsp;</span>Vertical translation up &nbsp; | &nbsp;<span>&nbsp;</span><strong>Value:</strong><span>&nbsp;</span>\( k = 3 \) &nbsp; | &nbsp;<span>&nbsp;</span><strong>Equation:</strong><span>&nbsp;</span>\( g(x) = f(x) + 3 = |x| + 3 \)</p>
+</div>
+<h4 style="color: #007acc;"><br><strong>Identifying From a Table of Values</strong></h4>
+<p><span>Compare the table of the transformed function to the parent table. Ask: did the x-values change? Did the y-values all shift by the same amount? Did the y-values scale by the same factor?</span></p>
+<table style="border-collapse: collapse; width: 42.7332%; height: 39px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50.0271%; text-align: center;">Parent Function \(f(x)=|x| \)</td>
+<td style="width: 50.0271%; text-align: center;">Transformed Function \(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.0271%; text-align: center;">
+<table style="border-collapse: collapse; width: 35.3363%; height: 144px; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.8715%;"><img class="equation_image" title="\bf{x}" src="https://optimadomi.instructure.com/equation_images/%255Cbf%257Bx%257D?scale=1" alt="LaTeX: \bf{x}" data-equation-content="\bf{x}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 50.1285%;"><img class="equation_image" title="\bf{f(x)}" src="https://optimadomi.instructure.com/equation_images/%255Cbf%257Bf(x)%257D?scale=1" alt="LaTeX: \bf{f(x)}" data-equation-content="\bf{f(x)}" data-ignore-a11y-check="" loading="lazy"></td>
+</tr>
+<tr>
+<td style="width: 49.8715%;">-2</td>
+<td style="width: 50.1285%;">2</td>
+</tr>
+<tr>
+<td style="width: 49.8715%;">-1</td>
+<td style="width: 50.1285%;">1</td>
+</tr>
+<tr>
+<td style="width: 49.8715%;">0</td>
+<td style="width: 50.1285%;">0</td>
+</tr>
+<tr>
+<td style="width: 49.8715%;">1</td>
+<td style="width: 50.1285%;">1</td>
+</tr>
+<tr>
+<td style="width: 49.8715%;">2</td>
+<td style="width: 50.1285%;">2</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50.0271%; text-align: center;">
+<table style="border-collapse: collapse; width: 34.857%; height: 159px; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%;"><img class="equation_image" title="\bf{x}" src="https://optimadomi.instructure.com/equation_images/%255Cbf%257Bx%257D?scale=1" alt="LaTeX: \bf{x}" data-equation-content="\bf{x}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 50%;"><img class="equation_image" title="\bf{g(x)}" src="https://optimadomi.instructure.com/equation_images/%255Cbf%257Bg(x)%257D?scale=1" alt="LaTeX: \bf{g(x)}" data-equation-content="\bf{g(x)}" data-ignore-a11y-check="" loading="lazy"></td>
+</tr>
+<tr>
+<td style="width: 50%;">-2</td>
+<td style="width: 50%;">4</td>
+</tr>
+<tr>
+<td style="width: 50%;">-1</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">0</td>
+<td style="width: 50%;">0</td>
+</tr>
+<tr>
+<td style="width: 50%;">1</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">4</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="worked-steps">
+<p><strong>Step 1 — Compare x-values:</strong><span>&nbsp;</span>The x-values are identical in both tables. No horizontal shift occurred.</p>
+<p><strong>Step 2 — Compare y-values:</strong><span> First note that the vertex did not change. Therefore, it is not a vertical shift. </span>Each y-value in \( g(x) \) is exactly double the corresponding y-value in \( f(x) \). For example: \( f(3) = 3 \) but \( g(3) = 6 \); \( f(1) = 1 \) but \( g(1) = 2 \). The ratio is always \( 2 \).</p>
+<p><strong>Step 3 — Identify the form:</strong><span>&nbsp;</span>Multiplying all y-values by 2 matches \( k \cdot f(x) \) with \( k = 2 \). Since \( k = 2 &gt; 1 \), the arms of the graph become steeper.</p>
+<p style="color: #007acc;"><strong>Answer:</strong></p>
+</div>
+<div style="border: 3px solid #003366; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<p><strong>Transformation type:</strong><span>&nbsp;</span>Vertical stretch &nbsp; | &nbsp;<span>&nbsp;</span><strong>Value:</strong><span>&nbsp;</span>\( k = 2 \) &nbsp; | &nbsp;<span>&nbsp;</span><strong>Equation:</strong><span>&nbsp;</span>\( g(x) = 2f(x) = 2|x| \)</p>
+</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p><span>Identify the type of transformation applied to \( f(x) = |x| \) and state the value of \( k \).</span></p>
+<div class="prob-body">
+<p>\( g(x) = |x| - 4 \)</p>
+</div>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p>Compare to \( f(x) = |x| \): the expression inside the bars is unchanged. A constant \( -4 \) has been added <em>outside</em> the bars to the output.</p>
+<p>This matches \( f(x) + k \) with \( k = -4 \). Since \( k &lt; 0 \), the graph shifts <em>down</em>.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+</div>
+<div class="answer-box">
+<p><strong>Type:</strong> Vertical translation down 4 units &nbsp; | &nbsp; <strong>Value:</strong> \( k = -4 \)</p>
+<p><strong>Effect on vertex:</strong> Moves from \( (0, 0) \) to \( (0, -4) \)</p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 2</span></h4>
+<p><span>Identify the type of transformation applied to \( f(x) = |x| \) and state the value of \( k \).</span></p>
+<div class="prob-body">
+<p>\( g(x) = |x + 3| \)</p>
+</div>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p>Compare to \( f(x) = |x| \): \( x \) inside the bars has been replaced with \( x + 3 \). Nothing changed outside the bars.</p>
+<p>This matches \( f(x + k) \) with \( k = 3 \). Since \( k = 3 &gt; 0 \), the graph shifts <em>left</em> by 3 units.</p>
+<p><strong>Confirm with vertex:</strong> Set \( x + 3 = 0 \to x = -3 \). New vertex: \( (-3, 0) \). Moved left 3. ✓</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+</div>
+<div class="answer-box">
+<p><strong>Type:</strong> Horizontal translation left 3 units &nbsp; | &nbsp; <strong>Value:</strong> \( k = 3 \)</p>
+<p><strong>Effect on vertex:</strong> Moves from \( (0, 0) \) to \( (-3, 0) \)</p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 3</span></h4>
+<p><span>Identify the type of transformation applied to \( f(x) = |x| \) and state the value of \( k \).</span></p>
+<p>The dashed gray line is the parent \( f(x) = |x| \). The solid blue line is \( g(x) \). Identify the type of transformation and find the value of \( k \).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/erwolwlmzq?embed" width="500" height="500" loading="lazy"></iframe></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p><strong>Compare vertices:</strong> Both have a vertex at \( (0, 0) \). No translation occurred.</p>
+<p><strong>Compare arm steepness:</strong> The solid line is <em>flatter</em> than the dashed parent. At \( x = 1 \), the parent reaches \( y = 1 \), but \( g(x) \) only reaches a little above \( y = 0 \). It does not reach \(y=1\) until \(x=3\).</p>
+<p><strong>Identify the form:</strong> Multiplying all y-values by \(\frac{1}{3}\) matches \( k \cdot f(x) \) with \( k = \frac{1}{3} \). Since \( k = \frac{1}{3} &lt; 1 \), this is a vertical compression.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+</div>
+<div class="answer-box">
+<p><strong>Type:</strong> Vertical ompression by a factor of \(\frac{1}{3}\)&nbsp; &nbsp;| &nbsp; <strong>Value:</strong> \( k = \frac{1}{3} \)</p>
+<p><strong>Equation:</strong> \( g(x) = \frac{1}{3}f(x) = \frac{1}{3}|x| \)</p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p><span>Identify the type of transformation applied to \( f(x) = |x| \) and state the value of \( k \).</span></p>
+<p>The dashed gray line is the parent \( f(x) = |x| \). The solid blue line is \( g(x) \). Identify the type of transformation and find the value of \( k \).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/xrejoerghh?embed" width="500" height="500" loading="lazy"></iframe></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p><strong>Compare vertices:</strong> Both graphs share the vertex at \( (0, 0) \). No translation occurred.</p>
+<p><strong>Compare direction:</strong> The parent opens upward; \( g(x) \) opens downward. The arms have the same steepness but are pointing in the opposite direction.</p>
+<p><strong>Compare y-values:</strong> At any x-value, \( g(x) = -f(x) \). For example, \( f(2) = 2 \) but \( g(2) = -2 \). The y-values were all negated.</p>
+<p><strong>Identify the form:</strong> Negating all y-values matches \( k \cdot f(x) \) with \( k = -1 \), which is a reflection over the x-axis.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+</div>
+<div class="answer-box">
+<p><strong>Type:</strong> Reflection over the x-axis &nbsp; | &nbsp; <strong>Value:</strong> \( k = -1 \)</p>
+<p><strong>Equation:</strong> \( g(x) = -f(x) = -|x| \)</p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 5</span></h4>
+<p><span>Identify the type of transformation applied to \( f(x) = |x| \) and state the value of \( k \).</span></p>
+<p>The table below shows the parent \( f(x) = |x| \) and a transformed function \( g(x) \). Identify the type of transformation and find the value of \( k \).</p>
+<table style="border-collapse: collapse; width: 40.8196%; height: 5px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(f(x)=|x| \)</td>
+<td style="width: 50%; text-align: center;">\(g(x) \)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 37.4005%; height: 162px; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%;">\(x\)</td>
+<td style="width: 50%;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%;">-2</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">-1</td>
+<td style="width: 50%;">1</td>
+</tr>
+<tr>
+<td style="width: 50%;">0</td>
+<td style="width: 50%;">0</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">3</td>
+<td style="width: 50%;">3</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 37.1353%; height: 165px; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%;">\(x\)</td>
+<td style="width: 50%;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%;">1</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">1</td>
+</tr>
+<tr>
+<td style="width: 50%;">3</td>
+<td style="width: 50%;">0</td>
+</tr>
+<tr>
+<td style="width: 50%;">5</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">6</td>
+<td style="width: 50%;">3</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p><strong>Compare the y-values:</strong><span>&nbsp;Look at the y-values in both tables. The values in \( g(x) \) are exactly the same as those in \( f(x) \) — both contain \( 2, 1, 0, 2, 3 \). The y-values did not change at all. This means no vertical transformation occurred.</span></p>
+<p><strong>Compare the x-values:</strong><span>&nbsp;Now look at where those y-values appear. In \( f(x) \), the output \( 0 \) (the vertex) occurs at \( x = 0 \). In \( g(x) \), the output \( 0 \) occurs at \( x = 3 \). The same output value appears 3 units to the right in \( g(x) \).</span></p>
+<p><span><strong>Check every row to confirm the shift:</strong>&nbsp;Line up the matching output values side by side.</span></p>
+<table style="border-collapse: collapse; width: 24.4811%; height: 171px;" border="1">
+<tbody>
+<tr>
+<td style="width: 25.0007%; text-align: center;">Output</td>
+<td style="width: 25.0007%; text-align: center;">x in \(f(x) \)</td>
+<td style="width: 25.0007%; text-align: center;">x in \(g(x) \)</td>
+<td style="width: 25.0007%; text-align: center;">Difference</td>
+</tr>
+<tr>
+<td style="width: 25.0007%; text-align: center;">2</td>
+<td style="width: 25.0007%; text-align: center;">-2</td>
+<td style="width: 25.0007%; text-align: center;">1</td>
+<td style="width: 25.0007%; text-align: center;">+3</td>
+</tr>
+<tr>
+<td style="width: 25.0007%; text-align: center;">1</td>
+<td style="width: 25.0007%; text-align: center;">-1</td>
+<td style="width: 25.0007%; text-align: center;">2</td>
+<td style="width: 25.0007%; text-align: center;">+3</td>
+</tr>
+<tr>
+<td style="width: 25.0007%; text-align: center;">0</td>
+<td style="width: 25.0007%; text-align: center;">0</td>
+<td style="width: 25.0007%; text-align: center;">3</td>
+<td style="width: 25.0007%; text-align: center;">+3</td>
+</tr>
+<tr>
+<td style="width: 25.0007%; text-align: center;">2</td>
+<td style="width: 25.0007%; text-align: center;">2</td>
+<td style="width: 25.0007%; text-align: center;">5</td>
+<td style="width: 25.0007%; text-align: center;">+3</td>
+</tr>
+<tr>
+<td style="width: 25.0007%; text-align: center;">3</td>
+<td style="width: 25.0007%; text-align: center;">3</td>
+<td style="width: 25.0007%; text-align: center;">6</td>
+<td style="width: 25.0007%; text-align: center;">+3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Identify the transformation form:</strong><span>&nbsp;</span>Every output value in \( g(x) \) occurs at an x-value that is exactly 3 greater than where it occurred in \( f(x) \). The entire graph shifted<span>&nbsp;</span><strong>right 3 units</strong>.</p>
+<p>This matches the form \( f(x + k) \) where \( x + k = x - 3 \), giving \( k = -3 \). Remember: adding a negative value inside the function — i.e., replacing \( x \) with \( x - 3 \) — shifts the graph to the<span>&nbsp;</span><em>right</em>, because the vertex now occurs where \( x - 3 = 0 \), which is at \( x = 3 \).</p>
+<p><strong>Verify with the vertex:</strong><span>&nbsp;The vertex of \( g(x) \) is where \( x - 3 = 0 \), which gives \( x = 3 \) and \( g(3) = 0 \). This matches the highlighted row in the \( g(x) \) table. ✓</span></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+</div>
+<div class="answer-box">
+<p><strong>Type:</strong> Horizontal translation right of 3 units&nbsp; &nbsp;| &nbsp; <strong>Value:</strong> \( k = 3 \)</p>
+<p><strong>Equation:</strong> \( g(x) = f(x-3) = |x-3| \)</p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Combined Effects of Two Transformations</strong></h4>
+<p>When a function includes more than one transformation, analyze each part of the equation independently. Changes outside the absolute value bars affect the output (y-values) and produce vertical translations, stretches, compressions, or reflections. Changes inside the absolute value bars affect the input (x-values) and produce horizontal translations. When both types appear together, both effects occur simultaneously on the graph. For each problem below, select the answer you believe is correct, then expand the solution to check and read the explanation.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 6</span></h4>
+<p>The function \( g(x) = f(x - 3) + 2 \) represents a transformation of \( f(x) = |x| \). Which statement best describes the combined effect on the graph?</p>
+<p>(A) &nbsp; Horizontal shift left 3 units and vertical shift up 2 units</p>
+<p>(B) &nbsp; Horizontal shift right 3 units and vertical shift up 2 units</p>
+<p>(C) &nbsp; Horizontal shift right 3 units and vertical shift down 2 units</p>
+<p>(D) &nbsp; Vertical stretch by 3 and vertical shift up 2 units</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Inside the bars:</strong> \( x - 3 \) matches \( f(x + k) \) with \( k = -3 \). Since \( k &lt; 0 \), the graph shifts <em>right</em> 3 units.</p>
+<p><strong>Outside the bars:</strong> \( + 2 \) is added to the output, matching \( f(x) + k \) with \( k = 2 \). Since \( k &gt; 0 \), the graph shifts <em>up</em> 2 units.</p>
+<p><strong>Combined:</strong> The vertex moves from \( (0,0) \) to \( (3, 2) \). Equation: \( g(x) = |x - 3| + 2 \).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p>(B) &nbsp; Horizontal shift right 3 units and vertical shift up 2 units <span style="color: #03893d; font-size: 18pt;">✓</span></p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 7</span></h4>
+<p>The function \( g(x) = -2 \cdot f(x) \) represents a transformation of \( f(x) = |x| \). Which statement best describes the combined effect on the graph?</p>
+<p>(A) &nbsp; Reflection over the y-axis and vertical stretch by factor 2</p>
+<p>(B) &nbsp; Vertical compression by factor 2 and horizontal shift right</p>
+<p>(C) &nbsp; Reflection over the x-axis and vertical stretch by factor 2</p>
+<p>(D) &nbsp; Horizontal compression by factor 2 and reflection over x-axis</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Analyze \( k = -2 \):</strong> The factor \( -2 \) is applied to the entire output. Break it into two parts:</p>
+<p style="padding-left: 20px;">The negative sign (\( k = -1 \)) negates all y-values → <strong>reflection over the x-axis</strong> (graph opens downward).</p>
+<p style="padding-left: 20px;">The absolute value of the factor (\( |k| = 2 &gt; 1 \)) scales all y-values by 2 → <strong>vertical stretch by factor 2</strong> (arms are steeper).</p>
+<p><strong>Combined:</strong> \( g(x) = -2|x| \). The graph opens downward with arms twice as steep as the parent.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p>(C) &nbsp; Reflection over the x-axis and vertical stretch by factor 2 <span style="color: #03893d; font-size: 18pt;">✓</span></p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 8</span></h4>
+<p>The function \( g(x) = \dfrac{1}{2} f(x + 4) \) represents a transformation of \( f(x) = |x| \). Which statement best describes the combined effect on the graph?</p>
+<p>(A) &nbsp; Horizontal shift right 4 units and vertical compression by factor \( \frac{1}{2} \)</p>
+<p>(B) &nbsp; Vertical stretch by factor 2 and horizontal shift left 4 units</p>
+<p>(C) &nbsp; Vertical compression by factor \( \frac{1}{2} \) and horizontal shift left 4 units</p>
+<p>(D) &nbsp; Horizontal compression by factor 2 and horizontal shift left 4 units</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Inside the bars:</strong> \( x + 4 \) matches \( f(x + k) \) with \( k = 4 \). Since \( k &gt; 0 \), the graph shifts <em>left</em> 4 units.</p>
+<p><strong>Outside the bars:</strong> \( \frac{1}{2} \) multiplies the entire output. Since \( 0 &lt; \frac{1}{2} &lt; 1 \), this is a <em>vertical compression</em> — the arms become flatter.</p>
+<p><strong>Combined:</strong> \( g(x) = \frac{1}{2}|x + 4| \). The vertex moves to \( (-4, 0) \) and the arms are half as steep as the parent.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p>(C) &nbsp; Vertical compression by factor \( \frac{1}{2} \) and horizontal shift left 4 units <span style="font-size: 18pt; color: #03893d;">✓</span></p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Creating a Corresponding Table, Graph, or Equation</strong></h4>
+<p>Given the parent function \( f(x) = |x| \) and a transformation written in the form \( f(x) + k \), \( f(x + k) \), \( k \cdot f(x) \), or \( f(kx) \), you can produce the complete table of values, graph, and equation for the transformed function by applying the transformation rules systematically to what you already know about the parent.</p>
+<p><strong><br>Create the table, graph, and equation for \( g(x) = f(x) - 2 \) </strong></p>
+<p>Since it is outside of the function, this affects the outputs and will be added to the outside of the absolute value. All y-values will shift down in the graph and 2 will be subtracted from all y-values in the table.</p>
+<p><strong>Equation:</strong> \( g(x) = f(x) - 2 = |x| - 2 \) (subtract 2 from every y-value of the parent)</p>
+<p><strong>Table:</strong> Keep all x-values the same. Subtract 2 from each f(x) value.</p>
+<p><strong>Key features:</strong><span>&nbsp;Vertex at \( (0, -2) \). X-intercepts at \( (\pm 2, 0) \). Y-intercept at \( (0, -2) \). Range: \( [-2, \infty) \).</span></p>
+<p><span><strong>Graph:</strong></span></p>
+<p>&nbsp;<iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/tjm7kmipcj?embed" width="400" height="400" loading="lazy"></iframe></p>
+</div>
+<h4><span style="color: #f88e0a;">Example 9</span></h4>
+<p>Given \( f(x) = |x| \), apply the transformation \( g(x) = f(x - 3) \) to create the graph and write the equation of \( g(x) \). Then state the new vertex and describe the transformation.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Identify the transformation:</strong> \( f(x - 3) \) matches \( f(x + k) \) with \( k = -3 \). This is a horizontal translation <em>right</em> 3 units. The new vertex is at \( (3, 0) \).</p>
+<p><strong>How to make the graph:</strong> The same output values of the parent now occur at x-values shifted 3 units to the right. Shift every point on the graph right 3 units.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<div class="answer-box">
+<p><strong>Equation:</strong> &nbsp; \( g(x) = f(x - 3) = |x - 3| \)</p>
+<p><strong>Vertex:</strong> &nbsp; \( (3, 0) \) &nbsp; | &nbsp; <strong>Transformation:</strong> Horizontal translation right 3 units</p>
+<p><strong>Graph description:</strong> Same V-shape as parent but shifted 3 units to the right. Arms have the same steepness (\( \pm 1 \)).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/xkuzbsiao4?embed" width="400" height="400" loading="lazy"></iframe></p>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 10</span></h4>
+<p>Given \( f(x) = |x| \) and its table of values shown, apply the transformation \( g(x) = f(x) + 5 \) to create the table of values and write the equation.</p>
+<table style="border-collapse: collapse; width: 11.8148%; height: 121px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(x\)</td>
+<td style="width: 50%; text-align: center;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-3</td>
+<td style="width: 50%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-1</td>
+<td style="width: 50%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">0</td>
+<td style="width: 50%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">2</td>
+<td style="width: 50%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">3</td>
+<td style="width: 50%; text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Identify the transformation:</strong> \( f(x) + 5 \) adds 5 to every output value. This is a vertical translation <em>up</em> 5 units. Vertex moves from \( (0,0) \) to \( (0, 5) \).</p>
+<p><strong>Table:</strong><span>&nbsp;x-values stay the same; add 5 to every f(x) value.</span></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Equation:</strong> &nbsp; \( g(x) = f(x) + 5 = |x| + 5 \)</p>
+<p><strong>Table:</strong>&nbsp;</p>
+<table style="border-collapse: collapse; width: 9.57956%; height: 151px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(x\)</td>
+<td style="width: 50%; text-align: center;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-3</td>
+<td style="width: 50%; text-align: center;">8</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-1</td>
+<td style="width: 50%; text-align: center;">6</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">0</td>
+<td style="width: 50%; text-align: center;">5</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">2</td>
+<td style="width: 50%; text-align: center;">7</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">3</td>
+<td style="width: 50%; text-align: center;">8</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 11</span></h4>
+<p>Given \( f(x) = |x| \), its graph, and table of values, apply the transformation \( g(x) = 3 \cdot f(x) \). Write the equation of \( g(x) \), complete the table, and describe how the graph changes from the parent.</p>
+<table style="border-collapse: collapse; width: 8.51517%; height: 87px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(x\)</td>
+<td style="width: 50%; text-align: center;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-2</td>
+<td style="width: 50%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-1</td>
+<td style="width: 50%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">0</td>
+<td style="width: 50%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">1</td>
+<td style="width: 50%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">2</td>
+<td style="width: 50%; text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/fmfxxkxmz1?embed" width="400" height="400" loading="lazy"></iframe></p>
+<details>
+<summary>Show Solution</summary>
+<p><strong>Equation:</strong> \( g(x) = 3 \cdot f(x) = 3|x| \)</p>
+<p><strong>Table:</strong> Multiply each y-value of \( f(x) \) by 3.</p>
+<p><strong>Graph:</strong> From the vertex, apply a rate of change of up 3 and over 1 on both sides.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Equation:</strong> &nbsp; \( g(x) = 3|x| \)</p>
+<p><strong>Table of Values:</strong>&nbsp;</p>
+<table style="border-collapse: collapse; width: 8.40873%; height: 145px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(x\)</td>
+<td style="width: 50%; text-align: center;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-2</td>
+<td style="width: 50%; text-align: center;">6</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">-1</td>
+<td style="width: 50%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">0</td>
+<td style="width: 50%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">1</td>
+<td style="width: 50%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">2</td>
+<td style="width: 50%; text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Graph:</strong></p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/53mmpbjxxs?embed" width="400" height="400" loading="lazy"></iframe>&nbsp;</p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 12</span></h4>
+<p>Given \( f(x) = |x| \), apply the combined transformation \( g(x) = -f(x - 1) + 4 \). Write the full equation of \( g(x) \), complete the table of values, identify each transformation applied, and state the vertex of \( g(x) \).</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Equation:</strong> \( g(x) = -f(x - 1) + 4 = -|x - 1| + 4 \)</p>
+<p><strong>Identify transformations:</strong></p>
+<p style="padding-left: 20px;">\( f(x - 1) \): horizontal translation right 1 unit (vertex x-coordinate: \( 1 \))</p>
+<p style="padding-left: 20px;">\( -f(x) \): reflection over x-axis (graph opens downward)</p>
+<p style="padding-left: 20px;">\( f(x) + 4 \): vertical translation up 4 units (vertex y-coordinate: \( 4 \))</p>
+<p><strong>Vertex:</strong> \( (1, 4) \) — the graph opens downward, so this is a maximum.</p>
+<p><strong>Complete the table:</strong> Substitute each x into \( g(x) = -|x - 1| + 4 \).</p>
+<p><strong>Equation:</strong> &nbsp; \( g(x) = -|x - 1| + 4 \)</p>
+<p><strong>Table:&nbsp;</strong></p>
+<table style="border-collapse: collapse; width: 6.75891%; height: 165px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.0041%; text-align: center;">\(x\)</td>
+<td style="width: 50.0041%; text-align: center;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.0041%; text-align: center;">-1</td>
+<td style="width: 50.0041%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50.0041%; text-align: center;">0</td>
+<td style="width: 50.0041%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 50.0041%; text-align: center;">1</td>
+<td style="width: 50.0041%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 50.0041%; text-align: center;">2</td>
+<td style="width: 50.0041%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 50.0041%; text-align: center;">3</td>
+<td style="width: 50.0041%; text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Graph:</strong></p>
+<p>&nbsp;<iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/0uaoalijyf?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>Transformations:</strong> (1) Horizontal translation right 1 unit &nbsp; (2) Reflection over x-axis &nbsp; (3) Vertical translation up 4 units</p>
+<p><strong>Vertex:</strong> \( (1, 4) \) — maximum point; graph opens downward</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you explored the full set of transformations that can be applied to the absolute value parent function \( f(x) = |x| \). You learned that adding to or subtracting from the output produces vertical translations, while making changes inside the function to the input produces horizontal translations — and that these two types behave in distinctly different ways. Multiplying the output by a factor greater than 1 stretches the graph vertically, while a factor between 0 and 1 compresses it, and a negative factor introduces a reflection across the x-axis. You practiced identifying each transformation from three different representations — an equation, a graph, and a table of values — and you learned to connect the value of \( k \) to the type and magnitude of the change. You then combined multiple transformations and described their effects together, and finally, you applied transformation rules to produce the equation, table, and graph of a transformed function from the parent. All of these skills come together in the general form \( g(x) = a|x - h| + k \), where \( a \) controls the direction and steepness, \( h \) controls the horizontal position of the vertex, and \( k \) controls the vertical position — giving you complete, efficient control over the shape and location of any absolute value graph from its equation alone.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How does adding or multiplying a real number to the input or output of an absolute value function change the position or shape of its graph, and why do changes to the input behave differently than changes to the output?</p>
+<p><span style="font-size: 1rem;">2. If you are given two graphs or tables — one of \( f(x) \) and one of a transformed version — what clues allow you to identify the type of transformation and determine the exact value of \( k \)?</span></p>
+<p><span style="font-size: 1rem;">3. How does recognizing the role of each parameter in \( f(x) = a|x - h| + k \) allow you to move efficiently between the equation, the table, and the graph of an absolute value function?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">13.04 &middot; Transforming Absolute Value Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 13.01 One-Variable Absolute Value Equations</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 13</div>
+        <div style="font-size: 13px; color: #666;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">13.01</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">13.01</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">One-Variable Absolute Value Equations</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p><strong>Absolute Value:</strong> The distance of a number from zero on a number line, always expressed as a non-negative value; written as \(|x|\).</p>
+<p><strong style="font-size: 1rem;">Case:</strong><span style="font-size: 1rem;"> One of the two possible equations formed when solving an absolute value equation, representing either the positive or negative interpretation of the expression inside the absolute value symbols.</span></p>
+<p><strong style="font-size: 1rem;">Equation:</strong><span style="font-size: 1rem;"> A mathematical statement asserting that two expressions are equal, indicated by an equals sign.</span></p>
+<p><strong style="font-size: 1rem;">Extraneous Solution:</strong><span style="font-size: 1rem;"> A value obtained algebraically that does not satisfy the original equation when substituted back in.</span></p>
+<p><strong style="font-size: 1rem;">Isolation:</strong><span style="font-size: 1rem;"> The process of rewriting an equation so that the absolute value expression is alone on one side before splitting into two cases.</span></p>
+<p><strong style="font-size: 1rem;">No Solution:</strong><span style="font-size: 1rem;"> The result when an absolute value equation is set equal to a negative number, since absolute value cannot be negative.</span></p>
+<p><strong style="font-size: 1rem;">Solution Set:</strong><span style="font-size: 1rem;"> The collection of all values that make an equation true.</span></p>
+<p><strong style="font-size: 1rem;">Variable:</strong><span style="font-size: 1rem;">&nbsp;A symbol, typically a letter, used to represent an unknown quantity in an equation.</span></p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>In today's lesson, we will explore <strong>absolute value equations</strong> — what they mean, why they behave differently from other equations you have solved, and how to find their solutions. You will learn that absolute value is rooted in a simple idea: distance. From there, you will build a reliable process for solving any one-variable absolute value equation, whether the numbers are tucked inside the absolute value bars, sitting outside them, or both. By the end of this lesson, you will be able to write and solve absolute value equations with confidence, recognize when a solution needs to be rejected, and know when an equation has no solution at all.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>What Is Absolute Value?</strong></h4>
+<p>The <strong>absolute value</strong> of a number is its <strong>distance from zero</strong> on a number line. Distance is <strong><span style="text-decoration: underline;">always a non-negative quantity</span></strong> — you cannot travel a negative number of steps — so absolute value is always <strong>zero or positive</strong>.</p>
+<p>The absolute value of a number \( x \) is written as \( |x| \).</p>
+<p><img id="1326635" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L01IMGWhatisAbsValue.png" alt="MAT11M13L01IMGWhatisAbsValue.png" width="861" height="144" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1326635" data-api-returntype="File" loading="lazy"></p>
+<div class="callout"><strong>Key Examples</strong> \( |3| = 3 \) &nbsp;&nbsp; \( |-3| = 3 \) &nbsp;&nbsp; \( |0| = 0 \) &nbsp;&nbsp; \( |-7| = 7 \)</div>
+<p>Notice that both \( 3 \) and \( -3 \) are exactly 3 units from zero. This is the key idea that makes absolute value equations unique — and it is the reason they produce two solutions in most cases.</p>
+<h4 style="color: #007acc; margin-top: 0;"><strong><br><br>What Does a Solution of an Absolute Value Equation Represent?</strong></h4>
+<p>When you solve an absolute value equation, you are answering the question: <em>"What values of x make the distance expression equal to a given amount?"</em></p>
+<p>Because two different numbers can be the same distance from zero (one positive, one negative), absolute value equations <strong>typically have two solutions</strong>.</p>
+<div class="callout green"><strong>Thinking About It</strong> If \( |x| = 5 \), you are asking: "What numbers are exactly 5 units from zero?" <span style="text-decoration: underline; color: #d60307;">The answer is \( x = 5 \) <em>and</em> \( x = -5 \).</span> Both work. Both are solutions.</div>
+<p>There are two special cases worth knowing before you begin solving:</p>
+<ul>
+<li><strong>One solution:</strong> If the absolute value expression equals zero, there is only one solution — for example, \( |x| = 0 \) gives \( x = 0 \).</li>
+<li><strong>No solution:</strong> If the absolute value expression is set equal to a <em>negative number</em>, there is no solution. Distance can never be negative, so no value of \( x \) can satisfy the equation.</li>
+</ul>
+<h4 style="color: #007acc; margin-top: 0;"><strong><br><br>How to Solve an Absolute Value Equation</strong></h4>
+<p>Coefficients and constants can appear <strong>inside</strong> the absolute value bars, <strong>outside</strong> the bars, or both. Regardless of where they appear, always follow these steps in order:</p>
+<div class="callout orange"><strong>The Process — Always Follow This Order</strong>
+<ol style="margin: 6px 0 0 20px;">
+<li><strong>Isolate the absolute value expression</strong> on one side by undoing any addition, subtraction, multiplication, or division that is <em>outside</em> the bars first.</li>
+<li><strong>Check the right side.</strong> If it is negative → No Solution. If it is zero or positive → continue.</li>
+<li><strong>Split into two cases:</strong> set the expression inside the bars equal to the positive value, and then set it equal to the negative value.</li>
+<li><strong>Solve each case</strong> as a separate linear equation.</li>
+<li><strong>Check both solutions</strong> by substituting back into the original equation.</li>
+</ol>
+</div>
+<h4 class="ex-header"><strong><br><br>Coefficient and Constant Inside the Absolute Value</strong></h4>
+<p><strong>Solve:</strong> \( |2x + 3| = 11 \)</p>
+<p>The coefficient \( 2 \) and constant \( +3 \) are both <em>inside</em> the absolute value bars. There is nothing outside the bars to undo, so the absolute value is already isolated. Proceed directly to splitting into two cases.</p>
+<table style="border-collapse: collapse; width: 50.1627%; height: 514.625px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 14.0693%; height: 29px;">Step 1</td>
+<td style="width: 37.0298%; height: 29px;">\(|2x+3|=11\)</td>
+<td style="width: 48.9009%; height: 29px;">Already isolated. Right side is positive - continue.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.0693%; height: 29px;">Case 1</td>
+<td style="width: 37.0298%; height: 29px;">\(2x+3=11\)</td>
+<td style="width: 48.9009%; height: 29px;">Set the inside equal to \(+11\).</td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 14.0693%; height: 77.8125px;"></td>
+<td style="width: 37.0298%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;2x+3=11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=8
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25262x%252B3%253D11%2520%255C%255C%250A%255Cphantom%257B2x%257D-3%2520%255Cquad%2520-3%2520%255C%255C%250A%255Chline%250A2x%253D8%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;2x+3=11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=8
+\end{array}" data-equation-content="\begin{array}
+&amp;2x+3=11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=8
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 48.9009%; height: 77.8125px;">Subtract 3 from both sides.</td>
+</tr>
+<tr style="height: 62.3125px;">
+<td style="width: 14.0693%; height: 62.3125px;"></td>
+<td style="width: 37.0298%; height: 62.3125px;"><img class="equation_image" title="\underline{2x}=\underline{8} \\
+\;2 \quad\;\; 2 \\
+x=4" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B2x%257D%253D%255Cunderline%257B8%257D%2520%255C%255C%250A%255C%253B2%2520%255Cquad%255C%253B%255C%253B%25202%2520%255C%255C%250Ax%253D4?scale=1" alt="LaTeX: \underline{2x}=\underline{8} \\
+\;2 \quad\;\; 2 \\
+x=4" data-equation-content="\underline{2x}=\underline{8} \\
+\;2 \quad\;\; 2 \\
+x=4" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 48.9009%; height: 62.3125px;">Divide both sides by 2</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 14.0693%; height: 26px;"></td>
+<td style="width: 37.0298%; height: 26px;"></td>
+<td style="width: 48.9009%; height: 26px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.0693%; height: 29px;">Case 2</td>
+<td style="width: 37.0298%; height: 29px;">\(2x+3=-11\)</td>
+<td style="width: 48.9009%; height: 29px;">Set the inside equal to \(-11\).</td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 14.0693%; height: 77.8125px;"></td>
+<td style="width: 37.0298%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;2x+3=-11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=-14
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25262x%252B3%253D-11%2520%255C%255C%250A%255Cphantom%257B2x%257D-3%2520%255Cquad%2520-3%2520%255C%255C%250A%255Chline%250A2x%253D-14%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;2x+3=-11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=-14
+\end{array}" data-equation-content="\begin{array}
+&amp;2x+3=-11 \\
+\phantom{2x}-3 \quad -3 \\
+\hline
+2x=-14
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 48.9009%; height: 77.8125px;">Subtract 3 from both sides.</td>
+</tr>
+<tr style="height: 64.6875px;">
+<td style="width: 14.0693%; height: 64.6875px;"></td>
+<td style="width: 37.0298%; height: 64.6875px;"><img class="equation_image" title="\underline{2x}=\underline{-14} \\
+\;2 \qquad\; 2 \\
+x=-7" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B2x%257D%253D%255Cunderline%257B-14%257D%2520%255C%255C%250A%255C%253B2%2520%255Cqquad%255C%253B%25202%2520%255C%255C%250Ax%253D-7?scale=1" alt="LaTeX: \underline{2x}=\underline{-14} \\
+\;2 \qquad\; 2 \\
+x=-7" data-equation-content="\underline{2x}=\underline{-14} \\
+\;2 \qquad\; 2 \\
+x=-7" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 48.9009%; height: 64.6875px;">Divide both sides by 2.</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 14.0693%; height: 30px;"></td>
+<td style="width: 37.0298%; height: 30px;"></td>
+<td style="width: 48.9009%; height: 30px;"></td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 14.0693%; height: 89px;">Check</td>
+<td style="width: 37.0298%; height: 89px;">
+<p><img class="equation_image" title="|2(4)+3|=|11|=11\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C2(4)%252B3%257C%253D%257C11%257C%253D11%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |2(4)+3|=|11|=11\; \textcolor{green}{\checkmark}" data-equation-content="|2(4)+3|=|11|=11\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img class="equation_image" title="|2(-7)+3|=|-11|=11\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C2(-7)%252B3%257C%253D%257C-11%257C%253D11%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |2(-7)+3|=|-11|=11\; \textcolor{green}{\checkmark}" data-equation-content="|2(-7)+3|=|-11|=11\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 48.9009%; height: 89px;">Both solutions verify in the original equation. Write as a solution set inside { }.</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #e62429;"><strong style="font-size: 1rem;">Solution:</strong></span><span style="font-size: 1rem;"> \( \{-7, 4\} \)</span></p>
+<strong><span style="font-size: 1rem;"><br>Coefficient and Constant Outside the Absolute Value</span></strong>
+<p><strong>Solve:</strong> \( 3|x - 4| + 2 = 14 \)</p>
+<p>The coefficient \( 3 \) and constant \( +2 \) are both <em>outside</em> the absolute value bars. Undo those operations first to isolate the absolute value before splitting into two cases.</p>
+<table style="border-collapse: collapse; width: 56.4534%; height: 584.719px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 12.4038%; height: 29px;">Step 1a</td>
+<td style="width: 32.6931%; height: 29px;">\(3|x-4|+2=14\)</td>
+<td style="width: 54.903%; height: 29px;"></td>
+</tr>
+<tr style="height: 82.5938px;">
+<td style="width: 12.4038%; height: 82.5938px;"></td>
+<td style="width: 32.6931%; height: 82.5938px;"><img class="equation_image" title="\begin{array}
+&amp;3|x-4|+2=14 \\
+\phantom{3|x+4|}-2 \quad -2 \\
+\hline
+3|x-4|=12
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25263%257Cx-4%257C%252B2%253D14%2520%255C%255C%250A%255Cphantom%257B3%257Cx%252B4%257C%257D-2%2520%255Cquad%2520-2%2520%255C%255C%250A%255Chline%250A3%257Cx-4%257C%253D12%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;3|x-4|+2=14 \\
+\phantom{3|x+4|}-2 \quad -2 \\
+\hline
+3|x-4|=12
+\end{array}" data-equation-content="\begin{array}
+&amp;3|x-4|+2=14 \\
+\phantom{3|x+4|}-2 \quad -2 \\
+\hline
+3|x-4|=12
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 54.903%; height: 82.5938px;">Undo the \(+2\) outside the bars by subtracting 2 from both sides.</td>
+</tr>
+<tr style="height: 71.8438px;">
+<td style="width: 12.4038%; height: 71.8438px;">Step1b</td>
+<td style="width: 32.6931%; height: 71.8438px;"><img class="equation_image" title="\underline{3|x-4|}=\underline{12} \\
+\quad\;\; 3 \qquad\quad 3 \\
+|x-4|=4" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B3%257Cx-4%257C%257D%253D%255Cunderline%257B12%257D%2520%255C%255C%250A%255Cquad%255C%253B%255C%253B%25203%2520%255Cqquad%255Cquad%25203%2520%255C%255C%250A%257Cx-4%257C%253D4?scale=1" alt="LaTeX: \underline{3|x-4|}=\underline{12} \\
+\quad\;\; 3 \qquad\quad 3 \\
+|x-4|=4" data-equation-content="\underline{3|x-4|}=\underline{12} \\
+\quad\;\; 3 \qquad\quad 3 \\
+|x-4|=4" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 54.903%; height: 71.8438px;">Divide both sides 3. The absolute value is not isolated. Right side is positive - continue.</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 12.4038%; height: 30px;"></td>
+<td style="width: 32.6931%; height: 30px;"></td>
+<td style="width: 54.903%; height: 30px;"></td>
+</tr>
+<tr style="height: 39.6562px;">
+<td style="width: 12.4038%; height: 39.6562px;">Case 1</td>
+<td style="width: 32.6931%; height: 39.6562px;"><img class="equation_image" title="x-4=4 \\" src="https://optimadomi.instructure.com/equation_images/x-4%253D4%2520%255C%255C?scale=1" alt="LaTeX: x-4=4 \\" data-equation-content="x-4=4 \\" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 54.903%; height: 39.6562px;">Set the inside equal to \(+4\).</td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 12.4038%; height: 77.8125px;"></td>
+<td style="width: 32.6931%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;x-4=4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=8
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-4%253D4%2520%255C%255C%250A%255Cphantom%257Bx%257D%252B4%2520%255C%253B%255C%253B%2520%252B4%2520%255C%255C%250A%255Chline%250Ax%253D8%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-4=4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=8
+\end{array}" data-equation-content="\begin{array}
+&amp;x-4=4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=8
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 54.903%; height: 77.8125px;">Add 4 to both sides.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.4038%; height: 29px;"></td>
+<td style="width: 32.6931%; height: 29px;"></td>
+<td style="width: 54.903%; height: 29px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.4038%; height: 29px;">Case 2</td>
+<td style="width: 32.6931%; height: 29px;">\(x-4=-4\)</td>
+<td style="width: 54.903%; height: 29px;">Set the inside equal to \(-4\).</td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 12.4038%; height: 77.8125px;"></td>
+<td style="width: 32.6931%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;x-4=-4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=0
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-4%253D-4%2520%255C%255C%250A%255Cphantom%257Bx%257D%252B4%2520%255C%253B%255C%253B%2520%252B4%2520%255C%255C%250A%255Chline%250Ax%253D0%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-4=-4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=0
+\end{array}" data-equation-content="\begin{array}
+&amp;x-4=-4 \\
+\phantom{x}+4 \;\; +4 \\
+\hline
+x=0
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 54.903%; height: 77.8125px;">Add 4 to both sides.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.4038%; height: 29px;"></td>
+<td style="width: 32.6931%; height: 29px;"></td>
+<td style="width: 54.903%; height: 29px;"></td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 12.4038%; height: 89px;">Check</td>
+<td style="width: 32.6931%; height: 89px;">
+<p><img class="equation_image" title="3|8-4|+2=3|4|+2=14\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/3%257C8-4%257C%252B2%253D3%257C4%257C%252B2%253D14%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 3|8-4|+2=3|4|+2=14\; \textcolor{green}{\checkmark}" data-equation-content="3|8-4|+2=3|4|+2=14\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img class="equation_image" title="3|0-4|+2=3|-4|+2=3(4)+2=14\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/3%257C0-4%257C%252B2%253D3%257C-4%257C%252B2%253D3(4)%252B2%253D14%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 3|0-4|+2=3|-4|+2=3(4)+2=14\; \textcolor{green}{\checkmark}" data-equation-content="3|0-4|+2=3|-4|+2=3(4)+2=14\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 54.903%; height: 89px;">Both solutions verify in the original equation. Write as a solution set using { }.</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #d60307;"><strong>Solution:</strong></span><span style="font-size: 1rem;"> \( \{0, 8\} \)</span></p>
+</div>
+<h4><span style="font-size: 14pt; color: #f88e0a;">Example 1</span></h4>
+<p>Solve:</p>
+<p>\( |x + 5| = 9 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<table style="border-collapse: collapse; width: 42.363%; height: 287px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 14.717%; height: 29px;">Step 1</td>
+<td style="width: 29.4622%; height: 29px;">\(|x+5|=9\)</td>
+<td style="width: 55.8208%; height: 29px;">Already isolated. Right side is positive - continue</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.717%; height: 29px;">Case 1</td>
+<td style="width: 29.4622%; height: 29px;">\(x+5=9\)</td>
+<td style="width: 55.8208%; height: 29px;">Set the inside equal to \(+9\).</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.717%; height: 29px;"></td>
+<td style="width: 29.4622%; height: 29px;">\(x=4\)</td>
+<td style="width: 55.8208%; height: 29px;">Subtract 5 from both sides.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 14.717%; height: 26px;"></td>
+<td style="width: 29.4622%; height: 26px;"></td>
+<td style="width: 55.8208%; height: 26px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.717%; height: 29px;">Case 2</td>
+<td style="width: 29.4622%; height: 29px;">\(x+5=-9\)</td>
+<td style="width: 55.8208%; height: 29px;">Set the inside equal to \(-9\).</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 14.717%; height: 29px;"></td>
+<td style="width: 29.4622%; height: 29px;">\(x=-14\)</td>
+<td style="width: 55.8208%; height: 29px;">Subtract 5 from both sides.</td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 14.717%; height: 27px;"></td>
+<td style="width: 29.4622%; height: 27px;"></td>
+<td style="width: 55.8208%; height: 27px;"></td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 14.717%; height: 89px;">Check</td>
+<td style="width: 29.4622%; height: 89px;">
+<p><img class="equation_image" title="|4+5|=|9|=9\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C4%252B5%257C%253D%257C9%257C%253D9%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |4+5|=|9|=9\; \textcolor{green}{\checkmark}" data-equation-content="|4+5|=|9|=9\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img class="equation_image" title="|-14+5|=|-9|=9\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C-14%252B5%257C%253D%257C-9%257C%253D9%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |-14+5|=|-9|=9\; \textcolor{green}{\checkmark}" data-equation-content="|-14+5|=|-9|=9\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 55.8208%; height: 89px;">Both solutions check out. Write as a solution set inside { }.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;<span style="color: #d60307;"><strong>Answer:</strong></span> \( \{-14, 4\} \)</p>
+</details>
+<p><br><br></p>
+<h4 class="prob-header"><span class="pnum" style="color: #f88e0a;">Example 2</span></h4>
+<p>Solve:</p>
+<p>\( 2|x - 3| = 10 \)</p>
+<details>
+<summary><span style="color: #d60307;"><strong>Show Solution<br></strong></span></summary>
+<table style="border-collapse: collapse; width: 49.7605%; height: 378.625px;" border="0">
+<tbody>
+<tr style="height: 53px;">
+<td style="width: 10.8137%; height: 53px;">Step 1</td>
+<td style="width: 25.9421%; height: 53px;">\(2|x-3|=10\)</td>
+<td style="width: 63.2442%; height: 53px;">The coefficient of \(2\) is outside the bars. Divide both sides by 2 to isolate the absolute value.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 10.8137%; height: 29px;"></td>
+<td style="width: 25.9421%; height: 29px;">\(|x-3|=5\)</td>
+<td style="width: 63.2442%; height: 29px;">Isolated. Right side is positive - continue.</td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 10.8137%; height: 77.8125px;">Case 1</td>
+<td style="width: 25.9421%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;x-3=5 \\
+\phantom{x}+3\;\;+3 \\
+\hline
+x=8
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-3%253D5%2520%255C%255C%250A%255Cphantom%257Bx%257D%252B3%255C%253B%255C%253B%252B3%2520%255C%255C%250A%255Chline%250Ax%253D8%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-3=5 \\
+\phantom{x}+3\;\;+3 \\
+\hline
+x=8
+\end{array}" data-equation-content="\begin{array}
+&amp;x-3=5 \\
+\phantom{x}+3\;\;+3 \\
+\hline
+x=8
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 63.2442%; height: 77.8125px;">Set equal to \(+5\) and solve for x.</td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 10.8137%; height: 27px;"></td>
+<td style="width: 25.9421%; height: 27px;"></td>
+<td style="width: 63.2442%; height: 27px;"></td>
+</tr>
+<tr style="height: 77.8125px;">
+<td style="width: 10.8137%; height: 77.8125px;">Case 2</td>
+<td style="width: 25.9421%; height: 77.8125px;"><img class="equation_image" title="\begin{array}
+&amp;x-3=-5 \\
+\phantom{x} +3 \;\; +3 \\
+\hline
+x=-2
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-3%253D-5%2520%255C%255C%250A%255Cphantom%257Bx%257D%2520%252B3%2520%255C%253B%255C%253B%2520%252B3%2520%255C%255C%250A%255Chline%250Ax%253D-2%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-3=-5 \\
+\phantom{x} +3 \;\; +3 \\
+\hline
+x=-2
+\end{array}" data-equation-content="\begin{array}
+&amp;x-3=-5 \\
+\phantom{x} +3 \;\; +3 \\
+\hline
+x=-2
+\end{array}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 63.2442%; height: 77.8125px;">Set equal to \(-5\) and solve for x.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 10.8137%; height: 25px;"></td>
+<td style="width: 25.9421%; height: 25px;"></td>
+<td style="width: 63.2442%; height: 25px;"></td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 10.8137%; height: 89px;">Check</td>
+<td style="width: 25.9421%; height: 89px;">
+<p><img class="equation_image" title="2|8-3|=2|5|=2(5)=10\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/2%257C8-3%257C%253D2%257C5%257C%253D2(5)%253D10%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 2|8-3|=2|5|=2(5)=10\; \textcolor{green}{\checkmark}" data-equation-content="2|8-3|=2|5|=2(5)=10\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img class="equation_image" title="2|-2-3|=2|-5|=2(5)=10\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/2%257C-2-3%257C%253D2%257C-5%257C%253D2(5)%253D10%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 2|-2-3|=2|-5|=2(5)=10\; \textcolor{green}{\checkmark}" data-equation-content="2|-2-3|=2|-5|=2(5)=10\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 63.2442%; height: 89px;">Both solutions check out. Write&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 1rem;"><span style="color: #e62429;"><strong>Solution:</strong></span> \( \{-2, 8\} \)</span></p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 3</span></h4>
+<p>Solve:</p>
+<p>\( |3x + 6| - 4 = 8 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p style="margin-bottom: 10px; font-style: italic; color: #555; font-size: 0.95rem;">A coefficient and constant are <em>inside</em> the bars, and a constant is <em>outside</em>. Undo the outside constant first.</p>
+<table style="border-collapse: collapse; width: 51.5168%; height: 504.859px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 11.272%; height: 29px;">Step 1</td>
+<td style="width: 31.6431%; height: 29px;">\(|3x+6|-4=8\)</td>
+<td style="width: 57.0849%; height: 29px;">Add 4 to both sides to isolate the absolute value.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 11.272%; height: 29px;"></td>
+<td style="width: 31.6431%; height: 29px;">\(|3x+6|=12\)</td>
+<td style="width: 57.0849%; height: 29px;">Isolated. Right side is positive - continue.</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 11.272%; height: 23px;"></td>
+<td style="width: 31.6431%; height: 23px;"></td>
+<td style="width: 57.0849%; height: 23px;"></td>
+</tr>
+<tr style="height: 75.4375px;">
+<td style="width: 11.272%; height: 75.4375px;">Case 1</td>
+<td style="width: 31.6431%; height: 75.4375px;"><img class="equation_image" title="\begin{aligned}
+3x+6=12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=6 \\
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A3x%252B6%253D12%2520%255C%255C%250A%255Cphantom%257B3x%257D%2520-6%2520%255C%253B%255C%253B%2520-6%2520%255C%255C%250A%255Chline%250A3x%253D6%2520%255C%255C%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+3x+6=12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=6 \\
+\end{aligned}" data-equation-content="\begin{aligned}
+3x+6=12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=6 \\
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 57.0849%; height: 75.4375px;">Set inside equal to \(+12\) and subtract 6 from both sides.</td>
+</tr>
+<tr style="height: 62.2969px;">
+<td style="width: 11.272%; height: 62.2969px;"></td>
+<td style="width: 31.6431%; height: 62.2969px;"><img class="equation_image" title="\underline{3x}=\underline{12} \\
+\;3 \qquad 3 \\
+x=4" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B3x%257D%253D%255Cunderline%257B12%257D%2520%255C%255C%250A%255C%253B3%2520%255Cqquad%25203%2520%255C%255C%250Ax%253D4?scale=1" alt="LaTeX: \underline{3x}=\underline{12} \\
+\;3 \qquad 3 \\
+x=4" data-equation-content="\underline{3x}=\underline{12} \\
+\;3 \qquad 3 \\
+x=4" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 57.0849%; height: 62.2969px;">Divide both sides by 3.</td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 11.272%; height: 27px;"></td>
+<td style="width: 31.6431%; height: 27px;"></td>
+<td style="width: 57.0849%; height: 27px;"></td>
+</tr>
+<tr style="height: 75.4375px;">
+<td style="width: 11.272%; height: 75.4375px;">Case 2</td>
+<td style="width: 31.6431%; height: 75.4375px;"><img class="equation_image" title="\begin{aligned}
+3x+6=-12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=-18 \\
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A3x%252B6%253D-12%2520%255C%255C%250A%255Cphantom%257B3x%257D%2520-6%2520%255C%253B%255C%253B%2520-6%2520%255C%255C%250A%255Chline%250A3x%253D-18%2520%255C%255C%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+3x+6=-12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=-18 \\
+\end{aligned}" data-equation-content="\begin{aligned}
+3x+6=-12 \\
+\phantom{3x} -6 \;\; -6 \\
+\hline
+3x=-18 \\
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 57.0849%; height: 75.4375px;">Set the inside equal to \(-12\) and subtract 6 from both sides.</td>
+</tr>
+<tr style="height: 64.6875px;">
+<td style="width: 11.272%; height: 64.6875px;"></td>
+<td style="width: 31.6431%; height: 64.6875px;"><img class="equation_image" title="\underline{3x}=\underline{-18} \\
+\;3 \qquad 3 \\
+x=-6" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B3x%257D%253D%255Cunderline%257B-18%257D%2520%255C%255C%250A%255C%253B3%2520%255Cqquad%25203%2520%255C%255C%250Ax%253D-6?scale=1" alt="LaTeX: \underline{3x}=\underline{-18} \\
+\;3 \qquad 3 \\
+x=-6" data-equation-content="\underline{3x}=\underline{-18} \\
+\;3 \qquad 3 \\
+x=-6" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 57.0849%; height: 64.6875px;">Divide both sides by 3.</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 11.272%; height: 30px;"></td>
+<td style="width: 31.6431%; height: 30px;"></td>
+<td style="width: 57.0849%; height: 30px;"></td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 11.272%; height: 89px;">Check</td>
+<td style="width: 31.6431%; height: 89px;">
+<p><img class="equation_image" title="|3(4)+6|-4=|12|-4=12-4=8\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C3(4)%252B6%257C-4%253D%257C12%257C-4%253D12-4%253D8%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |3(4)+6|-4=|12|-4=12-4=8\; \textcolor{green}{\checkmark}" data-equation-content="|3(4)+6|-4=|12|-4=12-4=8\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><img class="equation_image" title="|3(-6)+6|-4=|-12|-4=12-4=8\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/%257C3(-6)%252B6%257C-4%253D%257C-12%257C-4%253D12-4%253D8%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: |3(-6)+6|-4=|-12|-4=12-4=8\; \textcolor{green}{\checkmark}" data-equation-content="|3(-6)+6|-4=|-12|-4=12-4=8\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 57.0849%; height: 89px;">Both solutions check out. Write a solution set using { }.</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 1rem;"><span style="color: #e62429;"><span style="color: #e62429;">Answer</span><strong style="color: #e62429;">:</strong></span> \( \{-6, 2\} \)</span></p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Solve:</p>
+<p>\( 4|2x - 1| + 3 = 11 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p style="margin-bottom: 10px; font-style: italic; color: #555; font-size: 0.95rem;">A coefficient is inside the bars. A coefficient and constant are outside. Undo the outside operations one step at a time.</p>
+<table style="border-collapse: collapse; width: 57.5838%; height: 668.828px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;">Step 1a</td>
+<td style="width: 42.9158%; height: 29px;">\(4|2x-1|+3=11\)</td>
+<td style="width: 44.3532%; height: 29px;">Subtract 3 from both sides.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;"></td>
+<td style="width: 42.9158%; height: 29px;">\(4|2x-1|=8\)</td>
+<td style="width: 44.3532%; height: 29px;"></td>
+</tr>
+<tr style="height: 53px;">
+<td style="width: 12.731%; height: 53px;">Step 1b</td>
+<td style="width: 42.9158%; height: 53px;">\(|2x-1|=2\)</td>
+<td style="width: 44.3532%; height: 53px;">Divide both sides by 4. Absolute value is isolated. Right side is poisitive - continue.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;"></td>
+<td style="width: 42.9158%; height: 29px;"></td>
+<td style="width: 44.3532%; height: 29px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;">Case 1</td>
+<td style="width: 42.9158%; height: 29px;">\(2x-1=2\)</td>
+<td style="width: 44.3532%; height: 29px;">Set the inside equal to \(+2\).</td>
+</tr>
+<tr style="height: 158.906px;">
+<td style="width: 12.731%; height: 158.906px;"></td>
+<td style="width: 42.9158%; height: 158.906px;"><img class="equation_image" title="\begin{aligned}
+2x-1=2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=3 \\
+\underline{2x}=\underline{3} \\
+2 \qquad 2 \\
+x=\dfrac{3}{2}
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x-1%253D2%2520%255C%255C%250A%255Cphantom%257B2x%257D%252B1%255C%253B%255C%253B%252B1%2520%255C%255C%250A%255Chline%250A2x%253D3%2520%255C%255C%250A%255Cunderline%257B2x%257D%253D%255Cunderline%257B3%257D%2520%255C%255C%250A2%2520%255Cqquad%25202%2520%255C%255C%250Ax%253D%255Cdfrac%257B3%257D%257B2%257D%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x-1=2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=3 \\
+\underline{2x}=\underline{3} \\
+2 \qquad 2 \\
+x=\dfrac{3}{2}
+\end{aligned}" data-equation-content="\begin{aligned}
+2x-1=2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=3 \\
+\underline{2x}=\underline{3} \\
+2 \qquad 2 \\
+x=\dfrac{3}{2}
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 44.3532%; height: 158.906px;">
+<p>Add 1 to both sides, then divide by 2 to isolate the variable.</p>
+<p>The solution comes out as a fraction. Since dividing by 2 is a terminating decimal, we can use the solution as \(x=\dfrac{3}{2}\) or \(x=1.5\).</p>
+</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;"></td>
+<td style="width: 42.9158%; height: 29px;"></td>
+<td style="width: 44.3532%; height: 29px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 12.731%; height: 29px;">Case 2</td>
+<td style="width: 42.9158%; height: 29px;">\(2x-1=-2\)</td>
+<td style="width: 44.3532%; height: 29px;">Set the inside equal to \(-2\).</td>
+</tr>
+<tr style="height: 158.922px;">
+<td style="width: 12.731%; height: 158.922px;"></td>
+<td style="width: 42.9158%; height: 158.922px;"><img class="equation_image" title="\begin{aligned}
+2x-1=-2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=-1 \\
+\underline{2x}=\underline{-1} \\
+2 \qquad 2 \\
+x=-\dfrac{1}{2}
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x-1%253D-2%2520%255C%255C%250A%255Cphantom%257B2x%257D%252B1%255C%253B%255C%253B%252B1%2520%255C%255C%250A%255Chline%250A2x%253D-1%2520%255C%255C%250A%255Cunderline%257B2x%257D%253D%255Cunderline%257B-1%257D%2520%255C%255C%250A2%2520%255Cqquad%25202%2520%255C%255C%250Ax%253D-%255Cdfrac%257B1%257D%257B2%257D%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x-1=-2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=-1 \\
+\underline{2x}=\underline{-1} \\
+2 \qquad 2 \\
+x=-\dfrac{1}{2}
+\end{aligned}" data-equation-content="\begin{aligned}
+2x-1=-2 \\
+\phantom{2x}+1\;\;+1 \\
+\hline
+2x=-1 \\
+\underline{2x}=\underline{-1} \\
+2 \qquad 2 \\
+x=-\dfrac{1}{2}
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 44.3532%; height: 158.922px;">
+<p>Add 1 to both sides, then divide by 2 to isolate the variable.</p>
+<p>The solution comes out as a fraction. Since dividing by 2 is a terminating decimal, we can use the solution as \(x=-\dfrac{1}{2}\) or \(x=-0.5\).</p>
+</td>
+</tr>
+<tr style="height: 32px;">
+<td style="width: 12.731%; height: 32px;"></td>
+<td style="width: 42.9158%; height: 32px;"></td>
+<td style="width: 44.3532%; height: 32px;"></td>
+</tr>
+<tr style="height: 92px;">
+<td style="width: 12.731%; height: 92px;">Check</td>
+<td style="width: 42.9158%; height: 92px;">
+<p><img class="equation_image" title="4|2(\frac{3}{2})-1|+3=4|3-1|+3=4|2|+3=8+3=11\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/4%257C2(%255Cfrac%257B3%257D%257B2%257D)-1%257C%252B3%253D4%257C3-1%257C%252B3%253D4%257C2%257C%252B3%253D8%252B3%253D11%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 4|2(\frac{3}{2})-1|+3=4|3-1|+3=4|2|+3=8+3=11\; \textcolor{green}{\checkmark}" data-equation-content="4|2(\frac{3}{2})-1|+3=4|3-1|+3=4|2|+3=8+3=11\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy">&nbsp;</p>
+<p><img class="equation_image" title="4|2(\frac-{1}{2})-1|+3=4|-1-1|+3=4|-2|+3=8+3=11\; \textcolor{green}{\checkmark}" src="https://optimadomi.instructure.com/equation_images/4%257C2(%255Cfrac-%257B1%257D%257B2%257D)-1%257C%252B3%253D4%257C-1-1%257C%252B3%253D4%257C-2%257C%252B3%253D8%252B3%253D11%255C%253B%2520%255Ctextcolor%257Bgreen%257D%257B%255Ccheckmark%257D?scale=1" alt="LaTeX: 4|2(\frac-{1}{2})-1|+3=4|-1-1|+3=4|-2|+3=8+3=11\; \textcolor{green}{\checkmark}" data-equation-content="4|2(\frac-{1}{2})-1|+3=4|-1-1|+3=4|-2|+3=8+3=11\; \textcolor{green}{\checkmark}" data-ignore-a11y-check="" loading="lazy"></p>
+</td>
+<td style="width: 44.3532%; height: 92px;">
+<p>Both solutions check out. Write a solution set using { }.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;"><span style="color: #0e1c42;"><span style="color: #e62429;"><strong>Solution:</strong></span> \( \{-\dfrac{1}{2}, \dfrac{3}{2}\} \)</span></span></p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 5</span></h4>
+<p>Solve:</p>
+<p>\( |x + 4| + 7 = 3 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p style="margin-bottom: 10px; font-style: italic; color: #555; font-size: 0.95rem;">Always isolate the absolute value first. Pay close attention to the right side once you do.</p>
+<table style="border-collapse: collapse; width: 64.1831%; height: 87px;" border="0">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 11.5353%; height: 29px;">Step 1</td>
+<td style="width: 14.7224%; height: 29px;">\(|x+4|+7=3\)</td>
+<td style="width: 73.7424%; height: 29px;">Subtract 7 from both sides to isolate the absolute value.</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 11.5353%; height: 29px;"></td>
+<td style="width: 14.7224%; height: 29px;">\(|x+4|=-4\)</td>
+<td style="width: 73.7424%; height: 29px;">The absolute value is isolated. Check right side - negative</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 11.5353%; height: 29px;">No Solution</td>
+<td style="width: 14.7224%; height: 29px;">\(|x+4|=-4\)</td>
+<td style="width: 73.7424%; height: 29px;">Since the absolute value equals a negative number, there is no solution.</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-bottom: 10px; font-style: italic; color: #555; font-size: 0.95rem;">&nbsp;<strong style="color: #0e1c42; font-size: 1rem;">Why No Solution?</strong><span style="color: #0e1c42; font-size: 1rem;"> Asking \( |x + 4| = -4 \) is like asking "How far is \( x + 4 \) from zero if that distance is \( -4 \) units?" — a distance of \( -4 \) is impossible. The equation has no solution.</span></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\varnothing" src="https://optimadomi.instructure.com/equation_images/%255Cvarnothing?scale=1" alt="LaTeX: \varnothing" data-equation-content="\varnothing" data-ignore-a11y-check="" loading="lazy"></p>
+</details>
+<p>&nbsp;</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>📌 Quick Reference — Key Rules</strong></h4>
+<p>• Isolate the absolute value expression <em>before</em> splitting into two cases.<br>• Always split into a <em>positive</em> case and a <em>negative</em> case.<br>• If the isolated absolute value equals a negative number → <strong>No Solution</strong>.<br>• Always verify both solutions in the <em>original</em> equation.</p>
+</div>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you learned that absolute value represents distance from zero — a concept that gives absolute value equations their unique character. Because distance can be measured in two directions, most absolute value equations produce two solutions, one from the positive case and one from the negative case. You practiced a dependable process: isolate the absolute value first, check whether the right side is negative before going further, split into two cases, solve each one, and verify your answers. You also saw that when isolating the absolute value results in a negative value on the right side, the equation has no solution. These skills apply in both purely mathematical settings and real-world situations where a quantity is allowed to vary a certain distance from a target value. As you move forward, keep this process in mind — it will serve as the foundation for more advanced work with absolute value inequalities and functions later in the course.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. What does absolute value represent, and why does solving an absolute value equation produce two possible cases?</p>
+<p><span style="font-size: 1rem;">2. How can an absolute value equation be used to model situations in the real world where a quantity can vary in two directions from a fixed value?</span></p>
+<p><span style="font-size: 1rem;">3. How do you determine whether a solution to an absolute value equation is valid, extraneous, or nonexistent?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">13.01 &middot; One-Variable Absolute Value Equations</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

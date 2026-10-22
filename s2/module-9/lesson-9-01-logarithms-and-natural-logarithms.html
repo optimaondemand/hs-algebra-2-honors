@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 9.01 Logarithms and Natural Logarithms</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 9</div>
+        <div style="font-size: 13px; color: #666;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">9.01</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">9.01</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Logarithms and Natural Logarithms</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="170"><strong data-start="0" data-end="21">Argument of a Log</strong>: The argument of a logarithm is the positive number or expression inside the logarithm that represents the value whose exponent is being determined.</p>
+<p data-start="172" data-end="329"><strong data-start="172" data-end="180">Base</strong>: The base is the positive number, not equal to 1, that indicates the factor being repeatedly multiplied in an exponential or logarithmic expression.</p>
+<p data-start="331" data-end="549"><strong data-start="331" data-end="349">Change of Base</strong>: Change of base is a formula that allows a logarithm written in one base to be rewritten using logarithms of another base, typically base 10 or base \(e\), so it can be evaluated with a calculator.</p>
+<p data-start="551" data-end="657"><strong data-start="551" data-end="571">Common Logarithm</strong>: A common logarithm is a logarithm with base 10 and is usually written as <img class="equation_image" title="\log{x}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257Bx%257D?scale=1" alt="LaTeX: \log{x}" data-equation-content="\log{x}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="659" data-end="829"><strong data-start="659" data-end="684">Equivalent Expression</strong>: An equivalent expression is a mathematical expression that has the same value as another expression for all permissible values of the variable.</p>
+<p data-start="831" data-end="989"><strong data-start="831" data-end="851">Exponential Form</strong>: Exponential form is a way of writing a relationship where a base is raised to an exponent to produce a given value, such as <img class="equation_image" title="b^x=y" src="https://optimadomi.instructure.com/equation_images/b%255Ex%253Dy?scale=1" alt="LaTeX: b^x=y" data-equation-content="b^x=y" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="991" data-end="1139"><strong data-start="991" data-end="1026">Identity Property of Logarithms</strong>: The identity property of logarithms states that <img class="equation_image" title="\log_{b}{b}=1" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257Bb%257D%253D1?scale=1" alt="LaTeX: \log_{b}{b}=1" data-equation-content="\log_{b}{b}=1" data-ignore-a11y-check="" loading="lazy">, meaning the logarithm of the base equals one.</p>
+<p data-start="1141" data-end="1302"><strong data-start="1141" data-end="1161">Inverse Function</strong>: An inverse function is a function that reverses the effect of another function, so that applying both functions returns the original input.</p>
+<p data-start="1304" data-end="1490"><strong data-start="1304" data-end="1337">Inverse Property of Logarithm</strong>: The inverse property of logarithms states that <img class="equation_image" title="\log_{b}{(b^x)}=x" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257B(b%255Ex)%257D%253Dx?scale=1" alt="LaTeX: \log_{b}{(b^x)}=x" data-equation-content="\log_{b}{(b^x)}=x" data-ignore-a11y-check="" loading="lazy"> and <img class="equation_image" title="b^{\log_{b}{x}}=x" src="https://optimadomi.instructure.com/equation_images/b%255E%257B%255Clog_%257Bb%257D%257Bx%257D%257D%253Dx?scale=1" alt="LaTeX: b^{\log_{b}{x}}=x" data-equation-content="b^{\log_{b}{x}}=x" data-ignore-a11y-check="" loading="lazy">,&nbsp;showing that logarithms and exponentials undo each other.</p>
+<p data-start="1492" data-end="1665"><strong data-start="1492" data-end="1512">Logarithmic Form</strong>: Logarithmic form is a way of writing an exponential relationship that expresses the exponent needed to produce a given value, such as <img class="equation_image" title="\log_{b}{y}=x" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257By%257D%253Dx?scale=1" alt="LaTeX: \log_{b}{y}=x" data-equation-content="\log_{b}{y}=x" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1667" data-end="1814"><strong data-start="1667" data-end="1688">Natural Logarithm</strong>: A natural logarithm is a logarithm with base \(e\), written as <img class="equation_image" title="\ln{x}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Bx%257D?scale=1" alt="LaTeX: \ln{x}" data-equation-content="\ln{x}" data-ignore-a11y-check="" loading="lazy">, and is commonly used in mathematics and science.</p>
+<p data-start="1816" data-end="1971" data-is-last-node="" data-is-only-node=""><strong data-start="1816" data-end="1846">Zero Property of Logarithm</strong>: The zero property of logarithms states that <img class="equation_image" title="\log_{b}{1}=0" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257Bb%257D%257B1%257D%253D0?scale=1" alt="LaTeX: \log_{b}{1}=0" data-equation-content="\log_{b}{1}=0" data-ignore-a11y-check="" loading="lazy">, because any nonzero base raised to the zero power equals one.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>In previous math courses, you learned how exponential functions model repeated multiplication and rapid growth or decay. In Algebra 2, logarithms are introduced as a way to <em data-start="441" data-end="447">undo</em> exponential functions and answer a different type of question: <strong data-start="511" data-end="552">What exponent produces a given value?</strong> This lesson will guide you step by step through what logarithms are, how they relate to exponential functions, how to rewrite expressions using logarithmic properties, and how to evaluate and approximate logarithmic expressions. Both <strong data-start="787" data-end="808">common logarithms</strong> (base 10) and <strong data-start="823" data-end="845">natural logarithms</strong> (base \(e\)) will be included throughout the lesson.</p>
+<h4><strong data-start="1141" data-end="1161">Inverse Function</strong>:</h4>
+<p>An inverse function is a function that reverses the effect of another function, so that applying both functions returns the original input.</p>
+<p>Inverses are functions or operations that undo each other.</p>
+<p>Like subtraction undoes addition. Or division undoes multiplication.</p>
+<p>Logarithm is the inverse of exponential.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Logarithmic Functions</strong></h4>
+<p>A <strong data-start="1014" data-end="1038">logarithmic function</strong> is the inverse of an <strong data-start="1060" data-end="1084">exponential function</strong>.</p>
+<p>While exponential functions answer the question <em data-start="1134" data-end="1199">“What is the output when a base is raised to a given exponent?”</em>, <span style="text-decoration: underline;">logarithmic functions answer the question <em data-start="1243" data-end="1285">“What exponent produces a given output?”</em></span></p>
+<p>If a logarithmic function is written as:</p>
+<p><img class="equation_image" title="\Large \log_{b}{x}=y" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bx%257D%253Dy?scale=1" alt="LaTeX: \Large \log_{b}{x}=y" data-equation-content="\Large \log_{b}{x}=y" data-ignore-a11y-check="" loading="lazy"></p>
+<p>where:</p>
+<ul>
+<li>\(b\) is the base of the log</li>
+<li>\(y\) is the argument</li>
+<li>\(x\) is the value of the exponent of the base to make the argument</li>
+</ul>
+<p>Then the equivalent exponential form is:</p>
+<p><img class="equation_image" title="\Large b^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520b%255Ey%253Dx?scale=1" alt="LaTeX: \Large b^y=x" data-equation-content="\Large b^y=x" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1404" data-end="1497"><strong>This means logarithms and exponentials undo each other.</strong></p>
+<p data-start="1404" data-end="1497"><br>This inverse relationship applies to:</p>
+<ul data-start="1498" data-end="1612">
+<li data-start="1498" data-end="1553">
+<p data-start="1500" data-end="1553"><strong data-start="1500" data-end="1521">Common logarithms</strong>: base 10, written as <img class="equation_image" title="\log{x}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257Bx%257D?scale=1" alt="LaTeX: \log{x}" data-equation-content="\log{x}" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+<li data-start="1498" data-end="1553">
+<p data-start="1500" data-end="1553"><strong data-start="1556" data-end="1578">Natural logarithms</strong>: base \(e\), written as \(\ln{x}\)</p>
+</li>
+</ul>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Converting Between Logarithmic Form and Exponential Form</strong></h4>
+<p data-start="2207" data-end="2350">Converting between exponential and logarithmic forms is a direct application of the inverse relationship. The structure must remain consistent:</p>
+<ul data-start="2351" data-end="2467">
+<li data-start="2351" data-end="2380">
+<p data-start="2353" data-end="2380">The <strong data-start="2357" data-end="2365">base</strong> stays the same</p>
+</li>
+<li data-start="2381" data-end="2418">
+<p data-start="2383" data-end="2418">The <strong data-start="2387" data-end="2399">argument</strong> becomes the result</p>
+</li>
+<li data-start="2419" data-end="2467">
+<p data-start="2421" data-end="2467">The <strong data-start="2425" data-end="2437">exponent</strong> becomes the logarithm’s value</p>
+</li>
+</ul>
+<h4><br><strong>Converting between Forms</strong></h4>
+<ul>
+<li>You can rewrite a log as an exponential and vice versa.</li>
+</ul>
+<table style="border-collapse: collapse; width: 47.8596%;" border="1">
+<tbody>
+<tr>
+<td style="width: 35.536%;"></td>
+<td style="width: 24.085%;">Logarithmic Form</td>
+<td style="width: 18.4994%;">Converts to</td>
+<td style="width: 21.8796%;">Exponential Form</td>
+</tr>
+<tr>
+<td style="width: 35.536%;">Logarithm</td>
+<td style="width: 24.085%; text-align: center;"><img class="equation_image" title="\Large \log_{b}{x}=y" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bx%257D%253Dy?scale=1" alt="LaTeX: \Large \log_{b}{x}=y" data-equation-content="\Large \log_{b}{x}=y" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 18.4994%; text-align: center;"><img class="equation_image" title="\implies" src="https://optimadomi.instructure.com/equation_images/%255Cimplies?scale=1" alt="LaTeX: \implies" data-equation-content="\implies" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 21.8796%; text-align: center;"><img class="equation_image" title="\Large b^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520b%255Ey%253Dx?scale=1" alt="LaTeX: \Large b^y=x" data-equation-content="\Large b^y=x" data-ignore-a11y-check="" loading="lazy"></td>
+</tr>
+<tr>
+<td style="width: 35.536%;">
+<p>Common Logarithm</p>
+<p>- has an understood base 10</p>
+</td>
+<td style="width: 24.085%; text-align: center;"><img class="equation_image" title="\Large \log{x}=y" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog%257Bx%257D%253Dy?scale=1" alt="LaTeX: \Large \log{x}=y" data-equation-content="\Large \log{x}=y" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 18.4994%; text-align: center;"><img class="equation_image" title="\implies" src="https://optimadomi.instructure.com/equation_images/%255Cimplies?scale=1" alt="LaTeX: \implies" data-equation-content="\implies" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 21.8796%; text-align: center;"><img class="equation_image" title="\Large 10^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%252010%255Ey%253Dx?scale=1" alt="LaTeX: \Large 10^y=x" data-equation-content="\Large 10^y=x" data-ignore-a11y-check="" loading="lazy"></td>
+</tr>
+<tr>
+<td style="width: 35.536%;">
+<p>Natural Logarithm</p>
+<p>- has an understood base \(e\)</p>
+</td>
+<td style="width: 24.085%; text-align: center;"><img class="equation_image" title="\Large \ln{x}=y" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Cln%257Bx%257D%253Dy?scale=1" alt="LaTeX: \Large \ln{x}=y" data-equation-content="\Large \ln{x}=y" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 18.4994%; text-align: center;"><img class="equation_image" title="\implies" src="https://optimadomi.instructure.com/equation_images/%255Cimplies?scale=1" alt="LaTeX: \implies" data-equation-content="\implies" data-ignore-a11y-check="" loading="lazy"></td>
+<td style="width: 21.8796%; text-align: center;"><img class="equation_image" title="\Large e^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520e%255Ey%253Dx?scale=1" alt="LaTeX: \Large e^y=x" data-equation-content="\Large e^y=x" data-ignore-a11y-check="" loading="lazy"></td>
+</tr>
+</tbody>
+</table>
+<p><img id="1124290" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M09L01IMGConverting.png" alt="MAT11M09L01IMGConverting.png" width="303" height="87" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1124290" data-api-returntype="File" loading="lazy"></p>
+<h4><br>Examples:</h4>
+<p>Convert \(\log{1000}=3\) to exponential form.</p>
+<p>- Remember when there is no base written, it is a common log with an understood base 10.</p>
+<p>Answer: \(10^3=1000\)</p>
+<p><br>Convert \(3^x=81\) to logarithmic form.</p>
+<p>Answer: \(\log_{3}{81}=x\)</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Rewrite \(\log_{5}{625}=y\) in exponential form.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>5 is the base</p>
+<p>y is the exponent</p>
+<p>625 is the argument or value</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(5^y=625\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Rewrite \(\ln{7}=x\) in exponential form.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>e is the base since it's a natural log</p>
+<p>x is the exponent</p>
+<p>7 is the argument or value</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(e^x=7\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 3</span></h4>
+<p>Rewrite \(e^y=16\) in logarithmic form.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since e is the base, it will be a natural log ln</p>
+<p>y is the exponent or value of the log</p>
+<p>16 is the argument</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(\ln{16}=y\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 4</span></h4>
+<p>Rewrite \(10^2=100\) in logarithmic form.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since 10 is the base, it will be a common log and we do not have to write the base as it is understood.</p>
+<p>2 is the exponent or value of the log</p>
+<p>100 is the argument</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(\log{2}=100\)</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Evaluating Exact Values of Logarithms</strong></h4>
+<p data-start="3177" data-end="3320">Evaluating a logarithm <strong data-start="3200" data-end="3211">exactly</strong> means finding the exponent without using a calculator. This is done by recognizing known powers of the base.</p>
+<p data-start="3322" data-end="3341">Use the definition:</p>
+<p data-start="3322" data-end="3341"><img class="equation_image" title="\Large \log_{b}{x}=y" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bx%257D%253Dy?scale=1" alt="LaTeX: \Large \log_{b}{x}=y" data-equation-content="\Large \log_{b}{x}=y" data-ignore-a11y-check="" loading="lazy"> if and only if <img class="equation_image" title="\Large b^y=x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520b%255Ey%253Dx?scale=1" alt="LaTeX: \Large b^y=x" data-equation-content="\Large b^y=x" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="3322" data-end="3341">Ask yourself: "b to what power will make x?"</p>
+<h4 data-start="3322" data-end="3341"><br><strong>Example:</strong></h4>
+<p>Evaluate \(\log_{2}{16}\).</p>
+<p>Always start with your base.</p>
+<p>Using that base, ask yourself, "2 to what power will make 16?"</p>
+<p>\(2^4=16\)</p>
+<p>Therefore, \(\log_{2}{16}\) equals 4.</p>
+<p>Answer: 4</p>
+<p><br>Remember:</p>
+<p>Radicals create rational powers.</p>
+<p><img class="equation_image" title="\Large \sqrt[5]{2} = 2^{1/5}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Csqrt%255B5%255D%257B2%257D%2520%253D%25202%255E%257B1%252F5%257D?scale=1" alt="LaTeX: \Large \sqrt[5]{2} = 2^{1/5}" data-equation-content="\Large \sqrt[5]{2} = 2^{1/5}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Negative Powers create fractions.</p>
+<p><img class="equation_image" title="\Large 7^{-2} = \frac{1}{49}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%25207%255E%257B-2%257D%2520%253D%2520%255Cfrac%257B1%257D%257B49%257D?scale=1" alt="LaTeX: \Large 7^{-2} = \frac{1}{49}" data-equation-content="\Large 7^{-2} = \frac{1}{49}" data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Evaluate \(\log_{25}{5}\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>What power of 25 will make 5?</p>
+<p>We know that \(\sqrt{25}=5\) and roots are rational powers.</p>
+<p>So, \(25^{1/2}=5\).</p>
+<p>Therefore, \(\log_{25}{5}\) equals \(1/2\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(1/2\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Evaluate \(\log_{2}{\frac{1}{8}}\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>What power of 2 will make \(1/8\)?</p>
+<p>We know that \(2^3 = 8\) and to get a fraction, the power needs to be negative.</p>
+<p>So, \(2^{-3}=1/8\).</p>
+<p>Therefore, \(\log_{2}{\frac{1}{8}}\) equals \(-3\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(-3\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 3</span></h4>
+<p>Evaluate \(\log{10,000}\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Remember the base of a common log is 10.</p>
+<p>So, what power of 10 will make \(10,000\)?</p>
+<p>We can count the zeros since \(10^2=10\cdot 10=100\), which has 2 zeros.</p>
+<p>So, \(10^{4}=10,000\).</p>
+<p>Therefore, \(\log{10,000}\) equals \(4\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(4\)</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Approximating Logarithms and Natural Logarithms</strong></h4>
+<p data-start="3921" data-end="4044">Not all logarithms result in exact whole-number answers. In these cases, you can <strong data-start="4002" data-end="4017">approximate</strong> values using a calculator.</p>
+<p data-start="4046" data-end="4076">Most calculators only compute:</p>
+<ul data-start="4077" data-end="4120">
+<li data-start="4077" data-end="4097">
+<p data-start="4079" data-end="4097"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mop"><span><img class="equation_image" title="\log" src="https://optimadomi.instructure.com/equation_images/%255Clog?scale=1" alt="LaTeX: \log" data-equation-content="\log" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span> (base 10)</p>
+</li>
+<li data-start="4098" data-end="4120">
+<p data-start="4100" data-end="4120"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mop"><img class="equation_image" title="\ln" src="https://optimadomi.instructure.com/equation_images/%255Cln?scale=1" alt="LaTeX: \ln" data-equation-content="\ln" data-ignore-a11y-check="" loading="lazy"></span></span></span></span> (base \(e\))</p>
+</li>
+</ul>
+<p>To evaluate a logarithmic expression, we use the change of base property and a calculator. The log function in the calculator assumes base 10.</p>
+<p><img class="equation_image" title="\Large \log_{b}{x}=\frac{\log{x}}{\log{b}}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bx%257D%253D%255Cfrac%257B%255Clog%257Bx%257D%257D%257B%255Clog%257Bb%257D%257D?scale=1" alt="LaTeX: \Large \log_{b}{x}=\frac{\log{x}}{\log{b}}" data-equation-content="\Large \log_{b}{x}=\frac{\log{x}}{\log{b}}" data-ignore-a11y-check="" loading="lazy"> or <img class="equation_image" title="\Large \frac{\ln{x}}{\ln{b}}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Cfrac%257B%255Cln%257Bx%257D%257D%257B%255Cln%257Bb%257D%257D?scale=1" alt="LaTeX: \Large \frac{\ln{x}}{\ln{b}}" data-equation-content="\Large \frac{\ln{x}}{\ln{b}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Example:</p>
+<p><img class="equation_image" title="\log_{4}{35} = \frac{\log{35}}{\log{4}} \approx 2.5646..." src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B4%257D%257B35%257D%2520%253D%2520%255Cfrac%257B%255Clog%257B35%257D%257D%257B%255Clog%257B4%257D%257D%2520%255Capprox%25202.5646...?scale=1" alt="LaTeX: \log_{4}{35} = \frac{\log{35}}{\log{4}} \approx 2.5646..." data-equation-content="\log_{4}{35} = \frac{\log{35}}{\log{4}} \approx 2.5646..." data-ignore-a11y-check="" loading="lazy"></p>
+<p><img id="1119533" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/image-cb59ff1d-b290-488c-a9ca-c4cb1bdcebd9.png" alt="image-cb59ff1d-b290-488c-a9ca-c4cb1bdcebd9.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1119533" data-api-returntype="File" loading="lazy"></p>
+<p>&nbsp;</p>
+<p>To evaluate a natural log, we can just plug it into the calculator using ln.</p>
+<p>Example:</p>
+<p><img class="equation_image" title="\ln 8 \approx 2.0794..." src="https://optimadomi.instructure.com/equation_images/%255Cln%25208%2520%255Capprox%25202.0794...?scale=1" alt="LaTeX: \ln 8 \approx 2.0794..." data-equation-content="\ln 8 \approx 2.0794..." data-ignore-a11y-check="" loading="lazy"></p>
+<p><img id="1119535" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/image-b4eb7c4f-bb1d-4fa3-84d1-b735888ff732.png" alt="image-b4eb7c4f-bb1d-4fa3-84d1-b735888ff732.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1119535" data-api-returntype="File" loading="lazy"></p>
+<p><br>To evaluate a common log, we also plug into the calculator using log.</p>
+<p>Example:</p>
+<p><img class="equation_image" title="\log{24} \approx  1.38021..." src="https://optimadomi.instructure.com/equation_images/%255Clog%257B24%257D%2520%255Capprox%2520%25201.38021...?scale=1" alt="LaTeX: \log{24} \approx  1.38021..." data-equation-content="\log{24} \approx  1.38021..." data-ignore-a11y-check="" loading="lazy"></p>
+<p><img src="https://optimaondemand.github.io/hs-algebra-2-honors/media/image-91c9fd0f-218d-46ff-b097-2eca9bc140e3.png" alt="image.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1124441" data-api-returntype="File" loading="lazy"></p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Rounding to the thousandths place, approximate \(\log_{3}{42}\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will use the change of base formula, then plug that into our calculator.</p>
+<p><img class="equation_image" title="\log_{3}{42} = \frac{\log{42}}{\log{3}}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B42%257D%2520%253D%2520%255Cfrac%257B%255Clog%257B42%257D%257D%257B%255Clog%257B3%257D%257D?scale=1" alt="LaTeX: \log_{3}{42} = \frac{\log{42}}{\log{3}}" data-equation-content="\log_{3}{42} = \frac{\log{42}}{\log{3}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> <img class="equation_image" title="\log_{3}{42} \approx 3.402" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B3%257D%257B42%257D%2520%255Capprox%25203.402?scale=1" alt="LaTeX: \log_{3}{42} \approx 3.402" data-equation-content="\log_{3}{42} \approx 3.402" data-ignore-a11y-check="" loading="lazy"></p>
+<h4><br><br><span style="color: #f6a50d;">Example 2</span></h4>
+<p>Rounding to the nearest ten-thousandths, approximate \(\ln 12\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will plug the expression into our calculator and round to the 4th decimal place.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(\ln 12 \approx 2.4849\)</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;">Properties of Logarithms</h4>
+<p>Several properties help simplify or evaluate logarithmic expressions.</p>
+<p>&nbsp;</p>
+<table style="border-collapse: collapse; width: 61.2798%; height: 106px;" border="1">
+<tbody>
+<tr>
+<td style="width: 25.0136%;">
+<h4><strong>Property</strong></h4>
+</td>
+<td style="width: 25.0136%;">Logarithm</td>
+<td style="width: 25.0136%;">Common Logarithm</td>
+<td style="width: 25.0136%;">Natural Logarithm</td>
+</tr>
+<tr>
+<td style="width: 25.0136%;">
+<h4>Zero Property</h4>
+<p>This property works because any base raised to the power of 0 equals 1.</p>
+</td>
+<td style="width: 25.0136%;"><img class="equation_image" title="\Large \log_{a}{1}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Ba%257D%257B1%257D?scale=1" alt="LaTeX: \Large \log_{a}{1}" data-equation-content="\Large \log_{a}{1}" data-ignore-a11y-check="" loading="lazy"> = \(\Large 0\)</td>
+<td style="width: 25.0136%;">\(\Large \log{1}\) = \(\Large 0\)</td>
+<td style="width: 25.0136%;">\(\Large \ln{1}\) = \(\Large 0\)</td>
+</tr>
+<tr>
+<td style="width: 25.0136%;">
+<h4>Identity Property</h4>
+<p>This works because any base raised to the first power equals itself.</p>
+</td>
+<td style="width: 25.0136%;">\(\Large \log_{b}{b}\) = \(\Large 1\)</td>
+<td style="width: 25.0136%;">\(\Large \log{10}\) = \(\Large 1\)</td>
+<td style="width: 25.0136%;">\(\Large \ln{e}\) = \(\Large 1\)</td>
+</tr>
+<tr>
+<td style="width: 25.0136%;">
+<h4>Inverse Property</h4>
+</td>
+<td style="width: 25.0136%;">
+<p>\(\Large \log_{b}{b^x}\) = \(x\)</p>
+<p>or</p>
+<p>\(\Large b^{\log_{b}{x}}\) = \(x\)</p>
+</td>
+<td style="width: 25.0136%;">
+<p>\(\Large \log{10^x}\) = \(x\)</p>
+<p>or</p>
+<p>\(\Large 10^{\log{x}}\) = \(x\)</p>
+</td>
+<td style="width: 25.0136%;">
+<p>\(\Large \ln{e^x}\) = \(x\)</p>
+<p>or</p>
+<p>\(\Large e^{\ln{x}}\) = \(x\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p data-start="2061" data-end="2129">&nbsp;</p>
+<p data-start="2061" data-end="2129"><strong>Example of Zero Property:</strong></p>
+<p data-start="2061" data-end="2129">Evaluate \(\log_{7}{1}\).</p>
+<ul>
+<li data-start="2061" data-end="2129">Using the zero property, \(\log_{7}{1}\) equals 0 since any number to the 0 power equals 1.</li>
+</ul>
+<p>Answer: 0</p>
+<p data-start="2349" data-end="2417">&nbsp;</p>
+<p data-start="2349" data-end="2417"><strong>Example of Identity Property:</strong></p>
+<p data-start="2349" data-end="2417">Evaluate \(\log_{5}{5}\).</p>
+<ul>
+<li data-start="2349" data-end="2417">Using the identity property, 5 to the 1 power equals 5.</li>
+</ul>
+<p>Answer: 1</p>
+<p>&nbsp;</p>
+<p><strong>Example of Inverse Property:</strong></p>
+<p>Evaluate \(\log_{7}{7^8}\).</p>
+<ul>
+<li>Using the inverse property, the base 7 of the log cancels out the base 7 of the argument.</li>
+</ul>
+<p>Answer: 8</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Evaluate.</p>
+<p><img class="equation_image" title="\log_{4}{1}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B4%257D%257B1%257D?scale=1" alt="LaTeX: \log_{4}{1}" data-equation-content="\log_{4}{1}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span><br>Since the base of the log is 4 and the argument is 1, we can use the Zero Property.</p>
+<p>Therefore, the expression equals 0.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(0\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 2</span></h4>
+<p>Evaluate.</p>
+<p><img class="equation_image" title="\ln 1" src="https://optimadomi.instructure.com/equation_images/%255Cln%25201?scale=1" alt="LaTeX: \ln 1" data-equation-content="\ln 1" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span><br>Since the argument of the natural log is 1, we can use the Zero Property.</p>
+<p>Therefore, the expression equals 0.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(0\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 3</span></h4>
+<p>Evaluate.</p>
+<p><img class="equation_image" title="\log_{6}{6}" src="https://optimadomi.instructure.com/equation_images/%255Clog_%257B6%257D%257B6%257D?scale=1" alt="LaTeX: \log_{6}{6}" data-equation-content="\log_{6}{6}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span><br>Since the base and the argument are both 6, we can use the Identity Property.</p>
+<p>Therefore, the expression equals 1.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(1\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 4</span></h4>
+<p>Evaluate.</p>
+<p><img class="equation_image" title="e^{\ln{7}}" src="https://optimadomi.instructure.com/equation_images/e%255E%257B%255Cln%257B7%257D%257D?scale=1" alt="LaTeX: e^{\ln{7}}" data-equation-content="e^{\ln{7}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span><br>We can use the inverse property. The base e cancels out the ln.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(7\)</p>
+<h4 data-start="5580" data-end="5593"><strong><br><br>Conclusion</strong></h4>
+<p data-start="5595" data-end="6188" data-is-last-node="" data-is-only-node="">Logarithms provide a powerful way to reverse exponential functions and answer questions about unknown exponents. In this lesson, you learned how logarithmic functions relate to exponential functions, how to move between exponential and logarithmic forms, how to find exact and approximate logarithmic values, and how to use key logarithmic properties to simplify expressions. Mastery of these skills builds a strong foundation for solving exponential and logarithmic equations and for applying mathematics to real-world growth and decay models you will encounter later in Algebra 2 and beyond.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="1149" data-end="1214">1. How are logarithmic functions related to exponential functions?</p>
+<p data-start="1217" data-end="1321">2. How can an expression be rewritten in an equivalent form using properties of logarithms and exponents?</p>
+<p>3. What is the difference between evaluating a logarithm exactly and approximating its value?</p>
+<p><span style="font-size: 1rem;">4. How do the zero, identity, and inverse properties of logarithms help simplify expressions?</span></p>
+<p><span style="font-size: 1rem;">5. Why is the change of base formula useful when working with logarithms on a calculator?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">9.01 &middot; Logarithms and Natural Logarithms</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 14.02 Solving Systems of Linear and Nonlinear Functions Algebraically</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 14</div>
+        <div style="font-size: 13px; color: #666;">Systems of Equations and Inequalities</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">14.02</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Systems of Equations and Inequalities</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">14.02</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving Systems of Linear and Nonlinear Functions Algebraically</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p><strong>Discriminant:</strong> The expression \( b^2 - 4ac \) from the quadratic formula; used to determine the number of real solutions to a quadratic equation. A positive discriminant indicates two real solutions, zero indicates one, and a negative discriminant indicates no real solutions.</p>
+<p><strong style="font-size: 1rem;">Elimination:</strong><span style="font-size: 1rem;"> An algebraic method for solving a system of equations by adding or subtracting multiples of the equations to cancel out one variable.</span></p>
+<p><strong style="font-size: 1rem;">Extraneous Solution:</strong><span style="font-size: 1rem;"> A value obtained algebraically that does not satisfy one or both of the original equations when substituted back in; always check solutions in both equations.</span></p>
+<p><strong style="font-size: 1rem;">Substitution:</strong><span style="font-size: 1rem;"> An algebraic method for solving a system of equations by isolating one variable in one equation and replacing it in the other equation.</span></p>
+<p><strong style="font-size: 1rem;">System of Equations:</strong><span style="font-size: 1rem;"> A set of two or more equations that share the same variables, solved simultaneously to find the value(s) that satisfy all equations at once.</span></p>
+<p><strong style="font-size: 1rem;">Solution of a System:</strong><span style="font-size: 1rem;"> An ordered pair \( (x, y) \) that satisfies every equation in the system; graphically, it is a point of intersection of the two curves.</span></p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In today's lesson, we will explore how to solve systems of equations algebraically — finding exact solutions without relying on a graph. In the previous lesson, you used Desmos to locate intersection points visually, which is excellent for building intuition. However, graphical methods have a key limitation: when solutions are fractions, decimals, or involve irrational numbers, reading them precisely from a graph can be difficult or impossible. Algebraic methods remove that uncertainty by producing exact answers every time. In this lesson, you will learn two strategies for solving linear systems — substitution and elimination — and then apply a systematic setting-equal method to solve systems of two quadratic equations. Along the way, you will use the discriminant to predict how many solutions a quadratic system has before fully solving, and you will apply both types of systems to model and interpret real-world situations.</span></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Systems of Two Linear Equations Algebraically</strong></h4>
+<p>There are two reliable algebraic methods for solving a system of two linear equations: <strong>substitution</strong> and <strong>elimination</strong>. Both work for any linear system. When one variable is already isolated in one equation, substitution is typically the faster choice. When both equations are in standard form with coefficients that can be easily matched, elimination tends to be more direct. You may use either method for any problem — choose whichever feels most efficient given the form of the equations.</p>
+<h4><strong><br>Method 1 — Substitution</strong></h4>
+<ol>
+<li>Isolate one variable in one equation. If a variable is already isolated, skip this step.</li>
+<li>Substitute that expression into the other equation to create a one-variable equation.</li>
+<li>Solve the one-variable equation.</li>
+<li>Substitute that result back into the isolated equation to find the second variable.</li>
+<li>Write the solution as an ordered pair \( (x, y) \) and verify in both original equations.</li>
+</ol>
+<h4><strong><br>Solve Using Substitution:</strong></h4>
+<p>Solve <img class="equation_image" title="\begin{cases} y=2x+3 \\ x+y=9 \end{cases}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Bcases%257D%2520y%253D2x%252B3%2520%255C%255C%2520x%252By%253D9%2520%255Cend%257Bcases%257D?scale=1" alt="LaTeX: \begin{cases} y=2x+3 \\ x+y=9 \end{cases}" data-equation-content="\begin{cases} y=2x+3 \\ x+y=9 \end{cases}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>\( y \) is already isolated in the first equation.</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Substitute \( y = 2x + 3 \) into \( x + y = 9 \).</p>
+<p>\( x + (2x + 3) = 9 \)</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Solve for \( x \).</p>
+<p>\( 3x + 3 = 9 \Rightarrow 3x = 6 \Rightarrow x = 2 \)</p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Substitute \( x = 2 \) back into \( y = 2x + 3 \).</p>
+<p>\( y = 2(2) + 3 = 7 \)</p>
+<p><strong>Step 5 — Verify in both equations:</strong></p>
+<p>\( y = 2x + 3 \): &nbsp; \( 7 = 2(2) + 3 = 7 \) ✓</p>
+<p>\( x + y = 9 \): &nbsp; \( 2 + 7 = 9 \) ✓</p>
+<p><strong>Answer:&nbsp;</strong>\(\{(2,7)\}\)</p>
+<h4><strong><br><br>Method 2 — Elimination</strong></h4>
+<ol>
+<li>Write both equations in standard form \( Ax + By = C \) if they are not already.</li>
+<li>Multiply one or both equations by a constant so that the coefficients of one variable are<span>&nbsp;</span><em>opposites</em>.</li>
+<li>Add the two equations to eliminate that variable.</li>
+<li>Solve the resulting one-variable equation.</li>
+<li>Substitute back into either original equation to find the second variable.</li>
+<li>Write the solution as an ordered pair and verify in both original equations.</li>
+</ol>
+<h4><strong><br>Solve Using Elimination</strong></h4>
+<p>Solve \( \begin{cases} 2x+3y=7 \\ 4x-3y=5 \end{cases}\)</p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>Both equations are already in standard form.</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>The \( y \)-coefficients are already opposites: \( +3 \) and \( -3 \). No multiplication needed.</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Add the two equations.</p>
+<p><img class="equation_image" title="\begin{aligned}
+2x + 3y = 7 \\
+4x-3y=5 \\
+\hline
+6x \phantom{+3x} = 12
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x%2520%252B%25203y%2520%253D%25207%2520%255C%255C%250A4x-3y%253D5%2520%255C%255C%250A%255Chline%250A6x%2520%255Cphantom%257B%252B3x%257D%2520%253D%252012%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x + 3y = 7 \\
+4x-3y=5 \\
+\hline
+6x \phantom{+3x} = 12
+\end{aligned}" data-equation-content="\begin{aligned}
+2x + 3y = 7 \\
+4x-3y=5 \\
+\hline
+6x \phantom{+3x} = 12
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Solve for \( x \).</p>
+<p><img class="equation_image" title="\underline{6x}=\underline{12} \\
+6\quad\quad\; 6 \\
+x = 2" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B6x%257D%253D%255Cunderline%257B12%257D%2520%255C%255C%250A6%255Cquad%255Cquad%255C%253B%25206%2520%255C%255C%250Ax%2520%253D%25202?scale=1" alt="LaTeX: \underline{6x}=\underline{12} \\
+6\quad\quad\; 6 \\
+x = 2" data-equation-content="\underline{6x}=\underline{12} \\
+6\quad\quad\; 6 \\
+x = 2" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 5:</strong><span>&nbsp;</span>Substitute \( x = 2 \) into the first equation to find \( y \).</p>
+<p>\( 2(2) + 3y = 7 \Rightarrow 4 + 3y = 7 \Rightarrow 3y = 3 \Rightarrow y = 1 \)</p>
+<p><strong>Step 6 — Verify in both equations:</strong></p>
+<p>\( 2(2) + 3(1) = 4 + 3 = 7 \) ✓</p>
+<p>\( 4(2) - 3(1) = 8 - 3 = 5 \) ✓</p>
+<p><strong>Answer:&nbsp;</strong>\(\{(2,1)\}\)</p>
+<p>&nbsp;</p>
+<div style="border: 3px solid #003366; background-color: #f0f6ff; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<h4><strong>Three Possible Outcomes — What the Algebra Tells You</strong></h4>
+<p>After applying substitution or elimination, the algebraic result signals the number of solutions before you finish solving.</p>
+<p><strong>One Solution:</strong><span>&nbsp;</span>The variables each solve to a specific number. The two lines intersect at exactly one point.</p>
+<p><strong>No Solution:</strong><span>&nbsp;</span>All variables cancel, and the result is a<span>&nbsp;</span><em>false</em><span>&nbsp;</span>statement such as \( -10 = 8 \). The lines are parallel and never intersect.</p>
+<p><strong>Infinitely Many Solutions:</strong><span>&nbsp;</span>All variables cancel, and the result is a<span>&nbsp;</span><em>true</em><span>&nbsp;</span>statement such as \( 0 = 0 \). Both equations represent the same line — every point is a solution.</p>
+<p>Quick example of infinitely many: &nbsp;\( x + 2y = 5 \) and \( 2x + 4y = 10 \). &nbsp;Substituting gives \( 10 = 10 \) — always true, so infinitely many solutions.</p>
+</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Solve the system.</p>
+<p>\( \begin{cases} y=3x-1 \\ 5x+2y=20 \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Method: Substitution</strong> — \( y \) is already isolated in the first equation.</p>
+<p><strong>Step 1:</strong> Substitute \( y = 3x - 1 \) into \( 5x + 2y = 20 \).</p>
+<p style="padding-left: 22px;">\( 5x + 2(3x - 1) = 20 \)</p>
+<p style="padding-left: 22px;">\( 5x + 6x - 2 = 20 \)</p>
+<p style="padding-left: 22px;">\( 11x -2 = 20 \Rightarrow 11x=22 \Rightarrow x = 2 \)</p>
+<p><strong>Step 2:</strong> Substitute \( x = 2 \) into \( y = 3x - 1 \).</p>
+<p style="padding-left: 22px;">\( y = 3(2) - 1 = 6-1 = 5 \)</p>
+<p><strong>Verify:</strong></p>
+<p style="padding-left: 22px;">\( y = 3x - 1 \): &nbsp; \( 5 = 3(2) - 1 = 5 \) ✓</p>
+<p style="padding-left: 22px;">\( 5x + 2y = 20 \): &nbsp; \( 5(2) + 2(5) = 10 + 10 = 20 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> &nbsp; \( \{(2, 5)\} \) — one solution.</p>
+</div>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>Solve the system.</p>
+<p>\( \begin{cases} 3x+4y=11 \\ x-2y=-1 \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Method: Elimination</strong> — multiply the second equation by 4 so that \(y\) values are opposites of \(4\) and \(-4\).</p>
+<p><strong>Step 1:</strong> \(2(x-2y=-1) \Rightarrow 2x-4y=-2\)</p>
+<p><strong>Step 2:</strong> Add together equations \( 3x + 4y = 11 \) and \(2x-4y=-2\).</p>
+<p style="padding-left: 22px;"><img class="equation_image" title="\begin{aligned}
+3x+4y=11 \\
+2x-4y=-2 \\
+\hline
+6x \quad\quad =\;\;\; 9
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A3x%252B4y%253D11%2520%255C%255C%250A2x-4y%253D-2%2520%255C%255C%250A%255Chline%250A6x%2520%255Cquad%255Cquad%2520%253D%255C%253B%255C%253B%255C%253B%25209%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+3x+4y=11 \\
+2x-4y=-2 \\
+\hline
+6x \quad\quad =\;\;\; 9
+\end{aligned}" data-equation-content="\begin{aligned}
+3x+4y=11 \\
+2x-4y=-2 \\
+\hline
+6x \quad\quad =\;\;\; 9
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 3:&nbsp;</strong>Solve the linear equation to find the value of x.</p>
+<p style="padding-left: 40px;"><img class="equation_image" title="\underline{6x} = \underline{9} \\
+6 \quad\quad 6 \\
+x=\dfrac{3}{2}" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B6x%257D%2520%253D%2520%255Cunderline%257B9%257D%2520%255C%255C%250A6%2520%255Cquad%255Cquad%25206%2520%255C%255C%250Ax%253D%255Cdfrac%257B3%257D%257B2%257D?scale=1" alt="LaTeX: \underline{6x} = \underline{9} \\
+6 \quad\quad 6 \\
+x=\dfrac{3}{2}" data-equation-content="\underline{6x} = \underline{9} \\
+6 \quad\quad 6 \\
+x=\dfrac{3}{2}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 4: </strong>Substitute \( x = \dfrac{3}{2} \) into \( x-2y=-1\).</p>
+<p style="padding-left: 22px;"><img class="equation_image" title="\begin{aligned}
+x=\dfrac{9}{5} \rightarrow x-2y=-1 \\
+\frac{9}{5}-2y=-1 \\
+-\frac{9}{5} \qquad -\frac{9}{5} \\
+\hline
+-2y=-\frac{5}{5}-\frac{9}{5} \\
+-2y=-\frac{14}{5} \\
+y=-\frac{14}{5} \cdot -\frac{1}{2} \\
+y=\frac{7}{5}
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250Ax%253D%255Cdfrac%257B9%257D%257B5%257D%2520%255Crightarrow%2520x-2y%253D-1%2520%255C%255C%250A%255Cfrac%257B9%257D%257B5%257D-2y%253D-1%2520%255C%255C%250A-%255Cfrac%257B9%257D%257B5%257D%2520%255Cqquad%2520-%255Cfrac%257B9%257D%257B5%257D%2520%255C%255C%250A%255Chline%250A-2y%253D-%255Cfrac%257B5%257D%257B5%257D-%255Cfrac%257B9%257D%257B5%257D%2520%255C%255C%250A-2y%253D-%255Cfrac%257B14%257D%257B5%257D%2520%255C%255C%250Ay%253D-%255Cfrac%257B14%257D%257B5%257D%2520%255Ccdot%2520-%255Cfrac%257B1%257D%257B2%257D%2520%255C%255C%250Ay%253D%255Cfrac%257B7%257D%257B5%257D%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+x=\dfrac{9}{5} \rightarrow x-2y=-1 \\
+\frac{9}{5}-2y=-1 \\
+-\frac{9}{5} \qquad -\frac{9}{5} \\
+\hline
+-2y=-\frac{5}{5}-\frac{9}{5} \\
+-2y=-\frac{14}{5} \\
+y=-\frac{14}{5} \cdot -\frac{1}{2} \\
+y=\frac{7}{5}
+\end{aligned}" data-equation-content="\begin{aligned}
+x=\dfrac{9}{5} \rightarrow x-2y=-1 \\
+\frac{9}{5}-2y=-1 \\
+-\frac{9}{5} \qquad -\frac{9}{5} \\
+\hline
+-2y=-\frac{5}{5}-\frac{9}{5} \\
+-2y=-\frac{14}{5} \\
+y=-\frac{14}{5} \cdot -\frac{1}{2} \\
+y=\frac{7}{5}
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Verify:</strong></p>
+<p style="padding-left: 22px;">\( 3\left(\dfrac{9}{5}\right) + 4\left(\dfrac{7}{5}\right) = \dfrac{27}{5} + \dfrac{28}{5} = \dfrac{55}{5} = 11 \) ✓</p>
+<p style="padding-left: 22px;">\( \dfrac{9}{5} - 2\left(\dfrac{7}{5}\right) = \dfrac{9}{5} - \dfrac{14}{5} = -\dfrac{5}{5} = -1 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> &nbsp; <img class="equation_image" title="\left(\dfrac{9}{5}, \ \dfrac{7}{5}\right)" src="https://optimadomi.instructure.com/equation_images/%255Cleft(%255Cdfrac%257B9%257D%257B5%257D%252C%2520%255C%2520%255Cdfrac%257B7%257D%257B5%257D%255Cright)?scale=1" alt="LaTeX: \left(\dfrac{9}{5}, \ \dfrac{7}{5}\right)" data-equation-content="\left(\dfrac{9}{5}, \ \dfrac{7}{5}\right)" data-ignore-a11y-check="" loading="lazy"> — one solution.</p>
+</div>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p>Solve the system.</p>
+<p>\( \begin{cases} 6x-2y=8 \\ y-5=3x \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Method: Substitution</strong> — \( y \) can be isolated in the second equation by adding 5 to both sides.</p>
+<p><strong>Step 1:&nbsp;</strong>Isolate \(y \) in the second equation by adding 5 to both sides.</p>
+<p style="padding-left: 40px;"><img class="equation_image" title="\begin{aligned}
+y-5=3x \\
++5 \quad +5 \\
+\hline
+y=3x+5
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250Ay-5%253D3x%2520%255C%255C%250A%252B5%2520%255Cquad%2520%252B5%2520%255C%255C%250A%255Chline%250Ay%253D3x%252B5%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+y-5=3x \\
++5 \quad +5 \\
+\hline
+y=3x+5
+\end{aligned}" data-equation-content="\begin{aligned}
+y-5=3x \\
++5 \quad +5 \\
+\hline
+y=3x+5
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Substitute \( y = 3x + 5 \) into \( 6x - 2y = 8 \).</p>
+<p style="padding-left: 22px;">\( 6x - 2(3x + 5) = 8 \)</p>
+<p style="padding-left: 22px;">\( 6x - 6x - 10 = 8 \)</p>
+<p style="padding-left: 22px;">\( -10 = 8 \)</p>
+<p>All variable terms are cancelled, and the result is a <strong>false statement</strong>. No value of \( x \) makes this true.</p>
+<p><strong>Why?</strong> Rewriting both equations in slope-intercept form confirms the lines are parallel:</p>
+<p style="padding-left: 22px;">\( 6x - 2y = 8 \Rightarrow y = 3x - 4 \) &nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp; \( y = 3x + 5 \)</p>
+<p>Both have slope \( 3 \) but different y-intercepts. Parallel lines never intersect.</p>
+<div class="answer-box">
+<p><strong><span style="color: #e62429;">Answer:</span></strong> &nbsp; No Solution — the equations produce a false statement, confirming the lines are parallel and do not intersect.</p>
+</div>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Generating Equivalent Expressions</strong></h4>
+<p>When both equations in a system are quadratic, each graph is a parabola. The algebraic approach follows the same core logic as linear systems: find the \( x \)-values where both equations produce the same \( y \)-value. Because both equations are already solved for \( y \), you can set their right-hand sides equal to each other, producing a single equation in one variable. That equation will be quadratic, and you solve it using<span>&nbsp;</span><strong>factoring</strong>,<span>&nbsp;</span><strong>square roots</strong>, or the<span>&nbsp;</span><strong>quadratic formula</strong><span>, </span>depending on its form. After finding each \( x \)-value, substitute back into either original equation to find the corresponding \( y \)-value.</p>
+<div class="callout orange">
+<h4><strong><br>Method — Setting Equal</strong></h4>
+<ol>
+<li>Confirm both equations are solved for \( y \).</li>
+<li>Set the right-hand expressions equal: &nbsp; \( \text{expression}_1 = \text{expression}_2 \)</li>
+<li>Move all terms to one side to form \( ax^2 + bx + c = 0 \).</li>
+<li>Solve using factoring, square roots, or the quadratic formula.</li>
+<li>For each value of \( x \), substitute into either original equation to find \( y \).</li>
+<li>Write each solution as an ordered pair and verify in both original equations.</li>
+</ol>
+</div>
+<div class="callout">
+<h4><strong><br><br>How Many Solutions? — Using the Discriminant</strong></h4>
+<p>After combining the two quadratic expressions into the form \( ax^2 + bx + c = 0 \), evaluate the discriminant \( \Delta = b^2 - 4ac \) before solving. This tells you how many intersection points to expect.</p>
+<p><strong>\( \Delta &gt; 0 \):</strong><span>&nbsp;</span>&nbsp; Two distinct real solutions — the parabolas intersect at two points.</p>
+<p><strong>\( \Delta = 0 \):</strong><span>&nbsp;</span>&nbsp; Exactly one real solution — the parabolas are tangent and touch at one point.</p>
+<p><strong>\( \Delta &lt; 0 \):</strong><span>&nbsp;</span>&nbsp; No real solutions — the parabolas do not intersect. Stop here.</p>
+<h4><br><br><strong>Solving System of Two Quadratics</strong></h4>
+<p>Solve \(\begin{cases} y=x^2-4x+3 \\ y=-x^2+2x+3 \\ \end{cases}\)</p>
+<div class="worked-steps">
+<p><strong>Step 1:</strong><span>&nbsp;</span>Both equations are solved for \( y \). Set them equal.</p>
+<p style="padding-left: 40px;">\( x^2 - 4x + 3 = -x^2 + 2x + 3 \)</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Move all terms to one side and simplify.</p>
+<p style="padding-left: 40px;">\( x^2 - 4x + 3 + x^2 - 2x - 3 = 0 \)</p>
+<p style="padding-left: 40px;">\( 2x^2 - 6x = 0 \)</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Factor — pull out the GCF.</p>
+<p style="padding-left: 40px;">\( 2x(x - 3) = 0 \)</p>
+<p style="padding-left: 40px;">\( x = 0 \quad \text{or} \quad x = 3 \)</p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Find \( y \) for each \( x \) using \( y = x^2 - 4x + 3 \).</p>
+<p style="padding-left: 40px;">At \( x = 0 \): &nbsp; \( y = 0 - 0 + 3 = 3 \) &nbsp; → &nbsp; point \( (0, 3) \)</p>
+<p style="padding-left: 40px;">At \( x = 3 \): &nbsp; \( y = 9 - 12 + 3 = 0 \) &nbsp; → &nbsp; point \( (3, 0) \)</p>
+<p><strong>Step 5 — Verify both points in \( y = -x^2 + 2x + 3 \):</strong></p>
+<p style="padding-left: 40px;">\( (0, 3) \): &nbsp; \( y = 0 + 0 + 3 = 3 \) ✓</p>
+<p style="padding-left: 40px;">\( (3, 0) \): &nbsp; \( y = -9 + 6 + 3 = 0 \) ✓</p>
+</div>
+<div class="answer-box">
+<p><strong>Solutions:</strong><span>&nbsp;</span> &nbsp;<img class="equation_image" title="\{(0, \ 3),(3, \ 0)\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B(0%252C%2520%255C%25203)%252C(3%252C%2520%255C%25200)%255C%257D?scale=1" alt="LaTeX: \{(0, \ 3),(3, \ 0)\}" data-equation-content="\{(0, \ 3),(3, \ 0)\}" data-ignore-a11y-check="" loading="lazy"> — two solutions.</p>
+</div>
+</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Solve the system.</p>
+<p>\(\begin{cases} y=x^2+3x-4 \\ y=-x^2+x+8 \\ \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1:</strong> Set the expressions equal.</p>
+<p style="padding-left: 22px;">\( x^2 + 3x - 4 = -x^2 + x + 8 \)</p>
+<p><strong>Step 2:</strong> Move all terms to one side.</p>
+<p style="padding-left: 22px;"><img class="equation_image" title="\begin{array}
+&amp;\;\; x^2+3x-4 \\
++x^2-x-8 \\
+\hline
+2x^2 + 2x - 12 = 0
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526%255C%253B%255C%253B%2520x%255E2%252B3x-4%2520%255C%255C%250A%252Bx%255E2-x-8%2520%255C%255C%250A%255Chline%250A2x%255E2%2520%252B%25202x%2520-%252012%2520%253D%25200%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;\;\; x^2+3x-4 \\
++x^2-x-8 \\
+\hline
+2x^2 + 2x - 12 = 0
+\end{array}" data-equation-content="\begin{array}
+&amp;\;\; x^2+3x-4 \\
++x^2-x-8 \\
+\hline
+2x^2 + 2x - 12 = 0
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p style="padding-left: 22px;">\( x^2 + x - 6 = 0 \) &nbsp;&nbsp; (divide both sides by 2)</p>
+<p><strong>Step 3:</strong> Factor.</p>
+<p style="padding-left: 22px;">\( (x + 3)(x - 2) = 0 \)</p>
+<p style="padding-left: 22px;">\( x = -3 \quad \text{or} \quad x = 2 \)</p>
+<p><strong>Step 4:</strong> Find \( y \) using \( y = x^2 + 3x - 4 \).</p>
+<p style="padding-left: 22px;">At \( x = -3 \): &nbsp; \( y = (-3)^2+3(-3)-4 = 9 - 9 - 4 = -4 \) &nbsp; → &nbsp; point \( (-3, -4) \)</p>
+<p style="padding-left: 22px;">At \( x = 2 \): &nbsp; \( y = (2)^2+3(2)-4 = 4 + 6 - 4 = 6 \) &nbsp; → &nbsp; point \( (2, 6) \)</p>
+<p><strong>Verify in \( y = -x^2 + x + 8 \):</strong></p>
+<p style="padding-left: 22px;">\( (-3, -4) \): &nbsp; \( y = -9 - 3 + 8 = -4 \) ✓</p>
+<p style="padding-left: 22px;">\( (2, 6) \): &nbsp; \( y = -4 + 2 + 8 = 6 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answers:</strong></span> &nbsp; \( \{(-3, -4),(2, 6)\} \) — two solutions found by factoring.</p>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 5</span></h4>
+<p>Solve the system.</p>
+<p>\(\begin{cases} y=2x^2-3 \\ y=-x^2+9 \\ \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1:</strong> Set the expressions equal. Notice that neither equation has an \( x \)-term — only \( x^2 \) and constants. After combining, there is no middle term, and the equation can be solved using square roots.</p>
+<p style="padding-left: 22px;">\( 2x^2 - 3 = -x^2 + 9 \)</p>
+<p><strong>Step 2:</strong> Move all terms to one side.</p>
+<p style="padding-left: 22px;">\( 3x^2 = 12 \) - Divide the whole equation by 3</p>
+<p style="padding-left: 22px;">\(x^2 = 4\)</p>
+<p><strong>Step 3:</strong> Solve using square roots.</p>
+<p style="padding-left: 22px;">\( x^2 = 4 \Rightarrow x = \pm 2 \Rightarrow x=2\; \text{or}\; x=-2\)</p>
+<p><strong>Step 4:</strong> Find \( y \) using \( y = 2x^2 - 3 \). Note: since \( x^2 = 4 \) for both values of \( x \), both give the same \( y \).</p>
+<p style="padding-left: 22px;">At \( x = 2 \): &nbsp; \( y = 2(2)^2 - 3 = 2(4) - 3 = 8-3 = 5 \) &nbsp; → &nbsp; point \( (2, 5) \)</p>
+<p style="padding-left: 22px;">At \( x = -2 \): &nbsp; \( y = 2(-2)^2-3 = 2(4) - 3 = 5 \) &nbsp; → &nbsp; point \( (-2, 5) \)</p>
+<p><strong>Verify in \( y = -x^2 + 9 \):</strong></p>
+<p style="padding-left: 22px;">\( (2, 5) \): &nbsp; \( y = -4 + 9 = 5 \) ✓</p>
+<p style="padding-left: 22px;">\( (-2, 5) \): &nbsp; \( y = -4 + 9 = 5 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answers:</strong></span> &nbsp; \( \{(2, 5),(-2, 5)\} \) — two solutions found using square roots.</p>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 6</span></h4>
+<p>Solve the system.</p>
+<p>\(\begin{cases} y=x^2+2x+5 \\ y=-x^2-3x+1 \\ \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1:</strong> Set the expressions equal.</p>
+<p style="padding-left: 22px;">\( x^2 + 2x + 5 = -x^2 - 3x + 1 \)</p>
+<p><strong>Step 2:</strong> Move all terms to one side and simplify.</p>
+<p style="padding-left: 22px;">\( 2x^2 + 5x + 4 = 0 \)</p>
+<p><strong>Step 3:</strong> Evaluate the discriminant before attempting to solve.</p>
+<p style="padding-left: 22px;">\( a = 2, \quad b = 5, \quad c = 4 \)</p>
+<p style="padding-left: 22px;">\( \Delta = b^2 - 4ac = (5)^2 - 4(2)(4) = 25 - 32 = -7 \)</p>
+<p>Since \( \Delta = -7 &lt; 0 \), there are <strong>no real solutions</strong>. The quadratic \( 2x^2 + 5x + 4 = 0 \) has no real roots, which means the two parabolas never intersect. There is no need to apply the quadratic formula — we stop here.</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> &nbsp; No Solution — the discriminant is \( -7 &lt; 0 \), confirming the parabolas do not intersect.</p>
+</div>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Real-World Systems Algebraically</strong></h4>
+<p><span>When a real-world situation is modeled by a system of equations, solving algebraically produces exact values for when two quantities are equal — such as when revenue meets cost, when two moving objects reach the same position, or when supply equals demand. Once you have solved for the variable(s), it is essential to interpret the numerical answer in context: state clearly what the input value means, what the output value means, and include the appropriate units. Also check that every solution is reasonable given any domain constraints the situation imposes — for example, time cannot be negative, and a quantity of items must be a whole number.</span></p>
+</div>
+<h4><span style="color: #f88e0a;">Example 7</span></h4>
+<p>A candle shop models its weekly revenue and total production cost in dollars based on the number of candles sold, \( x \). The system below gives the revenue function \( R \) and cost function \( C \), where \( y \) represents the dollar amount.</p>
+<p>\( y = 12x \) &nbsp;&nbsp;&nbsp; (Revenue)</p>
+<p>\( y = 8x + 40 \) &nbsp;&nbsp;&nbsp; (Cost)</p>
+<p>Find the break-even point — the number of candles at which revenue equals cost — and interpret the solution in context.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1:</strong> Set the two expressions equal to each other. The break-even point is where \( R = C \).</p>
+<p style="padding-left: 22px;">\( 12x = 8x + 40 \)</p>
+<p><strong>Step 2:</strong> Solve for \( x \).</p>
+<p style="padding-left: 22px;">\( 4x = 40 \Rightarrow x = 10 \)</p>
+<p><strong>Step 3:</strong> Find the dollar amount at break-even.</p>
+<p style="padding-left: 22px;">\( y = 12(10) = 120 \)</p>
+<p><strong>Verify:</strong> &nbsp; Revenue: \( 12(10) = 120 \) ✓ &nbsp;&nbsp; Cost: \( 8(10) + 40 = 80 + 40 = 120 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Solution:</strong></span> &nbsp; \( (10, \ 120) \)</p>
+</div>
+<p><span style="color: #e62429;"><strong>Interpretation:</strong></span> The candle shop breaks even — earns exactly as much as it spends — when it sells <strong>10 candles</strong> per week. At that point, both revenue and cost equal <strong>$120</strong>. Selling fewer than 10 candles results in a net loss; selling more than 10 results in a profit.</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 8</span></h4>
+<p>Two drones are launched along curved flight paths. Their heights above the ground in feet are modeled by the system below, where \( t \) is the time in seconds after launch and \( h \) is the height in feet.</p>
+<p>\( h = -t^2 + 6t \) &nbsp;&nbsp;&nbsp; (Drone A)</p>
+<p>\( h = -2t^2 + 10t - 3 \) &nbsp;&nbsp;&nbsp; (Drone B)</p>
+<p>Find all times at which the two drones are at the same height, and interpret each solution in context.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1:</strong> Set the two height expressions equal.</p>
+<p style="padding-left: 22px;">\( -t^2 + 6t = -2t^2 + 10t - 3 \)</p>
+<p><strong>Step 2:</strong> Move all terms to one side.</p>
+<p style="padding-left: 22px;">\( -t^2 + 6t + 2t^2 - 10t + 3 = 0 \)</p>
+<p style="padding-left: 22px;">\( t^2 - 4t + 3 = 0 \)</p>
+<p><strong>Step 3:</strong> Factor.</p>
+<p style="padding-left: 22px;">\( (t - 1)(t - 3) = 0 \)</p>
+<p style="padding-left: 22px;">\( t = 1 \quad \text{or} \quad t = 3 \)</p>
+<p>Both values are positive, so both are within the meaningful domain of the problem.</p>
+<p><strong>Step 4:</strong> Find the height at each time using Drone A's equation.</p>
+<p style="padding-left: 22px;">At \( t = 1 \): &nbsp; \( h = -1 + 6 = 5 \) feet &nbsp; → &nbsp; point \( (1, 5) \)</p>
+<p style="padding-left: 22px;">At \( t = 3 \): &nbsp; \( h = -9 + 18 = 9 \) feet &nbsp; → &nbsp; point \( (3, 9) \)</p>
+<p><strong>Verify using Drone B's equation \( h = -2t^2 + 10t - 3 \):</strong></p>
+<p style="padding-left: 22px;">At \( t = 1 \): &nbsp; \( h = -2 + 10 - 3 = 5 \) ✓</p>
+<p style="padding-left: 22px;">At \( t = 3 \): &nbsp; \( h = -18 + 30 - 3 = 9 \) ✓</p>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Solutions:</strong></span> &nbsp; \( (1, \ 5) \) &nbsp; and &nbsp; \( (3, \ 9) \)</p>
+</div>
+<p><span style="color: #e62429;"><strong>Interpretation:</strong></span> The two drones are at the same height at two different moments during their flights. At \( t = 1 \) second, both drones are flying at <strong>5 feet</strong> above the ground. At \( t = 3 \) seconds, both drones are at <strong>9 feet</strong> above the ground. Both solutions are physically meaningful — the times are positive and the heights are positive.</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you learned how to solve systems of equations algebraically — a method that delivers exact solutions regardless of whether the answers are integers, fractions, or decimals. For systems of two linear equations, you applied substitution and elimination, and you learned to read the algebraic result as a signal: a unique numerical answer means one solution, a false statement means no solution, and a true identity means infinitely many solutions. For systems of two quadratic equations, the setting-equal method reduced the problem to a single quadratic equation, which you solved using factoring, square roots, or the quadratic formula depending on its form. Using the discriminant before solving gave you an efficient preview of how many solutions to expect, saving time when the answer is no real solutions. Finally, you applied both types of systems to real-world contexts — a business break-even analysis and synchronized drone flight paths — connecting the algebra to meaningful interpretations with appropriate units and domain considerations. The algebraic and graphical approaches from these two lessons complement each other: graphing helps you see what is happening, and algebra confirms it exactly.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How does solving a system of equations algebraically differ from solving it graphically, and when might one method be more reliable or efficient than the other?</p>
+<p>2. Why does setting two quadratic equations equal to each other reduce the problem to solving a single equation, and what does the resulting equation's discriminant reveal about the number of solutions?</p>
+<p>3. How can a system of equations be used to model a real-world situation, and what does the solution represent in context?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">14.02 &middot; Solving Systems of Linear and Nonlinear Functions Algebraically</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

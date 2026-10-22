@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.05 Transforming Logarithmic Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.05</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.05</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Transforming Logarithmic Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="115"><strong data-start="0" data-end="13">Asymptote</strong>: A line that a graph approaches but never reaches, indicating the long-term behavior of a function.</p>
+<p data-start="117" data-end="200"><strong data-start="117" data-end="127">Domain</strong>: The set of all possible input values for which a function is defined.</p>
+<p data-start="202" data-end="320"><strong data-start="202" data-end="222">Horizontal Shift</strong>: A transformation that moves a graph left or right along the x-axis without changing its shape.</p>
+<p data-start="322" data-end="489"><strong data-start="322" data-end="346">Logarithmic Function</strong>: A function that is the inverse of an exponential function and expresses the exponent needed to produce a given value from a specified base.</p>
+<p data-start="491" data-end="556"><strong data-start="491" data-end="500">Range</strong>: The set of all possible output values of a function.</p>
+<p data-start="558" data-end="656"><strong data-start="558" data-end="572">Reflection</strong>: A transformation that flips a graph across a line, such as the x-axis or y-axis.</p>
+<p data-start="658" data-end="752"><strong data-start="658" data-end="676">Transformation</strong>: A change made to a graph that alters its position, orientation, or size.</p>
+<p data-start="754" data-end="864"><strong data-start="754" data-end="769">Translation</strong>: A transformation that slides a graph horizontally or vertically without changing its shape.</p>
+<p data-start="866" data-end="998"><strong data-start="866" data-end="888">Vertical Asymptote</strong>: A vertical line that a graph approaches but never crosses, often representing a restriction in the domain.</p>
+<p data-start="1000" data-end="1111" data-is-last-node="" data-is-only-node=""><strong data-start="1000" data-end="1018">Vertical Shift</strong>: A transformation that moves a graph up or down along the y-axis without changing its shape.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Once you understand the basic structure and graph of a logarithmic function, the next step is learning how transformations affect its graph and equation. Transformations allow logarithmic functions to model real-world situations more accurately by shifting or reflecting the graph while preserving its overall shape. In this lesson, you will learn how reflections, vertical translations, and horizontal translations affect logarithmic functions. You will also learn how to identify transformations from equations, graphs, and tables, and how to create new equations or tables based on a given transformation.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Parent Logarithmic Function</strong></h4>
+<table style="border-collapse: collapse; width: 80.0098%;" border="1">
+<tbody>
+<tr>
+<td style="width: 19.6281%;">
+<h4><strong>Common Logarithm</strong></h4>
+<p><strong>\(\Large f(x)=\log{x}\)</strong></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;">Note, the base of the parent function is 10, a common log. So, we do not write the base.</span></span></span></span></span></p>
+</td>
+<td style="width: 25.3521%;">
+<p data-start="1134" data-end="1170">Key features of the parent function:</p>
+<ul data-start="1171" data-end="1291">
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Vertical asymptote: \(x=0\)</p>
+</li>
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Domain: \(x&gt;0\)</p>
+</li>
+<li data-start="1203" data-end="1222">
+<p data-start="1205" data-end="1222">Range: all real numbers, <img class="equation_image" title="-\infty < y < \infty" src="https://optimadomi.instructure.com/equation_images/-%255Cinfty%2520%253C%2520y%2520%253C%2520%255Cinfty?scale=1" alt="LaTeX: -\infty < y < \infty" data-equation-content="-\infty < y < \infty" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">X-intercept: \((1,0)\)</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">No y-intercept</p>
+</li>
+</ul>
+</td>
+<td style="width: 55.0006%; text-align: center;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/3o4qivhkge?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+<tr>
+<td style="width: 19.6281%;">
+<h4><strong>Natural Logarithm</strong></h4>
+<p><strong>\(\Large f(x)=\ln{x}\)</strong></p>
+<p>Note, the base of a natural log is e.</p>
+</td>
+<td style="width: 25.3521%;">
+<p data-start="1134" data-end="1170">Key features of the parent function:</p>
+<ul data-start="1171" data-end="1291">
+<li data-start="1171" data-end="1202">
+<p data-start="1173" data-end="1202">Vertical asymptote: <span style="font-family: math;">\(x=0\)</span></p>
+</li>
+<li data-start="1203" data-end="1222">
+<p data-start="1205" data-end="1222">Domain: \(x&gt;0\)</p>
+</li>
+<li data-start="1203" data-end="1222">
+<p data-start="1205" data-end="1222">Range: all real numbers, <img class="equation_image" title="-\infty < y < \infty" src="https://optimadomi.instructure.com/equation_images/-%255Cinfty%2520%253C%2520y%2520%253C%2520%255Cinfty?scale=1" alt="LaTeX: -\infty < y < \infty" data-equation-content="-\infty < y < \infty" data-ignore-a11y-check="" loading="lazy"></p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">X-intercept: \((1,0)\)</p>
+</li>
+<li data-start="1249" data-end="1274">
+<p data-start="1251" data-end="1274">No y-intercept</p>
+</li>
+</ul>
+</td>
+<td style="width: 55.0006%; text-align: center;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/cnce65gwlc?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+</tbody>
+</table>
+<p data-start="1293" data-end="1394">All transformations discussed in this lesson start from this parent function unless otherwise stated.</p>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Vertical Translations</strong></h4>
+<p data-start="1473" data-end="1558">Transformation Function:</p>
+<p data-start="1473" data-end="1558">Parent Function: \(f(x)=\log{(x)}\)</p>
+<p data-start="1473" data-end="1558">Transformation Function: \(g(x)=\log{(x+h)}+k\)</p>
+<p data-start="1473" data-end="1558">A <strong data-start="1475" data-end="1499">vertical translation</strong> moves the graph <strong data-start="1516" data-end="1530">up or down</strong> without changing its shape.</p>
+<p data-start="1560" data-end="1599">The transformed function is written as:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span style="font-size: 1rem;">\(g(x)=f(x)+k\)</span></span></span></span></span></p>
+<ul data-start="1623" data-end="1704">
+<li data-start="1623" data-end="1662">
+<p data-start="1625" data-end="1662">If \(k&gt;0\), the graph shifts <strong data-start="1656" data-end="1662">up</strong></p>
+</li>
+<li data-start="1663" data-end="1704">
+<p data-start="1665" data-end="1704">If \(k&lt;0\), the graph shifts <strong data-start="1696" data-end="1704">down</strong></p>
+</li>
+</ul>
+<p data-start="1706" data-end="1730">Effects on key features:</p>
+<ul data-start="1731" data-end="1869">
+<li data-start="1731" data-end="1774">
+<p data-start="1733" data-end="1774">The <strong data-start="1737" data-end="1774">vertical asymptote stays the same</strong></p>
+</li>
+<li data-start="1775" data-end="1806">
+<p data-start="1777" data-end="1806">The <strong data-start="1781" data-end="1806">domain stays the same</strong></p>
+</li>
+<li data-start="1807" data-end="1840">
+<p data-start="1809" data-end="1840">The <strong data-start="1813" data-end="1840">range shifts up or down</strong></p>
+</li>
+<li data-start="1841" data-end="1869">
+<p data-start="1843" data-end="1869">The x-intercept may change</p>
+</li>
+</ul>
+<p><br>To identify if a graph of a logarithmic function has shifted up or down, check the first point against the x-intercept of the parent function.</p>
+<h4><strong><br>Example:</strong></h4>
+<p>The graph of the parent function \(f(x)=\log{(x)}\) and a transformed function are shown in the graph.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ojabdhnnoq?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p>Identify the transformation and value of k. Which key features were affected?</p>
+<p><strong>Solution:</strong></p>
+<p>If we notice the x-intercept of \((1,0)\) in the parent function and what happened to it for the transformed function, we will notice it shifted up 2 units.</p>
+<p>The graph shifted up 2 units.</p>
+<p>This makes the equation of the transformed function \(g(x)=\log{(x)}+2\).</p>
+<p>Only the x-intercept will be affected by this transformation.</p>
+<h4><br><strong>Note</strong></h4>
+<p>The parent function can be</p>
+<ul>
+<li>a log with a base where b&gt;1, \(\log_{b}{x}\)</li>
+<li>a common log with base 10, \(\log{x}\)</li>
+<li>or a natural log with base e, \(\ln{x}\)</li>
+</ul>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Given the transformed equation \(g(x)=\log{(x)}-3\) of the parent function \(f(x)=\log{(x)}\), identify the following.</p>
+<ul>
+<li>Type of transformation</li>
+<li>Value of the shift</li>
+<li>Key features affected</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We see that 3 was subtracted from the whole function, which aligns with \(f(x)-3\). Since the value of k is less than 0, this tells us that this is a shift of 3 units down.</p>
+<ul>
+<li>Transformation is a vertical shift down.</li>
+<li>Value of shift is down 3 units.</li>
+<li>Only the x-intercept is affected.</li>
+</ul>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>Given the parent function \(f(x)=\ln{(x)}\) and a transformation as shown in the graph, identify the following.</p>
+<ul>
+<li>Type of transformation</li>
+<li>Value of the shift</li>
+<li>Key features affected</li>
+</ul>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/8lydskt6fs?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Notice that the x-intercept of \((1,0)\) of the parent function has moved up 5 units.</p>
+<ul>
+<li>Transformation is a vertical shift up.</li>
+<li>Value of shift is up 5 units.</li>
+<li>Only the x-intercept is affected.</li>
+</ul>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Horizontal Translations</strong></h4>
+<p data-start="2428" data-end="2491">A <strong data-start="2430" data-end="2456">horizontal translation</strong> moves the graph <strong data-start="2473" data-end="2490">left or right</strong>.</p>
+<p data-start="2493" data-end="2532">The transformed function is written as:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;">\(\Large g(x)=f(x+h)\)</span></span></span></span></span></p>
+<ul data-start="2556" data-end="2640">
+<li data-start="2556" data-end="2598">
+<p data-start="2558" data-end="2598">If \(h&gt;0\), the graph shifts <strong data-start="2589" data-end="2598">left</strong></p>
+</li>
+<li data-start="2599" data-end="2640">
+<p data-start="2601" data-end="2640">If \(h&lt;0\), the graph shifts <strong data-start="2632" data-end="2640">right</strong></p>
+</li>
+</ul>
+<p data-start="2642" data-end="2666">Effects on key features:</p>
+<ul data-start="2667" data-end="2793">
+<li data-start="2667" data-end="2702">
+<p data-start="2669" data-end="2702">The <strong data-start="2673" data-end="2702">vertical asymptote shifts </strong>left or right, to be the value of the horizontal translation</p>
+</li>
+<li data-start="2703" data-end="2727">
+<p data-start="2705" data-end="2727">The <strong data-start="2709" data-end="2727">domain changes</strong> based on the value of the horizontal shift</p>
+</li>
+<li data-start="2728" data-end="2758">
+<p data-start="2730" data-end="2758">The <strong data-start="2734" data-end="2758">range stays the same</strong></p>
+</li>
+<li data-start="2759" data-end="2793">
+<p data-start="2761" data-end="2793">The <strong>x-intercept</strong> also shifts left or right, to be 1 plus the value of the horizontal translation</p>
+</li>
+<li data-start="2759" data-end="2793">The existence of a y-intercept is affected only by shifts to the left.</li>
+</ul>
+<p><br>To identify if a graph of a logarithmic function has shifted up or down, check the first point against the x-intercept of the parent function.</p>
+<h4><strong><br>Example:</strong></h4>
+<p>The graph of the parent function \(f(x)=\log_{3}{(x)}\) and a transformed function are shown in the graph.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/bu6hivxdrf?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p>Identify the transformation and value of the transformation. Which key features were affected?</p>
+<p><strong>Solution:</strong></p>
+<p>If we notice the x-intercept of \((1,0)\) in the parent function and what happened to it for the transformed function, we will notice it shifted right 3 units.</p>
+<p>The graph shifted right 3 units.</p>
+<p>This makes the equation of the transformed function \(g(x)=\log{(x-3)}\).</p>
+<p>The vertical asymptote shifted right 3 units and became \(x=3\).</p>
+<p>The x-intercept shifted right 3 units and became \((4,0)\).</p>
+<p>The domain shifted with the asymptote and is now \(x&gt;3\).</p>
+<p>The range remains the same, and there is still no y-intercept.</p>
+<p><strong>Note</strong></p>
+<p>The parent function can be</p>
+<ul>
+<li>a log with a base where b&gt;1, \(\log_{b}{x}\)</li>
+<li>a common log with base 10, \(\log{x}\)</li>
+<li>or a natural log with base e, \(\ln{x}\)</li>
+</ul>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Given the parent function \(f(x)=\log{(x)}\) and a transformation as shown in the graph, identify the following.</p>
+<ul>
+<li>Type of transformation</li>
+<li>Value of the shift</li>
+<li>Key features affected</li>
+</ul>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ver605t9ec?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Notice that the x-intercept of \((1,0)\) of the parent function has moved left 4 units.</p>
+<ul>
+<li>Transformation is a horizontal shift left for the transformed function \(f(x+4)\).</li>
+<li>Value of shift is left 4 units.</li>
+<li>The Asymptote is shifted left 4 units to \(x=-4\).</li>
+<li>The x-intercept is shifted left 4 units to \((-3,0)\).</li>
+<li>The domain is now \(x&gt;-4\).</li>
+<li>There is also a y-intercept now where there was not one before.</li>
+</ul>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>Given the transformed equation \(g(x)=\log_{4}{(x-6)}\) of the parent function \(f(x)=\log_{4}{(x)}\), identify the following.</p>
+<ul>
+<li>Type of transformation</li>
+<li>Value of the shift</li>
+<li>Key features affected</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We see that 6 was subtracted from the x inside the function, which aligns with \(f(x-h)\). Since the value of h is greater than 0, this tells us that this is a shift of 6 units <strong>right</strong>.<br>Left and right shifts are always the opposite of what they are in the function.</p>
+<ul>
+<li>Transformation is a horizontal shift to the right.</li>
+<li>Value of shift is right 6 units.</li>
+<li>The asymptote will shift right 6 units to \(x=6\).</li>
+<li>The x-intercept will shift right 6 units to \((7,0)\).</li>
+<li>The domain is now \(x&gt;6\).</li>
+</ul>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><span style="color: #0e68b3;"><strong>Identifying the Type and Value of Translation</strong></span></h4>
+<p data-start="2635" data-end="2729">To identify a translation, compare the original function \(f(x)\)&nbsp;to the transformed function.</p>
+<ul data-start="2731" data-end="2831">
+<li data-start="2731" data-end="2764">
+<p data-start="2733" data-end="2764">\(f(x)+k\) → vertical shift</p>
+</li>
+<li data-start="2765" data-end="2831">
+<p data-start="2767" data-end="2831">\(f(x+h)\) → horizontal shift (opposite direction of the sign)</p>
+</li>
+</ul>
+<p data-start="4141" data-end="4162">To write an equation:</p>
+<ul data-start="4165" data-end="4267">
+<li data-start="4165" data-end="4214">
+<p data-start="4167" data-end="4214">Vertical shift → add or subtract k outside the function</p>
+</li>
+<li data-start="4217" data-end="4267">
+<p data-start="4219" data-end="4267">Horizontal shift → add or subtract h inside the function</p>
+</li>
+</ul>
+<p data-start="4271" data-end="4289">To create a table:</p>
+<ul data-start="4292" data-end="4384">
+<li data-start="4292" data-end="4341">
+<p data-start="4294" data-end="4341">Vertical shift → add or subtract k to each output value</p>
+</li>
+<li data-start="4344" data-end="4384">
+<p data-start="4346" data-end="4384">Horizontal shift → add or subtract h to each input value</p>
+</li>
+</ul>
+<p><br>Example</p>
+<p>The parent function \(f(x)=2^x\) is translated using the transformation function \(f(x)-4\).</p>
+<p>The graph will be translated down 4 units.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>A vertical shift of 3 units up is applied to the parent function \(f(x)=\log_{5}{(x)}\).</p>
+<p>Which function represents the transformed function?</p>
+<p>A. <img class="equation_image" title="g(x)=\log_{5}{(x)}-3" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Clog_%257B5%257D%257B(x)%257D-3?scale=1" alt="LaTeX: g(x)=\log_{5}{(x)}-3" data-equation-content="g(x)=\log_{5}{(x)}-3" data-ignore-a11y-check="" loading="lazy"></p>
+<p>B. <img class="equation_image" title="g(x)=\log_{5}{(x-3)}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Clog_%257B5%257D%257B(x-3)%257D?scale=1" alt="LaTeX: g(x)=\log_{5}{(x-3)}" data-equation-content="g(x)=\log_{5}{(x-3)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>C. <img class="equation_image" title="g(x)=\log_{5}{(x)+3}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Clog_%257B5%257D%257B(x)%252B3%257D?scale=1" alt="LaTeX: g(x)=\log_{5}{(x)+3}" data-equation-content="g(x)=\log_{5}{(x)+3}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>D. <img class="equation_image" title="g(x)=\log_{5}{(x+3)}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Clog_%257B5%257D%257B(x%252B3)%257D?scale=1" alt="LaTeX: g(x)=\log_{5}{(x+3)}" data-equation-content="g(x)=\log_{5}{(x+3)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since the transformation is a shift up 3 units, the transformation is applied to the whole function, \(f(x)\).</p>
+<p>This will make the equation \(g(x)=\log_{5}{(x)}+3\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> C</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>A horizontal shift of left 5 units is applied to the parent function \(f(x)=\ln{(x)}\).</p>
+<p>Which function represents the transformed function?</p>
+<p>A. <img class="equation_image" title="g(x)=\ln{(x+5)}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Cln%257B(x%252B5)%257D?scale=1" alt="LaTeX: g(x)=\ln{(x+5)}" data-equation-content="g(x)=\ln{(x+5)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>B. <img class="equation_image" title="g(x)=\ln{(x-5)}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Cln%257B(x-5)%257D?scale=1" alt="LaTeX: g(x)=\ln{(x-5)}" data-equation-content="g(x)=\ln{(x-5)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>C. <img class="equation_image" title="g(x)=\ln{(x)+5}" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Cln%257B(x)%252B5%257D?scale=1" alt="LaTeX: g(x)=\ln{(x)+5}" data-equation-content="g(x)=\ln{(x)+5}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>D. <img class="equation_image" title="g(x)=\ln{(x)}-5" src="https://optimadomi.instructure.com/equation_images/g(x)%253D%255Cln%257B(x)%257D-5?scale=1" alt="LaTeX: g(x)=\ln{(x)}-5" data-equation-content="g(x)=\ln{(x)}-5" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since the transformation is a shift left 5 units, the transformation is applied to the whole function, \(f(x+5)\).</p>
+<p>This will make the equation \(g(x)=\ln{(x+5)}\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> A</p>
+<h4><br><br><span style="color: #f67a0c;">Example 3</span></h4>
+<p>A horizontal shift of 2 units left is applied to the parent function \(f(x)=\log_{2}{x}\). The table of values for the parent function is given.</p>
+<table style="border-collapse: collapse; width: 6.79354%; height: 98px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.8662%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.8662%; text-align: center;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">1</td>
+<td style="width: 49.8662%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">2</td>
+<td style="width: 49.8662%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">4</td>
+<td style="width: 49.8662%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">8</td>
+<td style="width: 49.8662%; text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p>What would the table of values for the transformation function be?</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since we are shifting left 2 units, we subtract 2 from all the x values in the table, and the y values remain the same.</p>
+<table style="border-collapse: collapse; width: 10.1703%; height: 115px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.7668%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.0746%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.7668%; text-align: center;">1-2=-1</td>
+<td style="width: 49.0746%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 50.7668%; text-align: center;">2-2=0</td>
+<td style="width: 49.0746%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50.7668%; text-align: center;">4-2=2</td>
+<td style="width: 49.0746%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50.7668%; text-align: center;">8-2=6</td>
+<td style="width: 49.0746%; text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span>&nbsp;</p>
+<table style="border-collapse: collapse; width: 6.88922%; height: 122px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.0183%; text-align: center;"><strong>x</strong></td>
+<td style="width: 50.0183%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">-1</td>
+<td style="width: 50.0183%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">0</td>
+<td style="width: 50.0183%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">2</td>
+<td style="width: 50.0183%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">6</td>
+<td style="width: 50.0183%; text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<h4><span style="color: #f67a0c;"><br><br>Example 4</span></h4>
+<p>A vertical shift of 6 units down is applied to the parent function \(f(x)=\log_{3}{x}\). The table of values for the parent function is given.</p>
+<table style="border-collapse: collapse; width: 6.79354%; height: 98px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.8662%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.8662%; text-align: center;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">1</td>
+<td style="width: 49.8662%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">3</td>
+<td style="width: 49.8662%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 49.8662%; text-align: center;">9</td>
+<td style="width: 49.8662%; text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p>What would the table of values for the transformation function be?</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Since we are shifting down 6 units, we subtract 6 from all the y values in the table, and the x values remain the same.</p>
+<table style="border-collapse: collapse; width: 10.328%; height: 115px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.3408%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.5018%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.3408%; text-align: center;">1</td>
+<td style="width: 49.5018%; text-align: center;">0-6=-6</td>
+</tr>
+<tr>
+<td style="width: 50.3408%; text-align: center;">3</td>
+<td style="width: 49.5018%; text-align: center;">1-6=-5</td>
+</tr>
+<tr>
+<td style="width: 50.3408%; text-align: center;">9</td>
+<td style="width: 49.5018%; text-align: center;">2-6=-4</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span>&nbsp;</p>
+<table style="border-collapse: collapse; width: 6.88922%; height: 122px;" border="1">
+<tbody>
+<tr>
+<td style="width: 50.0183%; text-align: center;"><strong>x</strong></td>
+<td style="width: 50.0183%; text-align: center;"><strong>g(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">1</td>
+<td style="width: 50.0183%; text-align: center;">-6</td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">3</td>
+<td style="width: 50.0183%; text-align: center;">-5</td>
+</tr>
+<tr>
+<td style="width: 50.0183%; text-align: center;">9</td>
+<td style="width: 50.0183%; text-align: center;">-4</td>
+</tr>
+</tbody>
+</table>
+<h4 data-start="5176" data-end="5191"><strong><br><br>Conclusion</strong></h4>
+<p data-start="5193" data-end="5685" data-is-last-node="" data-is-only-node="">Transformations allow logarithmic functions to be adjusted while preserving their overall shape and behavior. By understanding reflections, vertical translations, and horizontal translations, you can identify how a logarithmic graph has changed and explain those changes using equations, graphs, or tables. Being able to create new representations from a given transformation strengthens your ability to model real-world situations and prepares you for more advanced logarithmic applications.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="1126" data-end="1219">1. How do changes to the equation of a logarithmic function affect its graph and key features?</p>
+<p data-start="1126" data-end="1219"><span style="font-size: 1rem;">2. What is the difference between transformations that affect the input of a logarithmic function versus those that affect the output?</span></p>
+<p data-start="1126" data-end="1219"><span style="font-size: 1rem;">3. How do transformations of logarithmic functions impact the domain and vertical asymptote?</span></p>
+<p data-start="1126" data-end="1219"><span style="font-size: 1rem;">4. How can tables, equations, and graphs be used to identify and verify transformations of logarithmic functions?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.05 &middot; Transforming Logarithmic Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

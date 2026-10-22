@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 12.02 Composition of Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 12</div>
+        <div style="font-size: 13px; color: #666;">Inverse Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">12.02</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Inverse Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">12.02</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Composition of Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Composite Function:</strong>&nbsp;A function formed by applying one function to the results of another, written as \( (f \circ g)(x) = f(g(x)) \), where the output of \( g(x) \) becomes the input of \( f(x) \).</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Composition of Functions:</strong>&nbsp;The operation of combining two functions by substituting the entire rule of one function in place of the input variable of another.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Domain:</strong>&nbsp;The complete set of allowable input values \( x \) for which a function is defined.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Domain Restriction:</strong>&nbsp;A limitation on the input values of a function, which in a composite function may arise when the range of the inner function excludes certain values that the outer function requires.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Function Notation:</strong>&nbsp;A symbolic way of writing a function and its operations, such as \( f(x) \) or \( f(g(x)) \), that clearly identifies the input being used and the operations being applied.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Inner Function:</strong>&nbsp;In a composition \( f(g(x)) \), the function \( g(x) \) is the inner function; its output becomes the input for the outer function.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Input:</strong>&nbsp;A value substituted into a function in place of the independent variable; in a composition, the output of the inner function serves as the input of the outer function.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Outer Function:</strong>&nbsp;In a composition \( f(g(x)) \), the function \( f \) is the outer function; it receives the output of the inner function as its input.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Output:</strong>&nbsp;The result produced by a function for a given input value; written as \( f(x) \) for a function \( f \) evaluated at \( x \).</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Range:</strong>&nbsp;The complete set of possible output values produced by a function for all inputs in its domain.</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Table of Values:</strong>&nbsp;An organized display of input-output pairs for a function, which can be used to represent and evaluate a composition by tracing outputs of one function as inputs into another.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In this lesson, you will learn how to compose two functions — that is, how to apply one function to the output of another. You will represent compositions both algebraically and using tables of values, and you will determine the domain and range of the resulting composite function.</span></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Finding the Composition of Two Functions Algebraically</strong></h4>
+<p><strong>What Is a Composition of Functions?</strong></p>
+<p>When you<span>&nbsp;</span><strong>compose</strong><span>&nbsp;</span>two functions, you use the output of one function as the input of another. Given two functions \(f(x)\) and \(g(x)\), the composition \(f(g(x))\) — also written \((f \circ g)(x)\) — means you substitute the entire rule of \(g(x)\) in place of the input variable \(x\) in \(f(x)\).</p>
+<p>The function \(g(x)\) is called the<span>&nbsp;</span><strong>inner function</strong><span>&nbsp;</span>and \(f(x)\) is called the<span>&nbsp;</span><strong>outer function</strong>. Always begin by identifying the inner function, then substitute it into the outer function and simplify.</p>
+<p><strong>Important:</strong><span>&nbsp;</span>Composition is<span>&nbsp;</span><em>not</em><span>&nbsp;</span>commutative. In general, \(f(g(x)) \neq g(f(x))\). <span style="text-decoration: underline;">The order in which the functions are composed changes the result.</span></p>
+<p><strong><br>Domain and Range of a Composite Function</strong></p>
+<p>After writing the rule for the composite function, you must determine its domain and range.</p>
+<p>The domain of \(f(g(x))\) is the set of all \(x\)-values that satisfy two conditions: \(x\) must be in the domain of \(g\), and the output \(g(x)\) must be in the domain of \(f\).</p>
+<p>In practice, the most common restriction arises when the outer function is a square root — the expression inside the radical must be greater than or equal to zero. The range is determined by the set of all possible output values once the domain has been established.</p>
+<h4><strong><br><span style="color: #0e68b3;">Quadratic Composed with a Linear Function</span></strong></h4>
+<p>Let \(f(x) = x^2 + 3\) and \(g(x) = 2x - 1\).</p>
+<p>Find \((f \circ g)(x)\) and state the domain and range.</p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>Identify the inner and outer functions. Here, \(g(x) = 2x - 1\) is the inner function and \(f(x) = x^2 + 3\) is the outer function.</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Substitute \(g(x)\) into \(f(x)\) in place of \(x\).</p>
+<p><img class="equation_image" title="f(g(x))\\
+f(2x - 1) \\
+ (2x - 1)^2 + 3" src="https://optimadomi.instructure.com/equation_images/f(g(x))%255C%255C%250Af(2x%2520-%25201)%2520%255C%255C%250A%2520(2x%2520-%25201)%255E2%2520%252B%25203?scale=1" alt="LaTeX: f(g(x))\\
+f(2x - 1) \\
+ (2x - 1)^2 + 3" data-equation-content="f(g(x))\\
+f(2x - 1) \\
+ (2x - 1)^2 + 3" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Expand and simplify.</p>
+<p><img class="equation_image" title="(2x - 1)^2 + 3 \\
+(2x-1)(2x-1)+3 \\
+\space \\
+\text{Multiply the parentheses} \\
+4x^2 - 2x -2x + 1 + 3 \\
+\space \\
+\text{Combine like terms} \\
+4x^2 - 4x + 4" src="https://optimadomi.instructure.com/equation_images/(2x%2520-%25201)%255E2%2520%252B%25203%2520%255C%255C%250A(2x-1)(2x-1)%252B3%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Ctext%257BMultiply%2520the%2520parentheses%257D%2520%255C%255C%250A4x%255E2%2520-%25202x%2520-2x%2520%252B%25201%2520%252B%25203%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Ctext%257BCombine%2520like%2520terms%257D%2520%255C%255C%250A4x%255E2%2520-%25204x%2520%252B%25204?scale=1" alt="LaTeX: (2x - 1)^2 + 3 \\
+(2x-1)(2x-1)+3 \\
+\space \\
+\text{Multiply the parentheses} \\
+4x^2 - 2x -2x + 1 + 3 \\
+\space \\
+\text{Combine like terms} \\
+4x^2 - 4x + 4" data-equation-content="(2x - 1)^2 + 3 \\
+(2x-1)(2x-1)+3 \\
+\space \\
+\text{Multiply the parentheses} \\
+4x^2 - 2x -2x + 1 + 3 \\
+\space \\
+\text{Combine like terms} \\
+4x^2 - 4x + 4" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Determine the domain. Both \(f(x)\) and \(g(x)\) are defined for all real numbers, so there are no restrictions.</p>
+<p><strong>Step 5:</strong><span>&nbsp;</span>Determine the range. The composite function \(4x^2 - 4x + 4\) is a parabola opening upward. Find its vertex: \(x = \dfrac{4}{2(4)} = \dfrac{1}{2}\). Evaluate: \(4\left(\dfrac{1}{2}\right)^2 - 4\left(\dfrac{1}{2}\right) + 4 = 1 - 2 + 4 = 3\). The minimum value is 3.</p>
+<p><strong><br>Answer:</strong><span>&nbsp;</span>\((f \circ g)(x) = 4x^2 - 4x + 4\).</p>
+<p>Domain: all real numbers as an inequality \(-\infty &lt; x &lt; \infty \).</p>
+<p>Range: \([3, \infty)\) as an inequality <img class="equation_image" title="y \geq 3" src="https://optimadomi.instructure.com/equation_images/y%2520%255Cgeq%25203?scale=1" alt="LaTeX: y \geq 3" data-equation-content="y \geq 3" data-ignore-a11y-check="" loading="lazy"></p>
+<h4><strong><br><br><span style="color: #0e68b3;">Square Root Composed with a Quadratic Function</span></strong></h4>
+<p>Let \(f(x) = \sqrt{x}\) and \(g(x) = x^2 - 9\).</p>
+<p>Find \((f \circ g)(x)\) and state the domain and range.</p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>Identify the inner and outer functions. Here, \(g(x) = x^2 - 9\) is the inner function and \(f(x) = \sqrt{x}\) is the outer function.</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Substitute \(g(x)\) into \(f(x)\).</p>
+<p>\(f(g(x)) = f(x^2 - 9) = \sqrt{x^2 - 9}\)</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Determine the domain. Because the outer function is a square root, the expression inside the radical must be greater than or equal to zero.</p>
+<p>\(x^2 - 9 \geq 0\)</p>
+<p>Factor: \((x - 3)(x + 3) \geq 0\)</p>
+<p>This inequality is satisfied when \(x \leq -3\) or \(x \geq 3\). This excludes everything between -3 and 3. Domain: \((-\infty, -3] \cup [3, \infty)\).</p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Determine the range. Since \(x^2 - 9 \geq 0\) for all \(x\) in the domain, and the square root of a non-negative number is non-negative, the range begins at 0 and increases without bound.</p>
+<p><strong><br>Answer:</strong><span>&nbsp;</span>\((f \circ g)(x) = \sqrt{x^2 - 9}\).</p>
+<p>Domain: \((-\infty, -3] \cup [3, \infty)\) as an inequality <img class="equation_image" title="x \leq-3\; or \; x \geq 3" src="https://optimadomi.instructure.com/equation_images/x%2520%255Cleq-3%255C%253B%2520or%2520%255C%253B%2520x%2520%255Cgeq%25203?scale=1" alt="LaTeX: x \leq-3\; or \; x \geq 3" data-equation-content="x \leq-3\; or \; x \geq 3" data-ignore-a11y-check="" loading="lazy">.</p>
+<p>Range: \([0, \infty)\) as an inequality <img class="equation_image" title="y \geq 0" src="https://optimadomi.instructure.com/equation_images/y%2520%255Cgeq%25200?scale=1" alt="LaTeX: y \geq 0" data-equation-content="y \geq 0" data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Let \(f(x) = 2^x\) and \(g(x) = x - 3\).</p>
+<p>Find \((f \circ g)(x)\) and state the domain and range.</p>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p><strong>Step 1:</strong> Identify the inner and outer functions. \(g(x) = x - 3\) is the inner function and \(f(x) = 2^x\) is the outer function.</p>
+<p><strong>Step 2:</strong> Substitute \(g(x)\) into \(f(x)\) in place of \(x\).</p>
+<p>\(f(g(x)) = f(x - 3) = 2^{x - 3}\)</p>
+<p><strong>Step 3:</strong> Check for domain restrictions. The linear function \(g(x) = x - 3\) is defined for all real numbers, and the exponential function \(f(x) = 2^x\) accepts all real numbers as input. There are no restrictions.</p>
+<p><strong>Step 4:</strong> Determine the range. An exponential function of the form \(2^{x-3}\) always produces positive output values, no matter what \(x\) is. The outputs get closer and closer to zero but never reach it.</p>
+<p><strong><br><span style="color: #e62429;">Answer:</span></strong> \((f \circ g)(x) = 2^{x-3}\).</p>
+<p>Domain: all real numbers <img class="equation_image" title="-\infty < x < \infty" src="https://optimadomi.instructure.com/equation_images/-%255Cinfty%2520%253C%2520x%2520%253C%2520%255Cinfty?scale=1" alt="LaTeX: -\infty < x < \infty" data-equation-content="-\infty < x < \infty" data-ignore-a11y-check="" loading="lazy">.</p>
+<p>Range: \((0, \infty)\) as an inequality \(y &gt; 0\).</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>Let \(f(x) = \sqrt{x}\) and \(g(x) = x^2 + 1 \).</p>
+<p>Find \((g \circ f)(x)\) and state the domain and range.</p>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p><strong>Step 1:</strong> Identify the inner and outer functions. \(f(x) =\sqrt{x}\) is the inner function and \(g(x) = x^2 + 1\) is the outer function.</p>
+<p><strong>Step 2:</strong> Substitute \(f(x)\) into \(g(x)\).</p>
+<p>\(g(f(x)) = g(\sqrt{x}) = (\sqrt{x})^2 + 1 = x + 1\)</p>
+<p><strong>Step 3:</strong> Determine the domain. Even though the simplified expression \(x + 1\) looks like it is defined for all real numbers, remember that the inner function \(g(x) = \sqrt{x}\) requires \(x \geq 0\). The domain restriction must be established before simplifying. Therefore, \(x \geq 0\). Domain: \([0, \infty)\).</p>
+<p><strong>Step 4:</strong> Determine the range. When \(x \geq 0\), the expression \(x + 1 \geq 0 + 1 = 1\). The output increases without bound as \(x\) increases.</p>
+<p><strong><br><span style="color: #e62429;">Answer:</span></strong> \((f \circ g)(x) = x + 1\), where \(x \geq 0\).</p>
+<p>Domain: \([0, \infty)\) as an inequality \(x\geq 0\).</p>
+<p>Range: \([1, \infty)\) as an inequality \(y \geq 1\).</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p>Let \(f(x) = \sqrt[3]{x}\) and \(g(x) = x^3 + 8\).</p>
+<p>Find \((f \circ g)(x)\) and state the domain and range.</p>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p><strong>Step 1:</strong> Identify the inner and outer functions. \(g(x) = x^3 + 8\) is the inner function and \(f(x) = \sqrt[3]{x}\) is the outer function.</p>
+<p><strong>Step 2:</strong> Substitute \(g(x)\) into \(f(x)\).</p>
+<p>\(f(g(x)) = f(x^3 + 8) = \sqrt[3]{x^3 + 8}\)</p>
+<p><strong>Step 3:</strong> Determine the domain. The cubic function \(g(x) = x^3 + 8\) is defined for all real numbers. Unlike square roots, cube roots are defined for all real numbers — including negative values — so the outer function places no additional restrictions on the input. There are no domain restrictions.</p>
+<p><strong>Step 4:</strong> Determine the range. Since the cube root function produces all real number outputs (from \(-\infty\) to \(\infty\)) and \(g(x) = x^3 + 8\) takes on all real values, the composite function outputs all real numbers as well.</p>
+<p><strong><br><span style="color: #e62429;">Answer:</span></strong> \((f \circ g)(x) = \sqrt[3]{x^3 + 8}\).</p>
+<p>Domain: all real numbers \(-\infty &lt; x &lt; \infty\).</p>
+<p>Range: all real numbers \(-\infty &lt; y &lt; \infty\).</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Finding Compositions of Two Functions Represented as Tables</strong></h4>
+<p><strong>How to Use Tables to Find a Composition</strong></p>
+<p>When functions are represented as tables of values rather than algebraic rules, you can still find compositions by carefully tracing outputs of one function as inputs into the other. The process follows the same logic as algebraic composition: \(f(g(x))\) means you first look up \(g(x)\) in the table for \(g\), then use that output value as the input when looking up a value in the table for \(f\).</p>
+<p>Follow these steps for any table composition:</p>
+<p><strong>Step 1 —</strong><span>&nbsp;</span>Locate the input value \(x\) in the table for the inner function and read off the output.</p>
+<p><strong>Step 2 —</strong><span>&nbsp;</span>Take that output and use it as the new input in the table for the outer function.</p>
+<p><strong>Step 3 —</strong><span>&nbsp;</span>Read the final output. This is the value of the composition.</p>
+<p><strong>Domain Restriction with Tables:</strong><span>&nbsp;</span>If the output of the inner function does not appear as an input in the outer function's table, the composition is<span>&nbsp;</span><strong>undefined</strong><span>&nbsp;</span>at that value. This is a domain restriction — that input value cannot be included in the domain of the composite function.</p>
+<h4><strong><br><span style="color: #0e68b3;">Evaluating Specific Composition Values from Tables</span></strong></h4>
+<p>Use the tables below to find \((f \circ g)(2)\), \((f \circ g)(4)\), and \((f \circ g)(5)\).</p>
+<table style="border-collapse: collapse; width: 30.3885%; height: 25px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;"><strong>g(x)</strong></td>
+<td style="width: 50%; text-align: center;"><strong>f(x)</strong></td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 40.8625%; height: 229px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50.291%;">\(x\)</td>
+<td style="width: 50.291%;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.291%;">1</td>
+<td style="width: 50.291%;">3</td>
+</tr>
+<tr>
+<td style="width: 50.291%;">2</td>
+<td style="width: 50.291%;">5</td>
+</tr>
+<tr>
+<td style="width: 50.291%;">3</td>
+<td style="width: 50.291%;">7</td>
+</tr>
+<tr>
+<td style="width: 50.291%;">4</td>
+<td style="width: 50.291%;">1</td>
+</tr>
+<tr>
+<td style="width: 50.291%;">5</td>
+<td style="width: 50.291%;">6</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 44.4444%; height: 212px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50.2112%;">\(x\)</td>
+<td style="width: 49.4387%;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">1</td>
+<td style="width: 49.4387%;">4</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">2</td>
+<td style="width: 49.4387%;">7</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">3</td>
+<td style="width: 49.4387%;">2</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">4</td>
+<td style="width: 49.4387%;">6</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">5</td>
+<td style="width: 49.4387%;">1</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">6</td>
+<td style="width: 49.4387%;">3</td>
+</tr>
+<tr>
+<td style="width: 50.2112%;">7</td>
+<td style="width: 49.4387%;">5</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Finding \((f \circ g)(2)\):</strong></p>
+<ul>
+<li>Step 1: Look up \(g(2)\) in the table for \(g\). \(g(2) = 5\).</li>
+<li>Step 2: Use 5 as input into the table for \(f\). \(f(5) = 1\).</li>
+<li>\((f \circ g)(2) = 1\)</li>
+</ul>
+<p><strong>Finding \((f \circ g)(4)\):</strong></p>
+<ul>
+<li>Step 1: \(g(4) = 1\).</li>
+<li>Step 2: \(f(1) = 4\).</li>
+<li>\((f \circ g)(4) = 4\)</li>
+</ul>
+<p><strong>Finding \((f \circ g)(5)\):</strong></p>
+<ul>
+<li>Step 1: \(g(5) = 6\).</li>
+<li>Step 2: \(f(6) = 3\).</li>
+<li>\((f \circ g)(5) = 3\)</li>
+</ul>
+<h4><strong><br><span style="color: #0e68b3;">When a Composition Is Undefined</span></strong></h4>
+<p>Using the same tables from Worked Example 1, find \((g \circ f)(1)\), \((g \circ f)(4)\), and \((g \circ f)(2)\).</p>
+<p><strong>Finding \((g \circ f)(1)\):</strong></p>
+<ul>
+<li>Step 1: Look up \(f(1)\) in the table for \(f\). \(f(1) = 4\).</li>
+<li>Step 2: Use 4 as input into the table for \(g\). \(g(4) = 1\).</li>
+<li>\((g \circ f)(1) = 1\)</li>
+</ul>
+<p><strong>Finding \((g \circ f)(4)\):</strong></p>
+<ul>
+<li>Step 1: \(f(4) = 6\).</li>
+<li>Step 2: Look up \(g(6)\) in the table for \(g\). The value \(x = 6\) does not appear in the table for \(g\). The composition is<span>&nbsp;</span><strong>undefined</strong>.</li>
+<li>\((g \circ f)(4)\) is undefined. The value \(x = 4\) is not in the domain of \(g \circ f\).</li>
+</ul>
+<p><strong>Finding \((g \circ f)(2)\):</strong></p>
+<ul>
+<li>Step 1: \(f(2) = 7\).</li>
+<li>Step 2: Look up \(g(7)\) in the table for \(g\). The value \(x = 7\) does not appear in the table for \(g\). The composition is<span>&nbsp;</span><strong>undefined</strong>.</li>
+<li>\((g \circ f)(2)\) is undefined. The value \(x = 2\) is not in the domain of \(g \circ f\).</li>
+</ul>
+<p>This example illustrates an important point: when the output of the inner function falls outside the domain of the outer function, the composition cannot be evaluated at that input. These values must be excluded from the domain of the composite function.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Use the tables below to find \((f \circ g)(1)\), \((f \circ g)(3)\), and \((g \circ f)(2)\).</p>
+<table style="border-collapse: collapse; width: 27.6211%; height: 41px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;"><strong>\(g(x)\)</strong></td>
+<td style="width: 50%; text-align: center;"><strong>\(f(x)\)</strong></td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 49.4071%; height: 109px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50%;">\(x\)</td>
+<td style="width: 50%;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%;">1</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">5</td>
+</tr>
+<tr>
+<td style="width: 50%;">3</td>
+<td style="width: 50%;">4</td>
+</tr>
+<tr>
+<td style="width: 50%;">4</td>
+<td style="width: 50%;">1</td>
+</tr>
+<tr>
+<td style="width: 50%;">5</td>
+<td style="width: 50%;">3</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 46.2451%; height: 144px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50%;">\(x\)</td>
+<td style="width: 50%;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%;">1</td>
+<td style="width: 50%;">5</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">3</td>
+</tr>
+<tr>
+<td style="width: 50%;">3</td>
+<td style="width: 50%;">1</td>
+</tr>
+<tr>
+<td style="width: 50%;">4</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">5</td>
+<td style="width: 50%;">4</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p><strong>Finding \((f \circ g)(1)\):</strong></p>
+<ul>
+<li>Step 1: Look up \(g(1)\) in the table for \(g\). \(g(1) = 2\).</li>
+<li>Step 2: Use 2 as the input in the table for \(f\). \(f(2) = 3\).</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer: </strong></span>\((f \circ g)(1) = 3\)</p>
+<p><strong><br>Finding \((f \circ g)(3)\):</strong></p>
+<ul>
+<li>Step 1: \(g(3) = 4\).</li>
+<li>Step 2: \(f(4) = 2\).</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span>&nbsp;\((f \circ g)(3) = 2\)</p>
+<p><strong><br>Finding \((g \circ f)(2)\):</strong></p>
+<ul>
+<li>Step 1: Now the order is reversed — \(f\) is the inner function and \(g\) is the outer function. Look up \(f(2)\) in the table for \(f\). \(f(2) = 3\).</li>
+<li>Step 2: Use 3 as the input in the table for \(g\). \(g(3) = 4\).</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span>&nbsp;\((g \circ f)(2) = 4\)</p>
+<p>Notice that \((f \circ g)(1) = 3\) and \((g \circ f)(2) = 4\) are different values, which reinforces that order matters in composition.</p>
+</details>
+<p>&nbsp;</p>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Use the tables below to build a complete table of values for \((p \circ q)(x)\) for all values of \(x\) in the domain. Then state the domain and range of the composite function.</p>
+<table style="border-collapse: collapse; width: 28.5258%; height: 62px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(q(x)\)</td>
+<td style="width: 50%; text-align: center;">\(p(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 52.0108%; height: 125px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50%;">\(x\)</td>
+<td style="width: 50%;">\(q(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%;">0</td>
+<td style="width: 50%;">1</td>
+</tr>
+<tr>
+<td style="width: 50%;">1</td>
+<td style="width: 50%;">4</td>
+</tr>
+<tr>
+<td style="width: 50%;">2</td>
+<td style="width: 50%;">2</td>
+</tr>
+<tr>
+<td style="width: 50%;">3</td>
+<td style="width: 50%;">0</td>
+</tr>
+<tr>
+<td style="width: 50%;">4</td>
+<td style="width: 50%;">3</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 51.2428%; height: 142px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50.1901%;">\(x\)</td>
+<td style="width: 50.1901%;">\(p(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.1901%;">0</td>
+<td style="width: 50.1901%;">3</td>
+</tr>
+<tr>
+<td style="width: 50.1901%;">1</td>
+<td style="width: 50.1901%;">0</td>
+</tr>
+<tr>
+<td style="width: 50.1901%;">2</td>
+<td style="width: 50.1901%;">4</td>
+</tr>
+<tr>
+<td style="width: 50.1901%;">3</td>
+<td style="width: 50.1901%;">1</td>
+</tr>
+<tr>
+<td style="width: 50.1901%;">4</td>
+<td style="width: 50.1901%;">2</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p>For each input \(x\), first look up \(q(x)\), then use that value to look up \(p(q(x))\).</p>
+<p>\((p \circ q)(0) = p(q(0)) = p(1) = 0\)</p>
+<p>\((p \circ q)(1) = p(q(1)) = p(4) = 2\)</p>
+<p>\((p \circ q)(2) = p(q(2)) = p(2) = 4\)</p>
+<p>\((p \circ q)(3) = p(q(3)) = p(0) = 3\)</p>
+<p>\((p \circ q)(4) = p(q(4)) = p(3) = 1\)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The completed composition table is:</p>
+<table style="border-collapse: collapse; width: 7.92975%;" border="1">
+<tbody>
+<tr>
+<th style="width: 44.5719%; text-align: center;">\(x\)</th>
+<th style="width: 55.4281%; text-align: center;">\((p \circ q)(x)\)</th>
+</tr>
+<tr>
+<td style="width: 44.5719%; text-align: center;">0</td>
+<td style="width: 55.4281%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 44.5719%; text-align: center;">1</td>
+<td style="width: 55.4281%; text-align: center;">2</td>
+</tr>
+<tr>
+<td style="width: 44.5719%; text-align: center;">2</td>
+<td style="width: 55.4281%; text-align: center;">4</td>
+</tr>
+<tr>
+<td style="width: 44.5719%; text-align: center;">3</td>
+<td style="width: 55.4281%; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="width: 44.5719%; text-align: center;">4</td>
+<td style="width: 55.4281%; text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Domain of \((p \circ q)(x)\):</strong> \(\{0, 1, 2, 3, 4\}\) — all inputs produce defined outputs because every output of \(q\) appears as an input in the table for \(p\).</p>
+<p><strong>Range of \((p \circ q)(x)\):</strong> \(\{0, 1, 2, 3, 4\}\) — the set of all output values in the completed table.</p>
+</details>
+<p>&nbsp;</p>
+<h4><span style="color: #f88e0a;">Example 5</span></h4>
+<p><span>Use the tables below to find \((g \circ f)(1)\), \((g \circ f)(3)\), \((g \circ f)(4)\), and \((f \circ g)(2)\). If any composition is undefined, explain why.</span></p>
+<table style="border-collapse: collapse; width: 31.0804%; height: 5px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">\(f(x)\)</td>
+<td style="width: 50%; text-align: center;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 49.0368%; height: 133px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50.1742%;">\(x\)</td>
+<td style="width: 50.1742%;">\(f(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">1</td>
+<td style="width: 50.1742%;">6</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">2</td>
+<td style="width: 50.1742%;">3</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">3</td>
+<td style="width: 50.1742%;">5</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">4</td>
+<td style="width: 50.1742%;">1</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 50%; text-align: center;">
+<table style="border-collapse: collapse; width: 53.2399%; height: 137px; margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td style="width: 50.1742%;">\(x\)</td>
+<td style="width: 50.1742%;">\(g(x)\)</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">1</td>
+<td style="width: 50.1742%;">3</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">2</td>
+<td style="width: 50.1742%;">1</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">3</td>
+<td style="width: 50.1742%;">4</td>
+</tr>
+<tr>
+<td style="width: 50.1742%;">4</td>
+<td style="width: 50.1742%;">2</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary><span style="color: #e62429;">Show Solution and Explanation</span></summary>
+<p><strong>Finding \((g \circ f)(1)\):</strong></p>
+<ul>
+<li>Step 1: \(f(1) = 6\).</li>
+<li>Step 2: Look up \(g(6)\). The value \(x = 6\) does not appear in the table for \(g\).</li>
+</ul>
+<p><strong><span style="color: #e62429;">Answer:</span> \((g \circ f)(1)\) is undefined.</strong> The output of \(f\) at \(x = 1\) falls outside the domain of \(g\), so this input must be excluded from the domain of the composite function.</p>
+<p><strong><br>Finding \((g \circ f)(3)\):</strong></p>
+<ul>
+<li>Step 1: \(f(3) = 5\).</li>
+<li>Step 2: Look up \(g(5)\). The value \(x = 5\) does not appear in the table for \(g\).</li>
+</ul>
+<p><strong><span style="color: #e62429;">Answer:</span> \((g \circ f)(3)\) is undefined.</strong> Same reason as above — the output of \(f\) at \(x = 3\) is not in the domain of \(g\).</p>
+<p><strong><br>Finding \((g \circ f)(4)\):</strong></p>
+<ul>
+<li>Step 1: \(f(4) = 1\).</li>
+<li>Step 2: Look up \(g(1)\). \(g(1) = 3\). This value exists in the table for \(g\).</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \((g \circ f)(4) = 3\)</p>
+<p><strong><br>Finding \((f \circ g)(2)\):</strong></p>
+<ul>
+<li>Step 1: Now the order is reversed — \(g\) is the inner function and \(f\) is the outer function. Look up \(g(2)\) in the table for \(g\). \(g(2) = 1\).</li>
+<li>Step 2: Look up \(f(1)\) in the table for \(f\). \(f(1) = 6\).</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \((f \circ g)(2) = 6\)</p>
+<p><strong>Summary:</strong> Of the four compositions asked for, two were undefined because the outputs of the inner function did not fall within the domain of the outer function's table. This is a key reminder that the domain of a composite function depends on whether the inner function's outputs are valid inputs for the outer function.</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Evaluating a Composition of Functions Given the Equations</strong></h4>
+<p><strong>How to Evaluate a Composition at a Specific Input Value</strong></p>
+<p>When you are given the equations of two functions and asked to evaluate a composition at a specific value, you have two methods available. Both will always produce the same answer.</p>
+<p><strong>Method 1 — Work from the inside out:</strong><span>&nbsp;</span>Evaluate the inner function at the given input first, then substitute that result into the outer function.</p>
+<p><strong>Method 2 — Build the composite rule first:</strong><span>&nbsp;</span>Find the algebraic rule for the composite function as you did in Part 1, then substitute the given input value into the simplified rule.</p>
+<p>For most problems at this level, Method 1 is faster when you only need a single value. Method 2 is more efficient when you need to evaluate the composition at several different input values.</p>
+<p>Before evaluating, always check that the given input is in the domain of the composite function. If the input is a restricted value, the composition is undefined at that point.</p>
+<h4><strong><br>Evaluating Using Method 1</strong></h4>
+<p>Let \(f(x) = x^2 - 4\) and \(g(x) = \sqrt{x + 5}\). Find \((f \circ g)(4)\).</p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>Identify the inner function. In \((f \circ g)(x) = f(g(x))\), the inner function is \(g(x) = \sqrt{x + 5}\).</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Evaluate the inner function at \(x = 4\).</p>
+<p>\(g(4) = \sqrt{4 + 5} = \sqrt{9} = 3\)</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Substitute the result into the outer function \(f(x) = x^2 - 4\).</p>
+<p>\(f(g(4)) = f(3) = (3)^2 - 4 = 9 - 4 = 5\)</p>
+<p><strong>Answer:</strong><span>&nbsp;</span>\((f \circ g)(4) = 5\)</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 6</span></h4>
+<p>Let \(f(x) = 3x + 2\) and \(g(x) = x^2 - 1\). Find \((g \circ f)(2)\).</p>
+<details>
+<summary><span style="color: #d60307;"><strong>Show Solution and Explanation</strong></span></summary>
+<p><strong>Step 1:</strong> In \((g \circ f)(x) = g(f(x))\), the inner function is \(f(x) = 3x + 2\). Evaluate at \(x = 2\).</p>
+<p>\(f(2) = 3(2) + 2 = 6 + 2 = 8\)</p>
+<p><strong>Step 2:</strong> Substitute the result into the outer function \(g(x) = x^2 - 1\).</p>
+<p>\(g(f(2)) = g(8) = (8)^2 - 1 = 64 - 1 = 63\)</p>
+<p><strong><br><span style="color: #d60307;">Answer:</span></strong> \((g \circ f)(2) = 63\)</p>
+<p><strong>Note:</strong> Notice that the order matters. If you had evaluated \((f \circ g)(2)\) instead, you would get \(f(g(2)) = f(3) = 3(3) + 2 = 11\), which is a completely different result.</p>
+</details>
+<p>&nbsp;</p>
+<h4><span style="color: #f88e0a;">Example 7</span></h4>
+<p>Let \(f(x) = 2^x\) and \(g(x) = \sqrt[3]{x - 1}\). Find \((f \circ g)(9)\).</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution and Explanation</strong></span></summary>
+<p><strong>Step 1:</strong> In \((f \circ g)(x) = f(g(x))\), the inner function is \(g(x) = \sqrt[3]{x - 1}\). Evaluate at \(x = 9\).</p>
+<p>\(g(9) = \sqrt[3]{9 - 1} = \sqrt[3]{8} = 2\)</p>
+<p><strong>Step 2:</strong> Substitute the result into the outer function \(f(x) = 2^x\).</p>
+<p>\(f(g(9)) = f(2) = 2^2 = 4\)</p>
+<p><strong><br><span style="color: #e62429;">Answer:</span></strong> \((f \circ g)(9) = 4\)</p>
+<p><strong>Note:</strong> The cube root function is defined for all real numbers, and the exponential function accepts all real inputs, so there are no domain concerns here. The input \(x = 9\) is valid.</p>
+</details>
+<p>&nbsp;</p>
+<h4><strong>Conclusion</strong></h4>
+<p><span>In this lesson, you learned how to compose two functions by substituting the rule or output of one function into another. When working algebraically, you practiced substituting the inner function into the outer function and simplifying the result, using linear, quadratic, cubic, exponential, square root, and cube root function types. You also learned that the domain of a composite function requires careful attention — any restriction from the inner function carries forward, and the outer function may impose additional restrictions, particularly when it contains a square root. When working with tables, you traced outputs of the inner function as inputs to the outer function and discovered that a composition is undefined whenever the inner function's output is not found in the domain of the outer function's table. Throughout both representations, you saw that order matters: \(f(g(x))\) and \(g(f(x))\) generally produce different results. These skills form the foundation for deeper work with inverse functions and advanced function analysis in future lessons.</span></p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">1. How does the process of composing two functions differ from applying arithmetic operations to two functions?</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">2. Why must the range of the inner function be considered when determining the domain of a composite function?</p>
+<p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">3. How does the order in which two functions are composed affect the resulting function and its domain and range?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">12.02 &middot; Composition of Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

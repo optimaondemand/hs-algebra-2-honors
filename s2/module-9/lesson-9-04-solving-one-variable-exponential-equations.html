@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 9.04 Solving One-Variable Exponential Equations</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 9</div>
+        <div style="font-size: 13px; color: #666;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">9.04</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Logarithmic Expressions and One-Variable Equations</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">9.04</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving One-Variable Exponential Equations</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="157"><strong data-start="0" data-end="8">Base</strong>: The base is the number that is raised to a power in an exponential or logarithmic expression and represents the factor being repeatedly multiplied.</p>
+<p data-start="159" data-end="272"><strong data-start="159" data-end="171">Equation</strong>: An equation is a mathematical statement that shows two expressions are equal, using an equals sign.</p>
+<p data-start="274" data-end="383"><strong data-start="274" data-end="298">Exponential Equation</strong>: An exponential equation is an equation in which a variable appears in the exponent.</p>
+<p data-start="385" data-end="539"><strong data-start="385" data-end="408">Extraneous Solution</strong>: An extraneous solution is a value that arises during the solving process but does not satisfy the original equation when checked.</p>
+<p data-start="541" data-end="695"><strong data-start="541" data-end="554">Logarithm</strong>: A logarithm is the inverse of an exponential function and represents the exponent to which a base must be raised to produce a given number.</p>
+<p data-start="697" data-end="881"><strong data-start="697" data-end="717">Natural Base (e)</strong>: The natural base, \(e\), is an irrational number approximately equal to 2.718 that is commonly used as the base for natural exponential and logarithmic functions.</p>
+<p data-start="883" data-end="1031"><strong data-start="883" data-end="909">Natural Logarithm (ln)</strong>: A natural logarithm is a logarithm with base \(e\), written as \(\ln{x}\), and is widely used in mathematics and science.</p>
+<p data-start="1033" data-end="1242"><strong data-start="1033" data-end="1065">Power Property of Logarithms</strong>: The power property of logarithms states that the logarithm of a power is equal to the exponent multiplied by the logarithm of the base, written as \(\log_{b}{(x^k)}-k\cdot \log_{b}{x}\).</p>
+<p data-start="1244" data-end="1368"><strong data-start="1244" data-end="1256">Solution</strong>: A solution is a value of the variable that makes an equation true when substituted into the original equation.</p>
+<p data-start="1370" data-end="1512" data-is-last-node="" data-is-only-node=""><strong data-start="1370" data-end="1382">Variable</strong>: A variable is a symbol, usually a letter, that represents an unknown or changing value in a mathematical expression or equation.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>In earlier lessons, you solved exponential equations by rewriting both sides with the same base. However, not all exponential equations can be rewritten this way. When the bases are different or cannot be matched easily, <strong data-start="513" data-end="527">logarithms</strong> provide a powerful tool for solving these equations. In this lesson, you will learn how to apply logarithms and natural logarithms to solve exponential equations, how to use the <strong data-start="706" data-end="738">power property of logarithms</strong> to isolate a variable, and how to solve equations involving the natural base <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mi>e</mi> </mrow> <annotation encoding="application/x-tex">e</annotation> </semantics> </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">e</span></span></span></span> by taking the natural logarithm of both sides.</p>
+<p>In this lesson, we will be using inverse operations.</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Inverse Operations</strong></h4>
+<p>A logarithmic function is the inverse of an exponential function.</p>
+<p>Remember the inverse property where a log cancels out an exponential.</p>
+<p><img class="equation_image" title="\Large \log_{b}{b^x} =x" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog_%257Bb%257D%257Bb%255Ex%257D%2520%253Dx?scale=1" alt="LaTeX: \Large \log_{b}{b^x} =x" data-equation-content="\Large \log_{b}{b^x} =x" data-ignore-a11y-check="" loading="lazy"></p>
+<p><br>To undo the exponential expression, we will be using the common log.</p>
+<p>Common Log: \(\log{x}\) where the base is assumed 10.</p>
+<p>This will prevent us from also needing to use the change of base formula when solving.<br><br></p>
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Power Property of Logarithms</strong></h4>
+<p>We will also be using the power property of logarithms.</p>
+<p><img class="equation_image" title="\Large \log{b^x} \implies x\cdot \log{b}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520%255Clog%257Bb%255Ex%257D%2520%255Cimplies%2520x%255Ccdot%2520%255Clog%257Bb%257D?scale=1" alt="LaTeX: \Large \log{b^x} \implies x\cdot \log{b}" data-equation-content="\Large \log{b^x} \implies x\cdot \log{b}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>This property is essential when solving exponential equations because it allows the exponent (which contains the variable) to be moved to the front of the logarithm. Once the variable is no longer in the exponent, standard algebraic techniques can be used to isolate it.</p>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Exponential Equations</strong></h4>
+<p data-start="977" data-end="1207">When an exponential equation has <strong data-start="1010" data-end="1029">different bases</strong> that cannot be rewritten as the same base, logarithms are used to solve the equation. The strategy is to apply a logarithm to <strong data-start="1156" data-end="1170">both sides</strong> of the equation. You may use either:</p>
+<ul data-start="1208" data-end="1280">
+<li data-start="1208" data-end="1245">
+<p data-start="1210" data-end="1245">the common logarithm (<img class="equation_image" title="\log" src="https://optimadomi.instructure.com/equation_images/%255Clog?scale=1" alt="LaTeX: \log" data-equation-content="\log" data-ignore-a11y-check="" loading="lazy">), or</p>
+</li>
+<li data-start="1246" data-end="1280">
+<p data-start="1248" data-end="1280">the natural logarithm (<img class="equation_image" title="\ln" src="https://optimadomi.instructure.com/equation_images/%255Cln?scale=1" alt="LaTeX: \ln" data-equation-content="\ln" data-ignore-a11y-check="" loading="lazy">).</p>
+</li>
+</ul>
+<p data-start="1282" data-end="1421">Applying a logarithm allows you to bring the exponent down using logarithmic properties, which makes it possible to solve for the variable.</p>
+<p data-start="1282" data-end="1421"><br><strong>Example</strong></p>
+<p data-start="1282" data-end="1421">Solve \(3^x=20\).</p>
+<p data-start="1282" data-end="1421">Step 1: We will take the log of both sides</p>
+<p data-start="1282" data-end="1421"><img class="equation_image" title="3^x=20 \\
+\space \\
+\log{3^x}=\log{20}" src="https://optimadomi.instructure.com/equation_images/3%255Ex%253D20%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Clog%257B3%255Ex%257D%253D%255Clog%257B20%257D?scale=1" alt="LaTeX: 3^x=20 \\
+\space \\
+\log{3^x}=\log{20}" data-equation-content="3^x=20 \\
+\space \\
+\log{3^x}=\log{20}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1282" data-end="1421">Step 2: We use the power property of logs to bring the \(x\) down as a coefficient of the log.</p>
+<p data-start="1282" data-end="1421"><img class="equation_image" title="\log{3^x}=\log{20} \\
+\space \\
+x\log{3}=\log{20}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B3%255Ex%257D%253D%255Clog%257B20%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%255Clog%257B3%257D%253D%255Clog%257B20%257D?scale=1" alt="LaTeX: \log{3^x}=\log{20} \\
+\space \\
+x\log{3}=\log{20}" data-equation-content="\log{3^x}=\log{20} \\
+\space \\
+x\log{3}=\log{20}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1282" data-end="1421">Step 3: Now we can use opposite operations to isolate x. Since it is being multipled to the log, we will divide by the log.</p>
+<p data-start="1282" data-end="1421"><img class="equation_image" title="x\log{3}=\log{20} \\
+\space \\
+\underline{x\log{3}}=\underline{\log{20}} \\
+\log{3}\quad\quad \log{3} \\
+\space \\
+x=\Large \frac{\log{20}}{\log{3}}" src="https://optimadomi.instructure.com/equation_images/x%255Clog%257B3%257D%253D%255Clog%257B20%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Cunderline%257Bx%255Clog%257B3%257D%257D%253D%255Cunderline%257B%255Clog%257B20%257D%257D%2520%255C%255C%250A%255Clog%257B3%257D%255Cquad%255Cquad%2520%255Clog%257B3%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B%255Clog%257B20%257D%257D%257B%255Clog%257B3%257D%257D?scale=1" alt="LaTeX: x\log{3}=\log{20} \\
+\space \\
+\underline{x\log{3}}=\underline{\log{20}} \\
+\log{3}\quad\quad \log{3} \\
+\space \\
+x=\Large \frac{\log{20}}{\log{3}}" data-equation-content="x\log{3}=\log{20} \\
+\space \\
+\underline{x\log{3}}=\underline{\log{20}} \\
+\log{3}\quad\quad \log{3} \\
+\space \\
+x=\Large \frac{\log{20}}{\log{3}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1282" data-end="1421">The EXACT solution is <img class="equation_image" title="\{\frac{\log{20}}{\log{3}}\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B%255Cfrac%257B%255Clog%257B20%257D%257D%257B%255Clog%257B3%257D%257D%255C%257D?scale=1" alt="LaTeX: \{\frac{\log{20}}{\log{3}}\}" data-equation-content="\{\frac{\log{20}}{\log{3}}\}" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1282" data-end="1421">We can also approximate the solution using the calculator.</p>
+<p data-start="1282" data-end="1421"><img class="equation_image" title="x=\frac{\log{20}}{\log{3}} \approx 2.726833..." src="https://optimadomi.instructure.com/equation_images/x%253D%255Cfrac%257B%255Clog%257B20%257D%257D%257B%255Clog%257B3%257D%257D%2520%255Capprox%25202.726833...?scale=1" alt="LaTeX: x=\frac{\log{20}}{\log{3}} \approx 2.726833..." data-equation-content="x=\frac{\log{20}}{\log{3}} \approx 2.726833..." data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+<h4><span style="color: #f6a50d;">Example 1</span></h4>
+<p>Solve <img class="equation_image" title="5^{x+1}=12" src="https://optimadomi.instructure.com/equation_images/5%255E%257Bx%252B1%257D%253D12?scale=1" alt="LaTeX: 5^{x+1}=12" data-equation-content="5^{x+1}=12" data-ignore-a11y-check="" loading="lazy">. Express as an exact value and an approximation, rounded to the nearest ten-thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We begin by taking the log of both sides. You can use the common log \(\log \) or the natural log \(\ln \).</p>
+<p><img class="equation_image" title="\log{5^{x+1}}=\log{12}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B5%255E%257Bx%252B1%257D%257D%253D%255Clog%257B12%257D?scale=1" alt="LaTeX: \log{5^{x+1}}=\log{12}" data-equation-content="\log{5^{x+1}}=\log{12}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we apply the power property of logs to bring the power \(x+1\) down as a coefficient of the log. Be sure to use ( ) around the power when writing it as a coefficient.</p>
+<p><img class="equation_image" title="\log{5^{x+1}}=\log{12} \\
+(x+1)\log{5}=\log{12}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B5%255E%257Bx%252B1%257D%257D%253D%255Clog%257B12%257D%2520%255C%255C%250A(x%252B1)%255Clog%257B5%257D%253D%255Clog%257B12%257D?scale=1" alt="LaTeX: \log{5^{x+1}}=\log{12} \\
+(x+1)\log{5}=\log{12}" data-equation-content="\log{5^{x+1}}=\log{12} \\
+(x+1)\log{5}=\log{12}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>We can choose to either distribute the \(\log{5}\) or divide it on both sides since it is being multiplied by the ( ). Since there is no coefficient on x inside the ( ), then dividing by \(\log{5}\) will be easiest.</p>
+<p><img class="equation_image" title="\underline{(x+1)\log{5}}=\underline{\log{12}} \\
+\quad \log{5} \quad\quad\quad\;\; \log{5} \\
+x+1=\Large \frac{\log{12}}{\log{5}}" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B(x%252B1)%255Clog%257B5%257D%257D%253D%255Cunderline%257B%255Clog%257B12%257D%257D%2520%255C%255C%250A%255Cquad%2520%255Clog%257B5%257D%2520%255Cquad%255Cquad%255Cquad%255C%253B%255C%253B%2520%255Clog%257B5%257D%2520%255C%255C%250Ax%252B1%253D%255CLarge%2520%255Cfrac%257B%255Clog%257B12%257D%257D%257B%255Clog%257B5%257D%257D?scale=1" alt="LaTeX: \underline{(x+1)\log{5}}=\underline{\log{12}} \\
+\quad \log{5} \quad\quad\quad\;\; \log{5} \\
+x+1=\Large \frac{\log{12}}{\log{5}}" data-equation-content="\underline{(x+1)\log{5}}=\underline{\log{12}} \\
+\quad \log{5} \quad\quad\quad\;\; \log{5} \\
+x+1=\Large \frac{\log{12}}{\log{5}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Last, we can subtract 1 from both sides to isolate x.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;x+1=\frac{\log{12}}{\log{5}} \\
+\phantom{x}-1\phantom{=\frac{\log{12}}{\log{5}}}-1 \\
+\hline
+x=\frac{\log{12}}{\log{5}}-1
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x%252B1%253D%255Cfrac%257B%255Clog%257B12%257D%257D%257B%255Clog%257B5%257D%257D%2520%255C%255C%250A%255Cphantom%257Bx%257D-1%255Cphantom%257B%253D%255Cfrac%257B%255Clog%257B12%257D%257D%257B%255Clog%257B5%257D%257D%257D-1%2520%255C%255C%250A%255Chline%250Ax%253D%255Cfrac%257B%255Clog%257B12%257D%257D%257B%255Clog%257B5%257D%257D-1%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x+1=\frac{\log{12}}{\log{5}} \\
+\phantom{x}-1\phantom{=\frac{\log{12}}{\log{5}}}-1 \\
+\hline
+x=\frac{\log{12}}{\log{5}}-1
+\end{array}" data-equation-content="\begin{array}
+&amp;x+1=\frac{\log{12}}{\log{5}} \\
+\phantom{x}-1\phantom{=\frac{\log{12}}{\log{5}}}-1 \\
+\hline
+x=\frac{\log{12}}{\log{5}}-1
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact \(\{\frac{\log{12}}{\log{5}}-1\}\)</p>
+<p>Approximate \(\{0.5440\}\)</p>
+<p>*Note - Remember, if the place you are rounding to is a 9, causing you to round up one more, put a 0 in the place you were asked to round to. Think of it as 39, rounded to 40, due to the 5 after the 9.</p>
+<p><br><br></p>
+<h4><span style="color: #f6a50d;">Example 2</span></h4>
+<p>Solve <img class="equation_image" title="5^{x-2}=4^{2x+3}" src="https://optimadomi.instructure.com/equation_images/5%255E%257Bx-2%257D%253D4%255E%257B2x%252B3%257D?scale=1" alt="LaTeX: 5^{x-2}=4^{2x+3}" data-equation-content="5^{x-2}=4^{2x+3}" data-ignore-a11y-check="" loading="lazy">. Express as an exact value and an approximation, rounded to the nearest thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We begin by taking the log of both sides. You can use the common log \(\log \) or the natural log \(\ln \).</p>
+<p><img class="equation_image" title="\log{5^{x-2}}=\log{4^{2x+3}}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B5%255E%257Bx-2%257D%257D%253D%255Clog%257B4%255E%257B2x%252B3%257D%257D?scale=1" alt="LaTeX: \log{5^{x-2}}=\log{4^{2x+3}}" data-equation-content="\log{5^{x-2}}=\log{4^{2x+3}}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we apply the power property of logs to bring the power \(x+1\) down as a coefficient of \(\log{5}\) and bring down the power \(2x+3\) as a coefficient of \(\log{4}\). Be sure to use ( ) around the power when writing it as a coefficient.</p>
+<p><img class="equation_image" title="\log{5^{x-2}}=\log{4^{2x+3}} \\
+(x-2)\log{5}=(2x+3)\log{4}" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B5%255E%257Bx-2%257D%257D%253D%255Clog%257B4%255E%257B2x%252B3%257D%257D%2520%255C%255C%250A(x-2)%255Clog%257B5%257D%253D(2x%252B3)%255Clog%257B4%257D?scale=1" alt="LaTeX: \log{5^{x-2}}=\log{4^{2x+3}} \\
+(x-2)\log{5}=(2x+3)\log{4}" data-equation-content="\log{5^{x-2}}=\log{4^{2x+3}} \\
+(x-2)\log{5}=(2x+3)\log{4}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Since we have logs on both sides, we need to distribute the logs to each ( ).</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;(x-2)\log{5}=(2x+3)\log{4} \\
+\log{(5)}x - 2\log{5}=2\log{(4)}x+3\log{4} \\
+\quad\quad\quad\;\; +2\log{5} \quad\quad\quad\quad\quad\;\; +2\log{5} \\
+\hline
+\log{(5)}x = 2\log{(4)}x+3\log{4}+2\log{5} \\
+-2\log{(4)}x\; -2\log{(4)}x \\
+\hline
+\log{(5)}x-2\log{(4)}x = 3\log{4}+2\log{5}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526(x-2)%255Clog%257B5%257D%253D(2x%252B3)%255Clog%257B4%257D%2520%255C%255C%250A%255Clog%257B(5)%257Dx%2520-%25202%255Clog%257B5%257D%253D2%255Clog%257B(4)%257Dx%252B3%255Clog%257B4%257D%2520%255C%255C%250A%255Cquad%255Cquad%255Cquad%255C%253B%255C%253B%2520%252B2%255Clog%257B5%257D%2520%255Cquad%255Cquad%255Cquad%255Cquad%255Cquad%255C%253B%255C%253B%2520%252B2%255Clog%257B5%257D%2520%255C%255C%250A%255Chline%250A%255Clog%257B(5)%257Dx%2520%253D%25202%255Clog%257B(4)%257Dx%252B3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%2520%255C%255C%250A-2%255Clog%257B(4)%257Dx%255C%253B%2520-2%255Clog%257B(4)%257Dx%2520%255C%255C%250A%255Chline%250A%255Clog%257B(5)%257Dx-2%255Clog%257B(4)%257Dx%2520%253D%25203%255Clog%257B4%257D%252B2%255Clog%257B5%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;(x-2)\log{5}=(2x+3)\log{4} \\
+\log{(5)}x - 2\log{5}=2\log{(4)}x+3\log{4} \\
+\quad\quad\quad\;\; +2\log{5} \quad\quad\quad\quad\quad\;\; +2\log{5} \\
+\hline
+\log{(5)}x = 2\log{(4)}x+3\log{4}+2\log{5} \\
+-2\log{(4)}x\; -2\log{(4)}x \\
+\hline
+\log{(5)}x-2\log{(4)}x = 3\log{4}+2\log{5}
+\end{array}" data-equation-content="\begin{array}
+&amp;(x-2)\log{5}=(2x+3)\log{4} \\
+\log{(5)}x - 2\log{5}=2\log{(4)}x+3\log{4} \\
+\quad\quad\quad\;\; +2\log{5} \quad\quad\quad\quad\quad\;\; +2\log{5} \\
+\hline
+\log{(5)}x = 2\log{(4)}x+3\log{4}+2\log{5} \\
+-2\log{(4)}x\; -2\log{(4)}x \\
+\hline
+\log{(5)}x-2\log{(4)}x = 3\log{4}+2\log{5}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>In the last line, the logs on the left side both have \(x\) in them that we can factor out.</p>
+<p><img class="equation_image" title="\log{(5)}\textcolor{red}{x}-2\log{(4)}\textcolor{red}{x}=3\log{4}+2\log{5} \\
+x(\log{5}-2\log{4})=3\log{4}+2\log{5} " src="https://optimadomi.instructure.com/equation_images/%255Clog%257B(5)%257D%255Ctextcolor%257Bred%257D%257Bx%257D-2%255Clog%257B(4)%257D%255Ctextcolor%257Bred%257D%257Bx%257D%253D3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%2520%255C%255C%250Ax(%255Clog%257B5%257D-2%255Clog%257B4%257D)%253D3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%2520?scale=1" alt="LaTeX: \log{(5)}\textcolor{red}{x}-2\log{(4)}\textcolor{red}{x}=3\log{4}+2\log{5} \\
+x(\log{5}-2\log{4})=3\log{4}+2\log{5} " data-equation-content="\log{(5)}\textcolor{red}{x}-2\log{(4)}\textcolor{red}{x}=3\log{4}+2\log{5} \\
+x(\log{5}-2\log{4})=3\log{4}+2\log{5} " data-ignore-a11y-check="" loading="lazy"></p>
+<p>Last, since \(x\) is being multiplied to the ( ), we can divide both sides by what is in the ( ) to isolate x.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;\underline{x(\log{5}-2\log{4})}=\underline{3\log{4}+2\log{5}} \\
+\;\log{5}-2\log{4} \quad\quad\quad \log{5}-2\log{4} \\
+\space \\
+x=\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526%255Cunderline%257Bx(%255Clog%257B5%257D-2%255Clog%257B4%257D)%257D%253D%255Cunderline%257B3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%257D%2520%255C%255C%250A%255C%253B%255Clog%257B5%257D-2%255Clog%257B4%257D%2520%255Cquad%255Cquad%255Cquad%2520%255Clog%257B5%257D-2%255Clog%257B4%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%257D%257B%255Clog%257B5%257D-2%255Clog%257B4%257D%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;\underline{x(\log{5}-2\log{4})}=\underline{3\log{4}+2\log{5}} \\
+\;\log{5}-2\log{4} \quad\quad\quad \log{5}-2\log{4} \\
+\space \\
+x=\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}
+\end{array}" data-equation-content="\begin{array}
+&amp;\underline{x(\log{5}-2\log{4})}=\underline{3\log{4}+2\log{5}} \\
+\;\log{5}-2\log{4} \quad\quad\quad \log{5}-2\log{4} \\
+\space \\
+x=\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact <img class="equation_image" title="\{\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B%255CLarge%2520%255Cfrac%257B3%255Clog%257B4%257D%252B2%255Clog%257B5%257D%257D%257B%255Clog%257B5%257D-2%255Clog%257B4%257D%257D%255C%257D?scale=1" alt="LaTeX: \{\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}\}" data-equation-content="\{\Large \frac{3\log{4}+2\log{5}}{\log{5}-2\log{4}}\}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Approximate \(\{-6.343\}\)</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;">Solving Exponential Equations Involving Natural Base \(e\)</h4>
+<p>When an exponential equation involves the <strong data-start="3276" data-end="3298">natural base \(e\)</strong>, it is most efficient to solve it by taking the <strong data-start="3347" data-end="3378">natural logarithm (\(\ln\))</strong> of both sides. This choice simplifies calculations because <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mi>ln</mi> <mo>⁡</mo> </mrow> <annotation encoding="application/x-tex">\ln</annotation> </semantics> </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mop">ln</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mi>e</mi> </mrow> <annotation encoding="application/x-tex">e</annotation> </semantics> </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">e</span></span></span></span> are inverse functions.</p>
+</div>
+<h4><span style="color: #f6a50d;">Example 3</span></h4>
+<p>Solve <img class="equation_image" title="e^{3x+1}=20" src="https://optimadomi.instructure.com/equation_images/e%255E%257B3x%252B1%257D%253D20?scale=1" alt="LaTeX: e^{3x+1}=20" data-equation-content="e^{3x+1}=20" data-ignore-a11y-check="" loading="lazy">. Express as an exact value and an approximation, rounded to the nearest ten-thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>First, we begin by taking the natural log \(\ln\) of both sides. Remember that \(\ln\) will cancel out the \(e\).</p>
+<p><img class="equation_image" title="\ln{e^{3x+1}}=\ln{20} \\
+3x+1=\ln{20}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Be%255E%257B3x%252B1%257D%257D%253D%255Cln%257B20%257D%2520%255C%255C%250A3x%252B1%253D%255Cln%257B20%257D?scale=1" alt="LaTeX: \ln{e^{3x+1}}=\ln{20} \\
+3x+1=\ln{20}" data-equation-content="\ln{e^{3x+1}}=\ln{20} \\
+3x+1=\ln{20}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="font-size: 1rem;">Next, we will subtract 1 from both sides.</span></p>
+<p><span style="font-size: 1rem;"><img class="equation_image" title="\begin{array}
+&amp;3x+1=\ln{20} \\
+\phantom{3x}-1\quad -1 \\
+\hline
+3x=\ln{20}-1
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25263x%252B1%253D%255Cln%257B20%257D%2520%255C%255C%250A%255Cphantom%257B3x%257D-1%255Cquad%2520-1%2520%255C%255C%250A%255Chline%250A3x%253D%255Cln%257B20%257D-1%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;3x+1=\ln{20} \\
+\phantom{3x}-1\quad -1 \\
+\hline
+3x=\ln{20}-1
+\end{array}" data-equation-content="\begin{array}
+&amp;3x+1=\ln{20} \\
+\phantom{3x}-1\quad -1 \\
+\hline
+3x=\ln{20}-1
+\end{array}" data-ignore-a11y-check="" loading="lazy"></span></p>
+<p><span style="font-size: 1rem;">Finally, we can divide both sides by 3 to isolate \(x\).</span></p>
+<p><img class="equation_image" title="\begin{array}
+&amp;\underline{3x}=\underline{\ln{20}-1} \\
+\;3 \quad\quad\quad\; 3 \\
+\space \\
+x=\Large \frac{\ln{20}-1}{3}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526%255Cunderline%257B3x%257D%253D%255Cunderline%257B%255Cln%257B20%257D-1%257D%2520%255C%255C%250A%255C%253B3%2520%255Cquad%255Cquad%255Cquad%255C%253B%25203%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B%255Cln%257B20%257D-1%257D%257B3%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;\underline{3x}=\underline{\ln{20}-1} \\
+\;3 \quad\quad\quad\; 3 \\
+\space \\
+x=\Large \frac{\ln{20}-1}{3}
+\end{array}" data-equation-content="\begin{array}
+&amp;\underline{3x}=\underline{\ln{20}-1} \\
+\;3 \quad\quad\quad\; 3 \\
+\space \\
+x=\Large \frac{\ln{20}-1}{3}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact <img class="equation_image" title="\{{\Large\frac{\ln{20}-1}{3}}\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B%257B%255CLarge%255Cfrac%257B%255Cln%257B20%257D-1%257D%257B3%257D%257D%255C%257D?scale=1" alt="LaTeX: \{{\Large\frac{\ln{20}-1}{3}}\}" data-equation-content="\{{\Large\frac{\ln{20}-1}{3}}\}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Approximate \(\{0.6652\}\)</p>
+<h4><span style="color: #f6a50d;"><br><br>Example 4</span></h4>
+<p>Solve <img class="equation_image" title="7e^{2x}-5=58" src="https://optimadomi.instructure.com/equation_images/7e%255E%257B2x%257D-5%253D58?scale=1" alt="LaTeX: 7e^{2x}-5=58" data-equation-content="7e^{2x}-5=58" data-ignore-a11y-check="" loading="lazy">. Express as an exact value and an approximation, rounded to the nearest ten-thousandths.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We need to first isolate the base e with its power to be able to use a natural log. So, we begin by adding 5 to both sides.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;7e^{2x}-5=58 \\
+\phantom{7e^{2x}}+5\quad +5 \\
+\hline
+7e^{2x}=63
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25267e%255E%257B2x%257D-5%253D58%2520%255C%255C%250A%255Cphantom%257B7e%255E%257B2x%257D%257D%252B5%255Cquad%2520%252B5%2520%255C%255C%250A%255Chline%250A7e%255E%257B2x%257D%253D63%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;7e^{2x}-5=58 \\
+\phantom{7e^{2x}}+5\quad +5 \\
+\hline
+7e^{2x}=63
+\end{array}" data-equation-content="\begin{array}
+&amp;7e^{2x}-5=58 \\
+\phantom{7e^{2x}}+5\quad +5 \\
+\hline
+7e^{2x}=63
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can divide both sides by 7 to isolate the exponential expression.</p>
+<p><img class="equation_image" title="\underline{7e^{2x}}=\underline{63} \\
+\;\; 7 \quad\quad\; 7 \\
+e^{2x}=9" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B7e%255E%257B2x%257D%257D%253D%255Cunderline%257B63%257D%2520%255C%255C%250A%255C%253B%255C%253B%25207%2520%255Cquad%255Cquad%255C%253B%25207%2520%255C%255C%250Ae%255E%257B2x%257D%253D9?scale=1" alt="LaTeX: \underline{7e^{2x}}=\underline{63} \\
+\;\; 7 \quad\quad\; 7 \\
+e^{2x}=9" data-equation-content="\underline{7e^{2x}}=\underline{63} \\
+\;\; 7 \quad\quad\; 7 \\
+e^{2x}=9" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can take the natural log \(\ln\) of both sides. Remember that \(\ln\) will cancel out the \(e\).</p>
+<p><img class="equation_image" title="\ln{e^{2x}}=\ln{9} \\
+2x=\ln{9}" src="https://optimadomi.instructure.com/equation_images/%255Cln%257Be%255E%257B2x%257D%257D%253D%255Cln%257B9%257D%2520%255C%255C%250A2x%253D%255Cln%257B9%257D?scale=1" alt="LaTeX: \ln{e^{2x}}=\ln{9} \\
+2x=\ln{9}" data-equation-content="\ln{e^{2x}}=\ln{9} \\
+2x=\ln{9}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="font-size: 1rem;">Finally, we can divide both sides by 2 to isolate \(x\).</span></p>
+<p><img class="equation_image" title="\begin{array}
+&amp;\underline{2x}=\underline{\ln{9}} \\
+\;2 \quad\quad2 \\
+\space \\
+x=\Large \frac{\ln{9}}{2}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526%255Cunderline%257B2x%257D%253D%255Cunderline%257B%255Cln%257B9%257D%257D%2520%255C%255C%250A%255C%253B2%2520%255Cquad%255Cquad2%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B%255Cln%257B9%257D%257D%257B2%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;\underline{2x}=\underline{\ln{9}} \\
+\;2 \quad\quad2 \\
+\space \\
+x=\Large \frac{\ln{9}}{2}
+\end{array}" data-equation-content="\begin{array}
+&amp;\underline{2x}=\underline{\ln{9}} \\
+\;2 \quad\quad2 \\
+\space \\
+x=\Large \frac{\ln{9}}{2}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span><br>Exact <img class="equation_image" title="\{{\Large\frac{\ln{9}}{2}}\}" src="https://optimadomi.instructure.com/equation_images/%255C%257B%257B%255CLarge%255Cfrac%257B%255Cln%257B9%257D%257D%257B2%257D%257D%255C%257D?scale=1" alt="LaTeX: \{{\Large\frac{\ln{9}}{2}}\}" data-equation-content="\{{\Large\frac{\ln{9}}{2}}\}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Approximate \(\{1.0986\}\)</p>
+<p data-start="393" data-end="812"><br><br>Many real-world situations involve quantities that grow over time, especially when money earns interest. When interest is added repeatedly, the amount grows exponentially. In these situations, the variable representing <strong data-start="612" data-end="620">time</strong> appears in the exponent, which means algebra alone is not enough to solve the equation. Instead, <strong data-start="718" data-end="732">logarithms</strong> or <strong data-start="736" data-end="758">natural logarithms</strong> are used to isolate the variable and find a solution.</p>
+<p data-start="814" data-end="979">In this section, you will learn how logarithms help solve exponential equations that come from <strong data-start="909" data-end="930">compound interest</strong> and <strong data-start="935" data-end="971">continuously compounded interest</strong> models.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Compounding Interest</strong></h4>
+<p data-start="1029" data-end="1183">When interest is compounded at regular intervals (such as monthly, quarterly, or annually), the situation is modeled by the <strong data-start="1153" data-end="1182">compound interest formula</strong>:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="minner" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="A=P(1+\frac{r}{n})^{nt}" src="https://optimadomi.instructure.com/equation_images/A%253DP(1%252B%255Cfrac%257Br%257D%257Bn%257D)%255E%257Bnt%257D?scale=1" alt="LaTeX: A=P(1+\frac{r}{n})^{nt}" data-equation-content="A=P(1+\frac{r}{n})^{nt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p data-start="1230" data-end="1236">Where:</p>
+<ul data-start="1237" data-end="1459">
+<li data-start="1237" data-end="1264">
+<p data-start="1239" data-end="1264"><img class="equation_image" title="A" src="https://optimadomi.instructure.com/equation_images/A?scale=1" alt="LaTeX: A" data-equation-content="A" data-ignore-a11y-check="" loading="lazy"> is the final amount</p>
+</li>
+<li data-start="1265" data-end="1310">
+<p data-start="1267" data-end="1310"><img class="equation_image" title="P" src="https://optimadomi.instructure.com/equation_images/P?scale=1" alt="LaTeX: P" data-equation-content="P" data-ignore-a11y-check="" loading="lazy"> is the initial investment (principal)</p>
+</li>
+<li data-start="1311" data-end="1367">
+<p data-start="1313" data-end="1367"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal"><img class="equation_image" title="r" src="https://optimadomi.instructure.com/equation_images/r?scale=1" alt="LaTeX: r" data-equation-content="r" data-ignore-a11y-check="" loading="lazy"></span></span></span></span> is the annual interest rate written as a decimal</p>
+</li>
+<li data-start="1368" data-end="1430">
+<p data-start="1370" data-end="1430"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal"><img class="equation_image" title="n" src="https://optimadomi.instructure.com/equation_images/n?scale=1" alt="LaTeX: n" data-equation-content="n" data-ignore-a11y-check="" loading="lazy"></span></span></span></span> is the number of times interest is compounded per year</p>
+</li>
+<li data-start="1431" data-end="1459">
+<p data-start="1433" data-end="1459"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal"><img class="equation_image" title="t" src="https://optimadomi.instructure.com/equation_images/t?scale=1" alt="LaTeX: t" data-equation-content="t" data-ignore-a11y-check="" loading="lazy"></span></span></span></span> is the time in years</p>
+</li>
+</ul>
+<p data-start="1461" data-end="1607">When solving for <strong data-start="1478" data-end="1486">time</strong>, the variable \(t\)&nbsp;is in the exponent. Because the base cannot be rewritten to match another base, logarithms are used.</p>
+</div>
+<h4 data-start="814" data-end="979"><span style="color: #f6a50d;">Example</span></h4>
+<p>A savings account has an initial deposit of $2,000 and earns 5% interest compounded monthly. How long will it take for the account to grow to $3,000?</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>Start by writing the formula and substituting the known values.
+<ul>
+<li><img class="equation_image" title="A=3000 \\
+P=2000 \\
+r=5\% = 0.05 \\
+n=12 \\
+t=?" src="https://optimadomi.instructure.com/equation_images/A%253D3000%2520%255C%255C%250AP%253D2000%2520%255C%255C%250Ar%253D5%255C%2525%2520%253D%25200.05%2520%255C%255C%250An%253D12%2520%255C%255C%250At%253D%253F?scale=1" alt="LaTeX: A=3000 \\
+P=2000 \\
+r=5\% = 0.05 \\
+n=12 \\
+t=?" data-equation-content="A=3000 \\
+P=2000 \\
+r=5\% = 0.05 \\
+n=12 \\
+t=?" data-ignore-a11y-check="" loading="lazy"><br><br></li>
+<li><img class="equation_image" title="3000=2000(1+\frac{0.05}{12})^{12t}" src="https://optimadomi.instructure.com/equation_images/3000%253D2000(1%252B%255Cfrac%257B0.05%257D%257B12%257D)%255E%257B12t%257D?scale=1" alt="LaTeX: 3000=2000(1+\frac{0.05}{12})^{12t}" data-equation-content="3000=2000(1+\frac{0.05}{12})^{12t}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Simplify inside the parentheses to get a single value.
+<ul>
+<li><img class="equation_image" title="1+\frac{0.05}{12} \\
+1+0.004167 \\
+1.004167" src="https://optimadomi.instructure.com/equation_images/1%252B%255Cfrac%257B0.05%257D%257B12%257D%2520%255C%255C%250A1%252B0.004167%2520%255C%255C%250A1.004167?scale=1" alt="LaTeX: 1+\frac{0.05}{12} \\
+1+0.004167 \\
+1.004167" data-equation-content="1+\frac{0.05}{12} \\
+1+0.004167 \\
+1.004167" data-ignore-a11y-check="" loading="lazy"><br><br></li>
+<li>The equation is now <img class="equation_image" title="3000=2000(1.004167)^{12t}" src="https://optimadomi.instructure.com/equation_images/3000%253D2000(1.004167)%255E%257B12t%257D?scale=1" alt="LaTeX: 3000=2000(1.004167)^{12t}" data-equation-content="3000=2000(1.004167)^{12t}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Now, we divide both sides by 2000 to isolate the exponential part of the equation.
+<ul>
+<li><img class="equation_image" title="3000\div 2000 = 1.5 \\
+\space \\
+1.5=1.004167^{12t}" src="https://optimadomi.instructure.com/equation_images/3000%255Cdiv%25202000%2520%253D%25201.5%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A1.5%253D1.004167%255E%257B12t%257D?scale=1" alt="LaTeX: 3000\div 2000 = 1.5 \\
+\space \\
+1.5=1.004167^{12t}" data-equation-content="3000\div 2000 = 1.5 \\
+\space \\
+1.5=1.004167^{12t}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Now, we will take the log of both sides and use the power property to bring down the exponent.
+<ul>
+<li><img class="equation_image" title="\log(1.5)=\log(1.004167^{12t}) \\
+\log(1.5)=12t\log(1.004167)" src="https://optimadomi.instructure.com/equation_images/%255Clog(1.5)%253D%255Clog(1.004167%255E%257B12t%257D)%2520%255C%255C%250A%255Clog(1.5)%253D12t%255Clog(1.004167)?scale=1" alt="LaTeX: \log(1.5)=\log(1.004167^{12t}) \\
+\log(1.5)=12t\log(1.004167)" data-equation-content="\log(1.5)=\log(1.004167^{12t}) \\
+\log(1.5)=12t\log(1.004167)" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Finally, to isolate the variable t, we will divide both sides by \(12\log(1.004167)\).
+<ul>
+<li><img class="equation_image" title="t=\Large \frac{\log(1.5)}{12\log(1.004167)}" src="https://optimadomi.instructure.com/equation_images/t%253D%255CLarge%2520%255Cfrac%257B%255Clog(1.5)%257D%257B12%255Clog(1.004167)%257D?scale=1" alt="LaTeX: t=\Large \frac{\log(1.5)}{12\log(1.004167)}" data-equation-content="t=\Large \frac{\log(1.5)}{12\log(1.004167)}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p>We will use the calculator to approximate the time to reach $3000 in the savings account.</p>
+<ul>
+<li>We find the approximation as 8.1255361....</li>
+<li>We will approximate this as 8 years.</li>
+</ul>
+<p>Answer: It will take approximately 8 years for the savings account to reach $3,000.<br><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Continuously Compounded Interest</strong></h4>
+<p data-start="2332" data-end="2462">When interest is compounded continuously, the growth is modeled using the number \(e\). The formula for continuous compounding is:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="A=Pe^{rt}" src="https://optimadomi.instructure.com/equation_images/A%253DPe%255E%257Brt%257D?scale=1" alt="LaTeX: A=Pe^{rt}" data-equation-content="A=Pe^{rt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">Where:</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ul>
+<li><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="A" src="https://optimadomi.instructure.com/equation_images/A?scale=1" alt="LaTeX: A" data-equation-content="A" data-ignore-a11y-check="" loading="lazy"> is the final amount in the account</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="P" src="https://optimadomi.instructure.com/equation_images/P?scale=1" alt="LaTeX: P" data-equation-content="P" data-ignore-a11y-check="" loading="lazy"> is the initial investment amount</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="r" src="https://optimadomi.instructure.com/equation_images/r?scale=1" alt="LaTeX: r" data-equation-content="r" data-ignore-a11y-check="" loading="lazy"> is the interest rate</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="t" src="https://optimadomi.instructure.com/equation_images/t?scale=1" alt="LaTeX: t" data-equation-content="t" data-ignore-a11y-check="" loading="lazy"> is the time in years</span></span></span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+<p data-start="2482" data-end="2590">Because the base is <img class="equation_image" title="e" src="https://optimadomi.instructure.com/equation_images/e?scale=1" alt="LaTeX: e" data-equation-content="e" data-ignore-a11y-check="" loading="lazy">, the <strong data-start="2513" data-end="2534">natural logarithm</strong> is the most efficient tool for solving these equations.</p>
+</div>
+<h4>Example</h4>
+<p>An investment of $5,000 is placed in an account that earns 4.2% interest compounded continuously. How long will it take for the investment to reach $8,000?</p>
+<p>Solution:</p>
+<ul>
+<li>We will begin with substituting in the known values into the formula.
+<ul>
+<li><img class="equation_image" title="8000=5000e^{0.042t}" src="https://optimadomi.instructure.com/equation_images/8000%253D5000e%255E%257B0.042t%257D?scale=1" alt="LaTeX: 8000=5000e^{0.042t}" data-equation-content="8000=5000e^{0.042t}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>We begin by dividing both sides by 5000 to isolate the exponential part.
+<ul>
+<li><img class="equation_image" title="1.6=e^{0.042t}" src="https://optimadomi.instructure.com/equation_images/1.6%253De%255E%257B0.042t%257D?scale=1" alt="LaTeX: 1.6=e^{0.042t}" data-equation-content="1.6=e^{0.042t}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Now, we take the natural log of both sides since our base is \(e\).
+<ul>
+<li><img class="equation_image" title="\ln(1.6)=0.042t" src="https://optimadomi.instructure.com/equation_images/%255Cln(1.6)%253D0.042t?scale=1" alt="LaTeX: \ln(1.6)=0.042t" data-equation-content="\ln(1.6)=0.042t" data-ignore-a11y-check="" loading="lazy"></li>
+<li>Remember that \(\ln\) cancels out the \(e\) as they are inverse operations.</li>
+</ul>
+</li>
+<li>Now, we will divide both sides by 0.042 to isolate the variable t.
+<ul>
+<li><img class="equation_image" title="t=\Large \frac{\ln(1.6)}{0.042}" src="https://optimadomi.instructure.com/equation_images/t%253D%255CLarge%2520%255Cfrac%257B%255Cln(1.6)%257D%257B0.042%257D?scale=1" alt="LaTeX: t=\Large \frac{\ln(1.6)}{0.042}" data-equation-content="t=\Large \frac{\ln(1.6)}{0.042}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p>We will use the calculator to approximate the time to reach $8000 in the savings account.</p>
+<ul>
+<li>We find the approximation as 11.19056....</li>
+<li>We will approximate this as 11 years.</li>
+</ul>
+<p>Answer: It will take approximately 11 years for the savings account to reach $8,000.</p>
+<p>&nbsp;</p>
+<h4 data-start="3051" data-end="3082"><strong>Why Logarithms Are Necessary</strong></h4>
+<p data-start="3084" data-end="3231">In both compound and continuously compounded interest problems, the variable being solved for appears in the <strong data-start="3193" data-end="3205">exponent</strong>. Logarithms allow you to:</p>
+<ul data-start="3232" data-end="3389">
+<li data-start="3232" data-end="3271">
+<p data-start="3234" data-end="3271">Move the variable out of the exponent</p>
+</li>
+<li data-start="3272" data-end="3333">
+<p data-start="3274" data-end="3333">Solve equations that cannot be rewritten with the same base</p>
+</li>
+<li data-start="3334" data-end="3389">
+<p data-start="3336" data-end="3389">Interpret realistic time values in financial contexts</p>
+</li>
+</ul>
+<p data-start="3391" data-end="3510">When the base is \(e\), use <strong data-start="3419" data-end="3441">natural logarithms</strong>. When the base is not \(e\), you may use either \(\log\) or \(\ln\).</p>
+<h4 data-start="4071" data-end="4084"><strong><br><br>Conclusion</strong></h4>
+<p data-start="4086" data-end="4617" data-is-last-node="" data-is-only-node="">In this lesson, you learned how to solve exponential equations that cannot be rewritten with the same base by applying logarithms or natural logarithms. You practiced using the power property of logarithms to isolate variables and learned why taking the natural logarithm is especially effective when working with equations involving the base \(e\). These methods are essential tools for solving exponential models in Algebra 2 and for understanding real-world applications such as population growth, interest, and decay processes.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. Why are logarithms necessary when solving exponential equations with different bases that cannot be rewritten using the same base?</p>
+<p>2. How does the power property of logarithms help us isolate variables in exponential equations?</p>
+<p>3. In what situations is the natural logarithms especially useful for solving equations involving \(e\)?</p>
+<p>4. How can we determine whether a solution to an exponential equation is viable in the context of a real-world situation?</p>
+<p>5. Why must we check for extraneous or invalid solutions when solving exponential equations using logarithms?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">9.04 &middot; Solving One-Variable Exponential Equations</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

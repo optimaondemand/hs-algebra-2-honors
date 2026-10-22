@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.03 Solving Exponential Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.03</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.03</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving Exponential Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="182"><strong data-start="0" data-end="24">Approximate Solution</strong>: A value that is close to the exact answer and is often found using graphs, tables, or estimation methods when an exact solution is difficult to determine.</p>
+<p data-start="184" data-end="333"><strong data-start="184" data-end="205">Compound Interest</strong>: Interest calculated on the initial amount of money as well as on the accumulated interest from previous compounding periods.</p>
+<p data-start="335" data-end="459"><strong data-start="335" data-end="356">Continuous Growth</strong>: Growth that occurs constantly over time and is modeled using an exponential function with base <em data-start="453" data-end="456">e</em>.</p>
+<p data-start="461" data-end="626"><strong data-start="461" data-end="497">Continuously Compounded Interest</strong>: Interest that is added an infinite number of times per year, resulting in exponential growth modeled by the natural base <em data-start="620" data-end="623">e</em>.</p>
+<p data-start="628" data-end="771"><strong data-start="628" data-end="652">Exponential Function</strong>: A function in which the variable appears in the exponent and represents growth or decay at a constant percent rate.</p>
+<p data-start="773" data-end="959"><strong data-start="773" data-end="790">Growth Factor</strong>: The multiplier in an exponential function that represents how much a quantity changes for each unit increase of the independent variable, often written as \(1+r\).</p>
+<p data-start="961" data-end="1076"><strong data-start="961" data-end="978">Initial Value</strong>: The starting amount of a quantity, typically the value of the function when the input is zero.</p>
+<p data-start="1078" data-end="1225"><strong data-start="1078" data-end="1095">Interest Rate</strong>: The percent of the principal that is earned or charged over a given time period, usually expressed as a decimal or percentage.</p>
+<p data-start="1227" data-end="1387"><strong data-start="1227" data-end="1247">Natural Base (e)</strong>: An irrational number approximately equal to 2.718 that is used as the base of exponential functions modeling continuous growth or decay.</p>
+<p data-start="1389" data-end="1510" data-is-last-node="" data-is-only-node=""><strong data-start="1389" data-end="1407">Rate of Growth</strong>: The constant percent by which a quantity increases during each time interval in an exponential model.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Exponential functions are used to model situations where quantities grow or decay by a constant percent rather than a constant amount. These models appear in many real-world contexts, such as population growth, radioactive decay, and financial investments. In this lesson, you will learn how to solve exponential models using equations and graphs, interpret solutions in context, and apply exponential functions to compound and continuously compounded interest. By the end of this lesson, you will be able to analyze and compare exponential growth models and explain what their solutions mean in real-world situations.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Mathematical Problems Modeled by Exponential Functions</strong></h4>
+<p data-start="1114" data-end="1168">An exponential function is often written in the form</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">\(\Large f(x)=a(b)^x\)</span></span></span></span></span></span></span></span></span></span></span></p>
+<p data-start="1189" data-end="1195">where:</p>
+<ul data-start="1196" data-end="1301">
+<li data-start="1196" data-end="1225">
+<p data-start="1198" data-end="1225"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">\(a\)</span></span></span></span> is the initial value,</p>
+</li>
+<li data-start="1226" data-end="1264">
+<p data-start="1228" data-end="1264">\(b\) is the growth or decay factor,</p>
+</li>
+<li data-start="1265" data-end="1301">
+<p data-start="1267" data-end="1301"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">\(x\)</span></span></span></span> is the independent variable.</p>
+</li>
+</ul>
+<p data-start="1303" data-end="1563">Sometimes, exponential equations cannot be solved easily using algebra alone. In these cases, <strong data-start="1396" data-end="1406">graphs</strong> are used to <strong data-start="1419" data-end="1457">approximate input or output values</strong>. Solving an exponential model means finding the value of \(x\) or \(y\)&nbsp;that satisfies a given condition.</p>
+<p data-start="1303" data-end="1563"><br><strong>Example</strong></p>
+<p data-start="1303" data-end="1563">Given the function \(f(x)=50(1.05)^x\), estimate the input when the function reaches 100.</p>
+<p data-start="1303" data-end="1563"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/w9qn2nbvej?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p data-start="1303" data-end="1563">Using the graph of the function, we find the x value when the function is 100. So, we trace up the y-axis to 100, then trace over to the graph of the function. We find this is approximately where x=9.</p>
+<p data-start="1303" data-end="1563">We can use the equation to verify our estimation by substituting 100 in for f(x) and solving for x.</p>
+<p data-start="1303" data-end="1563"><img class="equation_image" title="100=50(1.08)^x \\
+\underline{100}=\underline{50(1.08)^x} \\
+\; 50 \quad\quad 50 \\
+2=1.08^x" src="https://optimadomi.instructure.com/equation_images/100%253D50(1.08)%255Ex%2520%255C%255C%250A%255Cunderline%257B100%257D%253D%255Cunderline%257B50(1.08)%255Ex%257D%2520%255C%255C%250A%255C%253B%252050%2520%255Cquad%255Cquad%252050%2520%255C%255C%250A2%253D1.08%255Ex?scale=1" alt="LaTeX: 100=50(1.08)^x \\
+\underline{100}=\underline{50(1.08)^x} \\
+\; 50 \quad\quad 50 \\
+2=1.08^x" data-equation-content="100=50(1.08)^x \\
+\underline{100}=\underline{50(1.08)^x} \\
+\; 50 \quad\quad 50 \\
+2=1.08^x" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1303" data-end="1563">Once we isolate the exponential part of the function, we will use logs to solve the function for x.</p>
+<p data-start="1303" data-end="1563"><img class="equation_image" title="\log{2}=\log{1.08^x} \\
+\log{2}=x\cdot \log{1.08} \\
+\underline {\log{2}}=\underline{x \log{1.08}} \\
+\log{1.08} \quad \log{1.08} \\
+x=\Large \frac{\log{2}}{\log{1.08}} \approx 9.00647" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B2%257D%253D%255Clog%257B1.08%255Ex%257D%2520%255C%255C%250A%255Clog%257B2%257D%253Dx%255Ccdot%2520%255Clog%257B1.08%257D%2520%255C%255C%250A%255Cunderline%2520%257B%255Clog%257B2%257D%257D%253D%255Cunderline%257Bx%2520%255Clog%257B1.08%257D%257D%2520%255C%255C%250A%255Clog%257B1.08%257D%2520%255Cquad%2520%255Clog%257B1.08%257D%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B%255Clog%257B2%257D%257D%257B%255Clog%257B1.08%257D%257D%2520%255Capprox%25209.00647?scale=1" alt="LaTeX: \log{2}=\log{1.08^x} \\
+\log{2}=x\cdot \log{1.08} \\
+\underline {\log{2}}=\underline{x \log{1.08}} \\
+\log{1.08} \quad \log{1.08} \\
+x=\Large \frac{\log{2}}{\log{1.08}} \approx 9.00647" data-equation-content="\log{2}=\log{1.08^x} \\
+\log{2}=x\cdot \log{1.08} \\
+\underline {\log{2}}=\underline{x \log{1.08}} \\
+\log{1.08} \quad \log{1.08} \\
+x=\Large \frac{\log{2}}{\log{1.08}} \approx 9.00647" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1303" data-end="1563">We find that x is approximately 9 as seen in the graph.</p>
+<p data-start="1303" data-end="1563">Answer: When the function is 100, x is approximately 9.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Given the function \(f(x)=200(1.04)^x\), estimate when the function will exceed 300. Round to the nearest tenth.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>To estimate when the function will exceed 300, we solve for x when \(f(x)=300\).</p>
+<p><img class="equation_image" title="300=200(1.04)^x \\
+\underline{300}=\underline{200(1.04)^x} \\
+200  \quad\quad 200 \\
+\frac{3}{2}=1.04^x" src="https://optimadomi.instructure.com/equation_images/300%253D200(1.04)%255Ex%2520%255C%255C%250A%255Cunderline%257B300%257D%253D%255Cunderline%257B200(1.04)%255Ex%257D%2520%255C%255C%250A200%2520%2520%255Cquad%255Cquad%2520200%2520%255C%255C%250A%255Cfrac%257B3%257D%257B2%257D%253D1.04%255Ex?scale=1" alt="LaTeX: 300=200(1.04)^x \\
+\underline{300}=\underline{200(1.04)^x} \\
+200  \quad\quad 200 \\
+\frac{3}{2}=1.04^x" data-equation-content="300=200(1.04)^x \\
+\underline{300}=\underline{200(1.04)^x} \\
+200  \quad\quad 200 \\
+\frac{3}{2}=1.04^x" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Once we isolate the exponential expression, we use logs to solve for x.</p>
+<p><img class="equation_image" title="\log{\frac{3}{2}}=\log{1.04^x} \\
+\log{\frac{3}{2}}=x\cdot \log{1.04} \\
+\space \\
+\underline{\log{\frac{3}{2}}}=\underline{x\log{1.04}} \\
+\log{1.04}\;\; \log{1.04} \\
+x=\Large \frac{\log{3/2}}{\log{1.04}} \approx 10.338" src="https://optimadomi.instructure.com/equation_images/%255Clog%257B%255Cfrac%257B3%257D%257B2%257D%257D%253D%255Clog%257B1.04%255Ex%257D%2520%255C%255C%250A%255Clog%257B%255Cfrac%257B3%257D%257B2%257D%257D%253Dx%255Ccdot%2520%255Clog%257B1.04%257D%2520%255C%255C%250A%255Cspace%2520%255C%255C%250A%255Cunderline%257B%255Clog%257B%255Cfrac%257B3%257D%257B2%257D%257D%257D%253D%255Cunderline%257Bx%255Clog%257B1.04%257D%257D%2520%255C%255C%250A%255Clog%257B1.04%257D%255C%253B%255C%253B%2520%255Clog%257B1.04%257D%2520%255C%255C%250Ax%253D%255CLarge%2520%255Cfrac%257B%255Clog%257B3%252F2%257D%257D%257B%255Clog%257B1.04%257D%257D%2520%255Capprox%252010.338?scale=1" alt="LaTeX: \log{\frac{3}{2}}=\log{1.04^x} \\
+\log{\frac{3}{2}}=x\cdot \log{1.04} \\
+\space \\
+\underline{\log{\frac{3}{2}}}=\underline{x\log{1.04}} \\
+\log{1.04}\;\; \log{1.04} \\
+x=\Large \frac{\log{3/2}}{\log{1.04}} \approx 10.338" data-equation-content="\log{\frac{3}{2}}=\log{1.04^x} \\
+\log{\frac{3}{2}}=x\cdot \log{1.04} \\
+\space \\
+\underline{\log{\frac{3}{2}}}=\underline{x\log{1.04}} \\
+\log{1.04}\;\; \log{1.04} \\
+x=\Large \frac{\log{3/2}}{\log{1.04}} \approx 10.338" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> x=10.3</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>Given the function \(f(x)=15(0.75)^x\), estimate the value of the function when x=5. Round to the nearest hundredth.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>To estimate the value of the function when x=5, we substitute 5 in for x and evaluate.</p>
+<p><img class="equation_image" title="f(5)=15(0.75)^5 \\
+f(5)\approx 3.55957" src="https://optimadomi.instructure.com/equation_images/f(5)%253D15(0.75)%255E5%2520%255C%255C%250Af(5)%255Capprox%25203.55957?scale=1" alt="LaTeX: f(5)=15(0.75)^5 \\
+f(5)\approx 3.55957" data-equation-content="f(5)=15(0.75)^5 \\
+f(5)\approx 3.55957" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we round to the second decimal place.</p>
+<p><img class="equation_image" title="f(5)\approx 3.56" src="https://optimadomi.instructure.com/equation_images/f(5)%255Capprox%25203.56?scale=1" alt="LaTeX: f(5)\approx 3.56" data-equation-content="f(5)\approx 3.56" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> 3.56</p>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Real-World Problems Involving Exponential Growth or Decay</strong></h4>
+<p data-start="2436" data-end="2575">Real-world exponential problems involve situations where a quantity increases or decreases by a constant percent over equal time intervals.</p>
+<ul data-start="2577" data-end="2682">
+<li data-start="2577" data-end="2629">
+<p data-start="2579" data-end="2629"><strong data-start="2579" data-end="2589">Growth</strong> occurs when the base is greater than 1.</p>
+</li>
+<li data-start="2630" data-end="2682">
+<p data-start="2632" data-end="2682"><strong data-start="2632" data-end="2641">Decay</strong> occurs when the base is between 0 and 1.</p>
+</li>
+</ul>
+<p data-start="2684" data-end="2808">Solving these problems involves identifying the initial value, growth or decay rate, and interpreting the result in context.</p>
+<p data-start="2684" data-end="2808"><br><strong>Example</strong></p>
+<p data-start="2684" data-end="2808">A population of 1,200 bacteria grows by 6% each hour. This is modeled by the function.</p>
+<p data-start="2684" data-end="2808">\(P(t)=1200(1.06)^t\)</p>
+<p data-start="2684" data-end="2808">What is the population of the bacteria after 5 hours? Round to the nearest whole.</p>
+<p data-start="2684" data-end="2808">Solution:</p>
+<p data-start="2684" data-end="2808">We begin by substituting 5 in for t and evaluating.</p>
+<p data-start="2684" data-end="2808"><img class="equation_image" title="P(5)=1200(1.06)^5 \\
+P(5) \approx 1605.870693..." src="https://optimadomi.instructure.com/equation_images/P(5)%253D1200(1.06)%255E5%2520%255C%255C%250AP(5)%2520%255Capprox%25201605.870693...?scale=1" alt="LaTeX: P(5)=1200(1.06)^5 \\
+P(5) \approx 1605.870693..." data-equation-content="P(5)=1200(1.06)^5 \\
+P(5) \approx 1605.870693..." data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2684" data-end="2808">Now, we round our answer to the nearest whole unit.</p>
+<p data-start="2684" data-end="2808">This means that there are approximately 1,606 bacteria after 5 hours.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>A car loses 12% of its value each year. The exponential function \(V(t)=20000(0.88)^t\) models the value of a $20,000 car each year once purchased.</p>
+<p>Find the value of the car after 4 years. Round to the nearest hundredth.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by substituting in 4 for t.</p>
+<p><img class="equation_image" title="V(4)=20000(0.88)^4 \\
+V(4)\approx 11993.9072..." src="https://optimadomi.instructure.com/equation_images/V(4)%253D20000(0.88)%255E4%2520%255C%255C%250AV(4)%255Capprox%252011993.9072...?scale=1" alt="LaTeX: V(4)=20000(0.88)^4 \\
+V(4)\approx 11993.9072..." data-equation-content="V(4)=20000(0.88)^4 \\
+V(4)\approx 11993.9072..." data-ignore-a11y-check="" loading="lazy"></p>
+<p>Round off to the second decimal place.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The value of the car after 4 years is $11,993.91.</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>A small town had a population of 12,400 people in 2015. Since then, the population has increased by 3.2%. The exponential function that models the population growth each year is \(P(t)=12400(1.032)^x\).</p>
+<p>In approximately what year will the population reach 15,459?</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by substituting in 15459 for \(P(t)\).</p>
+<p><img class="equation_image" title="15459=12400(0.88)^t \\
+\underline{15459}=\underline{12400(0.88)^t} \\
+12400  \quad\quad 12400 \\
+\frac{15459}{12400}=0.88^t" src="https://optimadomi.instructure.com/equation_images/15459%253D12400(0.88)%255Et%2520%255C%255C%250A%255Cunderline%257B15459%257D%253D%255Cunderline%257B12400(0.88)%255Et%257D%2520%255C%255C%250A12400%2520%2520%255Cquad%255Cquad%252012400%2520%255C%255C%250A%255Cfrac%257B15459%257D%257B12400%257D%253D0.88%255Et?scale=1" alt="LaTeX: 15459=12400(0.88)^t \\
+\underline{15459}=\underline{12400(0.88)^t} \\
+12400  \quad\quad 12400 \\
+\frac{15459}{12400}=0.88^t" data-equation-content="15459=12400(0.88)^t \\
+\underline{15459}=\underline{12400(0.88)^t} \\
+12400  \quad\quad 12400 \\
+\frac{15459}{12400}=0.88^t" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will use logs to solve for t.</p>
+<p><img class="equation_image" title="\log{\frac{15459}{12400}}=\log{1.032^t} \\
+\log{\frac{15459}{12400}}=t\cdot \log{1.032} \\
+\underline{\log{\frac{15459}{12400}}}=\underline{t\log{1.032}} \\
+\log{1.032} \quad\quad \log{1.032} \\
+t=\Large \frac{\log{\frac{15459}{12400}}}{\log{1.032}} \approx 7.000133847..." src="https://optimadomi.instructure.com/equation_images/%255Clog%257B%255Cfrac%257B15459%257D%257B12400%257D%257D%253D%255Clog%257B1.032%255Et%257D%2520%255C%255C%250A%255Clog%257B%255Cfrac%257B15459%257D%257B12400%257D%257D%253Dt%255Ccdot%2520%255Clog%257B1.032%257D%2520%255C%255C%250A%255Cunderline%257B%255Clog%257B%255Cfrac%257B15459%257D%257B12400%257D%257D%257D%253D%255Cunderline%257Bt%255Clog%257B1.032%257D%257D%2520%255C%255C%250A%255Clog%257B1.032%257D%2520%255Cquad%255Cquad%2520%255Clog%257B1.032%257D%2520%255C%255C%250At%253D%255CLarge%2520%255Cfrac%257B%255Clog%257B%255Cfrac%257B15459%257D%257B12400%257D%257D%257D%257B%255Clog%257B1.032%257D%257D%2520%255Capprox%25207.000133847...?scale=1" alt="LaTeX: \log{\frac{15459}{12400}}=\log{1.032^t} \\
+\log{\frac{15459}{12400}}=t\cdot \log{1.032} \\
+\underline{\log{\frac{15459}{12400}}}=\underline{t\log{1.032}} \\
+\log{1.032} \quad\quad \log{1.032} \\
+t=\Large \frac{\log{\frac{15459}{12400}}}{\log{1.032}} \approx 7.000133847..." data-equation-content="\log{\frac{15459}{12400}}=\log{1.032^t} \\
+\log{\frac{15459}{12400}}=t\cdot \log{1.032} \\
+\underline{\log{\frac{15459}{12400}}}=\underline{t\log{1.032}} \\
+\log{1.032} \quad\quad \log{1.032} \\
+t=\Large \frac{\log{\frac{15459}{12400}}}{\log{1.032}} \approx 7.000133847..." data-ignore-a11y-check="" loading="lazy"></p>
+<p>We will round this off to 7 years. Since the function represents the population starting in 2015. Then, 7 years later will be 2022.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> In 2022, the population will be approximately 15,459.</p>
+<p>&nbsp;</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Compound Interest and Continuously Compounded Interest</strong></h4>
+<p data-start="3662" data-end="3792"><strong data-start="3662" data-end="3683">Compound interest</strong> and <strong data-start="3688" data-end="3724">continuously compounded interest</strong> are two ways to model financial growth using exponential functions.</p>
+<p data-start="3794" data-end="3827">The compound interest formula is:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="minner" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="\Large A=P(1+\frac{r}{n})^{nt}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520A%253DP(1%252B%255Cfrac%257Br%257D%257Bn%257D)%255E%257Bnt%257D?scale=1" alt="LaTeX: \Large A=P(1+\frac{r}{n})^{nt}" data-equation-content="\Large A=P(1+\frac{r}{n})^{nt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p data-start="3874" data-end="3922">The continuously compounded interest formula is:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: 'Balsamiq Sans', 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1rem;"><span class="mord" style="font-size: 1rem;"><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight"><img class="equation_image" title="\Large A=Pe^{rt}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520A%253DPe%255E%257Brt%257D?scale=1" alt="LaTeX: \Large A=Pe^{rt}" data-equation-content="\Large A=Pe^{rt}" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p data-start="3942" data-end="4082">Both models represent exponential growth, but continuously compounded interest grows slightly faster because interest is added continuously.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 3</span></h4>
+<p>You invest $1,000 in a savings account at a 5% interest rate that is compounded monthly. The function \(A(t)=1000(1+\frac{0.05}{12})^{12t}\) models the yearly amount of the investment.</p>
+<p>What will be the total amount in the account after 8 years invested?</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by substituting in 8 for \(t\).</p>
+<p><img class="equation_image" title="A(8)=1000(1+\frac{0.05}{12})^{12\cdot 8} \\
+A(8)\approx 1490.585468..." src="https://optimadomi.instructure.com/equation_images/A(8)%253D1000(1%252B%255Cfrac%257B0.05%257D%257B12%257D)%255E%257B12%255Ccdot%25208%257D%2520%255C%255C%250AA(8)%255Capprox%25201490.585468...?scale=1" alt="LaTeX: A(8)=1000(1+\frac{0.05}{12})^{12\cdot 8} \\
+A(8)\approx 1490.585468..." data-equation-content="A(8)=1000(1+\frac{0.05}{12})^{12\cdot 8} \\
+A(8)\approx 1490.585468..." data-ignore-a11y-check="" loading="lazy"></p>
+<p>Since we are talking about money, we will round off to the nearest hundredth, $1,490.59.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> If we invest $1000 for 8 years, there will $1,490.59 in the account.</p>
+<h4 data-start="4798" data-end="4813"><strong><br><br>Conclusion</strong></h4>
+<p data-start="4815" data-end="5319" data-is-last-node="" data-is-only-node="">Exponential functions provide a powerful way to model and solve problems involving growth and decay. By using graphs and equations, you can approximate solutions and interpret what they mean in real-world contexts. Understanding compound and continuously compounded interest allows you to compare financial growth models and make informed decisions. Mastering these concepts strengthens your ability to analyze change over time and prepares you for more advanced mathematical and real-world applications.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How can exponential functions be used to model and solve real-world problems?</p>
+<p>2. When is it appropriate to use a graph to approximate solutions to exponential equations?</p>
+<p>3. How do compound interest and continuously compounded interest differ in how they model growth over time?</p>
+<p>4. Why does continuously compounded interest result in greater growth than compounded interest over long periods?</p>
+<p>5. How can graphs help compare different exponential models representing the same real-world situation?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.03 &middot; Solving Exponential Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

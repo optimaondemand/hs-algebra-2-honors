@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 13.02 One-Variable Absolute Value Inequalites</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 13</div>
+        <div style="font-size: 13px; color: #666;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">13.02</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">13.02</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">One-Variable Absolute Value Inequalites</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p><strong>Absolute Value Inequality:</strong>&nbsp;An inequality that contains an absolute value expression, representing all values whose distance from a fixed point satisfies a given condition.</p>
+<p><strong>And Inequality (conjunction):</strong> A compound inequality in which both conditions must be true simultaneously, producing a bounded solution set between two values; associated with ( \( |x| &lt; k \) ).</p>
+<p><strong>Boundary Value:</strong>&nbsp;The value(s) at which an absolute value inequality transitions from true to false, determined by solving the related absolute value equation.</p>
+<p><strong>Compound Inequality:</strong>&nbsp;Two inequalities joined by the word <em>and</em> or <em>or</em>, used to express the two cases that arise when rewriting an absolute value inequality.</p>
+<p><strong>Interval Notation:</strong>&nbsp;A symbolic way of writing a solution set using parentheses for strict inequalities and brackets for inclusive inequalities (e.g., ( (-3, 5] )).</p>
+<p><strong>No Solution:</strong> The result when an absolute value inequality of the form ( \( |x| &lt; k \) ) has ( \(k \leq 0 \) ), since absolute value cannot be negative.</p>
+<p><strong>Or Inequality (disjunction):</strong> A compound inequality in which at least one of two conditions must be true, producing an unbounded solution set on two separate rays; associated with ( \( |x| &gt; k \) ).</p>
+<p><strong>Solution Set:</strong>&nbsp;The collection of all values that make an inequality true, often represented on a number line or in interval notation.</p>
+<p><strong>Tolerance:</strong>&nbsp;A real-world application of absolute value inequalities describing the acceptable range of variation above and below a target value.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>In today's lesson, we will explore <strong>absolute value inequalities</strong> — what they mean, how their solutions are structured, and how to solve them with confidence. In the previous lesson, you learned that absolute value measures distance from zero on a number line. That same idea of distance is at the heart of today's topic, but with an important shift: instead of asking "what value is <em>exactly</em> this far from zero?", we now ask "what values are <em>within</em> a certain distance, or <em>beyond</em> a certain distance?" That shift turns an equation into an inequality and, as you will see, produces solution sets with two very different shapes depending on the inequality symbol used. By the end of this lesson, you will be able to solve one-variable absolute value inequalities, represent solutions in inequality notation, interval notation, and on a number line, and write inequalities to model real-world situations involving acceptable ranges and tolerances.</p>
+<div style="border: 3px solid #6B3FA0; background-color: #e8daf6; padding: 20px; border-radius: 8px;">
+<h4 style="color: #6b3fa0; margin-top: 0;">What Is a Solution of an Absolute Value Inequality?</h4>
+<p>A <strong>solution</strong> of an absolute value inequality is any value of the variable that makes the inequality true. Because absolute value represents distance from zero, the direction of the inequality symbol tells you what kind of distance condition must be satisfied.</p>
+<h4 style="color: #6b3fa0; margin-top: 0;"><span style="color: #000000;"><strong>The Two Core Cases</strong></span></h4>
+<p>Think of \( |x| \) as the distance of \( x \) from zero on a number line.</p>
+<p><strong>Less Than ( \( &lt; \) or \( \leq \) ): &nbsp;</strong> \( |x| &lt; 5 \) asks, "Which values of \( x \) are <em>fewer than</em> 5 units from zero?" Values like \( 0,\ 3,\ -2, \) and \( 4.9 \) all qualify — they all fall <em>between</em> \( -5 \) and \( 5 \). The solution is a <strong>bounded interval</strong>: a single connected region on the number line.</p>
+<p><strong>Greater Than ( \( &gt; \) or \( \geq \) ): &nbsp;</strong> \( |x| &gt; 5 \) asks, "Which values of \( x \) are <em>more than</em> 5 units from zero?" Values like \( 8,\ -7, \) and \( 100 \) all qualify — they all fall <em>outside</em> the interval from \( -5 \) to \( 5 \). The solution is <strong>two unbounded rays</strong> going outward in opposite directions.</p>
+<p>Keep this distance interpretation in mind as you work through the two solving processes below. It explains why each type of inequality produces a fundamentally different shape of solution.</p>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Solving Absolute Value Inequalities with \( &gt; \) or \( \geq \)</strong></h4>
+<p>When an absolute value inequality uses \( &gt; \) or \( \geq \), the solution consists of two outward rays — all values that are <em>far enough away</em> from a central point. To capture both directions, you split the inequality into two separate inequalities connected by the word <strong>OR</strong>. This type of solution is called a <strong>disjunction</strong>.</p>
+<p><strong>The OR Rule for \( &gt; \) and \( \geq \)</strong></p>
+<p>Once the absolute value is isolated on one side and the right side is non-negative, rewrite as two separate inequalities:</p>
+<p><img class="equation_image" title="|\text{expression}| > k \quad \Longrightarrow \quad \text{expression} > k \quad \textbf{OR} \quad \text{expression} < {-k}" src="https://optimadomi.instructure.com/equation_images/%257C%255Ctext%257Bexpression%257D%257C%2520%253E%2520k%2520%255Cquad%2520%255CLongrightarrow%2520%255Cquad%2520%255Ctext%257Bexpression%257D%2520%253E%2520k%2520%255Cquad%2520%255Ctextbf%257BOR%257D%2520%255Cquad%2520%255Ctext%257Bexpression%257D%2520%253C%2520%257B-k%257D?scale=1" alt="LaTeX: |\text{expression}| > k \quad \Longrightarrow \quad \text{expression} > k \quad \textbf{OR} \quad \text{expression} < {-k}" data-equation-content="|\text{expression}| > k \quad \Longrightarrow \quad \text{expression} > k \quad \textbf{OR} \quad \text{expression} < {-k}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>For \( \geq \): replace both \( &gt; \) and \( &lt; \) with \( \geq \) and \( \leq \) accordingly.</p>
+<p><em>Special case:</em> If the right side is <strong>negative</strong> after isolating (for example, \( |x| &gt;-3 \)), the solution is <strong>all real numbers</strong> — since absolute value is always \( \geq 0 \), it is always greater than any negative number.</p>
+<h4 style="color: #007acc; margin-top: 0;"><br><strong>Steps for Solving a \( &gt; \) or \( \geq \) Absolute Value Inequality:</strong></h4>
+<ol>
+<li>Isolate the absolute value expression on one side of the inequality.</li>
+<li>Check the right side. If it is negative, the solution is all real numbers. If it is non-negative, continue.</li>
+<li>Split into two separate inequalities using OR: set the inside expression \( &gt; k \) and also \( &lt; {-k} \).</li>
+<li>Solve each inequality independently.</li>
+<li>Write the combined solution and represent it in all three forms.</li>
+</ol>
+<h4><strong><br>Solving Greater Than</strong></h4>
+<p><strong>Solve \( |x + 2| &gt; 5 \)</strong></p>
+<p><strong>Step 1 — Isolate:</strong> The absolute value is already isolated. The right side is \( 5 \), which is positive. Continue.</p>
+<p><strong>Step 2 — Split into two inequalities using OR:</strong></p>
+<p style="padding-left: 24px;">\( x + 2 &gt; 5 \) &nbsp;&nbsp; OR &nbsp;&nbsp; \( x + 2 &lt; -5 \)</p>
+<p><strong>Step 3 — Solve each case:</strong></p>
+<p style="padding-left: 24px;">Case 1: &nbsp; \( x + 2 &gt; 5 \) &nbsp;&nbsp; → &nbsp;&nbsp; \( x &gt; 3 \) &nbsp;&nbsp;&nbsp; (subtract \( 2 \) from both sides)</p>
+<p style="padding-left: 24px;">Case 2: &nbsp; \( x + 2 &lt; -5 \) &nbsp;&nbsp; → &nbsp;&nbsp; \( x &lt; -7 \) &nbsp;&nbsp;&nbsp; (subtract \( 2 \) from both sides)</p>
+<p><strong>Step 4 — Combine:</strong> The solution is all values where \( x &lt; -7 \) OR \( x &gt; 3 \). When writing "or" inequalities symbolically, we use <img class="equation_image" title="\vee" src="https://optimadomi.instructure.com/equation_images/%255Cvee?scale=1" alt="LaTeX: \vee" data-equation-content="\vee" data-ignore-a11y-check="" loading="lazy"> in place of the word "or". The order of the two inequalities does not matter.</p>
+<p><strong>Inequality Notation:</strong> &nbsp; <img class="equation_image" title="x<-7 \vee x>3" src="https://optimadomi.instructure.com/equation_images/x%253C-7%2520%255Cvee%2520x%253E3?scale=1" alt="LaTeX: x<-7 \vee x>3" data-equation-content="x<-7 \vee x>3" data-ignore-a11y-check="" loading="lazy"> can also be written as <img class="equation_image" title="x>3\vee x<-7" src="https://optimadomi.instructure.com/equation_images/x%253E3%255Cvee%2520x%253C-7?scale=1" alt="LaTeX: x>3\vee x<-7" data-equation-content="x>3\vee x<-7" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Interval Notation:</strong> &nbsp; \( (-\infty,\ -7)\ \cup\ (3,\ \infty) \)</p>
+<p><strong>Graph:&nbsp;</strong>To graph, we use a number 1 unit greater 3 and a number 1 unit less than -7 to understand which way to direct the rays on the graph.</p>
+<p><strong><img id="1327599" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGOrExample.png" alt="MAT11M13L02IMGOrExample.png" width="681" height="60" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327599" data-api-returntype="File" loading="lazy"></strong></p>
+<p style="font-size: 0.9rem; color: #555; font-style: italic; margin-bottom: 0;">Open circles at \( -7 \) and \( 3 \) indicate those values are <em>not</em> included in the solution.</p>
+<h4 style="color: #007acc; margin-top: 0;"><strong><br><br>Solving Absolute Value Inequalities with \( &lt; \) or \( \leq \)</strong></h4>
+<p>When an absolute value inequality uses \( &lt; \) or \( \leq \), the solution is a <strong>bounded interval</strong> — all values that fall close enough to a central point. Both distance conditions must be true simultaneously, so the two inequalities are joined with <strong>AND</strong> and written as a single three-part compound inequality. This type of solution is called a <strong>conjunction</strong>.</p>
+<h4><strong>The AND Rule for \( &lt; \) and \( \leq \)</strong></h4>
+<p>Once the absolute value is isolated on one side and the right side is non-negative, rewrite as a three-part compound inequality:</p>
+<p>\( |\text{expression}| &lt; k \quad \Longrightarrow \quad {-k} &lt; \text{expression} &lt; k \)</p>
+<p>For \( \leq \): replace both \( &lt; \) with \( \leq \) throughout.</p>
+<p><em>Special case:</em> If the right side is <strong>negative</strong> after isolating (for example, \( |x| &lt; -3 \)), the answer is <strong>No Solution</strong> — absolute value is always \( \geq 0 \) and can never be less than a negative number.</p>
+<h4 style="color: #007acc; margin-top: 0;"><strong><br>Steps for Solving a \( &lt; \) or \( \leq \) Absolute Value Inequality:</strong></h4>
+<ol>
+<li>Isolate the absolute value expression on one side of the inequality.</li>
+<li>Check the right side. If it is negative, write <strong>No Solution</strong>. If it is non-negative, continue.</li>
+<li>Rewrite as a three-part compound inequality: \( {-k} \leq expression \leq k \) (adjusting symbols as needed).</li>
+<li>Solve the compound inequality by performing the same operations to all three parts.</li>
+<li>Write the combined solution and represent it in all three forms.</li>
+</ol>
+<h4><strong><br>Solving Less Than</strong></h4>
+<p><strong>Solve \( |2x - 4| \leq 6 \)</strong></p>
+<p><strong>Step 1 — Isolate:</strong> The absolute value is already isolated. The right side is \( 6 \), which is positive. Continue.</p>
+<p><strong>Step 2 — Rewrite as a three-part compound inequality (AND):</strong></p>
+<p style="padding-left: 24px;">\( -6 \leq 2x - 4 \leq 6 \)</p>
+<p><strong>Step 3 — Add \( 4 \) to all three parts:</strong></p>
+<p style="padding-left: 24px;"><img class="equation_image" title="\begin{aligned}
+-6 \leq 2x - 4 \leq 6 \\
++4 \qquad +4 \ +4 \\
+\hline
+-2 \leq 2x \leq 10
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A-6%2520%255Cleq%25202x%2520-%25204%2520%255Cleq%25206%2520%255C%255C%250A%252B4%2520%255Cqquad%2520%252B4%2520%255C%2520%252B4%2520%255C%255C%250A%255Chline%250A-2%2520%255Cleq%25202x%2520%255Cleq%252010%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+-6 \leq 2x - 4 \leq 6 \\
++4 \qquad +4 \ +4 \\
+\hline
+-2 \leq 2x \leq 10
+\end{aligned}" data-equation-content="\begin{aligned}
+-6 \leq 2x - 4 \leq 6 \\
++4 \qquad +4 \ +4 \\
+\hline
+-2 \leq 2x \leq 10
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 4 — Divide all three parts by \( 2 \):</strong></p>
+<p style="padding-left: 24px;"><img class="equation_image" title="\begin{aligned}
+\underline{-2} \leq \underline{2x} \leq \underline{10} \\
+2 \qquad 2 \quad\;\;\; 2\; \\
+-1 \leq x \leq 5
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A%255Cunderline%257B-2%257D%2520%255Cleq%2520%255Cunderline%257B2x%257D%2520%255Cleq%2520%255Cunderline%257B10%257D%2520%255C%255C%250A2%2520%255Cqquad%25202%2520%255Cquad%255C%253B%255C%253B%255C%253B%25202%255C%253B%2520%255C%255C%250A-1%2520%255Cleq%2520x%2520%255Cleq%25205%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+\underline{-2} \leq \underline{2x} \leq \underline{10} \\
+2 \qquad 2 \quad\;\;\; 2\; \\
+-1 \leq x \leq 5
+\end{aligned}" data-equation-content="\begin{aligned}
+\underline{-2} \leq \underline{2x} \leq \underline{10} \\
+2 \qquad 2 \quad\;\;\; 2\; \\
+-1 \leq x \leq 5
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( -1 \leq x \leq 5 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( [-1,\ 5] \)</p>
+<p><strong>Graph: <img id="1327600" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGAndExample.png" alt="MAT11M13L02IMGAndExample.png" width="614" height="58" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327600" data-api-returntype="File" loading="lazy"></strong></p>
+<p style="font-size: 0.9rem; color: #555; font-style: italic; margin-bottom: 0;">Filled circles at \( -1 \) and \( 5 \) indicate those values <em>are</em> included in the solution.</p>
+</div>
+<h4><span style="font-size: 1rem; color: #f88e0a;">Example 1</span></h4>
+<p><span style="font-size: 1rem;">Solve:</span></p>
+<p>\( |x - 4| \geq 3 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p>The absolute value is already isolated and the right side is \( 3 \), which is positive. The inequality symbol is \( \geq \), so use the <strong>OR rule</strong>.</p>
+<p><strong>Split into two inequalities using OR:</strong></p>
+<p style="padding-left: 24px;">\( x - 4 \geq 3 \) &nbsp;&nbsp; OR &nbsp;&nbsp; \( x - 4 \leq -3 \)</p>
+<p><strong>Solve each case:</strong></p>
+<p style="padding-left: 24px;">Case 1: &nbsp; <img class="equation_image" title="x \xcancel{- 4+4} \geq 3+4" src="https://optimadomi.instructure.com/equation_images/x%2520%255Cxcancel%257B-%25204%252B4%257D%2520%255Cgeq%25203%252B4?scale=1" alt="LaTeX: x \xcancel{- 4+4} \geq 3+4" data-equation-content="x \xcancel{- 4+4} \geq 3+4" data-ignore-a11y-check="" loading="lazy"> &nbsp; &nbsp;→ &nbsp;&nbsp; \( x \geq 7 \) &nbsp;&nbsp;&nbsp; (add \( 4 \) to both sides)</p>
+<p style="padding-left: 24px;">Case 2: &nbsp; \( x \xcancel{- 4+4} \leq -3+4 \) &nbsp;&nbsp; → &nbsp;&nbsp; \( x \leq 1 \) &nbsp;&nbsp;&nbsp; (add \( 4 \) to both sides)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( x \leq 1 \vee x \geq 7 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( (-\infty,\ 1]\ \cup\ [7,\ \infty) \)</p>
+<p><strong>Graph: <img id="1327601" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGExample1.png" alt="MAT11M13L02IMGExample1.png" width="591" height="52" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327601" data-api-returntype="File" loading="lazy"></strong></p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 2</span></h4>
+<p>Solve:</p>
+<p>\( |2x + 5| &lt; 9 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<p>The absolute value is already isolated and the right side is \( 9 \), which is positive. The inequality symbol is \( &lt; \), so use the <strong>AND rule</strong> and write a three-part compound inequality.</p>
+<div class="worked-steps">
+<p><strong>Rewrite as a compound inequality:</strong></p>
+<p style="padding-left: 24px;">\( -9 &lt; 2x + 5 &lt; 9 \)</p>
+<p><strong>Subtract \( 5 \) from all three parts:</strong></p>
+<p style="padding-left: 24px;"><img class="equation_image" title="\begin{aligned}
+-9 <2x+5 < 9 \\
+-5 \qquad -5\; -5 \\
+\hline
+-14 < 2x < 4
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A-9%2520%253C2x%252B5%2520%253C%25209%2520%255C%255C%250A-5%2520%255Cqquad%2520-5%255C%253B%2520-5%2520%255C%255C%250A%255Chline%250A-14%2520%253C%25202x%2520%253C%25204%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+-9 <2x+5 < 9 \\
+-5 \qquad -5\; -5 \\
+\hline
+-14 < 2x < 4
+\end{aligned}" data-equation-content="\begin{aligned}
+-9 <2x+5 < 9 \\
+-5 \qquad -5\; -5 \\
+\hline
+-14 < 2x < 4
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Divide all three parts by \( 2 \):</strong></p>
+<p style="padding-left: 24px;"><img class="equation_image" title="\begin{aligned}
+\underline{-14} < \underline{2x} < \underline{4} \\
+2 \qquad 2 \quad\;\; 2 \\
+-7 < x < 2
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A%255Cunderline%257B-14%257D%2520%253C%2520%255Cunderline%257B2x%257D%2520%253C%2520%255Cunderline%257B4%257D%2520%255C%255C%250A2%2520%255Cqquad%25202%2520%255Cquad%255C%253B%255C%253B%25202%2520%255C%255C%250A-7%2520%253C%2520x%2520%253C%25202%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+\underline{-14} < \underline{2x} < \underline{4} \\
+2 \qquad 2 \quad\;\; 2 \\
+-7 < x < 2
+\end{aligned}" data-equation-content="\begin{aligned}
+\underline{-14} < \underline{2x} < \underline{4} \\
+2 \qquad 2 \quad\;\; 2 \\
+-7 < x < 2
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( -7 &lt; x &lt; 2 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( (-7,\ 2) \)</p>
+<p><strong>Graph: <img id="1327602" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGExample2.png" alt="MAT11M13L02IMGExample2.png" width="543" height="49" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327602" data-api-returntype="File" loading="lazy"></strong></p>
+</div>
+</div>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 3</span></h4>
+<p>Solve:</p>
+<p>\( |4x - 2| + 3 &gt; 11 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p>The absolute value is <em>not</em> isolated — there is a constant added outside the bars. Isolate first, then apply the OR rule.</p>
+<p><strong>Step 1 — Isolate:</strong> Subtract \( 3 \) from both sides.</p>
+<p style="padding-left: 24px;">\( |4x - 2| &gt; 8 \)</p>
+<p>The right side is \( 8 \), which is positive. Use the <strong>OR rule</strong>.</p>
+<p><strong>Step 2 — Split into OR:</strong></p>
+<p style="padding-left: 24px;">\( 4x - 2 &gt; 8 \) &nbsp;&nbsp; OR &nbsp;&nbsp; \( 4x - 2 &lt; -8 \)</p>
+<p><strong>Step 3 — Solve each case:</strong></p>
+<p style="padding-left: 24px;">Case 1: &nbsp; \( 4x &gt; 10 \) &nbsp; → &nbsp; \( x &gt; \dfrac{5}{2} \) &nbsp;&nbsp;&nbsp; (add \( 2 \), then divide by \( 4 \))</p>
+<p style="padding-left: 24px;">Case 2: &nbsp; \( 4x &lt; -6 \) &nbsp; → &nbsp; \( x &lt; -\dfrac{3}{2} \) &nbsp;&nbsp;&nbsp; (add \( 2 \), then divide by \( 4 \))</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( x &lt; -\dfrac{3}{2} \vee x &gt; \dfrac{5}{2} \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( \left(-\infty,\ -\dfrac{3}{2}\right)\ \cup\ \left(\dfrac{5}{2},\ \infty\right) \)</p>
+<p><strong>Graph:&nbsp;</strong>To help create the graph, we will use the first integer less than \(-\frac{3}{2} \), which is -2, and the first integer greater than \( \frac{5}{2}\), which is 3.</p>
+<p><strong><img id="1327603" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGExample3.png" alt="MAT11M13L02IMGExample3.png" width="570" height="55" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327603" data-api-returntype="File" loading="lazy"></strong></p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Example 4</span></h4>
+<p>Solve:</p>
+<p>\( |3x + 6| - 2 \leq 10 \)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p>The absolute value is <em>not</em> isolated — there is a constant subtracted outside the bars. Isolate first, then apply the AND rule.</p>
+<p><strong>Step 1 — Isolate:</strong> Add \( 2 \) to both sides.</p>
+<p style="padding-left: 24px;">\( |3x + 6| \leq 12 \)</p>
+<p>The right side is \( 12 \), which is positive. Use the <strong>AND rule</strong>.</p>
+<p><strong>Step 2 — Rewrite as a compound inequality:</strong></p>
+<p style="padding-left: 24px;">\( -12 \leq 3x + 6 \leq 12 \)</p>
+<p><strong>Step 3 — Subtract \( 6 \) from all three parts:</strong></p>
+<p style="padding-left: 24px;">\( -18 \leq 3x \leq 6 \)</p>
+<p><strong>Step 4 — Divide all three parts by \( 3 \):</strong></p>
+<p style="padding-left: 24px;">\( -6 \leq x \leq 2 \)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( -6 \leq x \leq 2 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( [-6,\ 2] \)</p>
+<p><strong>Graph: <img id="1327604" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L02IMGExample4.png" alt="MAT11M13L02IMGExample4.png" width="580" height="51" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1327604" data-api-returntype="File" loading="lazy"></strong></p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Writing Absolute Value Inequalities from Real-World Contexts</strong></h4>
+<p>Absolute value inequalities appear naturally whenever a quantity must stay within a certain range of a target value, or when a deviation beyond a threshold triggers a response. These situations are common in manufacturing quality control, science, medicine, and engineering — anywhere a tolerance or acceptable range is defined.</p>
+<p>Setting up the inequality requires identifying two things: the <strong>target value</strong> (the center of the acceptable range) and the <strong>maximum allowed deviation</strong> (how far the quantity can stray from that target). The expression inside the absolute value is always written as \( (\text{variable}) - (\text{target}) \), and the right side of the inequality is the allowed deviation.</p>
+<p><strong>Setting Up a Real-World Absolute Value Inequality</strong></p>
+<p><strong>Step 1:</strong> Identify the <em>target value</em> and the <em>maximum allowed deviation</em> from the problem.</p>
+<p><strong>Step 2:</strong> Write \( |\text{variable} - \text{target}| \) for the left side.</p>
+<p><strong>Step 3:</strong> Choose the inequality symbol: use \( \leq \) when the quantity must <em>stay within</em> the deviation (AND, bounded); use \( &gt; \) when a threshold is <em>exceeded</em> (OR, unbounded).</p>
+<p><strong>Step 4:</strong> Solve and interpret the answer in context.</p>
+</div>
+<h4><span style="color: #f88e0a;">Real-World Problem 1</span></h4>
+<p>Manufacturing Tolerance</p>
+<p>A machine cuts steel rods to a target length of 12 centimeters. Quality control requires that each rod's actual length differ from the target by <strong>no more than 0.2 centimeters</strong>.</p>
+<p>Write and solve an absolute value inequality to find the acceptable range of lengths. Let \( L \) represent the actual length of a rod in centimeters.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Identify values:</strong> Target \( = 12 \) cm; maximum allowed deviation \( = 0.2 \) cm.</p>
+<p><strong>Step 2 — Write the inequality:</strong> "No more than 0.2" means the deviation must be \( \leq 0.2 \).</p>
+<p style="padding-left: 24px;">\( |L - 12| \leq 0.2 \)</p>
+<p><strong>Step 3 — Solve using the AND rule:</strong></p>
+<p style="padding-left: 24px;">\( -0.2 \leq L - 12 \leq 0.2 \)</p>
+<p style="padding-left: 24px;">\( 11.8 \leq L \leq 12.2 \) &nbsp;&nbsp;&nbsp; (add \( 12 \) to all three parts)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( 11.8 \leq L \leq 12.2 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( [11.8,\ 12.2] \)</p>
+<p><strong>Interpretation:</strong> A rod passes inspection only if its length is between 11.8 cm and 12.2 cm, inclusive. Any rod shorter than 11.8 cm or longer than 12.2 cm is rejected.</p>
+</details>
+<p><br><br></p>
+<h4><span style="color: #f88e0a;">Real-World Problem 2</span></h4>
+<p>Weather Alert System</p>
+<p>A weather monitoring system issues an alert when the recorded temperature deviates from the seasonal average of 72°F by <strong>more than 15 degrees</strong>. Write and solve an absolute value inequality to find the temperatures that trigger an alert. Let \( T \) represent the recorded temperature in degrees Fahrenheit.</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Identify values:</strong> Seasonal average \( = 72 \)°F; alert threshold \( = \) more than \( 15 \)°F deviation.</p>
+<p><strong>Step 2 — Write the inequality:</strong> "More than 15" means the deviation must be \( &gt; 15 \).</p>
+<p style="padding-left: 24px;">\( |T - 72| &gt; 15 \)</p>
+<p><strong>Step 3 — Solve using the OR rule:</strong></p>
+<p style="padding-left: 24px;">\( T - 72 &gt; 15 \) &nbsp;&nbsp; OR &nbsp;&nbsp; \( T - 72 &lt; -15 \)</p>
+<p style="padding-left: 24px;">\( T &gt; 87 \) &nbsp;&nbsp; OR &nbsp;&nbsp; \( T &lt; 57 \) &nbsp;&nbsp;&nbsp; (add \( 72 \) to both sides of each)</p>
+<p><strong><span style="color: #e62429;">Answer:</span></strong></p>
+<p><strong>Inequality Notation:</strong> &nbsp; \( T &lt; 57 \vee T &gt; 87 \)</p>
+<p><strong>Interval Notation:</strong> &nbsp; \( (-\infty,\ 57)\ \cup\ (87,\ \infty) \)</p>
+<p><strong>Interpretation:</strong> A weather alert is triggered when the temperature drops below 57°F or rises above 87°F. Temperatures from 57°F to 87°F do not trigger the alert.</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you explored the meaning and structure of absolute value inequalities. You learned that the inequality symbol determines the shape of the entire solution: a bounded interval between two values for "less than" types, and two outward rays for "greater than" types. You practiced a reliable two-step strategy for both — isolate the absolute value first, check the right side for special cases, then apply the OR rule or the AND rule accordingly. Solutions were represented in three forms: inequality notation, interval notation, and graphically on a number line, giving you the flexibility to communicate answers in multiple ways. You also learned to recognize no-solution cases and all-real-numbers cases before splitting the inequality. Finally, you applied these skills to real-world problems involving manufacturing tolerances and weather alert thresholds, seeing how the same mathematical structure appears throughout science and industry. These concepts build directly on your work with absolute value equations and will carry forward into absolute value functions and more advanced modeling later in the course.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How is solving an absolute value inequality similar to and different from solving an absolute value equation?</p>
+<p><span style="font-size: 1rem;">2. Why does the direction of an absolute value inequality (less than versus greater than) determine whether the solution is a connected interval or two separate rays on the number line?</span></p>
+<p><span style="font-size: 1rem;">3. </span><span style="font-size: 1rem;">How can absolute value inequalities be used to represent real-world constraints, such as acceptable ranges, margins of error, or tolerance limits?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">13.02 &middot; One-Variable Absolute Value Inequalites</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

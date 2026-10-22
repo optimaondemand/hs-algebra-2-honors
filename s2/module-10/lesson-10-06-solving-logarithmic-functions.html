@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.06 Solving Logarithmic Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.06</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.06</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving Logarithmic Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="189"><strong data-start="0" data-end="24">Approximate Solution</strong>: A value that is close to the exact answer and is often found using graphs, tables, or estimation when an exact solution is difficult or impractical to determine.</p>
+<p data-start="191" data-end="274"><strong data-start="191" data-end="201">Domain</strong>: The set of all possible input values for which a function is defined.</p>
+<p data-start="276" data-end="427"><strong data-start="276" data-end="300">Exponential Function</strong>: A function in which the independent variable appears in the exponent and models growth or decay at a constant percent rate.</p>
+<p data-start="429" data-end="560"><strong data-start="429" data-end="450">Inverse Functions</strong>: Two functions that undo each other, meaning applying one after the other returns the original input value.</p>
+<p data-start="562" data-end="725"><strong data-start="562" data-end="586">Logarithmic Function</strong>: A function that is the inverse of an exponential function and expresses the exponent needed to produce a given value from a given base.</p>
+<p data-start="727" data-end="858"><strong data-start="727" data-end="742">Natural Log</strong>: A logarithmic function with base <em data-start="777" data-end="780">e</em>, written as \(\ln{x}\), commonly used to model continuous growth and decay.</p>
+<p data-start="860" data-end="923" data-is-last-node="" data-is-only-node=""><strong data-start="860" data-end="869">Range</strong>: The set of all possible output values of a function.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Logarithmic and natural logarithmic functions are used to solve problems where quantities grow or change at varying rates. These functions commonly appear in science, finance, and real-world modeling situations such as population growth, sound intensity, and radioactive decay. In this lesson, you will learn how to evaluate logarithmic and natural log functions when given an input value and how to solve for an unknown input when given an output value. You will also practice interpreting solutions in context and deciding when exact or approximate answers are appropriate.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Evaluating Logarithmic or Natural Log Functions Given x</strong></h4>
+<p data-start="1104" data-end="1248">When solving a logarithmic or natural logarithmic function <strong data-start="1163" data-end="1180">for a given x</strong>, you are evaluating the function to find the corresponding y-value.</p>
+<p data-start="1250" data-end="1263">Common forms:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;">\(\Large f(x)=\log_{b}{(x)}\)</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span class="mclose" style="font-size: 1rem;">\(\Large f(x)=\ln{(x)}\)</span></span></span></span></span></p>
+<ul data-start="1302" data-end="1454">
+<li data-start="1302" data-end="1375">
+<p data-start="1304" data-end="1375"><strong data-start="1304" data-end="1320">Exact values</strong> are possible when the argument is a power of the base.</p>
+</li>
+<li data-start="1376" data-end="1454">
+<p data-start="1378" data-end="1454"><strong data-start="1378" data-end="1400">Approximate values</strong> are used when the argument is not a convenient power.</p>
+</li>
+</ul>
+<p><br>When finding y or the value of the function, f(x), for a given x value, substitute the x value in and evaluate using the order of operations.</p>
+<h4><br><strong>Examples:</strong></h4>
+<p>Find \(f(8)\) for the given function.</p>
+<p>\(f(x)=\log_{2}{(x)}\)</p>
+<p>Solution:</p>
+<p>Substitute the value 8 in for x into the function and evaluate.</p>
+<p>Evaluating can sometimes produce approximate answers. If the evaluation creates a non-terminating decimal, then leaving in log form is the exact answer.</p>
+<ul>
+<li><img class="equation_image" title="f(8)=\log_{2}{(8)} \\
+f(8)=3" src="https://optimadomi.instructure.com/equation_images/f(8)%253D%255Clog_%257B2%257D%257B(8)%257D%2520%255C%255C%250Af(8)%253D3?scale=1" alt="LaTeX: f(8)=\log_{2}{(8)} \\
+f(8)=3" data-equation-content="f(8)=\log_{2}{(8)} \\
+f(8)=3" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+<p>Answer: \(f(8)=3\)</p>
+<p><br>Exact values are possible when the argument is a power of the base. Otherwise, approximate values are used.</p>
+<p><br>Find \(f(3)\) for the given function.</p>
+<p>\(f(x)=\ln{(x+2)}\)</p>
+<p>Solution:</p>
+<p>We will substitute 3 in for x.</p>
+<p>\(f(3)=\ln{(3+2)}\).</p>
+<p>We can simplify inside the parentheses to get \(f(3)=\ln{(5)}\).</p>
+<p>For the next step, we would have to use a calculator to get an approximate answer.</p>
+<p>Answer:</p>
+<p>Exact Answer is \(f(3)=\ln{(5)}\)</p>
+<p>Approximate Answer rounded to the nearest hundredth is 1.61.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=3\log_{5}{(x)}\)</p>
+<p>Evaluate \(f(25)\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by substituting 25 in for x and evaluating using the order of operations.</p>
+<p>The log function goes up at the beginning of the order with exponents since they are inverse operations.</p>
+<p>So, we would calculate anything inside a parenthesis first. Then we would evaluate logs or exponents next. Then multiplication and division to follow that. Any outside addition and subtraction would come last.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><img class="equation_image" title="f(25)=2\log_{5}{(25)}" src="https://optimadomi.instructure.com/equation_images/f(25)%253D2%255Clog_%257B5%257D%257B(25)%257D?scale=1" alt="LaTeX: f(25)=2\log_{5}{(25)}" data-equation-content="f(25)=2\log_{5}{(25)}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Remember that logs are inverses of exponents. To evaluate a log, we ask ourselves, the base to what power would create the argument.</li>
+<li>For this problem, 5 to what power would make 25? The answer would be 2.</li>
+<li>This works when there is an exact answer. Otherwise, we would use a calculator to find an approximation.</li>
+<li>So, \(\log_{5}{(25)}\) is the value 2.
+<ul>
+<li><img class="equation_image" title="f(25)=3(2)" src="https://optimadomi.instructure.com/equation_images/f(25)%253D3(2)?scale=1" alt="LaTeX: f(25)=3(2)" data-equation-content="f(25)=3(2)" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Now, we evaluate the multiplication.
+<ul>
+<li><img class="equation_image" title="f(25)=6" src="https://optimadomi.instructure.com/equation_images/f(25)%253D6?scale=1" alt="LaTeX: f(25)=6" data-equation-content="f(25)=6" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(f(25)=6\)</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=\log{(x+2)}\)</p>
+<p>Evaluate \(f(8)\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by substituting 8 in for x and evaluating using the order of operations.</p>
+<p>The log function goes up at the beginning of the order with exponents since they are inverse operations.</p>
+<p>So, we would calculate anything inside a parenthesis first. Then we would evaluate logs or exponents next. Then multiplication and division to follow that. Any outside addition and subtraction would come last.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><img class="equation_image" title="f(8)=\log{(8+2)} \\
+f(8)=\log{(10)}" src="https://optimadomi.instructure.com/equation_images/f(8)%253D%255Clog%257B(8%252B2)%257D%2520%255C%255C%250Af(8)%253D%255Clog%257B(10)%257D?scale=1" alt="LaTeX: f(8)=\log{(8+2)} \\
+f(8)=\log{(10)}" data-equation-content="f(8)=\log{(8+2)} \\
+f(8)=\log{(10)}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Remember that logs are inverses of exponents. To evaluate a log, we ask ourselves, the base to what power would create the argument.</li>
+<li>For this problem, 10 to what power would make 10? The answer would be 1.
+<ul>
+<li>If there is no base shown in the log, it is a common log understood to be base 10.</li>
+</ul>
+</li>
+<li>This works when there is an exact answer. Otherwise, we would use a calculator to find an approximation.</li>
+<li>So, \(\log{(10)}\) is the value 1.
+<ul>
+<li><img class="equation_image" title="f(8)=1" src="https://optimadomi.instructure.com/equation_images/f(8)%253D1?scale=1" alt="LaTeX: f(8)=1" data-equation-content="f(8)=1" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(f(8)=1\)</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 3</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=\log_{3}{(x)}+5\)</p>
+<p>Evaluate \(f(12)\). Round to the nearest hundredth if necessary.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by substituting 12 in for x and evaluating using the order of operations.</p>
+<p>The log function goes up at the beginning of the order with exponents since they are inverse operations.</p>
+<p>So, we would calculate anything inside a parenthesis first. Then we would evaluate logs or exponents next. Then multiplication and division to follow that. Any outside addition and subtraction would come last.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><img class="equation_image" title="f(12)=\log_{3}{(12)}+5" src="https://optimadomi.instructure.com/equation_images/f(12)%253D%255Clog_%257B3%257D%257B(12)%257D%252B5?scale=1" alt="LaTeX: f(12)=\log_{3}{(12)}+5" data-equation-content="f(12)=\log_{3}{(12)}+5" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Remember that logs are inverses of exponents. To evaluate a log, we ask ourselves, the base to what power would create the argument.</li>
+<li>For this problem, 3 to what power would make 12? There is no exact power. So, we will use the calculator to evaluate and estimate the answer.</li>
+<li>This works when there is an exact answer. Otherwise, we would use a calculator to find an approximation.
+<ul>
+<li><img class="equation_image" title="f(12)=\log_{3}{(12)}+5 \approx 7.2618595..." src="https://optimadomi.instructure.com/equation_images/f(12)%253D%255Clog_%257B3%257D%257B(12)%257D%252B5%2520%255Capprox%25207.2618595...?scale=1" alt="LaTeX: f(12)=\log_{3}{(12)}+5 \approx 7.2618595..." data-equation-content="f(12)=\log_{3}{(12)}+5 \approx 7.2618595..." data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(f(12)=7.26\)</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 4</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=4\ln{(x-6)}\)</p>
+<p>Evaluate \(f(13)\). Round to the nearest hundredth if necessary.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by substituting 13 in for x and evaluating using the order of operations.</p>
+<p>The log function goes up at the beginning of the order with exponents since they are inverse operations.</p>
+<p>So, we would calculate anything inside a parenthesis first. Then we would evaluate logs or exponents next. Then multiplication and division follow that. Any outside addition and subtraction would come last.</p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><img class="equation_image" title="f(13)=4\ln{(13-6)} \\
+f(13)=4\ln{(7)}" src="https://optimadomi.instructure.com/equation_images/f(13)%253D4%255Cln%257B(13-6)%257D%2520%255C%255C%250Af(13)%253D4%255Cln%257B(7)%257D?scale=1" alt="LaTeX: f(13)=4\ln{(13-6)} \\
+f(13)=4\ln{(7)}" data-equation-content="f(13)=4\ln{(13-6)} \\
+f(13)=4\ln{(7)}" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Remember that logs are inverses of exponents. To evaluate a log, we ask ourselves, the base to what power would create the argument.</li>
+<li>Natural logs have a base e, which is a nonterminating irrational number.</li>
+<li>We will use a calculator to find an approximation.
+<ul>
+<li><img class="equation_image" title="f(13)=4\ln{(7)} \approx 7.7836405..." src="https://optimadomi.instructure.com/equation_images/f(13)%253D4%255Cln%257B(7)%257D%2520%255Capprox%25207.7836405...?scale=1" alt="LaTeX: f(13)=4\ln{(7)} \approx 7.7836405..." data-equation-content="f(13)=4\ln{(7)} \approx 7.7836405..." data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(f(13)=7.78\)</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;">Solving Logarithmic and Natural Log Functions Given y</h4>
+<p data-start="2299" data-end="2426">When solving for an unknown input, isolate the logarithmic expression first, then rewrite the equation in <strong data-start="2405" data-end="2425">exponential form</strong>.</p>
+<p data-start="2428" data-end="2442">General rules:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span style="font-size: 1rem;"><img class="equation_image" title="f(x)=a\log_{b}{(x+c)}+d" src="https://optimadomi.instructure.com/equation_images/f(x)%253Da%255Clog_%257Bb%257D%257B(x%252Bc)%257D%252Bd?scale=1" alt="LaTeX: f(x)=a\log_{b}{(x+c)}+d" data-equation-content="f(x)=a\log_{b}{(x+c)}+d" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><span class="base" style="font-family: sans-serif; font-size: 1rem;"><span style="font-size: 1rem;"><img class="equation_image" title="f(x)=a\ln{(x+c)}+d" src="https://optimadomi.instructure.com/equation_images/f(x)%253Da%255Cln%257B(x%252Bc)%257D%252Bd?scale=1" alt="LaTeX: f(x)=a\ln{(x+c)}+d" data-equation-content="f(x)=a\ln{(x+c)}+d" data-ignore-a11y-check="" loading="lazy"></span></span></span></span></span></p>
+<p data-start="2472" data-end="2534">First isolate the logarithm, then convert to exponential form.</p>
+<h4 data-start="2472" data-end="2534"><br><strong>Examples:</strong></h4>
+<p data-start="2472" data-end="2534">Given the function.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="f(x)=\log_{3}{(x-1)}" src="https://optimadomi.instructure.com/equation_images/f(x)%253D%255Clog_%257B3%257D%257B(x-1)%257D?scale=1" alt="LaTeX: f(x)=\log_{3}{(x-1)}" data-equation-content="f(x)=\log_{3}{(x-1)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">Solve for x, given \(f(x)=2\).</p>
+<p data-start="2472" data-end="2534">Solution:</p>
+<p data-start="2472" data-end="2534">Begin by setting the function equal to 2.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="2=\log_{3}{(x-1)}" src="https://optimadomi.instructure.com/equation_images/2%253D%255Clog_%257B3%257D%257B(x-1)%257D?scale=1" alt="LaTeX: 2=\log_{3}{(x-1)}" data-equation-content="2=\log_{3}{(x-1)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">The log is already isolated. So, we will convert to exponential form.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="3^2=x-1" src="https://optimadomi.instructure.com/equation_images/3%255E2%253Dx-1?scale=1" alt="LaTeX: 3^2=x-1" data-equation-content="3^2=x-1" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">Now, we can evaluate the exponential expression and solve for x.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="\begin{array}
+&amp;3^2=x-1 \\
+9=x-1 \\
++1 \quad +1 \\
+\hline
+10=x \\
+or \\
+x=10
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25263%255E2%253Dx-1%2520%255C%255C%250A9%253Dx-1%2520%255C%255C%250A%252B1%2520%255Cquad%2520%252B1%2520%255C%255C%250A%255Chline%250A10%253Dx%2520%255C%255C%250Aor%2520%255C%255C%250Ax%253D10%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;3^2=x-1 \\
+9=x-1 \\
++1 \quad +1 \\
+\hline
+10=x \\
+or \\
+x=10
+\end{array}" data-equation-content="\begin{array}
+&amp;3^2=x-1 \\
+9=x-1 \\
++1 \quad +1 \\
+\hline
+10=x \\
+or \\
+x=10
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">Answer: \(x=10\)</p>
+<p data-start="2472" data-end="2534"><br>Given the function.</p>
+<p data-start="2472" data-end="2534">\(f(x)=2\ln{(x)}-5 \)</p>
+<p data-start="2472" data-end="2534">Solve for x when \(f(x)=3\).</p>
+<p data-start="2472" data-end="2534">Solution:</p>
+<p data-start="2472" data-end="2534">Begin by setting the function equal to 3.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="3=2\ln{(x)}-5" src="https://optimadomi.instructure.com/equation_images/3%253D2%255Cln%257B(x)%257D-5?scale=1" alt="LaTeX: 3=2\ln{(x)}-5" data-equation-content="3=2\ln{(x)}-5" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">We need to isolate the log first.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="\begin{array}
+&amp;3=2\ln{(x)}-5 \\
++5 \quad\quad\quad\;\; +5 \\
+8=2\ln{(x)} \\
+\underline{8}=\underline{2\ln{(x)}} \\
+2 \quad\quad 2 \\
+4=\ln{(x)}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25263%253D2%255Cln%257B(x)%257D-5%2520%255C%255C%250A%252B5%2520%255Cquad%255Cquad%255Cquad%255C%253B%255C%253B%2520%252B5%2520%255C%255C%250A8%253D2%255Cln%257B(x)%257D%2520%255C%255C%250A%255Cunderline%257B8%257D%253D%255Cunderline%257B2%255Cln%257B(x)%257D%257D%2520%255C%255C%250A2%2520%255Cquad%255Cquad%25202%2520%255C%255C%250A4%253D%255Cln%257B(x)%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;3=2\ln{(x)}-5 \\
++5 \quad\quad\quad\;\; +5 \\
+8=2\ln{(x)} \\
+\underline{8}=\underline{2\ln{(x)}} \\
+2 \quad\quad 2 \\
+4=\ln{(x)}
+\end{array}" data-equation-content="\begin{array}
+&amp;3=2\ln{(x)}-5 \\
++5 \quad\quad\quad\;\; +5 \\
+8=2\ln{(x)} \\
+\underline{8}=\underline{2\ln{(x)}} \\
+2 \quad\quad 2 \\
+4=\ln{(x)}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">Now, we will convert to exponential form using base e.</p>
+<p data-start="2472" data-end="2534"><img class="equation_image" title="e^4= x \\
+or \\
+x=e^4" src="https://optimadomi.instructure.com/equation_images/e%255E4%253D%2520x%2520%255C%255C%250Aor%2520%255C%255C%250Ax%253De%255E4?scale=1" alt="LaTeX: e^4= x \\
+or \\
+x=e^4" data-equation-content="e^4= x \\
+or \\
+x=e^4" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="2472" data-end="2534">The exact answer is \(e^4\).</p>
+<p data-start="2472" data-end="2534">We can approximate the answer using a calculator; \(x=e^4 \approx 54.59815...\)</p>
+<p data-start="2472" data-end="2534">Answer: \(x=e^4 \approx 54.598\)</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=\log_{4}{(x-3)}\).</p>
+<p>Find the value of x when \(f(x)=1\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by setting the equation equal to 1.</p>
+<p><img class="equation_image" title="1=\log_{4}{(x-3)}" src="https://optimadomi.instructure.com/equation_images/1%253D%255Clog_%257B4%257D%257B(x-3)%257D?scale=1" alt="LaTeX: 1=\log_{4}{(x-3)}" data-equation-content="1=\log_{4}{(x-3)}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>The log is isolated since there are no numbers on the outside. So, we will convert to exponential form.</p>
+<p><img class="equation_image" title="x-3=4^1 \\
+x-3=4" src="https://optimadomi.instructure.com/equation_images/x-3%253D4%255E1%2520%255C%255C%250Ax-3%253D4?scale=1" alt="LaTeX: x-3=4^1 \\
+x-3=4" data-equation-content="x-3=4^1 \\
+x-3=4" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can isolate the x.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;x-3=4 \\
+\quad +3\;\; +3 \\
+\hline
+x=7
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-3%253D4%2520%255C%255C%250A%255Cquad%2520%252B3%255C%253B%255C%253B%2520%252B3%2520%255C%255C%250A%255Chline%250Ax%253D7%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-3=4 \\
+\quad +3\;\; +3 \\
+\hline
+x=7
+\end{array}" data-equation-content="\begin{array}
+&amp;x-3=4 \\
+\quad +3\;\; +3 \\
+\hline
+x=7
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(x=7\)</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>Given the function.</p>
+<p>\(f(x)=\ln{(x-2)}+4\).</p>
+<p>Find the value of x when \(f(x)=6\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>We will begin by setting the equation equal to 6.</p>
+<p><img class="equation_image" title="6=\ln{(x-2)}+4" src="https://optimadomi.instructure.com/equation_images/6%253D%255Cln%257B(x-2)%257D%252B4?scale=1" alt="LaTeX: 6=\ln{(x-2)}+4" data-equation-content="6=\ln{(x-2)}+4" data-ignore-a11y-check="" loading="lazy"></p>
+<p>We will next isolate the log by subtracting 4 from both sides.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;6=\ln{(x-2)}+4 \\
+-4 \quad\quad\quad\quad\;\; -4 \\
+\hline
+2=\ln{(x-2)}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25266%253D%255Cln%257B(x-2)%257D%252B4%2520%255C%255C%250A-4%2520%255Cquad%255Cquad%255Cquad%255Cquad%255C%253B%255C%253B%2520-4%2520%255C%255C%250A%255Chline%250A2%253D%255Cln%257B(x-2)%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;6=\ln{(x-2)}+4 \\
+-4 \quad\quad\quad\quad\;\; -4 \\
+\hline
+2=\ln{(x-2)}
+\end{array}" data-equation-content="\begin{array}
+&amp;6=\ln{(x-2)}+4 \\
+-4 \quad\quad\quad\quad\;\; -4 \\
+\hline
+2=\ln{(x-2)}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we will convert to exponential form using base e.</p>
+<p><img class="equation_image" title="2=\ln{(x-2)} \\
+x-2=e^2" src="https://optimadomi.instructure.com/equation_images/2%253D%255Cln%257B(x-2)%257D%2520%255C%255C%250Ax-2%253De%255E2?scale=1" alt="LaTeX: 2=\ln{(x-2)} \\
+x-2=e^2" data-equation-content="2=\ln{(x-2)} \\
+x-2=e^2" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can isolate the x.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;x-2=e^2 \\
+\quad +2\;\; +2 \\
+\hline
+x=e^2+2
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526x-2%253De%255E2%2520%255C%255C%250A%255Cquad%2520%252B2%255C%253B%255C%253B%2520%252B2%2520%255C%255C%250A%255Chline%250Ax%253De%255E2%252B2%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;x-2=e^2 \\
+\quad +2\;\; +2 \\
+\hline
+x=e^2+2
+\end{array}" data-equation-content="\begin{array}
+&amp;x-2=e^2 \\
+\quad +2\;\; +2 \\
+\hline
+x=e^2+2
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>The exact answer is \(e^2+2\). We can approximate it using a calculator.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> \(x=e^2+2 \approx 9.389\)</p>
+<p>&nbsp;</p>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Real-World Logarithmic Functions</strong></h4>
+<p>In real-world situations, logarithmic functions often include constants and coefficients. Solutions are expressed as <strong data-start="3495" data-end="3513">approximations</strong>, and interpreting the solution means explaining what the value represents in context.</p>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>The acidity of a solution is modeled by the given function.</p>
+<p><img class="equation_image" title="pH=-\log{(C)}+1" src="https://optimadomi.instructure.com/equation_images/pH%253D-%255Clog%257B(C)%257D%252B1?scale=1" alt="LaTeX: pH=-\log{(C)}+1" data-equation-content="pH=-\log{(C)}+1" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Evaluate the \(pH\) when \(C=0.01\).</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by substituting the value of C into the function.</p>
+<p><img class="equation_image" title="pH=-\log{(0.01)}+1" src="https://optimadomi.instructure.com/equation_images/pH%253D-%255Clog%257B(0.01)%257D%252B1?scale=1" alt="LaTeX: pH=-\log{(0.01)}+1" data-equation-content="pH=-\log{(0.01)}+1" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can use a calculator to evaluate the expression.</p>
+<p>We find that \(pH=3\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The acidity of the solution will be 3.</p>
+<h4><span style="color: #f67a0c;"><br><br>Example 2</span></h4>
+<p>The given function models a chemical concentration.</p>
+<p><img class="equation_image" title="C=\ln{(t)}-1" src="https://optimadomi.instructure.com/equation_images/C%253D%255Cln%257B(t)%257D-1?scale=1" alt="LaTeX: C=\ln{(t)}-1" data-equation-content="C=\ln{(t)}-1" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Approximately how long will it take for the chemical concentration to reach 2.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Begin by setting the equation equal to 2.</p>
+<p><img class="equation_image" title="2=\ln{(t)}-1" src="https://optimadomi.instructure.com/equation_images/2%253D%255Cln%257B(t)%257D-1?scale=1" alt="LaTeX: 2=\ln{(t)}-1" data-equation-content="2=\ln{(t)}-1" data-ignore-a11y-check="" loading="lazy"></p>
+<p>We will first isolate the log by adding 1 to both sides.</p>
+<p><img class="equation_image" title="\begin{array}
+&amp;2=\ln{(t)}-1 \\
++1 \quad\quad +1 \\
+\hline
+3=\ln{(t)}
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%25262%253D%255Cln%257B(t)%257D-1%2520%255C%255C%250A%252B1%2520%255Cquad%255Cquad%2520%252B1%2520%255C%255C%250A%255Chline%250A3%253D%255Cln%257B(t)%257D%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;2=\ln{(t)}-1 \\
++1 \quad\quad +1 \\
+\hline
+3=\ln{(t)}
+\end{array}" data-equation-content="\begin{array}
+&amp;2=\ln{(t)}-1 \\
++1 \quad\quad +1 \\
+\hline
+3=\ln{(t)}
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Convert the equation to an exponential using base e.</p>
+<p><img class="equation_image" title="t=e^3" src="https://optimadomi.instructure.com/equation_images/t%253De%255E3?scale=1" alt="LaTeX: t=e^3" data-equation-content="t=e^3" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Now, we can use a calculator to evaluate the expression.</p>
+<p>We find that \(t\approx 20.09\).</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> The chemical concentration will reach 2 in approximately 20.1 minutes.</p>
+<h4 data-start="4873" data-end="4888"><strong><br><br>Conclusion</strong></h4>
+<p data-start="4890" data-end="5401" data-is-last-node="" data-is-only-node="">Logarithmic and natural logarithmic functions often appear in forms that include coefficients and added or subtracted constants. By learning how to evaluate these functions for a given input and solve for an unknown input using exponential form, you can handle both mathematical and real-world problems with confidence. Understanding when to give exact solutions and when to approximate, and interpreting solutions in context, helps connect logarithmic functions to meaningful applications beyond the classroom.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="770" data-end="849">1. How can logarithmic functions be used to model and solve real-world problems?</p>
+<p data-start="770" data-end="849"><span style="font-size: 1rem;">2. When is it appropriate to use a graph to approximate solutions to logarithmic equations?</span></p>
+<p data-start="770" data-end="849"><span style="font-size: 1rem;">3. Why do logarithmic models have restricted domains, and how do these restrictions affect solutions?</span></p>
+<p data-start="770" data-end="849"><span style="font-size: 1rem;">4. How can solutions to logarithmic equations be interpreted in real-world contexts?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.06 &middot; Solving Logarithmic Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

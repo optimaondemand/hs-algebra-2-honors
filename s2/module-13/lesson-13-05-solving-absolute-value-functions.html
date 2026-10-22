@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 13.05 Solving Absolute Value Functions</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 13</div>
+        <div style="font-size: 13px; color: #666;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">13.05</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Absolute Value Functions and Inequalities, and Piecewise Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">13.05</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving Absolute Value Functions</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p><strong>Constraint:</strong>&nbsp;A restriction on the domain or range of a function based on the limits of a real-world context, such as time or quantity not being allowed to take negative values.</p>
+<p><strong>Domain:</strong> The set of all allowable input values (\(x\)-values) for a function; in a real-world context, the domain is often restricted to values that are physically or logically meaningful.</p>
+<p><strong>Evaluate:</strong> To substitute a specific value for the input variable of a function and calculate the corresponding output; written as finding \( f(a) \) for a given value \( a \).</p>
+<p><strong>Function Notation:</strong> A way of expressing a function using the form \( f(x) \), where \( f \) names the function and \( x \) represents the input variable.</p>
+<p><strong>Input:</strong> The independent variable of a function, typically represented by \( x \); the value substituted into the function to produce an output.</p>
+<p><strong>Output:</strong> The dependent variable of a function, typically represented by \( y \) or \( f(x) \); the result of evaluating the function at a given input.</p>
+<p><strong>Range:</strong> The set of all possible output values (\(y\)-values) produced by a function; in a real-world context, the range may be restricted to values that are meaningful given the situation.</p>
+<p><strong>Solution:</strong> An input value (or values) that makes a function equation true for a given output; found by setting \( f(x) \) equal to the desired output and solving.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In today's lesson, we will explore how to use absolute value functions in two variables to solve mathematical and real-world problems. In previous lessons, you learned to graph absolute value functions, identify their key features, and apply transformations. Today you will use those skills purposefully: given a graph or equation of an absolute value function, you will find outputs from inputs, find inputs from outputs, and interpret your answers in the context of a situation. This kind of function work — moving fluently between inputs, outputs, equations, and graphs — is one of the most practical skills in algebra. By the end of this lesson, you will be able to read a graph to answer function questions, use the equation to evaluate or solve, and apply both tools to answer meaningful questions about real-world scenarios modeled by absolute value functions.</span></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Using a Graph to Find an Input or Output</strong></h4>
+<p>When a function is given as a graph, you can find any output by locating the corresponding input on the horizontal axis and reading the height of the graph at that point. You can also reverse the process — given an output value, locate it on the vertical axis and read the x-value(s) where the graph reaches that height. All results should be expressed using function notation.</p>
+<p><strong>Function Notation Reminder </strong></p>
+<p>\( f(a) = b \) means: when the input is \( a \), the output is \( b \).</p>
+<p><strong>To find an output from the graph:</strong> Start at the input value on the x-axis. Move vertically until you reach the graph. Read the y-value. Write your answer as \( f(a) = b \).</p>
+<p><strong>To find an input from the graph:</strong> Start at the output value on the y-axis. Move horizontally until you reach the graph. Read the x-value(s). Because absolute value graphs are V-shaped, there are often two x-values that produce the same output — one on each arm. Write your answer as \( f(a) = b \) for each solution.</p>
+<h4><br><strong>Finding Output from Graph Given the Input</strong></h4>
+<p>Use the graph of \(f(x)\) to find f(5).</p>
+<p><img id="1340103" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGFindInputEx.png" alt="MAT11M13L05IMGFindInputEx.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340103" data-api-returntype="File" loading="lazy"></p>
+<p><strong>Finding \( f(5) \) — given input, find output:</strong></p>
+<p>Locate \( x = 5 \) on the horizontal axis. Move straight up until you hit the graph. Read the y-coordinate: the graph is at height \( 4 \). The red dashed tracers on the graph show this path.</p>
+<p><img id="1340124" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGFindInputExAns.png" alt="MAT11M13L05IMGFindInputExAns.png" width="333" height="285" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340124" data-api-returntype="File" loading="lazy"></p>
+<p><strong>Answer:</strong><span>&nbsp;</span>\( f(5) = 4 \)</p>
+<p><strong><br><br>Finding Inputs from Graph Given the Output</strong></p>
+<p>Use the graph of \(f(x)\) to find f(x)=1.</p>
+<p><img id="1340137" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGFindOutputEx.png" alt="MAT11M13L05IMGFindOutputEx.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340137" data-api-returntype="File" loading="lazy"></p>
+<p><strong>Finding all \( x \) such that \( f(x) = 1 \) — given output, find input(s):</strong></p>
+<p>Locate \( y = 1 \) on the vertical axis. Draw a horizontal line across the graph at that height. The graph is V-shaped, so the horizontal line crosses it at<span>&nbsp;</span><em>two</em><span>&nbsp;</span>points: one on the left arm at \( (-5, 1) \) and one on the right arm at \( (3, 1) \). The red dashed tracers show both crossings.</p>
+<p><img id="1340155" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGFindOutputExAns.png" alt="MAT11M13L05IMGFindOutputExAns.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340155" data-api-returntype="File" loading="lazy"></p>
+<p><strong>Answer:</strong><span>&nbsp;</span>\( f(-1) = 4 \) and \( f(5) = 4 \)</p>
+<h4><strong><br><br>How many inputs can produce the same output?</strong></h4>
+<p>Because an absolute value graph is V-shaped, a horizontal line at most heights will cross the graph<span>&nbsp;</span><em>twice</em><span>&nbsp;</span>— once on each arm — giving two input values for the same output. At the vertex, the horizontal line just touches the tip of the V and produces exactly<span>&nbsp;</span><em>one</em><span>&nbsp;</span>input. A horizontal line drawn below the minimum (or above the maximum for a downward-opening graph) will cross the graph<span>&nbsp;</span><em>zero</em><span>&nbsp;</span>times — no solution exists.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>The graph below shows \(f(x)\). Use the graph to find \(f(1)\).</p>
+<p><img id="1340137" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGFindOutputEx.png" alt="MAT11M13L05IMGFindOutputEx.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340137" data-api-returntype="File" loading="lazy"></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Find \( f(1) \):</strong></p>
+<p style="padding-left: 20px;">Locate \( x = 1 \) on the horizontal axis. Move vertically down to the graph. The graph at \( x = 1 \) is at height \( y = -1 \).</p>
+<p style="padding-left: 20px;"><img id="1340194" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGEx1Ans.png" alt="MAT11M13L05IMGEx1Ans.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340194" data-api-returntype="File" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> &nbsp; \( f(1) = -1 \)</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>The graph below shows \(f(x)\). Use the graph to find all values of \(x\) such that \(f(x)=4\).</p>
+<p><img id="1340200" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGEx2.png" alt="MAT11M13L05IMGEx2.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340200" data-api-returntype="File" loading="lazy"></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Find all \( x \) such that \( f(x) = 4 \):</strong> Draw a horizontal line at \( y = 4 \). The line crosses the graph at two points: \( x = 2 \) and \( x = 4 \) as shown by the red dashed line.</p>
+<p><img id="1340284" src="https://optimaondemand.github.io/hs-algebra-2-honors/media/MAT11M13L05IMGEx2Ans.png" alt="MAT11M13L05IMGEx2Ans.png" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1340284" data-api-returntype="File" loading="lazy"></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> &nbsp; \( f(2) = 4 \) &nbsp; and &nbsp; \( f(4) = 4 \). So, \(2,4\).</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;">Using the Equation to Find ab Input or Output</h4>
+<p>When the equation of a function is given, you can find any output by<span>&nbsp;</span><strong>evaluating</strong><span>&nbsp;</span>the function — substituting the given input directly into the equation and simplifying. To find the input(s) that produce a given output, you<span>&nbsp;</span><strong>set the function equal to the output value</strong><span>&nbsp;</span>and solve the resulting absolute value equation.</p>
+<div class="callout orange">
+<h4><strong><br>Two Directions — Two Processes</strong></h4>
+<p><strong>Given the input, find the output (evaluate):</strong><span>&nbsp;</span>Substitute the x-value into the equation. Follow the order of operations. Write the answer as \( f(a) = b \).</p>
+<p>Example: Find \( f(4) \) for \( f(x) = 2|x - 1| - 3 \).</p>
+<p><img class="equation_image" title="f(4) = 2|4 - 1| - 3 \\
+f(4) = 2|3| - 3 \\
+f(4) = 2(3) - 3 \\
+f(4) = 6 - 3 \\
+f(4) = 3" src="https://optimadomi.instructure.com/equation_images/f(4)%2520%253D%25202%257C4%2520-%25201%257C%2520-%25203%2520%255C%255C%250Af(4)%2520%253D%25202%257C3%257C%2520-%25203%2520%255C%255C%250Af(4)%2520%253D%25202(3)%2520-%25203%2520%255C%255C%250Af(4)%2520%253D%25206%2520-%25203%2520%255C%255C%250Af(4)%2520%253D%25203?scale=1" alt="LaTeX: f(4) = 2|4 - 1| - 3 \\
+f(4) = 2|3| - 3 \\
+f(4) = 2(3) - 3 \\
+f(4) = 6 - 3 \\
+f(4) = 3" data-equation-content="f(4) = 2|4 - 1| - 3 \\
+f(4) = 2|3| - 3 \\
+f(4) = 2(3) - 3 \\
+f(4) = 6 - 3 \\
+f(4) = 3" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong><br>Given the output, find the input (solve):</strong><span>&nbsp;</span>Replace \( f(x) \) with the given output value. Isolate the absolute value, then split into two cases and solve each. Check for no-solution cases.</p>
+<p>Example: Find all \( x \) such that \( f(x) = 5 \) for \( f(x) = 2|x - 1| - 3 \).</p>
+<p><img class="equation_image" title="2|x-1| - 3 = 5 \; \text{add 3 to both sides}\\
+\space \\
+2|x-1| = 8 \; \text{divide both sides by 2}\\
+\space \\
+|x-1| = 4 \; \text{separate into 2 equations equal to 4 and -4}\\
+\space \\
+x - 1 = 4 \;\; \text{or}\;\; x - 1 = -4 \\
+\space \\
+x = 5\;\; \text{or} \;\; x = -3" src="https://optimadomi.instructure.com/equation_images/2%257Cx-1%257C%2520-%25203%2520%253D%25205%2520%255C%253B%2520%255Ctext%257Badd%25203%2520to%2520both%2520sides%257D%255C%255C%250A%255Cspace%2520%255C%255C%250A2%257Cx-1%257C%2520%253D%25208%2520%255C%253B%2520%255Ctext%257Bdivide%2520both%2520sides%2520by%25202%257D%255C%255C%250A%255Cspace%2520%255C%255C%250A%257Cx-1%257C%2520%253D%25204%2520%255C%253B%2520%255Ctext%257Bseparate%2520into%25202%2520equations%2520equal%2520to%25204%2520and%2520-4%257D%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%2520-%25201%2520%253D%25204%2520%255C%253B%255C%253B%2520%255Ctext%257Bor%257D%255C%253B%255C%253B%2520x%2520-%25201%2520%253D%2520-4%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%2520%253D%25205%255C%253B%255C%253B%2520%255Ctext%257Bor%257D%2520%255C%253B%255C%253B%2520x%2520%253D%2520-3?scale=1" alt="LaTeX: 2|x-1| - 3 = 5 \; \text{add 3 to both sides}\\
+\space \\
+2|x-1| = 8 \; \text{divide both sides by 2}\\
+\space \\
+|x-1| = 4 \; \text{separate into 2 equations equal to 4 and -4}\\
+\space \\
+x - 1 = 4 \;\; \text{or}\;\; x - 1 = -4 \\
+\space \\
+x = 5\;\; \text{or} \;\; x = -3" data-equation-content="2|x-1| - 3 = 5 \; \text{add 3 to both sides}\\
+\space \\
+2|x-1| = 8 \; \text{divide both sides by 2}\\
+\space \\
+|x-1| = 4 \; \text{separate into 2 equations equal to 4 and -4}\\
+\space \\
+x - 1 = 4 \;\; \text{or}\;\; x - 1 = -4 \\
+\space \\
+x = 5\;\; \text{or} \;\; x = -3" data-ignore-a11y-check="" loading="lazy"></p>
+</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 3</span></h4>
+<p>Let \( f(x) = 3|x + 2| - 5 \). Find \( f(-4) \) and \( f(1) \).</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Finding \( f(-4) \):</strong> Substitute \( x = -4 \).</p>
+<p style="padding-left: 20px;">\( f(-4) = 3|-4 + 2| - 5 = 3|-2| - 5 = 3(2) - 5 = 6 - 5 = 1 \)</p>
+<p><strong>Finding \( f(1) \):</strong> Substitute \( x = 1 \).</p>
+<p style="padding-left: 20px;">\( f(1) = 3|1 + 2| - 5 = 3|3| - 5 = 3(3) - 5 = 9 - 5 = 4 \)</p>
+<p><span style="color: #e62429;"><strong>Answer:&nbsp;</strong></span></p>
+<p>Part 1 - \(f(-4)=1\)</p>
+<p>Part 2 - \(f(1)=4\)</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 4</span></h4>
+<p>Let \( f(x) = |2x - 4| + 1 \). Find all values of \( x \) such that \( f(x) = 7 \).</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Set the function equal to 7:</strong></p>
+<p style="padding-left: 20px;">\( |2x - 4| + 1 = 7 \)</p>
+<p><strong>Step 2 — Isolate the absolute value:</strong></p>
+<p style="padding-left: 20px;">\( |2x - 4| = 6 \)</p>
+<p><strong>Step 3 — Split into two cases:</strong></p>
+<p style="padding-left: 20px;">Case 1: &nbsp; \( 2x - 4 = 6 \;\Rightarrow\; 2x = 10 \;\Rightarrow\; x = 5 \)</p>
+<p style="padding-left: 20px;">Case 2: &nbsp; \( 2x - 4 = -6 \;\Rightarrow\; 2x = -2 \;\Rightarrow\; x = -1 \)</p>
+<p><strong>Step 4 — Verify:</strong></p>
+<p style="padding-left: 20px;">\( f(5) = |2(5)-4|+1 = |6|+1 = 7 \) ✓ &nbsp;&nbsp; \( f(-1) = |2(-1)-4|+1 = |-6|+1 = 7 \) ✓</p>
+<p>\( f(5) = 7 \) and \( f(-1) = 7 \)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p>The input values \( -1,5 \) both produce an output of \( 7 \).</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 5</span></h4>
+<p>Let \( f(x) = -|x + 3| + 5 \).</p>
+<ol>
+<li>Find \( f(0) \).</li>
+<li>Find all values of \( x \) such that \( f(x) = 2 \).</li>
+<li>Explain why there is no solution to \( f(x) = 8 \).</li>
+</ol>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Part 1 — Evaluate \( f(0) \):</strong></p>
+<p style="padding-left: 20px;">\( f(0) = -|0 + 3| + 5 = -|3| + 5 = -3 + 5 = 2 \)</p>
+<p><strong>Part 2 — Solve \( f(x) = 2 \):</strong></p>
+<p style="padding-left: 20px;">\( -|x+3| + 5 = 2 \;\Rightarrow\; -|x+3| = -3 \;\Rightarrow\; |x+3| = 3 \)</p>
+<p style="padding-left: 20px;">Case 1: &nbsp; \( x + 3 = 3 \;\Rightarrow\; x = 0 \)</p>
+<p style="padding-left: 20px;">Case 2: &nbsp; \( x + 3 = -3 \;\Rightarrow\; x = -6 \)</p>
+<p><strong>Part 3 — Explain no solution for \( f(x) = 8 \):</strong></p>
+<p style="padding-left: 20px;">\( -|x+3| + 5 = 8 \;\Rightarrow\; -|x+3| = 3 \;\Rightarrow\; |x+3| = -3 \)</p>
+<p style="padding-left: 20px;">Absolute value can never equal a negative number, so no value of \( x \) satisfies this equation. The vertex of this function is at \( (-3, 5) \) and the graph opens downward, so the maximum output is \( 5 \). An output of \( 8 \) is above the maximum and is impossible.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Part 1:</strong> &nbsp; \( f(0) = 2 \)</p>
+<p><strong>Part 2:</strong> &nbsp; \( f(0) = 2 \) and \( f(-6) = 2 \)</p>
+<p><strong>Part 3:</strong> &nbsp; No solution — the maximum value of \( f(x) \) is \( 5 \), so \( f(x) = 8 \) has no solution.</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;">Solving Real-World Problems with Absolute Value Functions</h4>
+<p>Real-world situations are often modeled by absolute value functions because many quantities rise and then fall — or fall and then rise — at a steady rate from a turning point. Once the function is identified, you use the same two skills you just practiced: evaluate the function at a given input to answer "what is the output at this point?", or set the function equal to a given output to answer "when does the quantity reach this level?"</p>
+<p><strong>Strategy for Real-World Function Problems</strong></p>
+<p><strong>Step 1:</strong><span>&nbsp;</span>Identify what the input variable represents and what the output represents in context.</p>
+<p><strong>Step 2:</strong><span>&nbsp;</span>Determine whether you are finding an output (evaluate) or finding an input (solve).</p>
+<p><strong>Step 3:</strong><span>&nbsp;</span>Carry out the algebra, then interpret your numerical answer in the context of the problem — including appropriate units.</p>
+<p><strong>Step 4:</strong><span>&nbsp;</span>Check whether your answer makes sense given any domain or range constraints stated in the problem.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 6</span></h4>
+<p>The elevation of a hiking trail above its lowest point is modeled by \( f(x) = -|x - 4| + 9 \), where \( x \) is the horizontal distance in miles from the trailhead and \( f(x) \) is the elevation in hundreds of feet. The trail runs from \( x = 0 \) to \( x = 8 \) miles.</p>
+<ol>
+<li>Find \( f(6) \) and interpret the result.</li>
+<li>Find the value(s) of \( x \) such that \( f(x) = 6 \) and interpret the result.</li>
+<li>What is the maximum elevation, and at what point on the trail does it occur?</li>
+</ol>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Part 1 — Evaluate \( f(6) \):</strong></p>
+<p style="padding-left: 20px;">\( f(6) = -|6 - 4| + 9 = -|2| + 9 = -2 + 9 = 7 \)</p>
+<p><strong>Part 2 — Solve \( f(x) = 6 \):</strong></p>
+<p style="padding-left: 20px;">\( -|x - 4| + 9 = 6 \;\Rightarrow\; -|x-4| = -3 \;\Rightarrow\; |x-4| = 3 \)</p>
+<p style="padding-left: 20px;">Case 1: &nbsp; \( x - 4 = 3 \;\Rightarrow\; x = 7 \)</p>
+<p style="padding-left: 20px;">Case 2: &nbsp; \( x - 4 = -3 \;\Rightarrow\; x = 1 \)</p>
+<p style="padding-left: 20px;">Both \( x = 1 \) and \( x = 7 \) are within the domain \( [0, 8] \). ✓</p>
+<p><strong>Part 3 — Maximum elevation:</strong> The function opens downward; vertex is at \( x = 4 \).</p>
+<p style="padding-left: 20px;">\( f(4) = -|4 - 4| + 9 = 0 + 9 = 9 \)</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span></p>
+<p><strong>Part 1:</strong> &nbsp; \( f(6) = 7 \) — At 6 miles from the trailhead, the trail is 700 feet above the lowest point.</p>
+<p><strong>Part 2:</strong> &nbsp; \( f(1) = 6 \) and \( f(7) = 6 \) — The trail is 600 feet above the lowest point at two locations: 1 mile and 7 miles from the trailhead.</p>
+<p><strong>Part 3:</strong> &nbsp; \( f(4) = 9 \) — The maximum elevation is 900 feet above the lowest point, occurring at 4 miles from the trailhead.</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 7</span></h4>
+<p>A community theater tracks weekly ticket revenue. Based on historical data, the weekly revenue in hundreds of dollars is modeled by \( f(x) = -3|x - 5| + 12 \), where \( x \) is the number of weeks since a new show opened and \( f(x) \) is the revenue in hundreds of dollars. The show runs for 9 weeks.</p>
+<ol>
+<li>Find \( f(2) \) and interpret the result.</li>
+<li>Find all values of \( x \) such that \( f(x) = 6 \) and interpret the result.</li>
+<li>During which weeks does the theater break even, defined as \( f(x) = 0 \)?</li>
+</ol>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Part 1 — Evaluate \( f(2) \):</strong></p>
+<p style="padding-left: 20px;">\( f(2) = -3|2 - 5| + 12 = -3|-3| + 12 = -3(3) + 12 = -9 + 12 = 3 \)</p>
+<p><strong>Part 2 — Solve \( f(x) = 6 \):</strong></p>
+<p style="padding-left: 20px;">\( -3|x-5| + 12 = 6 \;\Rightarrow\; -3|x-5| = -6 \;\Rightarrow\; |x-5| = 2 \)</p>
+<p style="padding-left: 20px;">Case 1: &nbsp; \( x - 5 = 2 \;\Rightarrow\; x = 7 \)</p>
+<p style="padding-left: 20px;">Case 2: &nbsp; \( x - 5 = -2 \;\Rightarrow\; x = 3 \)</p>
+<p><strong>Part 3 — Solve \( f(x) = 0 \):</strong></p>
+<p style="padding-left: 20px;">\( -3|x-5| + 12 = 0 \;\Rightarrow\; |x-5| = 4 \)</p>
+<p style="padding-left: 20px;">Case 1: &nbsp; \( x = 9 \) &nbsp;&nbsp; Case 2: &nbsp; \( x = 1 \)</p>
+<p style="padding-left: 20px;">Both \( x = 1 \) and \( x = 9 \) fall within the 9-week run. ✓</p>
+<p><strong>Part 1:</strong> &nbsp; \( f(2) = 3 \) — In week 2, the theater earns $300 in ticket revenue.</p>
+<p><strong>Part 2:</strong> &nbsp; \( f(3) = 6 \) and \( f(7) = 6 \) — The theater earns $600 in week 3 and again in week 7.</p>
+<p><strong>Part 3:</strong> &nbsp; \( f(1) = 0 \) and \( f(9) = 0 \) — The theater breaks even (earns $0 in modeled revenue) in week 1 and week 9, the opening and closing weeks of the run.</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you developed two complementary tools for solving problems involving absolute value functions in two variables: reading a graph and working with an equation. From a graph, you learned to trace from a given input to its output, and to reverse the process — starting from a known output and identifying the input value or values where the graph reaches that height. You practiced expressing all results in function notation, which gives you a precise and efficient language for communicating function relationships. From an equation, you evaluated the function by substituting a known input, and you solved for unknown inputs by setting the function equal to a given output and applying the two-case method for absolute value equations. You also explored the special cases of no solution and maximum or minimum outputs. Finally, you applied both strategies to real-world scenarios — hiking trails, ticket sales, lake temperatures, and drone flight paths — interpreting every numerical answer in context and checking solutions against domain constraints. These skills connect every part of your work with absolute value functions this unit: graphing, key features, transformations, and now purposeful problem-solving. They also lay the groundwork for broader function work throughout the rest of the course.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. How can evaluating an absolute value function at a specific input value answer a question about a real-world situation, and what does the resulting output actually represent in context?</p>
+<p><span style="font-size: 1rem;">2. When the output of an absolute value function is known, how do you work backward to find the input — and why might there be two answers, one answer, or no answer depending on the situation?</span></p>
+<p><span style="font-size: 1rem;">3. How do the graph and equation of an absolute value function work together to solve problems, and when is each representation more useful?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">13.05 &middot; Solving Absolute Value Functions</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

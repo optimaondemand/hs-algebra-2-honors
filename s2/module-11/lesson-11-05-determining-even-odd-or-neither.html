@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 11.05 Determining Even, Odd, or Neither</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 11</div>
+        <div style="font-size: 13px; color: #666;">Properties of Functions</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">11.05</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Properties of Functions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">11.05</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Determining Even, Odd, or Neither</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="170"><strong data-start="0" data-end="27">Absolute Value Function</strong>: A function that includes an absolute value expression and produces a V-shaped graph, typically written in the form \(f(x)=a|x-h|+k\).</p>
+<p data-start="172" data-end="309"><strong data-start="172" data-end="189">Even Function</strong>: A function in which \(f(-x)=f(x)\)&nbsp;for all values in the domain, meaning the graph is symmetric across the y-axis.</p>
+<p data-start="311" data-end="469"><strong data-start="311" data-end="332">Function Notation</strong>: A way of writing functions using symbols such as \(f(x)\), which represents the output value of a function for a given input \(x\).</p>
+<p data-start="471" data-end="609"><strong data-start="471" data-end="490">Linear Function</strong>: A function written in the form \(f(x)=mx+b\), whose graph is a straight line and has a constant rate of change.</p>
+<p data-start="611" data-end="756"><strong data-start="611" data-end="622">Neither</strong>: A classification for a function that is not even and not odd because it does not satisfy the conditions for either type of symmetry.</p>
+<p data-start="758" data-end="894"><strong data-start="758" data-end="774">Odd Function</strong>: A function in which \(f(-x)=-f(x)\)&nbsp;for all values in the domain, meaning the graph is symmetric about the origin.</p>
+<p data-start="896" data-end="1015"><strong data-start="896" data-end="915">Origin Symmetry</strong>: A type of symmetry where a graph looks the same after being rotated 180 degrees around the origin.</p>
+<p data-start="1017" data-end="1194"><strong data-start="1017" data-end="1040">Polynomial Function</strong>: A function made up of terms that include constants and variables raised to nonnegative integer powers, such as \(f(x)=ax^n+bx^{n-1}+...+c\).</p>
+<p data-start="1196" data-end="1360"><strong data-start="1196" data-end="1217">Rational Function</strong>: A function that can be written as the ratio of two polynomials, typically in the form \(f(x)=\frac{p(x)}{q(x)}\)<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist-s">​</span></span></span></span></span></span></span></span> where \(q(x)\neq 0\).</p>
+<p data-start="1362" data-end="1494"><strong data-start="1362" data-end="1379">Root Function</strong>: A function in which the variable appears inside a radical expression, such as a square root or cube root function.</p>
+<p data-start="1496" data-end="1606"><strong data-start="1496" data-end="1508">Symmetry</strong>: A property of a graph where one part of the graph is a mirror image or rotation of another part.</p>
+<p data-start="1608" data-end="1762"><strong data-start="1608" data-end="1627">X-Axis Symmetry</strong>: A type of symmetry in which a graph is reflected across the x-axis, meaning points above the axis have corresponding points below it.</p>
+<p data-start="1764" data-end="1892" data-is-last-node="" data-is-only-node=""><strong data-start="1764" data-end="1783">Y-Axis Symmetry</strong>: A type of symmetry in which the left side of a graph is a mirror image of the right side across the y-axis.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>One of the most useful ways to classify a function is by its symmetry. When a function has a particular kind of symmetry, we say it is either <strong>even</strong> or <strong>odd</strong>. Functions that do not fit either category are called <strong>neither</strong>. Recognizing whether a function is even, odd, or neither helps us understand its behavior, sketch its graph more efficiently, and simplify complicated expressions in future mathematics courses. In this lesson, you will develop this skill in three stages: first by examining graphs, then by analyzing tables of values, and finally by working directly with equations. Each stage builds on the last, and by the end of the reading you will be able to classify any function — no matter how it is presented — quickly and confidently. The functions you will encounter include linear, absolute value, polynomial, root, and rational functions, which together make up the core function families you have studied so far this year.</p>
+<p>&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Identifying Even, Odd, or Neither from Graphs</strong></h4>
+<p>The key to classifying a function from its graph lies in recognizing <strong>symmetry</strong>. There are two types of symmetry that matter for this classification.</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>Even Functions — Y-Axis Symmetry</strong></h4>
+</td>
+</tr>
+<tr>
+<td width="624">
+<p>A function is <strong>even</strong> if its graph is symmetric about the <strong>y-axis</strong>. This means the left side of the graph is a mirror image of the right side. If you fold the graph along the y-axis, the two halves match perfectly.</p>
+<p>Key observation: For every point (x, y) on the graph, the point (−x, y) is also on the graph.</p>
+<p>Examples of even function types: parabolas (\(y=x^2\)), even-degree polynomials centered at the origin, and absolute value functions centered on the y-axis.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p data-start="966" data-end="1112">Example:</p>
+<p data-start="966" data-end="1112"><img src="https://optimaondemand.github.io/hs-algebra-2-honors/media/image-445eef7a-c32d-4a85-bed1-e6085f591392.png" alt="image.png" width="425" height="425" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1281269" data-api-returntype="File" loading="lazy"></p>
+<p data-start="966" data-end="1112">Notice in the graph how the points (−2, 2) and (2, 2) share the same y-value but opposite x-values — this is the defining pattern of y-axis symmetry.</p>
+<p data-start="966" data-end="1112">&nbsp;</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>Odd Functions — Origin Symmetry</strong></h4>
+</td>
+</tr>
+<tr>
+<td width="624">
+<p>A function is <strong>odd</strong> if its graph has <strong>rotational symmetry about the origin</strong>. If you rotate the graph 180° around the origin, it looks exactly the same.</p>
+<p>Key observation: For every point (x, y) on the graph, the point (−x, −y) is also on the graph.</p>
+<p>Examples of odd function types: cubic functions like \(y=x^3\), odd-degree polynomials through the origin, and the rational function \(y=\frac{1}{x}\).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p data-start="1528" data-end="1605">Example:</p>
+<p data-start="1528" data-end="1605"><img src="https://optimaondemand.github.io/hs-algebra-2-honors/media/image-2e1b1bfd-b3eb-4f57-9684-e7879093307b.png" alt="image.png" width="433" height="433" data-api-endpoint="https://optimadomi.instructure.com/api/v1/courses/1377/files/1281284" data-api-returntype="File" loading="lazy"></p>
+<p>Notice in this graph, the points (1.5, 1.875) and (−1.5, −1.875) are reflections through the origin — both the x and y values are negated.<strong><br><br><br></strong></p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>What about "neither"?</strong></h4>
+<p>If a graph has neither y-axis symmetry nor origin symmetry, the function is classified as <strong>neither even nor odd</strong>. This is by far the most common classification — most functions in the real world fall into this category. Root functions like \(y=\sqrt{x}\), linear functions like \(y=2x+1\) (shifted off the origin), and most shifted functions are neither.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p data-start="1746" data-end="1870">Example:</p>
+<p data-start="1746" data-end="1870"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/datjmydimb?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p data-start="1746" data-end="1870">&nbsp;</p>
+<p data-start="1746" data-end="1870"><strong>NOTE:</strong></p>
+<p data-start="1746" data-end="1870">A function can be the same shape on the graph, where one has y-axis symmetry, and the other one does not.</p>
+<p data-start="1746" data-end="1870">If a graph is shifted left or right, it would no longer have y-axis symmetry.</p>
+<p data-start="1746" data-end="1870">&nbsp;</p>
+<h4><strong>Step-by-Step: How to Check a Graph</strong></h4>
+<p>When given a graph, use this checklist:</p>
+<p>1. Draw or imagine a vertical line along the y-axis. Ask yourself: Does the left half mirror the right half? If yes → the function is even.</p>
+<p><span style="font-size: 1rem;">2. If not symmetric about the y-axis, ask: does every point (x, y) have a corresponding point (−x, −y) on the graph? Equivalently, does the graph look the same after a 180° rotation about the origin? If yes → the function is odd.</span></p>
+<p>3. If neither test passes → the function is neither even nor odd.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Given the graph:</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/vfwkmchsyd?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p data-start="2093" data-end="2137">What type of function symmetry does it have?</p>
+<p data-start="2139" data-end="2170">A. Odd<br data-start="2145" data-end="2148">B. Even<br data-start="2155" data-end="2158">C. Neither</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p data-start="2139" data-end="2170">We will compare the points on the graph to determine if there is any symmetry over the y-axis or around the origin.</p>
+<p data-start="2139" data-end="2170">On this graph, we can compare \((-2,1)\) with \((2,1)\).</p>
+<p data-start="2139" data-end="2170">When x=2, f(2)=1. When x=-2, f(-2)=1.</p>
+<p data-start="2139" data-end="2170">Replacing x with -x results in the same y-value.</p>
+<p data-start="2139" data-end="2170">This follows the y-axis symmetry.</p>
+<p data-start="2139" data-end="2170">Therefore, the function is even.</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Answer:</strong></span> B</p>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>Given the graph:</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/myhunzdsn0?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p data-start="2093" data-end="2137">What type of function symmetry does it have?</p>
+<p data-start="2139" data-end="2170">A. Odd<br data-start="2145" data-end="2148">B. Even<br data-start="2155" data-end="2158">C. Neither</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p data-start="2139" data-end="2170">We will compare the points on the graph to determine if there is any symmetry over the y-axis or around the origin.</p>
+<p data-start="2139" data-end="2170">On this graph, we can compare \((-1,-1)\) with \((1,1)\).</p>
+<p data-start="2139" data-end="2170">When x=1, f(1)=1. When x=-1, f(-1)=-1.</p>
+<p data-start="2139" data-end="2170">Replacing x with -x results in opposite y-values.</p>
+<p data-start="2139" data-end="2170">This follows the origin symmetry.</p>
+<p data-start="2139" data-end="2170">Therefore, the function is odd.</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Answer:</strong></span> A</p>
+<h4><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p>Given the graph:</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/8gt1sqbvl2?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p data-start="2093" data-end="2137">What type of function symmetry does it have?</p>
+<p data-start="2139" data-end="2170">A. Odd<br data-start="2145" data-end="2148">B. Even<br data-start="2155" data-end="2158">C. Neither</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p data-start="2139" data-end="2170">We will compare the points on the graph to determine if there is any symmetry over the y-axis or around the origin.</p>
+<p data-start="2139" data-end="2170">On this graph, we can compare any of the points on the graph.</p>
+<p data-start="2139" data-end="2170">If we try replacing x with -x, it will not result in the same y-value or even the opposite.</p>
+<p data-start="2139" data-end="2170">The graph does not sho symmetry over the y-axis or around the origin.</p>
+<p data-start="2139" data-end="2170">Therefore, the function is neither.</p>
+<p data-start="2139" data-end="2170"><span style="color: #e62429;"><strong>Answer:</strong></span> C</p>
+<p data-start="2139" data-end="2170">&nbsp;</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Identifying Even, Odd, or Neither in Tables of Values</strong></h4>
+<p>When a function is represented by a table of values rather than a graph, you are looking at individual coordinates instead of a continuous curve. The good news is that the same symmetry rules apply — you just need to know what <strong>patterns</strong> to look for in the numbers.</p>
+<p data-start="2768" data-end="2792">Look at pairs of inputs:</p>
+<ul data-start="2793" data-end="2811">
+<li data-section-id="h09eby" data-start="2793" data-end="2811">
+<p data-start="2795" data-end="2811"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">\(x\) </span></span></span></span>and \(-x\)</p>
+</li>
+</ul>
+<p data-start="2813" data-end="2840">Then compare their outputs.</p>
+<h4 data-section-id="t987zw" data-start="2847" data-end="2877"><strong>&nbsp;</strong></h4>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>Translating Symmetry into Number Patterns</strong></h4>
+<ul>
+<li><strong>Even function</strong> (y-axis symmetry): f(−x) = f(x) for all x in the table. In other words, opposite x-values produce the same output. If x = 3 gives f(3) = 9, then x = −3 must give f(−3) = 9.<br><br></li>
+<li><strong style="font-size: 1rem;">Odd function</strong><span style="font-size: 1rem;"> (origin symmetry): f(−x) = −f(x) for all x in the table. Opposite x-values produce opposite outputs. If x = 3 gives f(3) = 9, then x = −3 must give f(−3) = −9.<br><br></span></li>
+<li><strong style="font-size: 1rem;">Neither:</strong><span style="font-size: 1rem;"> Neither pattern holds consistently for all pairs of opposite x-values in the table.</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h4><br><strong>Checking a Table: What to Do</strong></h4>
+<p>Follow these steps every time you analyze a table:</p>
+<ol>
+<li>Identify pairs of opposite x-values in the table, such as (−3, 3), (−2, 2), (−1, 1).</li>
+<li>For each pair, compare the f(x) values. Write both values down side by side.</li>
+<li>Ask: Are the outputs equal? (even test) Or are they opposites, meaning they add to zero? (odd test)</li>
+<li>The test must hold for EVERY pair. One counterexample is enough to rule out even or odd.</li>
+</ol>
+<p>&nbsp;</p>
+<h4 data-section-id="t987zw" data-start="2847" data-end="2877"><strong>Note: If x = 0 appears in the table, f(0) must equal 0 for any odd function, because f(−0) = −f(0) means f(0) = −f(0), which only works if f(0) = 0. Even functions can have any value at x = 0.<br></strong></h4>
+</div>
+<h4 data-start="2139" data-end="2170"><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Given the table of values.</p>
+<table style="border-collapse: collapse; width: 6.55433%; height: 160px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.842%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.842%; text-align: center;"><strong>y</strong></td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">-10</td>
+<td style="width: 49.842%; text-align: center;">-2</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">-5</td>
+<td style="width: 49.842%; text-align: center;">-4</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">0</td>
+<td style="width: 49.842%; text-align: center;">-6</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">5</td>
+<td style="width: 49.842%; text-align: center;">-4</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">10</td>
+<td style="width: 49.842%; text-align: center;">-2</td>
+</tr>
+</tbody>
+</table>
+<p>Determine if the function is even, odd, or neither.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p><strong>Step 1:</strong> Identify pairs: \((-10,-2), (-5,-4), (5,-4), (10,-2)\).</p>
+<p><strong>Step 2:</strong> Compare outputs:</p>
+<p>\(f(-10)=-2\) and \(f(10)=-2\)&nbsp; →&nbsp; They are the same (\(-2=-2\)). ✓ Even test.</p>
+<p>\(f(-5)=-4\) and \(f(5)=-4\)&nbsp; →&nbsp; They are the same (\(-4=-4\)). ✓ Even test.</p>
+<p>f(0) = any number&nbsp; Ok for even functions. ✓</p>
+<p><strong>Conclusion:</strong> The function is <strong>even</strong>.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Even</p>
+<h4 data-start="2139" data-end="2170"><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>Given the table of values.</p>
+<table style="border-collapse: collapse; width: 6.55433%; height: 160px;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.842%; text-align: center;"><strong>x</strong></td>
+<td style="width: 49.842%; text-align: center;"><strong>y</strong></td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">-3</td>
+<td style="width: 49.842%; text-align: center;">21</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">-1</td>
+<td style="width: 49.842%; text-align: center;">7</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">0</td>
+<td style="width: 49.842%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">1</td>
+<td style="width: 49.842%; text-align: center;">-7</td>
+</tr>
+<tr>
+<td style="width: 49.842%; text-align: center;">3</td>
+<td style="width: 49.842%; text-align: center;">-21</td>
+</tr>
+</tbody>
+</table>
+<p>Determine if the function is even, odd, or neither.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p><strong>Step 1:</strong> Identify pairs: \((-1,7), (0,0), (1,-7)\).</p>
+<p><strong>Step 2:</strong> Compare outputs:</p>
+<p>\(f(-1)=7\) and \(f(1)=-7\)&nbsp; →&nbsp; They are opposites. ✓ Odd test.</p>
+<p>\(f(0)=0\) → Required for odd functions. ✓</p>
+<p><strong>Conclusion:</strong> The function is <strong>odd.</strong></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Odd</p>
+<h4 data-start="2139" data-end="2170"><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p>Given the table of values.</p>
+<table style="border-collapse: collapse; width: 7.3198%; height: 173px;" border="1">
+<tbody>
+<tr>
+<td style="width: 36.7957%; text-align: center;"><strong>x</strong></td>
+<td style="width: 63.2886%; text-align: center;"><strong>y</strong></td>
+</tr>
+<tr>
+<td style="width: 36.7957%; text-align: center;">-5</td>
+<td style="width: 63.2886%; text-align: center;">-2.1544347</td>
+</tr>
+<tr>
+<td style="width: 36.7957%; text-align: center;">-3</td>
+<td style="width: 63.2886%; text-align: center;">-2</td>
+</tr>
+<tr>
+<td style="width: 36.7957%; text-align: center;">5</td>
+<td style="width: 63.2886%; text-align: center;">0</td>
+</tr>
+<tr>
+<td style="width: 36.7957%; text-align: center;">3</td>
+<td style="width: 63.2886%; text-align: center;">-1.259921</td>
+</tr>
+<tr>
+<td style="width: 36.7957%; text-align: center;">13</td>
+<td style="width: 63.2886%; text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p>Determine if the function is even, odd, or neither.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p><strong>Step 1:</strong> Identify pairs: \((-3,-2), (5,0), (13,2)\).</p>
+<p><strong>Step 2:</strong> Compare outputs:</p>
+<p>There are no pairs with opposite x-values</p>
+<p><strong>Conclusion:</strong> The function is <strong>neither.</strong></p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Neither</p>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Identifying Even, Odd, or Neither from Equations</strong></h4>
+<p>The most powerful and efficient method for classifying a function is the <strong>algebraic test</strong>. Instead of relying on a picture or a set of data points, we use the equation directly.</p>
+<p>The test is based on the same definitions we have been using, but now expressed with function notation: we evaluate <strong>f(−x)</strong> and compare it to <strong>f(x)</strong> and <strong>−f(x)</strong>.</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>Understanding f(−x)</strong></h4>
+<p>To find \(f(-x)\), replace every occurrence of x in the equation with \((-x)\), then simplify.</p>
+<p>Example: If \(f(x)=3x^2-5\), then:</p>
+<p>\(f(-x)=3(-x)^2-5=3(x^2)-5=3x^2-5\)</p>
+<p>Since \(f(-x)=f(x)\), the function is even.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><span style="color: #0e68b3;"><strong>The Three-Step Algebraic Test</strong></span></h4>
+</td>
+</tr>
+<tr>
+<td width="624">
+<p><strong>Step 1: </strong>Find f(−x) by substituting −x for every x in the equation. Simplify completely.</p>
+<p><strong>Step 2: </strong>Compare f(−x) to f(x) and to −f(x).</p>
+<p><strong>Step 3: </strong>If f(−x) = f(x):&nbsp; the function is <strong>EVEN</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If f(−x) = −f(x):&nbsp; the function is <strong>ODD</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If neither:&nbsp; the function is <strong>NEITHER</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4><strong>Key Patterns to Know</strong></h4>
+<p>Before practicing, here are some helpful shortcuts to recognize:</p>
+<p>Powers of \((-x)\)): \((-x)^2=x^2\) (even power → stays positive)&nbsp; |&nbsp; \((-x)^3=-x^3\) (odd power → becomes negative)</p>
+<p>Polynomial shortcut: A polynomial with ONLY even-degree terms (x², x⁴, constants) is always even. A polynomial with ONLY odd-degree terms (x, x³, x⁵) and no constant term is always odd. A mix of both is neither.</p>
+<p>Absolute value: \(|-x|=|x|\), so \(f(x)=|x|\) is even. Any absolute value function centered at the origin will be even.</p>
+<p>Root functions: <img class="equation_image" title="f(x)=\sqrt[3]{x}" src="https://optimadomi.instructure.com/equation_images/f(x)%253D%255Csqrt%255B3%255D%257Bx%257D?scale=1" alt="LaTeX: f(x)=\sqrt[3]{x}" data-equation-content="f(x)=\sqrt[3]{x}" data-ignore-a11y-check="" loading="lazy"> (cube root) is odd because <img class="equation_image" title="\sqrt[3]{(-x)}=-\sqrt[3]{x}" src="https://optimadomi.instructure.com/equation_images/%255Csqrt%255B3%255D%257B(-x)%257D%253D-%255Csqrt%255B3%255D%257Bx%257D?scale=1" alt="LaTeX: \sqrt[3]{(-x)}=-\sqrt[3]{x}" data-equation-content="\sqrt[3]{(-x)}=-\sqrt[3]{x}" data-ignore-a11y-check="" loading="lazy">. But <img class="equation_image" title="f(x)=\sqrt{x}" src="https://optimadomi.instructure.com/equation_images/f(x)%253D%255Csqrt%257Bx%257D?scale=1" alt="LaTeX: f(x)=\sqrt{x}" data-equation-content="f(x)=\sqrt{x}" data-ignore-a11y-check="" loading="lazy"> (square root) is neither because its domain excludes negative x.</p>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p>Classify the function \(f(x)=x^2-7\) as even, odd, or neither using the algebraic test. Show all steps.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Step 1: <img class="equation_image" title="f(-x)=(-x)^2-7 \\
+f(-x)=x^2-7" src="https://optimadomi.instructure.com/equation_images/f(-x)%253D(-x)%255E2-7%2520%255C%255C%250Af(-x)%253Dx%255E2-7?scale=1" alt="LaTeX: f(-x)=(-x)^2-7 \\
+f(-x)=x^2-7" data-equation-content="f(-x)=(-x)^2-7 \\
+f(-x)=x^2-7" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Step 2: \(f(-x)=x^2-7=f(x)\) ✓&nbsp;</p>
+<p>Conclusion: Since f(−x) = f(x), the function is even. This makes sense because x² is an even-degree term, and constants have degree 0 (also even). The graph is a downward-shifted parabola with y-axis symmetry.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Even</p>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p>Classify the function \(f(x)=\frac{1}{-x^3+x}\) as even, odd, or neither using the algebraic test. Show all steps.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Step 1: <img class="equation_image" title="f(-x)=\frac{1}{-(-x)^3+(-x)} \\
+f(-x)=\frac{1}{x^3-x}" src="https://optimadomi.instructure.com/equation_images/f(-x)%253D%255Cfrac%257B1%257D%257B-(-x)%255E3%252B(-x)%257D%2520%255C%255C%250Af(-x)%253D%255Cfrac%257B1%257D%257Bx%255E3-x%257D?scale=1" alt="LaTeX: f(-x)=\frac{1}{-(-x)^3+(-x)} \\
+f(-x)=\frac{1}{x^3-x}" data-equation-content="f(-x)=\frac{1}{-(-x)^3+(-x)} \\
+f(-x)=\frac{1}{x^3-x}" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Step 2: \(f(-x)=-f(x)\) ✓&nbsp;</p>
+<p>Conclusion: Since f(−x) = -f(x), the function is odd. If you graphed the function, you would see the origin symmetry.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Odd</p>
+<h4><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p>Classify the function \(f(x)=x^2+x\) as even, odd, or neither using the algebraic test. Show all steps.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<p>Step 1: <img class="equation_image" title="f(-x)=(-x)^2+(-x) \\
+f(-x)=x^2-x" src="https://optimadomi.instructure.com/equation_images/f(-x)%253D(-x)%255E2%252B(-x)%2520%255C%255C%250Af(-x)%253Dx%255E2-x?scale=1" alt="LaTeX: f(-x)=(-x)^2+(-x) \\
+f(-x)=x^2-x" data-equation-content="f(-x)=(-x)^2+(-x) \\
+f(-x)=x^2-x" data-ignore-a11y-check="" loading="lazy"></p>
+<p>Step 2: \(f(-x)\neq f(x)\) and \(f(-x)\neq -f(x)\)</p>
+<p>Conclusion: Since \(f(-x)\) does not equal \(f(x)\) or \(-f(x)\), the function is neither.</p>
+<p><span style="color: #e62429;"><strong>Answer:</strong></span> Neither</p>
+<p>&nbsp;</p>
+<table width="624">
+<tbody>
+<tr>
+<td width="624">
+<h4><strong>Quick Reference Summary</strong></h4>
+<p>Even:&nbsp;&nbsp; f(−x) = f(x)&nbsp;&nbsp; →&nbsp; y-axis symmetry&nbsp;&nbsp; →&nbsp; same outputs for opposite inputs</p>
+<p>Odd:&nbsp;&nbsp;&nbsp; f(−x) = −f(x)&nbsp; →&nbsp; origin symmetry&nbsp; →&nbsp; opposite outputs for opposite inputs</p>
+<p>Neither: Neither condition holds for all x</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this reading, you explored three different methods for classifying a function as even, odd, or neither — through its graph, its table of values, and its equation. At the core of all three methods is the same idea: symmetry. Even functions mirror themselves across the y-axis, odd functions rotate onto themselves around the origin, and functions that lack both of these symmetries are neither. When examining graphs, you look for visual symmetry. When working with tables, you search for numerical patterns by comparing f(−x) to f(x) and −f(x). When working with equations, you apply the algebraic test by substituting −x directly into the formula. These three representations are different windows into the same underlying function, and being fluent with all three will serve you well as you continue into pre-calculus and beyond. As you practice, pay close attention to the structure of each function — the types of terms, the degrees of polynomials, and the placement of any shifts — because these features are often the fastest clues to a function's symmetry.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="790" data-end="853">1. What does it mean for a function to be even, odd, or neither?</p>
+<p data-start="790" data-end="853"><span style="font-size: 1rem;">2. How does symmetry help determine whether a function is even or odd?</span></p>
+<p data-start="790" data-end="853"><span style="font-size: 1rem;">3. How can substitution into a function rule verify evenness or oddness algebraically?</span></p>
+<p data-start="790" data-end="853"><span style="font-size: 1rem;">4. What patterns in a table indicate that a function may be even or odd?</span></p>
+<p data-start="790" data-end="853"><span style="font-size: 1rem;">5. Why are some functions neither even nor odd?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">11.05 &middot; Determining Even, Odd, or Neither</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

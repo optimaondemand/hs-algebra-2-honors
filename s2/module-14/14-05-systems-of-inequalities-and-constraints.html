@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>14.05 Systems of Inequalities and Constraints</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 14</div>
+        <div style="font-size: 13px; color: #666;">Systems of Equations and Inequalities</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">Module 14</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Systems of Equations and Inequalities</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">Module 14</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">14.05 Systems of Inequalities and Constraints</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p class="vocab-entry"><strong>Boundary Curve:</strong><span>&nbsp;</span>The graph of the equation obtained by replacing the inequality symbol with an equals sign; for linear inequalities the boundary is a straight line, and for quadratic inequalities the boundary is a parabola. A solid boundary ( \( \leq \) or \( \geq \) ) is included in the solution; a dashed boundary ( \( &lt; \) or \( &gt; \) ) is not included.</p>
+<p class="vocab-entry"><strong>Constraint:</strong><span>&nbsp;</span>A condition in a real-world problem that limits the possible values of the variables; represented as a linear or quadratic equation or inequality depending on the relationship being modeled.</p>
+<p class="vocab-entry"><strong>Feasible Region:</strong><span>&nbsp;</span>The set of all ordered pairs \( (x, y) \) that satisfy every inequality in a system simultaneously; represented graphically as the region where all individual solution regions overlap.</p>
+<p class="vocab-entry"><strong>Half-Plane:</strong><span>&nbsp;</span>The region of the coordinate plane on one side of a boundary line; the solution to a single linear inequality in two variables is a half-plane.</p>
+<p class="vocab-entry"><strong>Linear Inequality:</strong><span>&nbsp;</span>A mathematical statement comparing a linear expression to a value or another expression using an inequality symbol ( \( &lt;,\ &gt;,\ \leq,\ \geq \) ); its graph is a half-plane bounded by a straight line.</p>
+<p class="vocab-entry"><strong>Quadratic Inequality:</strong><span>&nbsp;</span>A mathematical statement comparing a quadratic expression \( ax^{2} + bx + c \) to a value or another expression using an inequality symbol; its graph is a region of the coordinate plane bounded by a parabola.</p>
+<p class="vocab-entry"><strong>Solution of a System of Inequalities:</strong><span>&nbsp;</span>An ordered pair \( (x, y) \) that satisfies all inequalities in the system simultaneously; graphically, any point that lies within the feasible region, including the boundary if the inequality is non-strict.</p>
+<p class="vocab-entry"><strong>System of Inequalities:</strong><span>&nbsp;</span>A set of two or more inequalities in the same variables considered together; in this lesson, systems consist of two linear inequalities, a linear and a quadratic inequality, or two quadratic inequalities.</p>
+<p class="vocab-entry"><strong>Test Point:</strong><span>&nbsp;</span>A specific ordered pair — often \( (0,\ 0) \) when it does not lie on the boundary — substituted into an inequality to determine which side of the boundary line or parabola satisfies the inequality and should be shaded.</p>
+<p class="vocab-entry"><strong>Two-Variable Inequality:</strong><span>&nbsp;</span>An inequality involving two variables \( x \) and \( y \), such as \( y &gt; 2x - 1 \) or \( y \leq x^{2} - 4 \), whose solution is a region of the coordinate plane rather than a discrete set of points.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>In previous lessons, you solved systems of equations — finding the exact points where two graphs intersect. In this lesson, you will extend that idea to systems of inequalities, where the solution is no longer a single point or a set of discrete points but an entire region of the coordinate plane. You will graph systems involving two linear inequalities, a linear and a quadratic inequality, and two quadratic inequalities, identifying the overlapping shaded region where all conditions are satisfied at the same time. You will also learn how to test a specific point to confirm it lies within the solution region. Finally, you will apply these skills to real-world situations where constraints — conditions that limit what is possible — are written as linear or quadratic equations and inequalities, and the goal is to identify the feasible region of all values that satisfy every constraint simultaneously.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Systems of Two Linear or Two Quadratic Inequalities</strong></h4>
+<p>A<span>&nbsp;</span><strong>system of inequalities</strong><span>&nbsp;</span>is two or more inequalities considered at the same time. The solution to the system is the set of all ordered pairs \( (x, y) \) that make every inequality true simultaneously. Graphically, each inequality defines a region of the plane — one side of its boundary — and the solution to the system is the region where all of those individual solution regions overlap. That overlapping region is called the<span>&nbsp;</span><strong>feasible region</strong>.</p>
+<p>To graph a single inequality, you first graph the boundary — the line or parabola you get by replacing the inequality symbol with an equals sign. If the inequality is strict ( \( &lt; \) or \( &gt; \) ), you draw the boundary with a<span>&nbsp;</span><strong>dashed</strong><span>&nbsp;</span>curve to show it is not included. If the inequality is non-strict ( \( \leq \) or \( \geq \) ), you draw a<span>&nbsp;</span><strong>solid</strong><span>&nbsp;</span>curve to show the boundary is included. Then you shade the region that satisfies the inequality.</p>
+<h4><strong><br>Steps for Graphing a System of Two Inequalities</strong></h4>
+<ol>
+<li>Graph the boundary of the first inequality (line or parabola). Use a dashed curve for \( &lt; \) or \( &gt; \), and a solid curve for \( \leq \) or \( \geq \).</li>
+<li>Pick a test point not on the boundary — \( (0, 0) \) works well if it is not on the boundary curve. Substitute it into the first inequality. If it makes the inequality true, shade the region containing the test point. If false, shade the opposite region.</li>
+<li>Repeat Steps 1 and 2 for the second inequality on the same graph.</li>
+<li>The feasible region — where both shadings overlap — is the solution of the system. Any point in this overlapping region satisfies both inequalities.</li>
+<li>To verify a specific point is in the solution region, substitute its coordinates into both original inequalities and confirm both produce true statements.</li>
+</ol>
+<p>&nbsp;</p>
+<div style="border: 3px solid #003366; background-color: #f0f6ff; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<p><strong>Key Idea — Solid vs. Dashed Boundary</strong></p>
+<p>A<span>&nbsp;</span><strong>solid</strong><span>&nbsp;</span>boundary means the curve itself is part of the solution ( \( \leq \) or \( \geq \) ). A<span>&nbsp;</span><strong>dashed</strong><span>&nbsp;</span>boundary means the curve is not part of the solution ( \( &lt; \) or \( &gt; \) ). When testing whether a boundary point is a solution to the system, check both inequalities — if either is strict and the test point lies on that boundary, it is not a valid solution.</p>
+</div>
+<h4><br><br><strong>System of Two Linear Inequalities</strong></h4>
+<p class="indent">Graph and identify the feasible region: &nbsp;</p>
+<p class="indent">\(\begin{cases} y &gt; x - 2 \\ y \leq -x + 4 \end{cases}\)</p>
+<p><strong>Step 1 — Graph \( y &gt; x - 2 \):</strong><span>&nbsp;</span>The boundary line is \( y = x - 2 \), a line with slope \( 1 \) and \( y \)-intercept \( -2 \). Draw it<span>&nbsp;</span><strong>dashed</strong><span>&nbsp;</span>(strict inequality). Test \( (0, 0) \): &nbsp; \( 0 &gt; 0 - 2 = -2 \). True — shade above the line.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/zzbqnko03g?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 2 — Graph \( y \leq -x + 4 \):</strong><span>&nbsp;</span>The boundary line is \( y = -x + 4 \), a line with slope \( -1 \) and \( y \)-intercept \( 4 \). Draw it<span>&nbsp;</span><strong>solid</strong><span>&nbsp;</span>(non-strict inequality). Test \( (0, 0) \): &nbsp; \( 0 \leq -0 + 4 = 4 \). True — shade below the line.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/5jawdlfpof?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 3 — Identify the feasible region:</strong><span>&nbsp;</span>The feasible region is the area above the dashed line and below (or on) the solid line. The two boundary lines intersect at \( (3, 1) \) — you can verify: \( y = 3 - 2 = 1 \) and \( y = -3 + 4 = 1 \) ✓. The feasible region is a wedge-shaped area to the left of this intersection.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/b3h77lrgi6?embed" width="400" height="400" loading="lazy"></iframe></p>
+<p><strong>Step 4 — Test a point in the region, e.g. \( (1, 2) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 2 &gt; 1 - 2 = -1 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 2 \leq -1 + 4 = 3 \) ✓</p>
+<p>Both true — \( (1, 2) \) is in the feasible region. ✓</p>
+<p><strong>Feasible Region:</strong><span>&nbsp;</span>The region above the dashed line \( y = x - 2 \) and on or below the solid line \( y = -x + 4 \). The point \( (1,\ 2) \) is a verified solution.</p>
+<h4><strong><br><br>System of Two Quadratic Inequalities</strong></h4>
+<p class="indent">Graph and identify the feasible region: &nbsp;</p>
+<p class="indent">\(\begin{cases} y \geq x^{2} - 4 \\ y &lt; -x^{2} + 6 \end{cases}\)</p>
+<p><strong>Step 1 — Graph \( y \geq x^{2} - 4 \):</strong><span>&nbsp;</span>The boundary is the parabola \( y = x^{2} - 4 \), opening upward with vertex \( (0, -4) \). Draw it<span>&nbsp;</span><strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \geq 0 - 4 = -4 \). True — shade above (and on) this parabola.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/jclj7vdh2e?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 2 — Graph \( y &lt; -x^{2} + 6 \):</strong><span>&nbsp;</span>The boundary is the parabola \( y = -x^{2} + 6 \), opening downward with vertex \( (0, 6) \). Draw it<span>&nbsp;</span><strong>dashed</strong>. Test \( (0, 0) \): &nbsp; \( 0 &lt; -0 + 6 = 6 \). True — shade below this parabola.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/xqhdxvltge?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 3 — Identify the feasible region:</strong><span>&nbsp;</span>The region is above or on the upward parabola and strictly below the downward parabola. This is a lens-shaped region centered around the \( y \)-axis between the two parabolas.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/rpajg7kn6e?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>Step 4 — Test the point \( (0, 0) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 0 \geq (0)^{2} - 4 = -4 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 0 &lt; -(0)^{2} + 6 = 6 \) ✓</p>
+<p>Both true — \( (0, 0) \) is in the feasible region. ✓</p>
+<p><strong>Feasible Region:</strong><span>&nbsp;</span>The lens-shaped region on or above \( y = x^{2} - 4 \) and strictly below \( y = -x^{2} + 6 \). The point \( (0,\ 0) \) is a verified solution.</p>
+</div>
+<h4><span style="color: #f48b08;">Example 1</span></h4>
+<p>Graph the system of inequalities, identify the feasible region, and verify that the point \( (0, 1) \) is or is not in the solution region.</p>
+<p class="indent">\(\begin{cases} y \geq 2x - 3 \\ y &lt; -\dfrac{1}{2}x + 4 \\ \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Graph \( y \geq 2x - 3 \):</strong> Boundary line \( y = 2x - 3 \), slope \( 2 \), \( y \)-intercept \( -3 \). Draw <strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \geq -3 \). True — shade above and on the line.</p>
+<p><strong>Step 2 — Graph \( y &lt; -\dfrac{1}{2}x + 4 \):</strong> Boundary line \( y = -\dfrac{1}{2}x + 4 \), slope \( -\dfrac{1}{2} \), \( y \)-intercept \( 4 \). Draw <strong>dashed</strong>. Test \( (0, 0) \): &nbsp; \( 0 &lt; 4 \). True — shade below the line.</p>
+<p><strong>Step 3 — Feasible region:</strong> The region on or above the solid line \( y = 2x - 3 \) and strictly below the dashed line \( y = -\dfrac{1}{2}x + 4 \). The boundary lines intersect where \( 2x - 3 = -\dfrac{1}{2}x + 4 \Rightarrow \dfrac{5}{2}x = 7 \Rightarrow x = \dfrac{14}{5} \), but students need only identify the region graphically.</p>
+<p><strong>Step 4 — Test \( (0, 1) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 1 \geq 2(0) - 3 = -3 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 1 &lt; -\dfrac{1}{2}(0) + 4 = 4 \) ✓</p>
+<p>Both true — \( (0, 1) \) is in the feasible region.</p>
+<p><span style="color: #e62429;"><strong>Feasible Region:</strong></span> On or above \( y = 2x - 3 \) (solid) and strictly below \( y = -\dfrac{1}{2}x + 4 \) (dashed).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ikikx6fhlm?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>\( (0,\ 1) \) is in the solution region.</strong> Both inequalities are satisfied. ✓</p>
+</details>
+<h4 class="indent"><span style="color: #f48b08;"><br><br>Example 2</span></h4>
+<p>Graph the system of inequalities, identify the feasible region, and verify that the point \( (1, 0) \) is or is not in the solution region.</p>
+<p class="indent">\(\begin{cases} y &gt; x^{2}+2x-3 \\ y \leq -x^{2} + 3 \\ \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Graph \( y &gt; x^{2} +2x-3 \):</strong> Boundary parabola \( y = x^{2} +2x-3 \), opening upward, vertex \( (-1,-4) \). Draw <strong>dashed</strong>. Test \( (0, 0) \): &nbsp; \( 0 &gt; -3 \). True — shade strictly above the parabola.</p>
+<p><strong>Step 2 — Graph \( y \leq -x^{2} + 3 \):</strong> Boundary parabola \( y = -x^{2} + 3 \), opening downward, vertex \( (0, 3) \). Draw <strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \leq 3 \). True — shade on and below the parabola.</p>
+<p><strong>Step 3 — Feasible region:</strong> A lens-shaped region strictly above \( y = x^{2} +2x-3 \) and on or below \( y = -x^{2} + 3 \), centered on the \( y \)-axis between the two parabolas.</p>
+<p><strong>Step 4 — Test \( (-1, 0) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 0 &gt; (-1)^{2} +2(-1)-3 = 1-2-3 = -4 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 0 \leq -(-1)^{2} + 3 = 2 \) ✓</p>
+<p>Both true — \( (-1, 0) \) is in the feasible region.</p>
+<p><span style="color: #e62429;"><strong>Feasible Region:</strong></span> Strictly above \( y = x^{2} - 5 \) (dashed) and on or below \( y = -x^{2} + 3 \) (solid).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/tjj8njiofe?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>\( (-1,\ 0) \) is in the solution region.</strong> Both inequalities are satisfied. ✓</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>System of a Linear and Quadratic Inequality</strong></h4>
+<p>When a system contains one linear inequality and one quadratic inequality, the feasible region is bounded by both a straight line and a parabola. The approach is exactly the same as before — graph each boundary, use a test point to determine which side to shade, and find the overlapping region. The key difference is that the shape of the feasible region is more complex because one boundary is curved.</p>
+<p>The boundary line and boundary parabola will intersect at either zero, one, or two points. These intersection points — found by solving the corresponding system of equations — mark the corners of the feasible region and help you see clearly where the region begins and ends.</p>
+<div class="callout">
+<p><strong>Finding the Boundary Intersections</strong></p>
+<p>To find where the boundary line and boundary parabola intersect, set the two boundary equations equal to each other (or substitute one into the other) and solve. These intersection points are the corners of the feasible region. They lie on both boundaries — but whether they are included in the solution depends on the inequality symbols: a point on a dashed boundary is not part of the solution, while a point on a solid boundary is.</p>
+<h4><br><br><strong>System of Mixed Inequalities</strong></h4>
+<p class="indent">Graph and identify the feasible region: &nbsp;</p>
+<p class="indent">\(\begin{cases} y \geq x + 2 \\ y \leq -(x - 2)^{2} + 6 \end{cases}\)</p>
+<div class="worked-steps">
+<p><strong>Step 1 — Graph \( y \geq x + 2 \):</strong><span>&nbsp;</span>Boundary line \( y = x + 2 \), slope \( 1 \), \( y \)-intercept \( 2 \). Draw<span>&nbsp;</span><strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \geq 2 \). False — shade on and above the line (the side not containing \( (0, 0) \)).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/gkeupvxk2o?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 2 — Graph \( y \leq -(x - 2)^{2} + 6 \):</strong><span>&nbsp;</span>The boundary is the parabola \( y = -(x - 2)^{2} + 6 \) in vertex form, opening downward with vertex \( (2, 6) \). Draw<span>&nbsp;</span><strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \leq -(0-2)^{2} + 6 = -4 + 6 = 2 \). True — shade on and below the parabola.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/1w22gejpeo?embed" width="300" height="300" loading="lazy"></iframe></p>
+<p><strong>Step 3 — Find boundary intersections:</strong><span>&nbsp;</span>Set \( x + 2 = -(x - 2)^{2} + 6 \).</p>
+<p class="indent">\( x + 2 = -x^{2} + 4x - 4 + 6 = -x^{2} + 4x + 2 \)</p>
+<p class="indent">\( x^{2} - 3x = 0 \)</p>
+<p class="indent">\( x(x - 3) = 0 \Rightarrow x = 0 \) or \( x = 3 \)</p>
+<p class="indent">At \( x = 0 \): \( y = 2 \). At \( x = 3 \): \( y = 5 \). Corners: \( (0, 2) \) and \( (3, 5) \).</p>
+<p><strong>Step 4 — Identify the feasible region:</strong><span>&nbsp;</span>The region on or above the solid line and on or below the solid downward parabola, between the corners \( (0, 2) \) and \( (3, 5) \). Since the parabola sits above the line between \( x = 0 \) and \( x = 3 \), there is a valid region between them.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/6webwsx50g?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>Step 5 — Test the point \( (1, 4) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 4 \geq 1 + 2 = 3 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 4 \leq -(1-2)^{2} + 6 = -1 + 6 = 5 \) ✓</p>
+<p>Both true — \( (1, 4) \) is in the feasible region. ✓</p>
+</div>
+<div class="answer-box">
+<p><strong>Feasible Region:</strong><span>&nbsp;</span>On or above the solid line \( y = x + 2 \) and on or below the solid parabola \( y = -(x-2)^{2} + 6 \) (vertex \( (2,6) \)), between the corner points \( (0,\ 2) \) and \( (3,\ 5) \).</p>
+<p><strong>Verified solution point:</strong><span>&nbsp;</span>\( (1,\ 4) \) ✓</p>
+</div>
+</div>
+</div>
+<h4 class="indent"><span style="color: #f48b08;">Example 3</span></h4>
+<p>Graph the system of inequalities, identify the feasible region, find the boundary intersection points, and verify that \( (2, 2) \) is or is not in the solution region.</p>
+<p class="indent">\(\begin{cases} y &lt; 2x + 3 \\ y \geq x^{2} - 4x + 1 \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Graph \( y &lt; 2x + 3 \):</strong> Boundary line \( y = 2x + 3 \), slope \( 2 \), \( y \)-intercept \( 3 \). Draw <strong>dashed</strong>. Test \( (0, 0) \): &nbsp; \( 0 &lt; 3 \). True — shade strictly below the line.</p>
+<p><strong>Step 2 — Graph \( y \geq x^{2} - 4x + 1 \):</strong> Boundary parabola \( y = x^{2} - 4x + 1 \), opening upward. Complete the square: \( y = (x-2)^{2} - 3 \), so vertex \( (2, -3) \). Draw <strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \geq 0 - 0 + 1 = 1 \). False — shade on and above the parabola (the side not containing \( (0, 0) \)). Confirm with \( (2, 2) \): &nbsp; \( 2 \geq 4 - 8 + 1 = -3 \). True ✓.</p>
+<p><strong>Step 3 — Find boundary intersections:</strong> Set \( 2x + 3 = x^{2} - 4x + 1 \Rightarrow x^{2} - 6x - 2 = 0 \).</p>
+<p class="indent">Quadratic formula: \( x = \dfrac{6 \pm \sqrt{36 + 8}}{2} = \dfrac{6 \pm \sqrt{44}}{2} = 3 \pm \sqrt{11} \)</p>
+<p class="indent">\( x \approx 6.32 \) or \( x \approx -0.32 \). These are the approximate corners of the feasible region. Since the line is dashed, these corners are not included in the solution.</p>
+<p><strong>Step 4 — Feasible region:</strong> Strictly below the dashed line and on or above the solid parabola, between the two intersection points.</p>
+<p><strong>Step 5 — Test \( (2, 2) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 2 &lt; 2(2) + 3 = 7 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 2 \geq (2)^{2} - 4(2) + 1 = 4 - 8 + 1 = -3 \) ✓</p>
+<p>Both true — \( (2, 2) \) is in the feasible region.</p>
+<p><span style="color: #e62429;"><strong>Feasible Region:</strong></span> Strictly below \( y = 2x + 3 \) (dashed) and on or above \( y = x^{2} - 4x + 1 \) (solid, vertex \( (2,-3) \)), between \( x \approx -0.32 \) and \( x \approx 6.32 \).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/k1rotzspuy?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>\( (2,\ 2) \) is in the solution region.</strong> Both inequalities are satisfied. ✓</p>
+</details>
+<h4 class="indent"><span style="color: #f48b08;"><br><br>Example 4</span></h4>
+<p>Graph the system of inequalities, identify the feasible region, find the boundary intersection points, and verify that \( (2, 3) \) is or is not in the solution region.</p>
+<p class="indent">\(\begin{cases} y \geq -x + 1 \\ y \leq -(x - 2)^{2} + 5 \end{cases}\)</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Graph \( y \geq -x + 1 \):</strong> Boundary line \( y = -x + 1 \), slope \( -1 \), \( y \)-intercept \( 1 \). Draw <strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \geq 1 \). False — shade on and above the line (the side not containing \( (0, 0) \)).</p>
+<p><strong>Step 2 — Graph \( y \leq -(x - 2)^{2} + 5 \):</strong> The boundary is \( y = -(x-2)^{2} + 5 \) in vertex form, opening downward with vertex \( (2, 5) \). Draw <strong>solid</strong>. Test \( (0, 0) \): &nbsp; \( 0 \leq -(0-2)^{2} + 5 = -4 + 5 = 1 \). True — shade on and below the parabola.</p>
+<p><strong>Step 3 — Find boundary intersections:</strong> Set \( -x + 1 = -(x-2)^{2} + 5 \).</p>
+<p class="indent">\( -x + 1 = -x^{2} + 4x - 4 + 5 = -x^{2} + 4x + 1 \)</p>
+<p class="indent">\( x^{2} - 5x = 0 \)</p>
+<p class="indent">\( x(x - 5) = 0 \Rightarrow x = 0 \) or \( x = 5 \)</p>
+<p class="indent">At \( x = 0 \): \( y = 1 \). At \( x = 5 \): \( y = -4 \). Corners: \( (0, 1) \) and \( (5, -4) \). Both are included since both boundaries are solid.</p>
+<p><strong>Step 4 — Feasible region:</strong> On or above the solid line and on or below the solid downward parabola, between the corner points \( (0, 1) \) and \( (5, -4) \).</p>
+<p><strong>Step 5 — Test \( (2, 3) \):</strong></p>
+<p class="indent">Inequality 1: &nbsp; \( 3 \geq -(2) + 1 = -1 \) ✓</p>
+<p class="indent">Inequality 2: &nbsp; \( 3 \leq -(2-2)^{2} + 5 = 0 + 5 = 5 \) ✓</p>
+<p>Both true — \( (2, 3) \) is in the feasible region.</p>
+<p><strong>Feasible Region:</strong> On or above \( y = -x + 1 \) (solid) and on or below \( y = -(x-2)^{2} + 5 \) (solid, vertex \( (2,5) \)), between the corner points \( (0,\ 1) \) and \( (5,\ -4) \).</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/twgkd1htbb?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>\( (2,\ 3) \) is in the solution region.</strong> Both inequalities are satisfied. ✓</p>
+</details>
+<p><br><br></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Real-World Constraints as Systems of Equations and Inequalities</strong></h4>
+<p>In real-world problems, a<span>&nbsp;</span><strong>constraint</strong><span>&nbsp;</span>is any condition that limits the possible values of the variables. Some constraints are exact — for example, a budget that must be spent exactly, or a path that must be followed precisely — and these are written as equations. Most constraints, however, are limiting rather than exact — a budget that cannot be exceeded, a minimum quantity required, a speed that must stay below a certain level — and these are written as inequalities.</p>
+<p>To model a real-world situation with a system of constraints, you first identify the variables and what they represent, then translate each condition into an equation or inequality. Once you have the system, you graph all of the constraints on the same axes. The feasible region — the area satisfying all constraints simultaneously — represents every combination of values that is actually possible given the real-world conditions. A point within the feasible region represents a specific combination of values that satisfies all constraints at once.</p>
+<h4><strong><br>How to Set Up a System of Constraints from Context</strong></h4>
+<ol>
+<li>Identify the two quantities that vary — these become your variables \( x \) and \( y \).</li>
+<li>Read each condition in the problem. Ask: is this an exact requirement (use \( = \)) or a limiting condition (use \( \leq \), \( \geq \), \( &lt; \), or \( &gt; \) )?</li>
+<li>Determine whether the relationship between the two variables is linear (constant rate) or quadratic (changing rate, area, or curved relationship).</li>
+<li>Write each constraint as an equation or inequality. Include any natural domain restrictions such as \( x \geq 0 \) or \( y \geq 0 \) when quantities cannot be negative.</li>
+<li>Graph all constraints on the same coordinate plane and identify the feasible region.</li>
+<li>Verify that a specific point inside the feasible region satisfies all constraints by substituting into each one.</li>
+</ol>
+</div>
+<h4 class="indent"><span style="color: #f48b08;">Example 5</span></h4>
+<p><span>The profit \( P \), in thousands of dollars, earned by Office Co. from selling laptops can be modeled by \( P = -2x^{2} + 12x - 10 \), where \( x \) is the price of a laptop in hundreds of dollars. </span></p>
+<p><span>The company operates under the following constraints: </span></p>
+<ul>
+<li><span>t</span><span>he profit must exceed \( \$3{,}000 \)</span></li>
+<li><span>the laptop price must be set at no more than \( \$400 \)</span></li>
+<li><span>the price must be at least \( \$100 \) for the model to apply</span></li>
+</ul>
+<p><span>Write the system of constraints, identify the feasible region, and verify a valid price-profit combination.</span></p>
+<p><span>What is the maximum profit if the laptops are sold for $300?</span></p>
+<p><span>If the company wants to make a profit of $6,000, this would occur at a price of $___ and $___ per laptop.</span></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Identify the constraints and write each as an inequality or equation:</strong></p>
+<p class="indent">Profit model (upper bound on achievable profit): &nbsp; \( P \leq -2x^{2} + 12x - 10 \) (quadratic — profit cannot exceed the model — <span style="color: #027634;">green parabola curve</span>)</p>
+<p class="indent">Minimum profit requirement: &nbsp; \( P &gt; 3 \) (linear — profit must exceed \$3,000 — <span style="color: #9242b4;">purple dashed horizontal line</span>)</p>
+<p class="indent">Maximum price constraint: &nbsp; \( x \leq 4 \) (linear — price at most \$400 — <span style="color: #f48b08;">orange vertical line</span>)</p>
+<p class="indent">Minimum price constraint: &nbsp; \( x \geq 1 \) (linear — price at least \$100 — <span style="color: #c71f23;">red vertical line</span>)</p>
+<p><strong>Step 2 — Describe the boundaries:</strong> The quadratic boundary \( P = -2x^{2} + 12x - 10 \) is a downward-opening parabola with vertex at \( (3, 8) \) — meaning maximum profit of \( \$8{,}000 \) occurs at a price of \( \$300 \). The parabola crosses \( P = 0 \) at \( x = 1 \) and \( x = 5 \). The linear constraint \( P = 3 \) is a horizontal boundary line. The vertical lines \( x = 1 \) and \( x = 4 \) bound the price range.</p>
+<p><strong>Step 3 — Identify the feasible region:</strong> Graph all boundaries. The feasible region is the area on or below the parabola, strictly above \( P = 3 \), to the left of \( x = 4 \), and to the right of \( x = 1 \). This is a bounded region in the first quadrant.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/ak2zafbos5?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p><strong>Step 4 — Test the point \( (2, 4) \)</strong> — laptop price \( \$200 \), profit \( \$4{,}000 \):</p>
+<p class="indent">\( P \leq -2x^{2} + 12x - 10 \): &nbsp; \( 4 \leq -2(4) + 24 - 10 = 6 \) ✓</p>
+<p class="indent">\( P &gt; 3 \): &nbsp; \( 4 &gt; 3 \) ✓</p>
+<p class="indent">\( x \leq 4 \): &nbsp; \( 2 \leq 4 \) ✓</p>
+<p class="indent">\( x \geq 1 \): &nbsp; \( 2 \geq 1 \) ✓</p>
+<p>All constraints satisfied — \( (2, 4) \) is a valid price-profit combination.</p>
+<p><span>What is the maximum profit if the laptops are sold for $300?</span></p>
+<p><span>To answer this,m we go to 3 on the x axis and follow up to the boundary curve. This would give a profit of $8,000.</span></p>
+<p><span>If the company wants to make a profit of $6,000, this would occur at a price of $___ and $___ per laptop.</span></p>
+<p><span>To answer this, we go to 6 on the y-axis and find the first x-value of the curve and the last one since everything under the curve within the boundary lines is the feasible region.</span></p>
+<p><span>This would be between $200 and $400 per laptop.</span></p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you moved from the idea of a system of equations — where the solution is a point or set of points — to the idea of a system of inequalities, where the solution is an entire region of the coordinate plane. You learned to graph systems of two linear inequalities, systems of a linear and quadratic inequality, and systems of two quadratic inequalities, identifying the feasible region as the area where all individual solution regions overlap. You saw that the boundary of each inequality is drawn as a solid curve when the inequality is non-strict and as a dashed curve when it is strict, and that a test point is used to confirm which side of the boundary satisfies each condition. You also learned that boundary intersections mark the corners of the feasible region and can be found by solving the corresponding system of equations. Finally, you applied these skills to real-world constraint problems, translating conditions about quantities, limits, and relationships into systems of linear and quadratic equations and inequalities, and verifying that specific points within the feasible region satisfy every constraint simultaneously.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. What does the solution region of a system of linear and quadratic inequalities represent graphically, and how do you determine which side of each boundary — whether a line or a parabola — to shade as part of the solution?</p>
+<p>2. How does the shape of the boundary curve change the solution region when moving from a system of two linear inequalities to one involving a quadratic inequality or two quadratic inequalities, and what does that difference mean for the set of possible solutions?</p>
+<p>3. How do you translate a real-world constraint into a linear or quadratic inequality, and what does the feasible region of the resulting system tell you about what is possible, what is not possible, and what values satisfy all conditions simultaneously?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Module 14 &middot; 14.05 Systems of Inequalities and Constraints</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

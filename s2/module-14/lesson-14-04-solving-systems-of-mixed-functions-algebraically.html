@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 14.04 Solving Systems of Mixed Functions Algebraically</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q4 &middot; Module 14</div>
+        <div style="font-size: 13px; color: #666;">Systems of Equations and Inequalities</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">14.04</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Systems of Equations and Inequalities</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">14.04</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Solving Systems of Mixed Functions Algebraically</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p class="vocab-entry"><strong>Absolute Value Equation:</strong><span>&nbsp;</span>An equation of the form \( |ax + b| = c \), solved by splitting into two cases: \( ax + b = c \) and \( ax + b = -c \).</p>
+<p class="vocab-entry"><strong>Cube Root Function:</strong><span>&nbsp;</span>A function of the form \( f(x) = \sqrt[3]{x} \) or \( f(x) = a\sqrt[3]{x - h} + k \); to solve algebraically, isolate the cube root and cube both sides.</p>
+<p class="vocab-entry"><strong>Cubic Equation:</strong><span>&nbsp;</span>A polynomial equation of degree three, written in the form \( ax^{3} + bx^{2} + cx + d = 0 \); may have one, two, or three real solutions.</p>
+<p class="vocab-entry"><strong>Extraneous Solution:</strong><span>&nbsp;</span>A value that results from the algebraic solving process but does not satisfy one or both of the original equations; must be identified and rejected after substituting back to verify.</p>
+<p class="vocab-entry"><strong>Linear Equation:</strong><span>&nbsp;</span>An equation whose graph is a straight line, typically written as \( y = mx + b \) or in standard form \( Ax + By = C \).</p>
+<p class="vocab-entry"><strong>Nonlinear Equation:</strong><span>&nbsp;</span>An equation whose graph is not a straight line; in this lesson, nonlinear equations include quadratic, cubic, square root, cube root, and absolute value functions.</p>
+<p class="vocab-entry"><strong>Quadratic Equation:</strong><span>&nbsp;</span>A polynomial equation of degree two, written in the form \( ax^{2} + bx + c = 0 \); solved by factoring, completing the square, or the quadratic formula \( x = \dfrac{-b \pm \sqrt{b^{2} - 4ac}}{2a} \).</p>
+<p class="vocab-entry"><strong>Solution Set:</strong><span>&nbsp;</span>The collection of all ordered pairs \( (x, y) \) that satisfy both equations in a system simultaneously; found algebraically by solving for \( x \) and substituting back to find the corresponding \( y \)-values.</p>
+<p class="vocab-entry"><strong>Square Root Function:</strong><span>&nbsp;</span>A function of the form \( f(x) = \sqrt{x} \) or \( f(x) = a\sqrt{x - h} + k \); to solve algebraically, isolate the square root and square both sides, then check for extraneous solutions.</p>
+<p class="vocab-entry"><strong>Substitution Method:</strong><span>&nbsp;</span>An algebraic technique for solving a system of equations in which one equation is solved for a variable and that expression is substituted into the other equation, reducing the system to a single equation in one variable.</p>
+<p class="vocab-entry"><strong>System of Equations:</strong><span>&nbsp;</span>A set of two or more equations considered together, for which a solution must satisfy all equations simultaneously.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p><span>In the previous lesson, you used Desmos to locate the solutions to a system of linear and nonlinear equations by finding where the two graphs intersect. Graphing is powerful for visualization, but it gives you approximate answers and can miss solutions that are hard to see on a screen. In this lesson, you will learn how to find exact solutions using&nbsp;</span><strong>algebraic methods</strong><span>. The core idea is the&nbsp;</span><strong>substitution method</strong><span>: because the linear equation expresses \( y \) in terms of \( x \), you can replace \( y \) in the nonlinear equation with that expression, collapsing two equations in two variables into one equation in one variable. You will then apply the solving techniques appropriate for each type of nonlinear function — quadratic, cubic, square root, cube root, and absolute value — and you will learn to recognize and discard&nbsp;</span><strong>extraneous solutions</strong><span>&nbsp;that the algebra can produce but that do not actually satisfy the original system.</span></p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>The Substitution Method</strong></h4>
+<p>The substitution method works on a simple principle: if two expressions are both equal to \( y \), then they must be equal to each other. When one equation is linear and written as \( y = mx + b \), you substitute \( mx + b \) in place of \( y \) in the nonlinear equation. The result is a single equation in \( x \) only, which you solve using whatever algebraic technique fits the equation type. Once you have the \( x \)-value(s), substitute each one back into the<span>&nbsp;</span><em>linear</em><span>&nbsp;</span>equation to find the corresponding \( y \)-value, giving you the ordered pair solution(s).</p>
+<div class="callout orange">
+<h4><strong><br>Steps for Solving a Linear-Nonlinear System by Substitution</strong></h4>
+<ol>
+<li>Write the linear equation in slope-intercept form: \( y = mx + b \).</li>
+<li>Substitute the expression \( mx + b \) for \( y \) in the nonlinear equation.</li>
+<li>Solve the resulting single-variable equation for \( x \). Use the technique appropriate for the equation type: factor or use the quadratic formula for quadratics; isolate and cube for cube roots; isolate and square for square roots; split into two cases for absolute value.</li>
+<li>For each value of \( x \) found, substitute back into \( y = mx + b \) to find the corresponding \( y \)-value.</li>
+<li>Write each solution as an ordered pair \( (x, y) \).</li>
+<li>Verify every solution by substituting the ordered pair into<span>&nbsp;</span><strong>both</strong><span>&nbsp;</span>original equations. Reject any solution that does not satisfy both equations — these are extraneous solutions.</li>
+</ol>
+<p>&nbsp;</p>
+<div style="border: 3px solid #003366; padding: 15px; margin: 10px 0; border-radius: 8px;">
+<p><strong>Key Idea — Why Use the Linear Equation to Find \( y \)?</strong></p>
+<p>After solving for \( x \), always substitute back into the<span>&nbsp;</span><strong>linear</strong><span>&nbsp;</span>equation \( y = mx + b \) to find \( y \). The linear equation is simpler and less likely to produce arithmetic errors than the nonlinear one. The nonlinear equation is then used only for verification.</p>
+</div>
+<h4><br><br><strong>Linear and Quadratic System</strong></h4>
+<p>Solve the system algebraically and verify the solutions.</p>
+<p class="indent">\(\begin{cases} y = 2x -1 \\ y = x^{2} -2x+2 \end{cases} \)</p>
+<div class="worked-steps">
+<p><strong>Step 1 — Substitute:</strong><span>&nbsp;</span>Replace \( y \) with \( 2x - 1 \).</p>
+<p class="indent">\( 2x - 1 = x^{2} - 2x + 2 \)</p>
+<p><strong>Step 2 — Rearrange:</strong><span>&nbsp;</span>Move all terms to one side.</p>
+<p class="indent"><img class="equation_image" title="\begin{aligned}
+2x-1=x^2-2x+2 \\
+-2x+1 \quad\;\;\; -2x+1\\
+\hline
+0 = x^{2} - 4x + 3
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x-1%253Dx%255E2-2x%252B2%2520%255C%255C%250A-2x%252B1%2520%255Cquad%255C%253B%255C%253B%255C%253B%2520-2x%252B1%255C%255C%250A%255Chline%250A0%2520%253D%2520x%255E%257B2%257D%2520-%25204x%2520%252B%25203%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x-1=x^2-2x+2 \\
+-2x+1 \quad\;\;\; -2x+1\\
+\hline
+0 = x^{2} - 4x + 3
+\end{aligned}" data-equation-content="\begin{aligned}
+2x-1=x^2-2x+2 \\
+-2x+1 \quad\;\;\; -2x+1\\
+\hline
+0 = x^{2} - 4x + 3
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 3 — Factor:</strong></p>
+<p class="indent">\( 0 = (x - 1)(x - 3) \)</p>
+<p class="indent">\( x = 1 \) &nbsp; or &nbsp; \( x = 3 \)</p>
+<p><strong>Step 4 — Find \( y \)-values using \( y = 2x - 1 \):</strong></p>
+<p class="indent">When \( x = 1 \): &nbsp; \( y = 2(1) - 1 = 1 \) &nbsp; → &nbsp; \( (1, 1) \)</p>
+<p class="indent">When \( x = 3 \): &nbsp; \( y = 2(3) - 1 = 5 \) &nbsp; → &nbsp; \( (3, 5) \)</p>
+<p><strong>Step 5 — Verify \( (1, 1) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = 2(1) - 1 = 1 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (1)^{2} - 2(1) + 2 = 1 - 2 + 2 = 1 \) ✓</p>
+<p><strong>Step 6 — Verify \( (3, 5) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = 2(3) - 1 = 5 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (3)^{2} - 2(3) + 2 = 9 - 6 + 2 = 5 \) ✓</p>
+</div>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Solutions:</strong></span><span>&nbsp;</span>&nbsp; \( \{(1, 1),(3, 5)\} \) — both verified in both equations.</p>
+</div>
+</div>
+</div>
+<div style="border: 3px solid #3C8C4C; background-color: #dff5e1; padding: 20px; border-radius: 8px;">
+<h4 style="color: #3c8c4c; margin-top: 0;"><strong>Verifying Solutions and Identifying Extraneous Solutions</strong></h4>
+<p>Verification is not optional — it is a required final step in every algebraic solution. Substituting an ordered pair \( (a, b) \) into both original equations tells you whether \( (a, b) \) is a genuine solution to the<span>&nbsp;</span><em>system</em>, not just a by-product of the algebra. For most nonlinear types, verification is a check. For square root and absolute value equations, verification is a necessity because the algebraic steps used to solve them can introduce false answers called<span>&nbsp;</span><strong>extraneous solutions</strong>.</p>
+<p>An<span>&nbsp;</span><strong>extraneous solution</strong><span>&nbsp;</span>is a value that satisfies the transformed equation you created during solving but does not satisfy one or both of the original equations. Extraneous solutions arise in two common situations in this lesson.</p>
+<div class="callout">
+<p><strong><br>When Extraneous Solutions Appear</strong></p>
+</div>
+<div class="callout">
+<p><strong>Square root equations:</strong><span>&nbsp;</span>When you square both sides to eliminate a square root, you may introduce solutions that only work in the squared version of the equation, not the original. For example, squaring both sides of \( \sqrt{x} = -3 \) gives \( x = 9 \), but substituting back shows \( \sqrt{9} = 3 \neq -3 \). Always substitute back into the original square root equation to check.</p>
+<p><strong>Absolute value equations:</strong><span>&nbsp;</span>Splitting \( |expression| = c \) into two cases can produce a value that satisfies one case algebraically but places \( x \) outside the domain of that case. Always substitute back and check that the value inside the absolute value has the correct sign for the case used.</p>
+</div>
+<div class="callout green">
+<p><strong><br>Verifying a Solution — What to Check</strong></p>
+<p>Substitute the ordered pair \( (a, b) \) into<span>&nbsp;</span><strong>Equation 1</strong>: replace \( x \) with \( a \) and \( y \) with \( b \) and confirm the equation is true.</p>
+<p>Substitute the same ordered pair \( (a, b) \) into<span>&nbsp;</span><strong>Equation 2</strong>: repeat the check. Both equations must produce true statements.</p>
+<p>If either equation produces a false statement, the ordered pair is an extraneous solution and must be rejected. The system either has fewer solutions than you found, or no real solution at all.</p>
+</div>
+</div>
+<h4><span style="color: #f88e0a;">Example 1</span></h4>
+<p><span>Solve the system algebraically. Verify all solutions.</span></p>
+<p><span>\(\begin{cases} y=x+2 \\ y=x^2-4 \end{cases} \)</span></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Substitute \( y = x + 2 \) into the quadratic:</strong></p>
+<p class="indent">\( x + 2 = x^{2} - 4 \)</p>
+<p><strong>Step 2 — Rearrange into standard form:</strong></p>
+<p class="indent">\( 0 = x^{2} - x - 6 \)</p>
+<p><strong>Step 3 — Factor:</strong></p>
+<p class="indent">\( 0 = (x - 3)(x + 2) \)</p>
+<p class="indent">\( x = 3 \) &nbsp; or &nbsp; \( x = -2 \)</p>
+<p><strong>Step 4 — Find \( y \)-values using \( y = x + 2 \):</strong></p>
+<p class="indent">When \( x = 3 \): &nbsp; \( y = 3 + 2 = 5 \) &nbsp; → &nbsp; \( (3, 5) \)</p>
+<p class="indent">When \( x = -2 \): &nbsp; \( y = -2 + 2 = 0 \) &nbsp; → &nbsp; \( (-2, 0) \)</p>
+<p><strong>Step 5 — Verify \( (3, 5) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = 3 + 2 = 5 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (3)^{2} - 4 = 9 - 4 = 5 \) ✓</p>
+<p><strong>Step 6 — Verify \( (-2, 0) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = -2 + 2 = 0 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (-2)^{2} - 4 = 4 - 4 = 0 \) ✓</p>
+<p><span style="color: #e62429;"><strong>Solutions:</strong></span> &nbsp; \( \{(3, 5),(-2, 0)\} \) — both verified. No extraneous solutions.</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 2</span></h4>
+<p><span>Solve the system algebraically. Verify all solutions.</span></p>
+<p><span>\(\begin{cases} y=2x-1 \\ y=|x+3| \end{cases} \)</span></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Substitute \( y = 2x - 1 \) into the absolute value equation:</strong></p>
+<p class="indent">\( 2x - 1 = |x + 3| \)</p>
+<p><strong>Step 2 — Split into two cases:</strong></p>
+<p><strong>Case A</strong> (when \( x + 3 \geq 0 \), i.e., \( x \geq -3 \)):</p>
+<p class="indent"><img class="equation_image" title="\begin{aligned}
+2x - 1 = x + 3 \\
+-x \qquad\; -x\quad \\
+\hline
+x-1=3 \\
++1\;\;+1 \\
+\hline
+x=4
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x%2520-%25201%2520%253D%2520x%2520%252B%25203%2520%255C%255C%250A-x%2520%255Cqquad%255C%253B%2520-x%255Cquad%2520%255C%255C%250A%255Chline%250Ax-1%253D3%2520%255C%255C%250A%252B1%255C%253B%255C%253B%252B1%2520%255C%255C%250A%255Chline%250Ax%253D4%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x - 1 = x + 3 \\
+-x \qquad\; -x\quad \\
+\hline
+x-1=3 \\
++1\;\;+1 \\
+\hline
+x=4
+\end{aligned}" data-equation-content="\begin{aligned}
+2x - 1 = x + 3 \\
+-x \qquad\; -x\quad \\
+\hline
+x-1=3 \\
++1\;\;+1 \\
+\hline
+x=4
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p class="indent">Check domain: \( 4 \geq -3 \) ✓ &nbsp; → &nbsp; \( y = 2(4) - 1 = 7 \) &nbsp; → &nbsp; candidate \( (4, 7) \)</p>
+<p><strong>Case B</strong> (when \( x + 3 &lt; 0 \), i.e., \( x &lt; -3 \)):</p>
+<p class="indent"><img class="equation_image" title="\begin{aligned}
+2x - 1 = -(x + 3) \\
+2x-1=-x - 3 \\
++x \qquad \;\;+x \qquad \\
+\hline
+3x-1\;\;=\qquad-3 \\
++1\qquad\qquad +1 \\
+\hline
+3x=-2
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250A2x%2520-%25201%2520%253D%2520-(x%2520%252B%25203)%2520%255C%255C%250A2x-1%253D-x%2520-%25203%2520%255C%255C%250A%252Bx%2520%255Cqquad%2520%255C%253B%255C%253B%252Bx%2520%255Cqquad%2520%255C%255C%250A%255Chline%250A3x-1%255C%253B%255C%253B%253D%255Cqquad-3%2520%255C%255C%250A%252B1%255Cqquad%255Cqquad%2520%252B1%2520%255C%255C%250A%255Chline%250A3x%253D-2%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+2x - 1 = -(x + 3) \\
+2x-1=-x - 3 \\
++x \qquad \;\;+x \qquad \\
+\hline
+3x-1\;\;=\qquad-3 \\
++1\qquad\qquad +1 \\
+\hline
+3x=-2
+\end{aligned}" data-equation-content="\begin{aligned}
+2x - 1 = -(x + 3) \\
+2x-1=-x - 3 \\
++x \qquad \;\;+x \qquad \\
+\hline
+3x-1\;\;=\qquad-3 \\
++1\qquad\qquad +1 \\
+\hline
+3x=-2
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p class="indent"><img class="equation_image" title="\underline{3x} = \underline{-2} \\
+\;3 \qquad 3 \\
+\space \\
+x = -\dfrac{2}{3}" src="https://optimadomi.instructure.com/equation_images/%255Cunderline%257B3x%257D%2520%253D%2520%255Cunderline%257B-2%257D%2520%255C%255C%250A%255C%253B3%2520%255Cqquad%25203%2520%255C%255C%250A%255Cspace%2520%255C%255C%250Ax%2520%253D%2520-%255Cdfrac%257B2%257D%257B3%257D?scale=1" alt="LaTeX: \underline{3x} = \underline{-2} \\
+\;3 \qquad 3 \\
+\space \\
+x = -\dfrac{2}{3}" data-equation-content="\underline{3x} = \underline{-2} \\
+\;3 \qquad 3 \\
+\space \\
+x = -\dfrac{2}{3}" data-ignore-a11y-check="" loading="lazy"></p>
+<p class="indent">Check domain: \( -\dfrac{2}{3} &lt; -3 \) is <strong>false</strong>. This value is outside Case B's domain — it is an extraneous solution.</p>
+<p><strong>Step 3 — Verify \( (4, 7) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = 2(4) - 1 = 7 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = |4 + 3| = |7| = 7 \) ✓</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span> &nbsp; \( (4, 7) \) — one solution, verified.</p>
+<p><strong>Extraneous solution rejected:</strong> &nbsp; \( x = -\dfrac{2}{3} \) falls outside the domain of Case B and does not satisfy the original system.</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 3</span></h4>
+<p><span>Solve the system algebraically. Verify all solutions.</span></p>
+<p><span>\(\begin{cases} y=x-3 \\ y=\sqrt{2x-2} \end{cases} \)</span></p>
+<p><span><em>Hint: After substituting, isolate the square root and square both sides. Remember to check for extraneous solutions.</em></span></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Substitute \( y = x - 3 \) into the square root equation:</strong></p>
+<p class="indent">\( x - 3 = \sqrt{2x - 2} \)</p>
+<p><strong>Step 2 — Note the domain restriction:</strong> For the square root to be defined, \( 2x - 2 \geq 0 \), so \( x \geq 1 \). Also, since \( \sqrt{2x-2} \geq 0 \), we need \( x - 3 \geq 0 \), so \( x \geq 3 \).</p>
+<p><strong>Step 3 — Square both sides:</strong></p>
+<p class="indent"><img class="equation_image" title="(x - 3)^{2} = 2x - 2 \\
+(x-3)(x-3) = 2x-2 \\
+x^2-6x+9=2x-2" src="https://optimadomi.instructure.com/equation_images/(x%2520-%25203)%255E%257B2%257D%2520%253D%25202x%2520-%25202%2520%255C%255C%250A(x-3)(x-3)%2520%253D%25202x-2%2520%255C%255C%250Ax%255E2-6x%252B9%253D2x-2?scale=1" alt="LaTeX: (x - 3)^{2} = 2x - 2 \\
+(x-3)(x-3) = 2x-2 \\
+x^2-6x+9=2x-2" data-equation-content="(x - 3)^{2} = 2x - 2 \\
+(x-3)(x-3) = 2x-2 \\
+x^2-6x+9=2x-2" data-ignore-a11y-check="" loading="lazy"></p>
+<p class="indent">Move terms to get quadratic equal to 0.</p>
+<p class="indent"><img class="equation_image" title="\begin{aligned}
+x^2-6x+9=2x-2 \\
+-2x +2 \; -2x+2 \\
+\hline
+x^{2} - 8x + 11= 0\qquad
+\end{aligned}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Baligned%257D%250Ax%255E2-6x%252B9%253D2x-2%2520%255C%255C%250A-2x%2520%252B2%2520%255C%253B%2520-2x%252B2%2520%255C%255C%250A%255Chline%250Ax%255E%257B2%257D%2520-%25208x%2520%252B%252011%253D%25200%255Cqquad%250A%255Cend%257Baligned%257D?scale=1" alt="LaTeX: \begin{aligned}
+x^2-6x+9=2x-2 \\
+-2x +2 \; -2x+2 \\
+\hline
+x^{2} - 8x + 11= 0\qquad
+\end{aligned}" data-equation-content="\begin{aligned}
+x^2-6x+9=2x-2 \\
+-2x +2 \; -2x+2 \\
+\hline
+x^{2} - 8x + 11= 0\qquad
+\end{aligned}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 4 — Apply the quadratic formula:</strong></p>
+<p class="indent"><img class="equation_image" title="x = \dfrac{8 \pm \sqrt{64 - 44}}{2} = \dfrac{8 \pm \sqrt{20}}{2} = \dfrac{8 \pm 2\sqrt{5}}{2} = 4 \pm \sqrt{5}" src="https://optimadomi.instructure.com/equation_images/x%2520%253D%2520%255Cdfrac%257B8%2520%255Cpm%2520%255Csqrt%257B64%2520-%252044%257D%257D%257B2%257D%2520%253D%2520%255Cdfrac%257B8%2520%255Cpm%2520%255Csqrt%257B20%257D%257D%257B2%257D%2520%253D%2520%255Cdfrac%257B8%2520%255Cpm%25202%255Csqrt%257B5%257D%257D%257B2%257D%2520%253D%25204%2520%255Cpm%2520%255Csqrt%257B5%257D?scale=1" alt="LaTeX: x = \dfrac{8 \pm \sqrt{64 - 44}}{2} = \dfrac{8 \pm \sqrt{20}}{2} = \dfrac{8 \pm 2\sqrt{5}}{2} = 4 \pm \sqrt{5}" data-equation-content="x = \dfrac{8 \pm \sqrt{64 - 44}}{2} = \dfrac{8 \pm \sqrt{20}}{2} = \dfrac{8 \pm 2\sqrt{5}}{2} = 4 \pm \sqrt{5}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 5 — Check domain \( x \geq 3 \):</strong></p>
+<p class="indent">\( x = 4 + \sqrt{5} \approx 6.236 \geq 3 \) ✓ &nbsp; → &nbsp; \( y = (4 + \sqrt{5}) - 3 = 1 + \sqrt{5} \)</p>
+<p class="indent">\( x = 4 - \sqrt{5} \approx 1.764 &lt; 3 \) — fails domain check. Extraneous solution.</p>
+<p><strong>Step 6 — Verify \( (4 + \sqrt{5},\ 1 + \sqrt{5}) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = (4 + \sqrt{5}) - 3 = 1 + \sqrt{5} \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = \sqrt{2(4 + \sqrt{5}) - 2} = \sqrt{8 + 2\sqrt{5} - 2} = \sqrt{6 + 2\sqrt{5}} \)</p>
+<p class="indent">Note: \( \sqrt{6 + 2\sqrt{5}} = \sqrt{(\sqrt{5} + 1)^{2}} = \sqrt{5} + 1 \) ✓</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span> &nbsp; \( (4 + \sqrt{5},\ 1 + \sqrt{5}) \) — verified.</p>
+<p><strong>Extraneous solution rejected:</strong> &nbsp; \( x = 4 - \sqrt{5} \approx 1.76 \) fails the domain requirement \( x \geq 3 \).</p>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 4</span></h4>
+<p><span>Solve the system algebraically. Verify all solutions.</span></p>
+<p><span>\(\begin{cases} y=x+6 \\ y=x^3+x^2-3x+2 \end{cases} \)</span></p>
+<p><em>Hint: After substituting, move all terms to one side. The resulting cubic can be factored by grouping — look for a common binomial factor shared between the first two terms and the last two terms.</em></p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<div class="solution-body">
+<div class="worked-steps">
+<p><strong>Step 1 — Substitute \( y = x + 6 \) into the cubic equation:</strong></p>
+<p class="indent">\( x + 6 = x^{3} + x^{2} - 3x + 2 \)</p>
+<p><strong>Step 2 — Rearrange so one side equals zero:</strong></p>
+<p class="indent">\( 0 = x^{3} + x^{2} - 3x + 2 - x - 6 \)</p>
+<p class="indent">\( 0 = x^{3} + x^{2} - 4x - 4 \)</p>
+<p><strong>Step 3 — Factor by grouping:</strong> Split the cubic into two pairs.</p>
+<p class="indent">\( 0 = (x^{3} + x^{2}) + (-4x - 4) \)</p>
+<p class="indent">\( 0 = x^{2}(x + 1) - 4(x + 1) \)</p>
+<p class="indent">\( 0 = (x + 1)(x^{2} - 4) \)</p>
+<p><strong>Step 4 — Factor completely:</strong> \( x^{2} - 4 \) is a difference of squares.</p>
+<p class="indent">\( 0 = (x + 1)(x - 2)(x + 2) \)</p>
+<p class="indent">\( x = -1 \), &nbsp; \( x = 2 \), &nbsp; or &nbsp; \( x = -2 \)</p>
+<p><strong>Step 5 — Find \( y \)-values using \( y = x + 6 \):</strong></p>
+<p class="indent">When \( x = -1 \): &nbsp; \( y = -1 + 6 = 5 \) &nbsp; → &nbsp; \( (-1,\ 5) \)</p>
+<p class="indent">When \( x = 2 \): &nbsp; \( y = 2 + 6 = 8 \) &nbsp; → &nbsp; \( (2,\ 8) \)</p>
+<p class="indent">When \( x = -2 \): &nbsp; \( y = -2 + 6 = 4 \) &nbsp; → &nbsp; \( (-2,\ 4) \)</p>
+<p><strong>Step 6 — Verify \( (-1,\ 5) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = -1 + 6 = 5 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (-1)^{3} + (-1)^{2} - 3(-1) + 2 = -1 + 1 + 3 + 2 = 5 \) ✓</p>
+<p><strong>Step 7 — Verify \( (2,\ 8) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = 2 + 6 = 8 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (2)^{3} + (2)^{2} - 3(2) + 2 = 8 + 4 - 6 + 2 = 8 \) ✓</p>
+<p><strong>Step 8 — Verify \( (-2,\ 4) \):</strong></p>
+<p class="indent">Equation 1: &nbsp; \( y = -2 + 6 = 4 \) ✓</p>
+<p class="indent">Equation 2: &nbsp; \( y = (-2)^{3} + (-2)^{2} - 3(-2) + 2 = -8 + 4 + 6 + 2 = 4 \) ✓</p>
+</div>
+<div class="answer-box">
+<p><span style="color: #e62429;"><strong>Solutions:</strong></span> &nbsp; \( \{(-1,\ 5),(2,\ 8),(-2,\ 4)\} \) — all three verified in both equations.</p>
+<p>A line can intersect a cubic curve at up to three points, and this system achieves all three. Factoring by grouping is the key technique: pulling out \( x^{2} \) from the first pair and \( -4 \) from the second pair revealed the common binomial factor \( (x + 1) \), then the remaining factor \( (x^{2} - 4) \) was a difference of squares.</p>
+</div>
+</div>
+</details>
+<h4><span style="color: #f88e0a;"><br><br>Example 5</span></h4>
+<p>A small business models its monthly cost and revenue as functions of the number of units produced, \( x \). The monthly cost grows linearly while revenue follows a quadratic model that rises and then levels off as the market saturates.</p>
+<p class="indent">\( C = 4x + 20 \) &nbsp;&nbsp;&nbsp; (Monthly cost, in hundreds of dollars)</p>
+<p class="indent">\( R = -x^{2} + 14x - 4 \) &nbsp;&nbsp;&nbsp; (Monthly revenue, in hundreds of dollars)</p>
+<p>Find the number(s) of units at which revenue equals cost (the break-even point(s)). Solve algebraically, verify each solution, and interpret the result in context. Consider only \( x \geq 0 \).</p>
+<details>
+<summary><span style="color: #e62429;"><strong>Show Solution</strong></span></summary>
+<p><strong>Step 1 — Set cost equal to revenue:</strong> &nbsp; \( C = R \)</p>
+<p class="indent">\( 4x + 20 = -x^{2} + 14x - 4 \)</p>
+<p><strong>Step 2 — Rearrange into standard form:</strong></p>
+<p class="indent"><img class="equation_image" title="\begin{array}
+&amp;\qquad\quad 4x+20=-x^2+14x-4 \\
+-x^2-14x+4 \qquad \qquad\qquad \\
+\hline
+x^{2} - 10x + 24 = 0
+\end{array}" src="https://optimadomi.instructure.com/equation_images/%255Cbegin%257Barray%257D%250A%2526%255Cqquad%255Cquad%25204x%252B20%253D-x%255E2%252B14x-4%2520%255C%255C%250A-x%255E2-14x%252B4%2520%255Cqquad%2520%255Cqquad%255Cqquad%2520%255C%255C%250A%255Chline%250Ax%255E%257B2%257D%2520-%252010x%2520%252B%252024%2520%253D%25200%250A%255Cend%257Barray%257D?scale=1" alt="LaTeX: \begin{array}
+&amp;\qquad\quad 4x+20=-x^2+14x-4 \\
+-x^2-14x+4 \qquad \qquad\qquad \\
+\hline
+x^{2} - 10x + 24 = 0
+\end{array}" data-equation-content="\begin{array}
+&amp;\qquad\quad 4x+20=-x^2+14x-4 \\
+-x^2-14x+4 \qquad \qquad\qquad \\
+\hline
+x^{2} - 10x + 24 = 0
+\end{array}" data-ignore-a11y-check="" loading="lazy"></p>
+<p><strong>Step 3 — Factor:</strong></p>
+<p class="indent">\( (x - 4)(x - 6) = 0 \)</p>
+<p class="indent">\( x = 4 \) &nbsp; or &nbsp; \( x = 6 \)</p>
+<p><strong>Step 4 — Find cost/revenue values using \( C = 4x + 20 \):</strong></p>
+<p class="indent">When \( x = 4 \): &nbsp; \( C = 4(4) + 20 = 36 \) hundreds of dollars &nbsp; → &nbsp; \( (4, 36) \)</p>
+<p class="indent">When \( x = 6 \): &nbsp; \( C = 4(6) + 20 = 44 \) hundreds of dollars &nbsp; → &nbsp; \( (6, 44) \)</p>
+<p><strong>Step 5 — Verify \( (4, 36) \):</strong></p>
+<p class="indent">Cost: &nbsp; \( C = 4(4) + 20 = 36 \) ✓</p>
+<p class="indent">Revenue: &nbsp; \( R = -(4)^{2} + 14(4) - 4 = -16 + 56 - 4 = 36 \) ✓</p>
+<p><strong>Step 6 — Verify \( (6, 44) \):</strong></p>
+<p class="indent">Cost: &nbsp; \( C = 4(6) + 20 = 44 \) ✓</p>
+<p class="indent">Revenue: &nbsp; \( R = -(6)^{2} + 14(6) - 4 = -36 + 84 - 4 = 44 \) ✓</p>
+<p>Both solutions are verified and both have \( x &gt; 0 \), so both are meaningful in context.</p>
+<p><span style="color: #e62429;"><strong>Solutions:</strong></span> &nbsp; \( \{(4, 36),(6, 44)\} \) — both verified. No extraneous solutions.</p>
+<p><span style="color: #e62429;"><strong>Interpretation:</strong></span> The business reaches break-even at <strong>two points</strong>: when producing <strong>4 units</strong> (revenue and cost both equal $3,600) and again when producing <strong>6 units</strong> (revenue and cost both equal $4,400). Between these two production levels — from 4 to 6 units — revenue exceeds cost and the business is profitable. Outside this range, the quadratic revenue model falls below the linear cost line, meaning the business operates at a loss for very low or very high production. This is a realistic model: producing too few units fails to cover fixed costs, and producing too many saturates the market and drives revenue down.</p>
+</details>
+<h4><strong><br><br>Conclusion</strong></h4>
+<p>In this lesson, you learned how to solve a system consisting of a linear and a nonlinear equation using the algebraic substitution method. By replacing \( y \) in the nonlinear equation with the linear expression \( mx + b \), you reduced a two-variable system to a single equation in one variable — a quadratic, cubic, square root, cube root, or absolute value equation — and applied the appropriate algebraic technique to solve it. You saw that finding \( x \)-values is only the first part of the process: each \( x \)-value must be substituted back into the linear equation to produce the full ordered pair solution, and every solution must be verified in both original equations. You also learned that squaring both sides to eliminate a square root and splitting absolute value equations into cases are the two main situations where extraneous solutions can appear, making verification especially critical. Finally, you applied these skills to a real-world business model, connecting the algebraic break-even solutions to meaningful economic conclusions. Algebraic methods give you exact answers that graphical methods can only approximate — and with careful verification, you can be certain those answers are genuine solutions to the system.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p>1. Why does substituting the linear equation into the nonlinear equation allow you to reduce a system of two equations in two variables down to a single equation in one variable, and what does solving that equation tell you about the system?</p>
+<p>2. How does the type of nonlinear function — quadratic, cubic, square root, cube root, or absolute value — determine the algebraic steps needed to solve the system, and when should you be alert for extraneous solutions?</p>
+<p>3. When a real-world situation is modeled by a linear-nonlinear system, what does the algebraic solution represent in context, and how do you decide whether a solution is meaningful given the constraints of the problem?</p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">14.04 &middot; Solving Systems of Mixed Functions Algebraically</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>

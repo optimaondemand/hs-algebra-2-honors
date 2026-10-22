@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 10.04 Logarithmic Functions and Their Graphs</title>
+<style>html,body{margin:0;padding:0;background:#fff}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#2d3b45}img{max-width:100%;height:auto}video{max-width:100%;height:auto}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]],processEscapes:true},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ALGEBRA 2</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 18px; color: #0e1c42;">Q3 &middot; Module 10</div>
+        <div style="font-size: 13px; color: #666;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 18px; color: #0e1c42;">10.04</div>
+    </div>
+    <div style="flex: 1; min-width: 150px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Exponential and Logarithmic Functions in Two Variables</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #0e1c42; margin-bottom: 8px;">10.04</div>
+    <div style="font-size: 22px; color: #0e1c42; margin-bottom: 6px;">Logarithmic Functions and Their Graphs</div>
+    <div style="font-size: 15px; color: #666;">Lesson</div>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; VOCABULARY</div>
+    <p data-start="0" data-end="115"><strong data-start="0" data-end="13">Asymptote</strong>: A line that a graph approaches but never reaches, describing the long-term behavior of a function.</p>
+<p data-start="117" data-end="255"><strong data-start="117" data-end="125">Base</strong>: The positive number in an exponential or logarithmic function that determines the rate of growth or the scale of the function.</p>
+<p data-start="257" data-end="340"><strong data-start="257" data-end="267">Domain</strong>: The set of all possible input values for which a function is defined.</p>
+<p data-start="342" data-end="513"><strong data-start="342" data-end="366">Logarithmic Function</strong>: A function that expresses the inverse relationship of an exponential function and answers the question of what exponent produces a given value.</p>
+<p data-start="515" data-end="580"><strong data-start="515" data-end="524">Range</strong>: The set of all possible output values of a function.</p>
+<p data-start="582" data-end="728"><strong data-start="582" data-end="604">Vertical Asymptote</strong>: A vertical line that a graph approaches but never crosses, often indicating a restriction in the domain of the function.</p>
+<p data-start="730" data-end="853" data-is-last-node="" data-is-only-node=""><strong data-start="730" data-end="745">Y-Intercept</strong>: The point where a graph crosses the y-axis, representing the value of the function when the input is zero.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; EXPLORING THE MATH</div>
+    <p>Logarithmic functions are the inverse of exponential functions and are used to describe situations where growth happens quickly at first and then slows over time. Before working with transformations or more complex models, it is important to understand the basic structure and behavior of a logarithmic function. In this lesson, you will learn how to identify the structure of a basic logarithmic function and interpret its graph by identifying key features such as the x-intercept, vertical asymptote, domain, and range. You will also learn how these features are interpreted when logarithmic functions are used to model real-world situations.</p>
+<div style="background-color: #e6f4ff; border-left: 5px solid #007acc; padding: 15px; margin: 10px 0; border-radius: 12px; font-family: sans-serif;">
+<h4 style="color: #007acc; margin-top: 0;"><strong>Logarithmic Functions and Their Key Features</strong></h4>
+<table style="border-collapse: collapse; width: 60.4145%; height: 437.552px;" border="1">
+<tbody>
+<tr style="height: 412.448px;">
+<td style="width: 32.3962%; height: 412.448px;">
+<p data-start="1190" data-end="1247">A <strong data-start="1192" data-end="1222">basic logarithmic function</strong> is written in the form</p>
+<p><img class="equation_image" title="\Large f(x)=\log_{b}{x}" src="https://optimadomi.instructure.com/equation_images/%255CLarge%2520f(x)%253D%255Clog_%257Bb%257D%257Bx%257D?scale=1" alt="LaTeX: \Large f(x)=\log_{b}{x}" data-equation-content="\Large f(x)=\log_{b}{x}" data-ignore-a11y-check="" loading="lazy"></p>
+<p data-start="1273" data-end="1279">where:</p>
+<ul data-start="1280" data-end="1381">
+<li data-start="1280" data-end="1321">
+<p data-start="1282" data-end="1321"><strong data-start="1282" data-end="1291"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">\(b\)</span></span></span></span></strong> is the base of the logarithm,</p>
+</li>
+<li data-start="1322" data-end="1351">
+<p data-start="1324" data-end="1351"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><img class="equation_image" title="b>0" src="https://optimadomi.instructure.com/equation_images/b%253E0?scale=1" alt="LaTeX: b>0" data-equation-content="b>0" data-ignore-a11y-check="" loading="lazy"></span></span></span></span> and <img class="equation_image" title="b \neq 1" src="https://optimadomi.instructure.com/equation_images/b%2520%255Cneq%25201?scale=1" alt="LaTeX: b \neq 1" data-equation-content="b \neq 1" data-ignore-a11y-check="" loading="lazy">,</p>
+</li>
+<li data-start="1352" data-end="1381">
+<p data-start="1354" data-end="1381"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathnormal">\(x\)</span></span></span></span> must be <strong data-start="1368" data-end="1380">positive</strong>.</p>
+</li>
+</ul>
+<p data-start="1383" data-end="1550">Because logarithmic functions are the inverse of exponential functions, they answer the question:<br data-start="1480" data-end="1483"><em data-start="1483" data-end="1550">“To what power must the base be raised to produce a given value?”</em></p>
+</td>
+<td style="width: 32.3986%; height: 412.448px;">
+<p data-start="1552" data-end="1605">Key features of a basic logarithmic function include:</p>
+<ul data-start="1607" data-end="1833">
+<li data-start="1607" data-end="1644">
+<p data-start="1609" data-end="1644"><strong data-start="1609" data-end="1631">Vertical asymptote</strong>: \(x=0\)</p>
+</li>
+<li data-start="1607" data-end="1644"><strong>End Behavior:</strong><br>
+<ul data-start="1607" data-end="1833">
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y\rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y\rightarrow -\infty" data-equation-content="y\rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x \rightarrow \infty" data-equation-content="x \rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li data-start="1645" data-end="1670">
+<p data-start="1647" data-end="1670"><strong data-start="1647" data-end="1657">Domain</strong>: \(x&gt;0\)</p>
+</li>
+<li data-start="1671" data-end="1702">
+<p data-start="1673" data-end="1702"><strong data-start="1673" data-end="1682">Range</strong>: all real numbers</p>
+</li>
+<li data-start="1703" data-end="1769">
+<p data-start="1705" data-end="1769"><strong data-start="1705" data-end="1720">Y-intercept</strong>: none (if the vertical asymptote is x=0)</p>
+</li>
+<li data-start="1770" data-end="1833">
+<p data-start="1772" data-end="1833"><strong data-start="1772" data-end="1787">X-intercept</strong>: occurs at the point where y=0.</p>
+</li>
+</ul>
+</td>
+<td style="width: 35.2144%; text-align: center; height: 412.448px;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/hoomn05qy9?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+<tr style="height: 25.1042px;">
+<td style="width: 32.3962%; height: 25.1042px;">
+<p>A basic natural log is written in the form</p>
+<p>\(\Large f(x)=\ln{x}\)</p>
+<p>This is the inverse function of base e.</p>
+</td>
+<td style="width: 32.3986%; height: 25.1042px;">
+<p data-start="1552" data-end="1605">Key features of a basic logarithmic function include:</p>
+<ul data-start="1607" data-end="1833">
+<li data-start="1607" data-end="1644">
+<p data-start="1609" data-end="1644"><strong data-start="1609" data-end="1631">Vertical asymptote</strong>: \(x=0\)</p>
+</li>
+<li><strong>End Behavior:</strong><br>
+<ul data-start="1607" data-end="1833">
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y\rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y\rightarrow -\infty" data-equation-content="y\rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x \rightarrow \infty" data-equation-content="x \rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li data-start="1645" data-end="1670">
+<p data-start="1647" data-end="1670"><strong data-start="1647" data-end="1657">Domain</strong>: \(x&gt;0\)</p>
+</li>
+<li data-start="1671" data-end="1702">
+<p data-start="1673" data-end="1702"><strong data-start="1673" data-end="1682">Range</strong>: all real numbers</p>
+</li>
+<li data-start="1703" data-end="1769">
+<p data-start="1705" data-end="1769"><strong data-start="1705" data-end="1720">Y-intercept</strong>: none (if the vertical asymptote is x=0)</p>
+</li>
+<li data-start="1770" data-end="1833">
+<p data-start="1772" data-end="1833"><strong data-start="1772" data-end="1787">X-intercept</strong>: occurs at the point where y=0.</p>
+</li>
+</ul>
+</td>
+<td style="width: 35.2144%; height: 25.1042px; text-align: center;"><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/qqizxbi02t?embed" width="400" height="400" loading="lazy"></iframe></td>
+</tr>
+</tbody>
+</table>
+<p data-start="1772" data-end="1833">Note the end behavior for a logarithmic function and how it is different than other functions we have explored. When we talk about what x approaches, for the left side, we look at what happens as it approaches 0 from the right side since there is nothing on the left side of the y-axis unless the graph is shifted left. When we look at what is happening from the right side of the vertical asymptote, which is 0 in the parent function, we denote this as <img class="equation_image" title="0^+" src="https://optimadomi.instructure.com/equation_images/0%255E%252B?scale=1" alt="LaTeX: 0^+" data-equation-content="0^+" data-ignore-a11y-check="" loading="lazy">. If we were to look at what happens from the left side, we would denote this as <img class="equation_image" title="0^-" src="https://optimadomi.instructure.com/equation_images/0%255E-?scale=1" alt="LaTeX: 0^-" data-equation-content="0^-" data-ignore-a11y-check="" loading="lazy">.</p>
+<p data-start="1772" data-end="1833"><strong style="font-family: inherit; font-size: 18px;"><br>Example</strong></p>
+<p>Consider the function \(f(x)=\log_{2}{(x)}\) and its graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/c5nr2srwhe?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>Determine the key features of the function.</p>
+<ul>
+<li>Vertical Asymptote is \(x=0\).</li>
+<li>End Behavior:<br>
+<ul data-start="1607" data-end="1833">
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y\rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y\rightarrow -\infty" data-equation-content="y\rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li data-start="1607" data-end="1644">As <img class="equation_image" title="x \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x \rightarrow \infty" data-equation-content="x \rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>Since the vertical asymptote is \(x=0\), there is no y-intercept.</li>
+<li>X-intercept is \((1,0)\)</li>
+<li>Domain is \(x&gt;0\)</li>
+<li>Range is all real numbers written as \(-\infty &lt; y &lt; \infty\)</li>
+</ul>
+</div>
+<h4><span style="color: #f67a0c;">Example 1</span></h4>
+<p>Consider the function \(f(x)=3\log_{5}{(x)}\) and its graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/p7fwxh8zit?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>Identify the key features of the logarithmic function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>Vertical Asymptote: \(x=0\)</li>
+<li>End Behavior:
+<ul>
+<li>As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y \rightarrow -\infty" data-equation-content="y \rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li>As <img class="equation_image" title="x\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x\rightarrow \infty" data-equation-content="x\rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>X-intercept: \((1,0)\)</li>
+<li>Domain: \(x&gt;0\)</li>
+<li>Range: \(-\infty &lt; y &lt; \infty\)</li>
+</ul>
+<h4><span style="color: #f67a0c;"><strong><br><br></strong>Example 2</span></h4>
+<p>Consider the function \(f(x)=-\log_{3}{(x)}\) and its graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/e2q97vduaa?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>Identify the key features of the logarithmic function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>Vertical Asymptote: \(x=-3\)</li>
+<li>End Behavior:
+<ul>
+<li>As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li>As <img class="equation_image" title="x\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x\rightarrow \infty" data-equation-content="x\rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y \rightarrow -\infty" data-equation-content="y \rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>X-intercept: \((1,0)\)</li>
+<li>Domain: \(x&gt;-3\)</li>
+<li>Range: \(-\infty &lt; y &lt; \infty\)</li>
+</ul>
+<h4><span style="color: #f67a0c;"><br><br>Example 3</span></h4>
+<p>Consider the function \(f(x)=4\ln{(x)}\) and its graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/fpifgdwxcv?embed" width="600" height="600" loading="lazy"></iframe></p>
+<p>Identify the key features of the logarithmic function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>Vertical Asymptote: \(x=0\)</li>
+<li>End Behavior:
+<ul>
+<li>As <img class="equation_image" title="x\rightarrow 0^+" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E%252B?scale=1" alt="LaTeX: x\rightarrow 0^+" data-equation-content="x\rightarrow 0^+" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y \rightarrow -\infty" data-equation-content="y \rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li>As <img class="equation_image" title="x\rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: x\rightarrow \infty" data-equation-content="x\rightarrow \infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>X-intercept: \((1,0)\)</li>
+<li>Domain: \(x&gt;0\)</li>
+<li>Range: \(-\infty &lt; y &lt; \infty\)</li>
+</ul>
+<h4><span style="color: #f67a0c;"><br><br>Example 4</span></h4>
+<p>Consider the function \(f(x)=\frac{1}{2}\ln{(-x)}\) and its graph shown.</p>
+<p><iframe style="border: 1px solid #ccc;" title="embedded content" src="https://www.desmos.com/calculator/shkvlwakew?embed" width="500" height="500" loading="lazy"></iframe></p>
+<p>Identify the key features of the logarithmic function.</p>
+<p><span style="color: #e62429;"><strong>Solution:</strong></span></p>
+<ul>
+<li>First, note that everything was flipped over the y-axis in this graph. When we look at end behavior, we will look at as x approaches negative infinity and as x approaches 0 from the left. This also reverses the domain of the function.</li>
+<li>Vertical Asymptote: \(x=0\)</li>
+<li>End Behavior:
+<ul>
+<li>As <img class="equation_image" title="x\rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: x\rightarrow -\infty" data-equation-content="x\rightarrow -\infty" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow \infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520%255Cinfty?scale=1" alt="LaTeX: y \rightarrow \infty" data-equation-content="y \rightarrow \infty" data-ignore-a11y-check="" loading="lazy"></li>
+<li>As <img class="equation_image" title="x\rightarrow 0^-" src="https://optimadomi.instructure.com/equation_images/x%255Crightarrow%25200%255E-?scale=1" alt="LaTeX: x\rightarrow 0^-" data-equation-content="x\rightarrow 0^-" data-ignore-a11y-check="" loading="lazy">, then <img class="equation_image" title="y \rightarrow -\infty" src="https://optimadomi.instructure.com/equation_images/y%2520%255Crightarrow%2520-%255Cinfty?scale=1" alt="LaTeX: y \rightarrow -\infty" data-equation-content="y \rightarrow -\infty" data-ignore-a11y-check="" loading="lazy"></li>
+</ul>
+</li>
+<li>X-intercept: \((-1,0)\)</li>
+<li>Domain: \(x&lt;0\)</li>
+<li>Range: \(-\infty &lt; y &lt; \infty\)</li>
+</ul>
+<h4 data-start="4978" data-end="4993"><strong><br><br>Conclusion</strong></h4>
+<p data-start="4995" data-end="5551" data-is-last-node="" data-is-only-node="">A strong understanding of basic logarithmic functions is essential before working with transformations or more complex models. By learning to identify the structure of a logarithmic function and interpret its graph, you can recognize key features such as the x-intercept, vertical asymptote, domain, and range. Applying these ideas to real-world situations helps you understand constraints and interpret what the graph represents. This foundational knowledge prepares you for deeper work with logarithmic transformations and applications in future lessons.</p>
+</div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+    <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#10067; ESSENTIAL QUESTIONS</div>
+    <p data-start="848" data-end="931">1. What is a logarithmic function, and how is it related to an exponential function?</p>
+<p data-start="848" data-end="931"><span style="font-size: 1rem;">2. How does the base of a logarithmic function affect its graph and behavior?</span></p>
+<p data-start="848" data-end="931"><span style="font-size: 1rem;">3. What are the key features of logarithmic graphs, and how can they be identified?</span></p>
+<p data-start="848" data-end="931"><span style="font-size: 1rem;">4. Why do logarithmic functions have restricted domains, and how are these constraints interpreted in real-world contexts?</span></p>
+</div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ALGEBRA 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">10.04 &middot; Logarithmic Functions and Their Graphs</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</body>
+</html>
